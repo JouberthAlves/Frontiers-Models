@@ -35,7 +35,8 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     racingRuns[4].live_url !== 'https://racing-sonnet-5.5.biel.dev.br/' ||
     racingRuns[4].site_url !== 'https://racing-sonnet-5.5.biel.dev.br/' ||
     racingRuns[5].id !== 'gemini-4-hydrogen-v3.4' ||
-    racingRuns[5].live_url !== null ||
+    racingRuns[5].live_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
+    racingRuns[5].site_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
     racing.non_frontier_runs?.length !== 1 ||
     racing.non_frontier_runs[0] !== 'gemini-3.8-v3.4' ||
     racingRuns.some(run => run.id === 'gemini-3.8-v3.4') ||

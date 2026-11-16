@@ -98,8 +98,9 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
   assert.equal(hydrogen.source_file_count, 319);
   assert.equal(hydrogen.source_bytes, 379164707);
   assert.equal(hydrogen.source_repository, null);
-  assert.equal(hydrogen.live_url, null);
-  assert.equal(hydrogen.site_url, null);
+  assert.equal(hydrogen.live_url, 'https://racing-gemini-4-hydrogen.biel.dev.br/');
+  assert.equal(hydrogen.site_url, hydrogen.live_url);
+  assert.equal(hydrogen.site_status, 'owner-provided-url-reachability-not-independently-verified');
   assert.equal(hydrogen.git_bundle, null);
   for (const run of racing.runs.filter(run => racing.legacy_runs.includes(run.id))) {
     assert.equal(run.live_url, null);
@@ -139,6 +140,7 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
       ? './runs/gemini-4-hydrogen-v3.4/source/'
       : './benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/';
     assert.ok(s.includes('[Gemini 4 Hydrogen](' + localHydrogen + ')'), 'Hydrogen source must be archived and model-named');
+    assert.ok(s.includes('](https://racing-gemini-4-hydrogen.biel.dev.br/)'), 'Hydrogen live URL must match owner-provided URL');
     assert.ok(!s.includes('https://github.com/bielxdh3/gemini-mvp'), 'no deleted-repository dependency');
     assert.ok(!s.includes('https://github.com/bielxdh3/4argon'), 'never link original Argon repository');
     const localSonnet = path.startsWith('benchmarks/racing/')

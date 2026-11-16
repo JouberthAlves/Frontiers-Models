@@ -66,8 +66,8 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else if (run.id === 'gemini-4-hydrogen-v3.4') {
         assert.equal(run.model, 'Gemini 4 Hydrogen');
-        assert.equal(run.live_url, null);
-        assert.equal(run.site_url, null);
+        assert.equal(run.live_url, 'https://racing-gemini-4-hydrogen.biel.dev.br/');
+        assert.equal(run.site_url, run.live_url);
         assert.equal(run.source_repository, null);
         assert.equal(run.source_commit, 'dd66f1157269126af067faacef0e7f1725d3c7d6');
         assert.equal(run.source_file_count, 319);

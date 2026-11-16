@@ -28,8 +28,9 @@ test('Gemini 4 Hydrogen V3.4: complete 319-file, byte-exact upstream source snap
   const run = catalog.runs.find(item => item.id === id);
   assert.ok(run && catalog.current_arena.includes(id));
   assert.equal(run.model, 'Gemini 4 Hydrogen');
-  assert.equal(run.live_url, null);
-  assert.equal(run.site_url, null);
+  assert.equal(run.live_url, 'https://racing-gemini-4-hydrogen.biel.dev.br/');
+  assert.equal(run.site_url, run.live_url);
+  assert.equal(run.site_status, 'owner-provided-url-reachability-not-independently-verified');
   assert.equal(run.source_repository, null);
   assert.equal(run.gameplay_verification, 'not-independently-verified');
   assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
@@ -75,12 +76,13 @@ test('Gemini 4 Hydrogen V3.4: complete 319-file, byte-exact upstream source snap
   assert.doesNotMatch(provenance, /github\.com\/bielxdh3\/gemini-mvp/);
 });
 
-test('Gemini 4 Hydrogen is catalogued with a local model-named source link, not a fictional game URL', () => {
+test('Gemini 4 Hydrogen has the owner-provided gameplay URL and locally archived model-named source', () => {
   for (const path of ['README.md', 'README-PT-BR.md',
     'benchmarks/racing/README.md', 'benchmarks/racing/README-PT-BR.md']) {
     const text = readFileSync(resolve(root, path), 'utf8');
     const prefix = path.startsWith('benchmarks/racing/') ? './runs/' : './benchmarks/racing/runs/';
     assert.ok(text.includes('[Gemini 4 Hydrogen](' + prefix + id + '/source/)'), path);
+    assert.ok(text.includes('](https://racing-gemini-4-hydrogen.biel.dev.br/)'), path + ' missing owner-provided game URL');
     assert.ok(!text.includes('github.com/bielxdh3/gemini-mvp'), path);
   }
 });
