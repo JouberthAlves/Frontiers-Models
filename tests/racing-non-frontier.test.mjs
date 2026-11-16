@@ -44,7 +44,13 @@ test('both languages place the V3.4 Gemini only below the current Racing listing
     const end=content.indexOf('\n\n',start);
     const current=content.slice(start,end);
     assert.doesNotMatch(current,/Gemini 3\.8 Flash|gemini-3\.8-v3\.4/);
-    assert.equal([...current.matchAll(/\*\*[^*]+\(V3\.4\)\*\*/g)].length,6);
+    assert.equal([...current.matchAll(/\*\*[^*]+\*\*/g)].length, 6);
+    assert.doesNotMatch(current, /\*\*[^*]+\(V3\.4\)\*\*/);
+    for (const [symbol, model] of [
+      ['\u2600\ufe0f', 'GPT-6.1 Sol'], ['\u2726', 'GPT-6 Astra'],
+      ['\u266c', 'Opus 5.5'], ['\u25c8', 'Gemini 4 Argon'],
+      ['\u2727', 'Sonnet 5.5'], ['\u2b21', 'Gemini 4 Hydrogen'],
+    ]) assert.ok(current.includes(symbol + ' **' + model + '**'), file + ': ' + model);
     const otherHeading=pt?'Racing não frontier':'Non-frontier Racing';
     const sectionStart=content.lastIndexOf(otherHeading);
     assert.ok(sectionStart>end,file+' Non-frontier section follows active table');

@@ -8,12 +8,12 @@ The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference im
 
 | Current model | Play | Source |
 | --- | --- | --- |
-| **GPT-6.1 Sol (V3.4)** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) |
-| **GPT-6 Astra (V3.4)** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) |
-| **Opus 5.5 (V3.4)** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) |
-| **Gemini 4 Argon (V3.4)** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./runs/gemini-4-argon-v3.4/source/) |
-| **Sonnet 5.5 (V3.4)** | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./runs/sonnet-5.5-v3.4/source/) |
-| **Gemini 4 Hydrogen (V3.4)** | — | [Gemini 4 Hydrogen](./runs/gemini-4-hydrogen-v3.4/source/) |
+| ☀️ **GPT-6.1 Sol** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) |
+| ✦ **GPT-6 Astra** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) |
+| ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) |
+| ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./runs/gemini-4-argon-v3.4/source/) |
+| ✧ **Sonnet 5.5** | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./runs/sonnet-5.5-v3.4/source/) |
+| ⬡ **Gemini 4 Hydrogen** | — | [Gemini 4 Hydrogen](./runs/gemini-4-hydrogen-v3.4/source/) |
 
 [Operational addendum](./EXECUTION-ADDENDUM.md) · [Source code metrics](./SOURCE-METRICS.md) · [Run provenance](./RUN-PROVENANCE.md) · [Earlier prompts](./prompts/README.md).
 
