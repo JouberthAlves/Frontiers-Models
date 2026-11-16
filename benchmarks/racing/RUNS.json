@@ -314,6 +314,35 @@
         "hardware": "rtx-3070-ti-1080p",
         "full_benchmark_acceptance": "not-independently-verified"
       }
+    },
+    {
+      "id": "gemini-4-hydrogen-v3.4",
+      "model": "Gemini 4 Hydrogen",
+      "live_url": null,
+      "site_url": null,
+      "site_status": "no-owner-provided-live-url",
+      "source_repository": null,
+      "source_branch": "main",
+      "source_commit": "dd66f1157269126af067faacef0e7f1725d3c7d6",
+      "source_tree": "40ed6333751c590955985b1b197175ee5aa984aa",
+      "prompt": "prompts/racing-v3.4/racing-v3.4.md",
+      "prompt_association": "source README identifies Racing-bench V3.4; original prompt and 14-reference delivery not independently verified",
+      "provenance": "runs/gemini-4-hydrogen-v3.4/SOURCE-PROVENANCE.md",
+      "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
+      "gameplay_verification": "not-independently-verified",
+      "display_status": "current-archived-source-no-site",
+      "archive_path": "runs/gemini-4-hydrogen-v3.4/source",
+      "manifest": "runs/gemini-4-hydrogen-v3.4/SOURCE-FILES.json",
+      "source_file_count": 319,
+      "source_bytes": 379164707,
+      "git_bundle": null,
+      "reported_verification": {
+        "source": "original-project-readme-self-report",
+        "high_preset_average_fps": 59.5,
+        "low_preset_average_fps": 58.2,
+        "hardware": "rtx-3070-ti-1080p-vsync-60hz",
+        "full_benchmark_acceptance": "not-independently-verified"
+      }
     }
   ],
   "current_prompt": "racing-v3.4",
@@ -327,7 +356,8 @@
     "gpt-6-astra-v3.4",
     "opus-5.5-v3.4",
     "gemini-4-argon-v3.4",
-    "sonnet-5.5-v3.4"
+    "sonnet-5.5-v3.4",
+    "gemini-4-hydrogen-v3.4"
   ],
   "non_frontier_runs": [
     "gemini-3.8-v3.4"

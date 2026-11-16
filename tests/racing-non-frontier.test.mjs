@@ -14,10 +14,10 @@ const site = 'https://racing-gemini-3.8-flash.biel.dev.br/';
 test('Gemini 3.8 Flash V3.4 moves to Non-frontier, without deleting its archived source', () => {
   assert.deepEqual(runs.non_frontier_runs, [source]);
   assert.ok(!runs.current_arena.includes(source));
-  assert.equal(runs.current_arena.length, 5);
+  assert.equal(runs.current_arena.length, 6);
   assert.deepEqual(runs.current_arena, [
     'gpt-6.1-sol-v3.4','gpt-6-astra-v3.4','opus-5.5-v3.4',
-    'gemini-4-argon-v3.4','sonnet-5.5-v3.4'
+    'gemini-4-argon-v3.4','sonnet-5.5-v3.4','gemini-4-hydrogen-v3.4'
   ]);
   const gemini = runs.runs.find(r => r.id === source);
   assert.equal(gemini.role, 'non-frontier-run');
@@ -44,7 +44,7 @@ test('both languages place the V3.4 Gemini only below the current Racing listing
     const end=content.indexOf('\n\n',start);
     const current=content.slice(start,end);
     assert.doesNotMatch(current,/Gemini 3\.8 Flash|gemini-3\.8-v3\.4/);
-    assert.equal([...current.matchAll(/\*\*[^*]+\(V3\.4\)\*\*/g)].length,5);
+    assert.equal([...current.matchAll(/\*\*[^*]+\(V3\.4\)\*\*/g)].length,6);
     const otherHeading=pt?'Racing não frontier':'Non-frontier Racing';
     const sectionStart=content.lastIndexOf(otherHeading);
     assert.ok(sectionStart>end,file+' Non-frontier section follows active table');
@@ -62,9 +62,9 @@ test('both languages place the V3.4 Gemini only below the current Racing listing
 
 test('SVG is current-only and excludes both Gemini 3.8 visible text and ID', () => {
   const svg=read('assets/frontier-models-hero-v7.svg');
-  assert.equal([...svg.matchAll(/data-role="run" data-benchmark="racing"/g)].length,5);
+  assert.equal([...svg.matchAll(/data-role="run" data-benchmark="racing"/g)].length,6);
   assert.equal([...svg.matchAll(/data-role="run" data-benchmark="orbitarium"/g)].length,5);
   assert.ok(!svg.includes('Gemini 3.8 Flash'));
   assert.ok(!svg.includes('gemini-3.8-v3.4'));
-  assert.match(svg,/aria-label="10 current runs: 5 Racing and 5 Orbitarium"/);
+  assert.match(svg,/aria-label="11 current runs: 6 Racing and 5 Orbitarium"/);
 });

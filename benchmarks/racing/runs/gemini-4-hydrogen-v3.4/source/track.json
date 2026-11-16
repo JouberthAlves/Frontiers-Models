@@ -1,0 +1,40 @@
+{
+  "name": "Costa Dourada",
+  "seed": 20261116,
+  "seaLevel": 0.0,
+  "sunDirection": [-0.91, 0.145, -0.388],
+  "bridgeSpan": {
+    "startRatio": 0.918,
+    "endRatio": 0.941
+  },
+  "controlPoints": [
+    { "x": 300,  "y": 3.5,  "z": 5,   "width": 12.0, "bankingDeg": 0.0,  "zone": "Z1" },
+    { "x": 150,  "y": 3.5,  "z": -18, "width": 12.0, "bankingDeg": 0.0,  "zone": "Z1" },
+    { "x": 0,    "y": 3.5,  "z": -40, "width": 12.0, "bankingDeg": 0.0,  "zone": "Z1" },
+    { "x": -160, "y": 3.5,  "z": -56, "width": 12.0, "bankingDeg": 0.0,  "zone": "Z1" },
+    { "x": -315, "y": 4.0,  "z": -54, "width": 12.0, "bankingDeg": 2.0,  "zone": "Z1" },
+    { "x": -440, "y": 6.0,  "z": -10, "width": 11.5, "bankingDeg": 4.0,  "zone": "Z1" },
+
+    { "x": -495, "y": 11.5, "z": 95,  "width": 11.0, "bankingDeg": 4.5,  "zone": "Z2" },
+    { "x": -435, "y": 18.5, "z": 205, "width": 11.0, "bankingDeg": 5.0,  "zone": "Z2" },
+    { "x": -315, "y": 25.5, "z": 230, "width": 11.0, "bankingDeg": 3.5,  "zone": "Z2" },
+    { "x": -205, "y": 32.0, "z": 170, "width": 11.0, "bankingDeg": -4.0, "zone": "Z2" },
+    { "x": -95,  "y": 39.0, "z": 215, "width": 11.0, "bankingDeg": 4.0,  "zone": "Z2" },
+    { "x": -75,  "y": 45.5, "z": 325, "width": 11.0, "bankingDeg": 4.5,  "zone": "Z2" },
+    { "x": -185, "y": 51.0, "z": 415, "width": 11.0, "bankingDeg": 4.0,  "zone": "Z2" },
+    { "x": -245, "y": 54.5, "z": 525, "width": 11.0, "bankingDeg": 3.0,  "zone": "Z2" },
+
+    { "x": -120, "y": 54.0, "z": 595, "width": 11.5, "bankingDeg": 2.0,  "zone": "Z3" },
+    { "x": 20,   "y": 50.5, "z": 565, "width": 11.5, "bankingDeg": 0.0,  "zone": "Z3" },
+    { "x": 150,  "y": 47.0, "z": 505, "width": 12.0, "bankingDeg": 0.0,  "zone": "Z3" },
+    { "x": 280,  "y": 44.0, "z": 475, "width": 12.0, "bankingDeg": 0.0,  "zone": "Z3" },
+    { "x": 405,  "y": 41.0, "z": 470, "width": 11.5, "bankingDeg": 2.0,  "zone": "Z3" },
+
+    { "x": 505,  "y": 36.0, "z": 395, "width": 11.0, "bankingDeg": 3.0,  "zone": "Z4" },
+    { "x": 545,  "y": 28.5, "z": 275, "width": 11.0, "bankingDeg": 3.0,  "zone": "Z4" },
+    { "x": 540,  "y": 20.5, "z": 150, "width": 11.0, "bankingDeg": 1.0,  "zone": "Z4" },
+    { "x": 510,  "y": 13.5, "z": 55,  "width": 11.0, "bankingDeg": 0.0,  "zone": "Z4" },
+    { "x": 460,  "y": 7.5,  "z": 18,  "width": 11.5, "bankingDeg": 3.0,  "zone": "Z4" },
+    { "x": 385,  "y": 4.2,  "z": 16,  "width": 12.0, "bankingDeg": 1.5,  "zone": "Z4" }
+  ]
+}

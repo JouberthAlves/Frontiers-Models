@@ -23,7 +23,7 @@ const currentRunCount = racingRuns.length + orbitRuns.length;
 if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 ||
     !orbitRuns.some(run => run.model === 'Gemini 4 Argon') ||
     orbitRuns.some(run => run.model === 'Gemini 3.8 Flash') ||
-    racingRuns.length !== 5 ||
+    racingRuns.length !== 6 ||
     racingRuns[0].id !== 'gpt-6.1-sol-v3.4' ||
     racingRuns[1].id !== 'gpt-6-astra-v3.4' ||
     racingRuns[2].id !== 'opus-5.5-v3.4' ||
@@ -34,6 +34,8 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     racingRuns[4].id !== 'sonnet-5.5-v3.4' ||
     racingRuns[4].live_url !== 'https://racing-sonnet-5.5.biel.dev.br/' ||
     racingRuns[4].site_url !== 'https://racing-sonnet-5.5.biel.dev.br/' ||
+    racingRuns[5].id !== 'gemini-4-hydrogen-v3.4' ||
+    racingRuns[5].live_url !== null ||
     racing.non_frontier_runs?.length !== 1 ||
     racing.non_frontier_runs[0] !== 'gemini-3.8-v3.4' ||
     racingRuns.some(run => run.id === 'gemini-3.8-v3.4') ||
@@ -42,7 +44,7 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     orbitRuns.some(run => !run.live_url?.startsWith('https://')) ||
     racingRuns.some(run => !run.display_status.startsWith('current-') ||
       (run.live_url !== null && !run.live_url?.startsWith('https://')))) {
-  throw new Error('Hero expects five current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
+  throw new Error('Hero expects six current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')
@@ -58,8 +60,8 @@ function badge({ run, x, y, width, accent, benchmark }) {
 }
 
 const racingBadges = racingRuns.map((run, i) =>
-  badge({ run, x: i < 3 ? 650 + i * 239 : 769.5 + (i - 3) * 239, y: i < 3 ? 173 : 235, width: 225,
-    accent: ['#facc6b', '#aaa7ff', '#ff99cc', '#8df0a4', '#f4a1ed'][i], benchmark: 'racing' })
+  badge({ run, x: i < 3 ? 650 + i * 239 : 650 + (i - 3) * 239, y: i < 3 ? 173 : 235, width: 225,
+    accent: ['#facc6b', '#aaa7ff', '#ff99cc', '#8df0a4', '#f4a1ed', '#78dad1'][i], benchmark: 'racing' })
 ).join('\n    ');
 const orbitBadges = orbitRuns.map((run, i) =>
   badge({ run, x: i < 3 ? 650 + i * 239 : 769.5 + (i - 3) * 239, y: i < 3 ? 455 : 517,

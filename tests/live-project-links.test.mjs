@@ -27,7 +27,7 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
 
 test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provided URLs', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
-  assert.deepEqual(racing.current_arena, ['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4']);
+  assert.deepEqual(racing.current_arena, ['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4', 'gemini-4-hydrogen-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
   assert.deepEqual(racing.non_frontier_runs, ['gemini-3.8-v3.4']);
   const current = racing.runs.find(run => run.id === 'gemini-3.8-v3.4');
@@ -88,6 +88,16 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
   assert.equal(sonnet.live_url, 'https://racing-sonnet-5.5.biel.dev.br/');
   assert.equal(sonnet.site_url, sonnet.live_url);
   assert.equal(sonnet.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+  const hydrogen = racing.runs.find(run => run.id === 'gemini-4-hydrogen-v3.4');
+  assert.equal(hydrogen.model, 'Gemini 4 Hydrogen');
+  assert.equal(hydrogen.source_commit, 'dd66f1157269126af067faacef0e7f1725d3c7d6');
+  assert.equal(hydrogen.source_tree, '40ed6333751c590955985b1b197175ee5aa984aa');
+  assert.equal(hydrogen.source_file_count, 319);
+  assert.equal(hydrogen.source_bytes, 379164707);
+  assert.equal(hydrogen.source_repository, null);
+  assert.equal(hydrogen.live_url, null);
+  assert.equal(hydrogen.site_url, null);
+  assert.equal(hydrogen.git_bundle, null);
   for (const run of racing.runs.filter(run => racing.legacy_runs.includes(run.id))) {
     assert.equal(run.live_url, null);
     assert.equal(run.display_status, 'legacy-archived');
@@ -120,6 +130,11 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
       : './benchmarks/racing/runs/gemini-4-argon-v3.4/source/';
     assert.ok(s.includes('[Gemini 4 Argon](' + localArgon + ')'), 'Argon must link archived source only');
     assert.ok(s.includes('https://racing-gemini-4-argon.biel.dev.br/'), 'Argon must link owner-provided live URL');
+    const localHydrogen = path.startsWith('benchmarks/racing/')
+      ? './runs/gemini-4-hydrogen-v3.4/source/'
+      : './benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/';
+    assert.ok(s.includes('[Gemini 4 Hydrogen](' + localHydrogen + ')'), 'Hydrogen source must be archived and model-named');
+    assert.ok(!s.includes('https://github.com/bielxdh3/gemini-mvp'), 'no deleted-repository dependency');
     assert.ok(!s.includes('https://github.com/bielxdh3/4argon'), 'never link original Argon repository');
     const localSonnet = path.startsWith('benchmarks/racing/')
       ? './runs/sonnet-5.5-v3.4/source/'
