@@ -31,4 +31,4 @@ For historical V2.6 reproduction, the [original prompt](./prompts/racing-v2.6.md
 
 | Model | Category | Website | Source code |
 | --- | --- | --- | --- |
-| **Gemini 3.8 Flash (V3.4)** | Non-frontier | [Open](https://racing-gemini-3.8-flash.biel.dev.br/) | [Code](./runs/gemini-3.8-v3.4/source/) |
+| ◈ **Gemini 3.8 Flash** | Non-frontier | Deleted | [Code](./runs/gemini-3.8-v3.4/source/) |

@@ -37,9 +37,11 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
     } else if (registry.non_frontier_runs.includes(run.id)) {
       assert.equal(run.id, 'gemini-3.8-v3.4');
       assert.equal(run.role, 'non-frontier-run');
-      assert.equal(run.display_status, 'non-frontier-archived-source-site-live');
+      assert.equal(run.display_status, 'non-frontier-archived-source-site-deleted');
       assert.ok(!registry.current_arena.includes(run.id));
-      assert.equal(run.live_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
+      assert.equal(run.live_url, null);
+      assert.equal(run.site_url, null);
+      assert.match(run.site_status, /owner-reported-deleted-2026-11-16/);
       assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
       assert.ok(run.manifest && run.provenance);
     } else {

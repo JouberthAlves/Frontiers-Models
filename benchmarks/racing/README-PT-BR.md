@@ -31,4 +31,4 @@ Para reproduzir a V2.6, forneça **OS DOIS** documentos: o [prompt original](./p
 
 | Modelo | Categoria | Site | Código-fonte |
 | --- | --- | --- | --- |
-| **Gemini 3.8 Flash (V3.4)** | Não frontier | [Abrir](https://racing-gemini-3.8-flash.biel.dev.br/) | [Código](./runs/gemini-3.8-v3.4/source/) |
+| ◈ **Gemini 3.8 Flash** | Não frontier | Deleted | [Código](./runs/gemini-3.8-v3.4/source/) |

@@ -27,6 +27,7 @@
       "status": "imported",
       "arena_visibility": "historical-hidden",
       "live_url": null,
+      "site_status": "owner-reported-deleted-2026-11-16",
       "legacy_source_repository": "bielxdh3/GPT5.6-SUN-MAX-SOLAR-SYSTEM",
       "archive_status": "self-contained"
     },
@@ -75,7 +76,7 @@
     {
       "id": "grok-4.6-frontier-v2",
       "model": "Grok 4.6",
-      "role": "archived-frontier-run",
+      "role": "outdated-frontier-run",
       "source_commit": null,
       "source_archive_sha256": "5d77eeb509e147e40701fa7a72d7009c1a81ed3eca8f0c992d3dd6fa454cd1aa",
       "source_archive_bytes": 122173,
@@ -83,9 +84,9 @@
       "prompt": "prompts/frontier-v2.md",
       "target_path": "runs/grok-4.6/frontier-v2",
       "status": "imported",
-      "arena_visibility": "non-frontier-or-archived",
+      "arena_visibility": "non-frontier-or-outdated",
       "live_url": "https://grok-4-6-solar-system.vercel.app",
-      "notes": "Grok 4.6 is preserved as a historical reference outside the current arena; the supplied ZIP provenance remains unchanged.",
+      "notes": "Grok 4.6 is preserved as an outdated reference outside the current arena; the supplied ZIP provenance remains unchanged.",
       "archive_status": "self-contained"
     },
     {
@@ -133,14 +134,15 @@
     {
       "id": "gemini-3.8-flash-high-frontier-v2",
       "model": "Gemini 3.8 Flash",
-      "role": "archived-frontier-run",
+      "role": "non-frontier-run",
       "source_commit": "805cfe87a6b4dcc64961130d4f9d2738f1005790",
       "prompt": "prompts/frontier-v2.md",
       "target_path": "runs/gemini-3.8-flash/frontier-v2",
       "status": "source-pinned",
       "arena_visibility": "non-frontier-or-outdated",
-      "live_url": "https://orbitarium-gemini-3.8-flash.biel.dev.br",
-      "notes": "Former current reference archived as a historical Frontier V2 run, superseded in the current arena by Gemini 4 Argon. Original source commit, prompt provenance, URL, and source-pinned status are retained; a full source snapshot is not present here.",
+      "live_url": null,
+      "site_status": "owner-reported-deleted-2026-11-16",
+      "notes": "Former current run now classified as Non-frontier after being superseded by Gemini 4 Argon. Original source commit, prompt provenance, and source-pinned status are retained; the website was reported deleted by the owner on 2026-11-16. A full source snapshot is not present here.",
       "legacy_source_repository": "bielxdh3/gemini",
       "archive_status": "source-repository-pinned"
     },
@@ -153,8 +155,9 @@
       "target_path": null,
       "status": "source-pinned",
       "arena_visibility": "non-frontier-or-outdated",
-      "live_url": "https://orbitarium-gpt-5.6-luna.biel.dev.br",
-      "notes": "Non-frontier reference kept visible outside the main arena. The source repository is pinned; prompt provenance is not archived in Frontier Models.",
+      "live_url": null,
+      "site_status": "owner-reported-deleted-2026-11-16",
+      "notes": "Non-frontier reference kept visible outside the main arena. The website was reported deleted by the owner on 2026-11-16; the source repository is pinned, but prompt provenance is not archived in Frontier Models.",
       "legacy_source_repository": "bielxdh3/orbitario-luna",
       "archive_status": "source-repository-pinned"
     }

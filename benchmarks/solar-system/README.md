@@ -24,11 +24,11 @@
 
 | Model | Category | Website | Source / record |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sol V1** | Historical | — | [Code](./runs/gpt-5.6-sun-max/original/) |
+| ☀️ **GPT-5.6 Sol V1** | Historical | Deleted | [Code](./runs/gpt-5.6-sun-max/original/) |
 | ☀️ **GPT-5.6 Sol V2** | Outdated | [Open](https://orbitarium-gpt-5.6-sol-v2.biel.dev.br) | [Code](./runs/gpt-5.6-sun-max/rebuild/) |
-| 🌙 **GPT-5.6 Luna** | Non-frontier | [Open](https://orbitarium-gpt-5.6-luna.biel.dev.br) | [Record](./RUN-PROVENANCE.md) |
-| 𝕏 **Grok 4.6** | Archived | [Open](https://grok-4-6-solar-system.vercel.app) | [Code](./runs/grok-4.6/frontier-v2/) |
-| ◈ **Gemini 3.8 Flash** | Archived | [Open](https://orbitarium-gemini-3.8-flash.biel.dev.br) | [Record](./GEMINI-3.8-FLASH-PROVENANCE.md) |
+| 🌙 **GPT-5.6 Luna** | Non-frontier | Deleted | [Record](./RUN-PROVENANCE.md) |
+| 𝕏 **Grok 4.6** | Outdated | [Open](https://grok-4-6-solar-system.vercel.app) | [Code](./runs/grok-4.6/frontier-v2/) |
+| ◈ **Gemini 3.8 Flash** | Non-frontier | Deleted | [Record](./GEMINI-3.8-FLASH-PROVENANCE.md) |
 
 ## What this benchmark tests
 

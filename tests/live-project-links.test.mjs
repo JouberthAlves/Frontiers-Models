@@ -11,17 +11,20 @@ const racing = JSON.parse(read('benchmarks/racing/RUNS.json'));
 
 const orbitariumSites = new Map([
   ['gpt-5.6-sun-max-frontier-v2', 'https://orbitarium-gpt-5.6-sol-v2.biel.dev.br'],
-  ['gpt-5.6-luna-max-orbitario', 'https://orbitarium-gpt-5.6-luna.biel.dev.br'],
   ['gpt-6-astra-max-frontier-v2', 'https://orbitarium-gpt-6-astra.biel.dev.br'],
   ['gpt-6.1-sol-source', 'https://orbitarium-gpt-6.1-sol.biel.dev.br'],
   ['grok-4.7-solar-source', 'https://orbitarium-grok-4.7.biel.dev.br'],
-  ['gemini-3.8-flash-high-frontier-v2', 'https://orbitarium-gemini-3.8-flash.biel.dev.br'],
   ['gemini-4-argon-source', 'https://orbitarium-gemini-4-argon.biel.dev.br']
 ]);
 
-test('all seven canonical Orbitarium sites retain their original links', () => {
+test('all five remaining canonical Orbitarium sites retain their original links', () => {
   for (const [id, url] of orbitariumSites) {
     assert.equal(orbitarium.find(run => run.id === id)?.live_url, url, id);
+  }
+  for (const id of ['gpt-5.6-sun-max-original', 'gpt-5.6-luna-max-orbitario', 'gemini-3.8-flash-high-frontier-v2']) {
+    const run = orbitarium.find(x => x.id === id);
+    assert.equal(run?.live_url, null, id);
+    assert.equal(run?.site_status, 'owner-reported-deleted-2026-11-16', id);
   }
 });
 
@@ -33,13 +36,13 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
   const current = racing.runs.find(run => run.id === 'gemini-3.8-v3.4');
   assert.equal(current.model, 'Gemini 3.8 Flash');
   assert.equal(current.role, 'non-frontier-run');
-  assert.equal(current.display_status, 'non-frontier-archived-source-site-live');
+  assert.equal(current.display_status, 'non-frontier-archived-source-site-deleted');
   assert.ok(!racing.current_arena.includes(current.id));
   assert.equal(current.source_commit, '8f1992b88c3771edae825f7ecc52f1499844cb0b');
   assert.equal(current.source_repository, 'https://github.com/bielxdh3/gemini-3.8');
-  assert.equal(current.site_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
-  assert.match(current.site_status, /http-200/);
-  assert.equal(current.live_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
+  assert.equal(current.site_url, null);
+  assert.match(current.site_status, /owner-reported-deleted-2026-11-16/);
+  assert.equal(current.live_url, null);
   const sol = racing.runs.find(run => run.id === 'gpt-6.1-sol-v3.4');
   assert.equal(sol.model, 'GPT-6.1 Sol');
   assert.equal(sol.source_repository, 'https://github.com/bielxdh3/6.1racinsol');
@@ -107,7 +110,9 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
     const s = read(path);
     assert.match(s, /racing-v3\.1\.md/);
     assert.match(s, /racing-v3\.4/);
-    assert.match(s, /racing-gemini-3\.8-flash\.biel\.dev\.br/);
+    assert.doesNotMatch(s, /racing-gemini-3\.8-flash\.biel\.dev\.br/);
+    assert.ok(s.includes('**Gemini 3.8 Flash**'));
+    assert.ok(s.includes(' | Deleted | '));
     const localGemini = path.startsWith('benchmarks/racing/')
       ? './runs/gemini-3.8-v3.4/source/'
       : './benchmarks/racing/runs/gemini-3.8-v3.4/source/';
@@ -150,13 +155,17 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
   }
 });
 
-test('Orbitarium homepage and archive links are unchanged', () => {
+test('Orbitarium homepage retains active links and labels the deleted sites', () => {
   for (const path of ['README.md', 'README-PT-BR.md',
     'benchmarks/solar-system/README.md', 'benchmarks/solar-system/README-PT-BR.md']) {
     const s = read(path);
     for (const [id, url] of orbitariumSites) assert.ok(s.includes('](' + url + ')'), path + ': ' + id);
     assert.doesNotMatch(s, /orbitarium-gpt-5\.6-sol\.v1\.biel\.dev\.br/);
-    assert.ok(s.includes('GPT-5.6 Sol V1'));
+    for (const model of ['GPT-5.6 Sol V1', 'GPT-5.6 Luna', 'Gemini 3.8 Flash']) {
+      const row = s.split('\n').filter(line => line.includes('**' + model + '**')).at(-1);
+      assert.ok(row?.includes(' | Deleted | '), path + ': ' + model);
+    }
+    assert.doesNotMatch(s, /orbitarium-gpt-5\.6-luna\.biel\.dev\.br|orbitarium-gemini-3\.8-flash\.biel\.dev\.br/);
   }
   assert.equal(orbitarium.find(run => run.id === 'gpt-5.6-sun-max-original')?.live_url, null);
 });

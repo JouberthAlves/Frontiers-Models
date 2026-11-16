@@ -9,7 +9,7 @@ const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const read = p => readFileSync(resolve(root,p),'utf8');
 const runs = JSON.parse(read('benchmarks/racing/RUNS.json'));
 const source = 'gemini-3.8-v3.4';
-const site = 'https://racing-gemini-3.8-flash.biel.dev.br/';
+const site = null;
 
 test('Gemini 3.8 Flash V3.4 moves to Non-frontier, without deleting its archived source', () => {
   assert.deepEqual(runs.non_frontier_runs, [source]);
@@ -21,7 +21,8 @@ test('Gemini 3.8 Flash V3.4 moves to Non-frontier, without deleting its archived
   ]);
   const gemini = runs.runs.find(r => r.id === source);
   assert.equal(gemini.role, 'non-frontier-run');
-  assert.equal(gemini.display_status, 'non-frontier-archived-source-site-live');
+  assert.equal(gemini.display_status, 'non-frontier-archived-source-site-deleted');
+  assert.match(gemini.site_status, /owner-reported-deleted-2026-11-16/);
   assert.equal(gemini.source_commit, '8f1992b88c3771edae825f7ecc52f1499844cb0b');
   assert.equal(gemini.source_tree, '9ef8386e5961f81823cd51f5eb3f1c063922df94');
   assert.equal(gemini.source_file_count, 188);
@@ -55,12 +56,13 @@ test('both languages place the V3.4 Gemini only below the current Racing listing
     const sectionStart=content.lastIndexOf(otherHeading);
     assert.ok(sectionStart>end,file+' Non-frontier section follows active table');
     const nonfrontier=content.slice(sectionStart);
-    assert.ok(nonfrontier.includes('**Gemini 3.8 Flash (V3.4)**'));
+    assert.ok(nonfrontier.includes('**Gemini 3.8 Flash**'));
+    assert.ok(nonfrontier.includes(' | Deleted | '));
     assert.ok(nonfrontier.includes(pt?'Não frontier':'Non-frontier'));
     const local=(file.startsWith('benchmarks/racing/')?'./runs/':'./benchmarks/racing/runs/')
       +source+'/source/';
     assert.ok(nonfrontier.includes(']('+local+')'),file+' source link');
-    assert.ok(nonfrontier.includes(site),file+' game link');
+    assert.ok(!nonfrontier.includes('racing-gemini-3.8-flash.biel.dev.br'),file+' deleted site must not link');
     assert.ok(!content.includes('https://github.com/bielxdh3/4argon'));
     assert.ok(!content.includes(['https://github.com/','bielxdh3/','sonnet55'].join('')));
   }

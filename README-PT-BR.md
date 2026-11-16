@@ -73,7 +73,7 @@ Explore a [arquitetura do repositório](./docs/REPOSITORY-ARCHITECTURE.md) e as 
 
 | Modelo | Categoria | Site | Código-fonte |
 | --- | --- | --- | --- |
-| ◈ **Gemini 3.8 Flash (V3.4)** | Não frontier | [Abrir](https://racing-gemini-3.8-flash.biel.dev.br/) | [Código](./benchmarks/racing/runs/gemini-3.8-v3.4/source/) |
+| ◈ **Gemini 3.8 Flash** | Não frontier | Deleted | [Código](./benchmarks/racing/runs/gemini-3.8-v3.4/source/) |
 
 ## 🗂️ Outros projetos do Orbitarium
 
@@ -81,11 +81,11 @@ Execuções anteriores e referências fora da arena atual.
 
 | Modelo | Categoria | Site | Código / registro |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sol V1** | Histórico | — | [Código](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) |
+| ☀️ **GPT-5.6 Sol V1** | Histórico | Deleted | [Código](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) |
 | ☀️ **GPT-5.6 Sol V2** | Desatualizado | [Abrir](https://orbitarium-gpt-5.6-sol-v2.biel.dev.br) | [Código](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) |
-| 🌙 **GPT-5.6 Luna** | Não frontier | [Abrir](https://orbitarium-gpt-5.6-luna.biel.dev.br) | [Registro](./benchmarks/solar-system/RUN-PROVENANCE.md) |
-| 𝕏 **Grok 4.6** | Arquivado | [Abrir](https://grok-4-6-solar-system.vercel.app) | [Código](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
-| ◈ **Gemini 3.8 Flash** | Arquivado | [Abrir](https://orbitarium-gemini-3.8-flash.biel.dev.br) | [Registro](./benchmarks/solar-system/GEMINI-3.8-FLASH-PROVENANCE.md) |
+| 🌙 **GPT-5.6 Luna** | Não frontier | Deleted | [Registro](./benchmarks/solar-system/RUN-PROVENANCE.md) |
+| 𝕏 **Grok 4.6** | Desatualizado | [Abrir](https://grok-4-6-solar-system.vercel.app) | [Código](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
+| ◈ **Gemini 3.8 Flash** | Não frontier | Deleted | [Registro](./benchmarks/solar-system/GEMINI-3.8-FLASH-PROVENANCE.md) |
 
 ## O que é Frontier Models?
 
