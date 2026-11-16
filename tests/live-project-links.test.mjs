@@ -11,35 +11,38 @@ const racing = JSON.parse(read('benchmarks/racing/RUNS.json'));
 
 const orbitariumSites = new Map([
   ['gpt-5.6-sun-max-frontier-v2', 'https://orbitarium-gpt-5.6-sol-v2.biel.dev.br'],
-  ['gpt-5.6-luna-max-orbitario', 'https://orbitarium-gpt-5.6-luna.biel.dev.br'],
   ['gpt-6-astra-max-frontier-v2', 'https://orbitarium-gpt-6-astra.biel.dev.br'],
   ['gpt-6.1-sol-source', 'https://orbitarium-gpt-6.1-sol.biel.dev.br'],
   ['grok-4.7-solar-source', 'https://orbitarium-grok-4.7.biel.dev.br'],
-  ['gemini-3.8-flash-high-frontier-v2', 'https://orbitarium-gemini-3.8-flash.biel.dev.br'],
   ['gemini-4-argon-source', 'https://orbitarium-gemini-4-argon.biel.dev.br']
 ]);
 
-test('all seven canonical Orbitarium sites retain their original links', () => {
+test('all five remaining canonical Orbitarium sites retain their original links', () => {
   for (const [id, url] of orbitariumSites) {
     assert.equal(orbitarium.find(run => run.id === id)?.live_url, url, id);
+  }
+  for (const id of ['gpt-5.6-sun-max-original', 'gpt-5.6-luna-max-orbitario', 'gemini-3.8-flash-high-frontier-v2']) {
+    const run = orbitarium.find(x => x.id === id);
+    assert.equal(run?.live_url, null, id);
+    assert.equal(run?.site_status, 'owner-reported-deleted-2026-11-16', id);
   }
 });
 
 test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provided URLs', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
-  assert.deepEqual(racing.current_arena, ['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4']);
+  assert.deepEqual(racing.current_arena, ['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4', 'gemini-4-hydrogen-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
   assert.deepEqual(racing.non_frontier_runs, ['gemini-3.8-v3.4']);
   const current = racing.runs.find(run => run.id === 'gemini-3.8-v3.4');
   assert.equal(current.model, 'Gemini 3.8 Flash');
   assert.equal(current.role, 'non-frontier-run');
-  assert.equal(current.display_status, 'non-frontier-archived-source-site-live');
+  assert.equal(current.display_status, 'non-frontier-archived-source-site-deleted');
   assert.ok(!racing.current_arena.includes(current.id));
   assert.equal(current.source_commit, '8f1992b88c3771edae825f7ecc52f1499844cb0b');
   assert.equal(current.source_repository, 'https://github.com/bielxdh3/gemini-3.8');
-  assert.equal(current.site_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
-  assert.match(current.site_status, /http-200/);
-  assert.equal(current.live_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
+  assert.equal(current.site_url, null);
+  assert.match(current.site_status, /owner-reported-deleted-2026-11-16/);
+  assert.equal(current.live_url, null);
   const sol = racing.runs.find(run => run.id === 'gpt-6.1-sol-v3.4');
   assert.equal(sol.model, 'GPT-6.1 Sol');
   assert.equal(sol.source_repository, 'https://github.com/bielxdh3/6.1racinsol');
@@ -88,6 +91,17 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
   assert.equal(sonnet.live_url, 'https://racing-sonnet-5.5.biel.dev.br/');
   assert.equal(sonnet.site_url, sonnet.live_url);
   assert.equal(sonnet.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+  const hydrogen = racing.runs.find(run => run.id === 'gemini-4-hydrogen-v3.4');
+  assert.equal(hydrogen.model, 'Gemini 4 Hydrogen');
+  assert.equal(hydrogen.source_commit, 'dd66f1157269126af067faacef0e7f1725d3c7d6');
+  assert.equal(hydrogen.source_tree, '40ed6333751c590955985b1b197175ee5aa984aa');
+  assert.equal(hydrogen.source_file_count, 319);
+  assert.equal(hydrogen.source_bytes, 379164707);
+  assert.equal(hydrogen.source_repository, null);
+  assert.equal(hydrogen.live_url, 'https://racing-gemini-4-hydrogen.biel.dev.br/');
+  assert.equal(hydrogen.site_url, hydrogen.live_url);
+  assert.equal(hydrogen.site_status, 'owner-provided-url-reachability-not-independently-verified');
+  assert.equal(hydrogen.git_bundle, null);
   for (const run of racing.runs.filter(run => racing.legacy_runs.includes(run.id))) {
     assert.equal(run.live_url, null);
     assert.equal(run.display_status, 'legacy-archived');
@@ -97,7 +111,9 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
     const s = read(path);
     assert.match(s, /racing-v3\.1\.md/);
     assert.match(s, /racing-v3\.4/);
-    assert.match(s, /racing-gemini-3\.8-flash\.biel\.dev\.br/);
+    assert.doesNotMatch(s, /racing-gemini-3\.8-flash\.biel\.dev\.br/);
+    assert.ok(s.includes('**Gemini 3.8 Flash**'));
+    assert.ok(s.includes(' | Deleted | '));
     const localGemini = path.startsWith('benchmarks/racing/')
       ? './runs/gemini-3.8-v3.4/source/'
       : './benchmarks/racing/runs/gemini-3.8-v3.4/source/';
@@ -120,6 +136,12 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
       : './benchmarks/racing/runs/gemini-4-argon-v3.4/source/';
     assert.ok(s.includes('[Gemini 4 Argon](' + localArgon + ')'), 'Argon must link archived source only');
     assert.ok(s.includes('https://racing-gemini-4-argon.biel.dev.br/'), 'Argon must link owner-provided live URL');
+    const localHydrogen = path.startsWith('benchmarks/racing/')
+      ? './runs/gemini-4-hydrogen-v3.4/source/'
+      : './benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/';
+    assert.ok(s.includes('[Gemini 4 Hydrogen](' + localHydrogen + ')'), 'Hydrogen source must be archived and model-named');
+    assert.ok(s.includes('](https://racing-gemini-4-hydrogen.biel.dev.br/)'), 'Hydrogen live URL must match owner-provided URL');
+    assert.ok(!s.includes('https://github.com/bielxdh3/gemini-mvp'), 'no deleted-repository dependency');
     assert.ok(!s.includes('https://github.com/bielxdh3/4argon'), 'never link original Argon repository');
     const localSonnet = path.startsWith('benchmarks/racing/')
       ? './runs/sonnet-5.5-v3.4/source/'
@@ -135,13 +157,17 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
   }
 });
 
-test('Orbitarium homepage and archive links are unchanged', () => {
+test('Orbitarium homepage retains active links and labels the deleted sites', () => {
   for (const path of ['README.md', 'README-PT-BR.md',
     'benchmarks/solar-system/README.md', 'benchmarks/solar-system/README-PT-BR.md']) {
     const s = read(path);
     for (const [id, url] of orbitariumSites) assert.ok(s.includes('](' + url + ')'), path + ': ' + id);
     assert.doesNotMatch(s, /orbitarium-gpt-5\.6-sol\.v1\.biel\.dev\.br/);
-    assert.ok(s.includes('GPT-5.6 Sol V1'));
+    for (const model of ['GPT-5.6 Sol V1', 'GPT-5.6 Luna', 'Gemini 3.8 Flash']) {
+      const row = s.split('\n').filter(line => line.includes('**' + model + '**')).at(-1);
+      assert.ok(row?.includes(' | Deleted | '), path + ': ' + model);
+    }
+    assert.doesNotMatch(s, /orbitarium-gpt-5\.6-luna\.biel\.dev\.br|orbitarium-gemini-3\.8-flash\.biel\.dev\.br/);
   }
   assert.equal(orbitarium.find(run => run.id === 'gpt-5.6-sun-max-original')?.live_url, null);
 });

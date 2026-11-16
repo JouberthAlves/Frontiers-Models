@@ -14,6 +14,7 @@
 | **Opus 5.5** | Git `e75f298d49…` | Current | Archived |
 | **Gemini 4 Argon** | Git `88632a8369…` | Current | Archived |
 | **Sonnet 5.5** | Git `f2400ade4b…` | Current | Archived |
+| **Gemini 4 Hydrogen** | Git `dd66f11572…` | Current | Archived |
 | **Gemini 3.8 Flash** | Git `8f1992b88c…` | Non-frontier | Archived |
 
 Exact source hashes and project copies are indexed by [RUNS.json](./RUNS.json) and each run's source manifest.
@@ -32,6 +33,7 @@ Exact source hashes and project copies are indexed by [RUNS.json](./RUNS.json) a
 | **Opus 5.5** | Git `e75f298d49…` | Atual | Arquivado |
 | **Gemini 4 Argon** | Git `88632a8369…` | Atual | Arquivado |
 | **Sonnet 5.5** | Git `f2400ade4b…` | Atual | Arquivado |
+| **Gemini 4 Hydrogen** | Git `dd66f11572…` | Atual | Arquivado |
 | **Gemini 3.8 Flash** | Git `8f1992b88c…` | Non-frontier | Arquivado |
 
 Os três snapshots históricos do Racing incluem bundles Git completos. Na V3.4, Gemini 3.8 possui 188 arquivos Git (vídeo externo LFS não incluído) e Gemini 4 Argon possui 450 arquivos Git e 382.941.704 bytes, ambos com manifestos SHA-256 e sem bundle de histórico.

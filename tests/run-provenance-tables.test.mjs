@@ -34,6 +34,7 @@ function classification(run, isRacing, pt) {
   }
   if (currentOrbit.has(run.id)) return pt ? 'Atual' : 'Current';
   if (run.role === 'non-frontier-run') return 'Non-frontier';
+  if (run.role === 'outdated-frontier-run') return pt ? 'Desatualizado' : 'Outdated';
   return pt ? 'Histórico' : 'Historical';
 }
 

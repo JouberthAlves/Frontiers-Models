@@ -1,0 +1,82 @@
+{
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "metrics": {
+      "totalLength": 3169.6,
+      "maxGradePct": 10.26,
+      "maxBankingDeg": 5,
+      "minCurveRadius": 25.35,
+      "maxTerrainAboveRoad": -0.0196,
+      "maxRoadTerrainGap": 0.0845,
+      "exclusionViolations": 0,
+      "groundingViolations": 0,
+      "houseOverlaps": 0,
+      "checkpointErrors": 0,
+      "colliderMismatch": 0,
+      "houseCountZ3": 80,
+      "houseVariations": 5,
+      "vegetationSpecies": 4,
+      "minPropsPer100m": 15
+    }
+  },
+  "sceneAudit": {
+    "ok": true,
+    "errors": [],
+    "cars": [
+      {
+        "index": 0,
+        "triangles": 25608,
+        "materials": 9
+      },
+      {
+        "index": 1,
+        "triangles": 25708,
+        "materials": 9
+      },
+      {
+        "index": 2,
+        "triangles": 25608,
+        "materials": 9
+      },
+      {
+        "index": 3,
+        "triangles": 25708,
+        "materials": 9
+      },
+      {
+        "index": 4,
+        "triangles": 25608,
+        "materials": 9
+      },
+      {
+        "index": 5,
+        "triangles": 25708,
+        "materials": 9
+      }
+    ],
+    "boxViolations": [],
+    "flatMaterialViolations": [],
+    "smallTextureViolations": [],
+    "worldMetrics": {
+      "totalLength": 3169.6,
+      "maxGradePct": 10.26,
+      "maxBankingDeg": 5,
+      "minCurveRadius": 25.35,
+      "maxTerrainAboveRoad": -0.0196,
+      "maxRoadTerrainGap": 0.0845,
+      "exclusionViolations": 0,
+      "groundingViolations": 0,
+      "houseOverlaps": 0,
+      "checkpointErrors": 0,
+      "colliderMismatch": 0,
+      "houseCountZ3": 80,
+      "houseVariations": 5,
+      "vegetationSpecies": 4,
+      "minPropsPer100m": 15
+    },
+    "playerEngineHasAudioBuffer": true
+  },
+  "trackLength": 3169.6116688460397
+}

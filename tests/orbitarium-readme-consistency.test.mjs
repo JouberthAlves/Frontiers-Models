@@ -18,8 +18,8 @@ const historical = [
   ['gpt-5.6-sun-max-original','GPT-5.6 Sol V1','Historical','Histórico'],
   ['gpt-5.6-sun-max-frontier-v2','GPT-5.6 Sol V2','Outdated','Desatualizado'],
   ['gpt-5.6-luna-max-orbitario','GPT-5.6 Luna','Non-frontier','Não frontier'],
-  ['grok-4.6-frontier-v2','Grok 4.6','Archived','Arquivado'],
-  ['gemini-3.8-flash-high-frontier-v2','Gemini 3.8 Flash','Archived','Arquivado'],
+  ['grok-4.6-frontier-v2','Grok 4.6','Outdated','Desatualizado'],
+  ['gemini-3.8-flash-high-frontier-v2','Gemini 3.8 Flash','Non-frontier','Não frontier'],
 ];
 function table(content,title){
   const part=content.split(title)[1];
@@ -47,9 +47,15 @@ for (const [file,pt,isBench] of [
     for(let i=0;i<rows.length;i++){
       const [id,name,en,br]=historical[i],r=run(id),row=rows[i];
       assert.equal(row.length,4,name);
+      if (['gpt-5.6-sun-max-original','gpt-5.6-luna-max-orbitario','gemini-3.8-flash-high-frontier-v2'].includes(id)) {
+        assert.equal(r.live_url, null);
+        assert.equal(r.site_status, 'owner-reported-deleted-2026-11-16');
+      }
       assert.ok(row[0].includes('**'+name+'**'));
       assert.equal(row[1],pt?br:en);
-      assert.equal(row[2],r.live_url?'['+(pt?'Abrir':'Open')+']('+r.live_url+')':'—');
+      if (id === 'grok-4.6-frontier-v2') assert.equal(r.role, 'outdated-frontier-run');
+      if (id === 'gemini-3.8-flash-high-frontier-v2') assert.equal(r.role, 'non-frontier-run');
+      assert.equal(row[2],r.live_url?'['+(pt?'Abrir':'Open')+']('+r.live_url+')':r.site_status?.startsWith('owner-reported-deleted-')?'Deleted':'—');
       const sourcePath=r.archive_status==='self-contained'
         ?(isBench?'./':'./benchmarks/solar-system/')+r.target_path+'/'
         :(isBench?'./':'./benchmarks/solar-system/')+(id.includes('gemini-3.8')?'GEMINI-3.8-FLASH-PROVENANCE.md':'RUN-PROVENANCE.md');

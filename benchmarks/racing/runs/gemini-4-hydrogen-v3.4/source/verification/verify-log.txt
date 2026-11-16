@@ -1,0 +1,39 @@
+[2026-11-16T08:17:16.608Z] Hardware: {"renderer":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)","vendor":"Google Inc. (NVIDIA)","cores":16}
+[2026-11-16T08:17:16.880Z] Validation ok=true errors=0
+[2026-11-16T08:17:16.880Z] SceneAudit ok=true audioBuffers=true
+[2026-11-16T08:17:22.067Z] Z3 Perf High: mean=59.5 fps, 1%low=30 fps
+[2026-11-16T08:17:22.067Z] Z3 Perf Low:  mean=58.2 fps, 1%low=29.9 fps
+[2026-11-16T08:17:22.176Z] Audio 3x Restart Voices: [20, 20, 20, 20] (leaked=0)
+[2026-11-16T08:17:22.615Z] Anti-cut blockedCount=1, lapCompleted=false
+[2026-11-16T08:17:23.455Z] Captured s1-reta-orla-60fps.png | metrics={"file":"s1-reta-orla-60fps.png","width":1920,"height":1080,"meanLuminance":0.5829,"stdLuminance":0.2702,"skyFraction":0.4621,"maxSingleColorShare":0.0741,"clippedWhitePct":0.03,"clippedBlackPct":0,"ok":true}
+[2026-11-16T08:17:24.235Z] Captured s2-grid-3-4-60fps.png | metrics={"file":"s2-grid-3-4-60fps.png","width":1920,"height":1080,"meanLuminance":0.3786,"stdLuminance":0.2238,"skyFraction":0.2134,"maxSingleColorShare":0.0933,"clippedWhitePct":0,"clippedBlackPct":0.05,"ok":true}
+[2026-11-16T08:17:24.845Z] Captured s3-praia-espuma-60fps.png | metrics={"file":"s3-praia-espuma-60fps.png","width":1920,"height":1080,"meanLuminance":0.6591,"stdLuminance":0.1972,"skyFraction":0.4313,"maxSingleColorShare":0.0778,"clippedWhitePct":0,"clippedBlackPct":0,"ok":true}
+[2026-11-16T08:17:25.548Z] Captured s4-falesia-mirante-60fps.png | metrics={"file":"s4-falesia-mirante-60fps.png","width":1920,"height":1080,"meanLuminance":0.4869,"stdLuminance":0.2409,"skyFraction":0.4756,"maxSingleColorShare":0.0506,"clippedWhitePct":0,"clippedBlackPct":0.02,"ok":true}
+[2026-11-16T08:17:26.491Z] Captured s5-vila-rua-60fps.png | metrics={"file":"s5-vila-rua-60fps.png","width":1920,"height":1080,"meanLuminance":0.4123,"stdLuminance":0.241,"skyFraction":0.3658,"maxSingleColorShare":0.0657,"clippedWhitePct":0,"clippedBlackPct":0,"ok":true}
+[2026-11-16T08:17:27.261Z] Captured s6-bosque-luz-60fps.png | metrics={"file":"s6-bosque-luz-60fps.png","width":1920,"height":1080,"meanLuminance":0.4423,"stdLuminance":0.2398,"skyFraction":0.313,"maxSingleColorShare":0.0515,"clippedWhitePct":0,"clippedBlackPct":0.01,"ok":true}
+[2026-11-16T08:17:27.979Z] Captured s7-ponte-60fps.png | metrics={"file":"s7-ponte-60fps.png","width":1920,"height":1080,"meanLuminance":0.5334,"stdLuminance":0.2765,"skyFraction":0.38,"maxSingleColorShare":0.0867,"clippedWhitePct":0.16,"clippedBlackPct":0.04,"ok":true}
+[2026-11-16T08:17:28.705Z] Captured s8-disputa-60fps.png | metrics={"file":"s8-disputa-60fps.png","width":1920,"height":1080,"meanLuminance":0.5715,"stdLuminance":0.2939,"skyFraction":0.4686,"maxSingleColorShare":0.0728,"clippedWhitePct":0.09,"clippedBlackPct":0,"ok":true}
+[2026-11-16T08:17:29.328Z] Captured s9-close-pista-60fps.png | metrics={"file":"s9-close-pista-60fps.png","width":1920,"height":1080,"meanLuminance":0.67,"stdLuminance":0.2747,"skyFraction":0.5193,"maxSingleColorShare":0.0964,"clippedWhitePct":0.19,"clippedBlackPct":0,"ok":true}
+[2026-11-16T08:17:32.252Z] Captured s10-baixa-vila-58fps.png | metrics={"file":"s10-baixa-vila-58fps.png","width":1920,"height":1080,"meanLuminance":0.4106,"stdLuminance":0.2413,"skyFraction":0.3627,"maxSingleColorShare":0.0652,"clippedWhitePct":0,"clippedBlackPct":0,"ok":true}
+[2026-11-16T08:17:33.258Z] Captured s11-escala-60fps.png | metrics={"file":"s11-escala-60fps.png","width":1920,"height":1080,"meanLuminance":0.383,"stdLuminance":0.258,"skyFraction":0.2901,"maxSingleColorShare":0.1116,"clippedWhitePct":0,"clippedBlackPct":0.02,"ok":true}
+[2026-11-16T08:17:34.380Z] Captured s12-mapa-60fps.png | metrics={"file":"s12-mapa-60fps.png","width":1920,"height":1080,"meanLuminance":0.3723,"stdLuminance":0.0888,"skyFraction":0.204,"maxSingleColorShare":0.1177,"clippedWhitePct":0,"clippedBlackPct":0,"ok":false}
+[2026-11-16T08:17:36.988Z] Generated compare/s1.png..s9.png
+[2026-11-16T08:18:05.006Z] Chase Sweep: 127 frames, sanityFailures=0
+[2026-11-16T08:19:53.092Z] Audio WAV: {"sampleRate":48000,"channels":2,"durationSec":104.19,"peakAmplitude":0.3829,"peakDbfs":-8.34,"rmsDbfs":-21.5,"withinLimiterCeiling":true}, EndScreen=results, Rank=5
+[2026-11-16T08:19:53.092Z] Audio Event [00:00] gear_shift: Gear 1 at 1270 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [00:00] ai_pass: Close pass with AI #4 (d=6.7m)
+[2026-11-16T08:19:53.092Z] Audio Event [00:02] gear_shift: Gear 2 at 6951 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [00:03] gear_shift: Gear 3 at 7023 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [00:07] gear_shift: Gear 4 at 7510 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [00:30] gear_shift: Gear 3 at 3723 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [00:31] gear_shift: Gear 2 at 3864 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [00:33] gear_shift: Gear 1 at 3971 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [00:37] gear_shift: Gear 2 at 6260 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [00:40] gear_shift: Gear 3 at 7422 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [01:10] gear_shift: Gear 4 at 6962 RPM
+[2026-11-16T08:19:53.092Z] Audio Event [01:27] ai_pass: Close pass with AI #3 (d=10.0m)
+[2026-11-16T08:19:53.092Z] Audio Event [01:34] ai_pass: Close pass with AI #3 (d=10.0m)
+[2026-11-16T08:19:53.092Z] Audio Event [01:35] bridge: Crossing Z4 Gorge Bridge
+[2026-11-16T08:19:53.092Z] Audio Event [01:38] gear_shift: Gear 3 at 3158 RPM
+[2026-11-16T08:19:57.383Z] Lap Audit: finished=true rank=5 overtakes=1 maxAiStuck=0.00s resets=0 invariants=0 camIntersections=0
+[2026-11-16T08:19:57.383Z] ConsoleErrors=0, FailedRequests=0
