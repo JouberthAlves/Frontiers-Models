@@ -4,13 +4,16 @@
 
 | Prompt | Status | UTF-8 bytes | Lines | SHA-256 |
 | --- | --- | ---: | ---: | --- |
+| [racing-v3.4.1.md](./racing-v3.4/racing-v3.4.1.md) | **Candidate — denser vila/bosque for future runs; shares 14 V3.4 refs** | **29,324** | **417** | `98c0dd4ea0edd6f2fcc88dcb278e543ead2f4781eb4ce945bbb8b1aa7a5dae6a` |
 | **[racing-v3.4.md](./racing-v3.4/racing-v3.4.md)** | **Current, race-first + 14 visual references** | **25,790** | **406** | `faee98a423dde53686d63b3d8df89ebfb930e69f6f0322866fc526c06415e867` |
 | [racing-v3.3.md](./racing-v3.3.md) | Historical, frozen; G1–G13 | **269,102** | **1,263** | `4e532514d322f59d70912285b292a2fae569a516bb9581c5c8f60036fe99dcd7` |
 | [racing-v3.2.md](./racing-v3.2.md) | Historical, frozen | 252,906 | 1,195 | `bacdc4f7ad93881c6159bdbb353a421ca59aacd2450a08a88e0b700530ccf3ed` |
 | [racing-v3.1.md](./racing-v3.1.md) | Historical, frozen | 223,685 | 1,072 | `2b0ce465048b9edacc8ba943d3bbf09aeee223410bf9eb3c4012f515d7fb93b5` |
 | [racing-v2.6.md](./racing-v2.6.md) | Legacy, archived verbatim | 80,309 | 429 | `8dc65f23a8eaa35a06a7833a7929763fd16aa3cde2ff563561bffac7d7d69248` |
 
-**For every new V3.4 run, provide its complete standalone prompt, all 14 JPG visual references, and the three-paragraph [version-independent operational companion](../EXECUTION-ADDENDUM.md).** Do not supply unrelated context, earlier implementations or model output.
+**V3.4.1 is **proposed only** in this PR: it retains V3.4's race scope and 14 reference JPGs, adding reproducible per-segment scenery-density requirements. Existing V3.4 runs and their exact input remain unchanged; `current_prompt` stays V3.4 until an explicit promotion.
+
+For every new V3.4 run, provide its complete standalone prompt, all 14 JPG visual references, and the three-paragraph [version-independent operational companion](../EXECUTION-ADDENDUM.md).** Do not supply unrelated context, earlier implementations or model output.
 
 **For historical V3.3 reproduction, attach exactly two files:** the complete [V3.3 official prompt](./racing-v3.3.md) and the short [V3.3 operational clarification](./racing-v3.3-attach.md) allowing necessary browser, Playwright, DevTools and build/test tools. Do not attach audit context, older runner addenda or review notes.
 
