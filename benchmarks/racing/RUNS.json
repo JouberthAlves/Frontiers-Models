@@ -83,9 +83,9 @@
     "racing-v3.4.1": {
       "path": "prompts/racing-v3.4/racing-v3.4.1.md",
       "status": "candidate-scenery-density-for-future-runs",
-      "sha256": "082acba28ffeef264d29cbd781b5b7349d015de3710d051aeed2c7cec63c51a9",
-      "bytes": 33405,
-      "lines": 435,
+      "sha256": "113137d261d58188e42b18ecfd7efabbc002209ad0fb0dedd36cd65f4ad985fe",
+      "bytes": 37497,
+      "lines": 437,
       "source_filename": "racing-v3.4.1.md",
       "reference_directory": "prompts/racing-v3.4/refs",
       "reference_images": 14,
