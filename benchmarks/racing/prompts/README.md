@@ -4,7 +4,7 @@
 
 | Prompt | Status | UTF-8 bytes | Lines | SHA-256 |
 | --- | --- | ---: | ---: | --- |
-| [racing-v3.4.1.md](./racing-v3.4/racing-v3.4.1.md) | **Candidate — 60-house vila / denser bosque for future runs; shares 14 V3.4 refs** | **29,780** | **417** | `28f3bb8f2e8984364eeed892998b0548178c0fa45d58a626ef71e68639451d94` |
+| [racing-v3.4.1.md](./racing-v3.4/racing-v3.4.1.md) | **Candidate — coherent coastal village / layered diverse flora for future runs; shares 14 V3.4 refs** | **33,405** | **435** | `082acba28ffeef264d29cbd781b5b7349d015de3710d051aeed2c7cec63c51a9` |
 | **[racing-v3.4.md](./racing-v3.4/racing-v3.4.md)** | **Current, race-first + 14 visual references** | **25,790** | **406** | `faee98a423dde53686d63b3d8df89ebfb930e69f6f0322866fc526c06415e867` |
 | [racing-v3.3.md](./racing-v3.3.md) | Historical, frozen; G1–G13 | **269,102** | **1,263** | `4e532514d322f59d70912285b292a2fae569a516bb9581c5c8f60036fe99dcd7` |
 | [racing-v3.2.md](./racing-v3.2.md) | Historical, frozen | 252,906 | 1,195 | `bacdc4f7ad93881c6159bdbb353a421ca59aacd2450a08a88e0b700530ccf3ed` |
