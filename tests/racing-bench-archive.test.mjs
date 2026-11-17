@@ -221,6 +221,17 @@ test('Racing V3.4.1 candidate pins continuous urban/forest density without rewri
   assert.ok(content.includes('varredura de 25 m'));
   assert.ok(content.includes('scene-stats.json'));
   assert.ok(content.includes('Preservar grupos próximos de árvores'));
+  assert.ok(content.includes('Céu visível ≥ 10%'));
+  assert.ok(content.includes('4 bits por canal'));
+  assert.ok(content.includes('**somente a exigência de céu ≥ 10%**'));
+  assert.ok(content.includes('PCM real do bus master após o limiter'));
+  assert.ok(content.includes('**pelo menos dois eixos > 1,0 m**'));
+  assert.ok(content.includes('**exatamente os nomes fixos da tabela**'));
+  assert.ok(content.includes('ceil(16 × f)'));
+  assert.ok(content.includes('ceil(10 × f)'));
+  assert.ok(content.includes('ceil(12 × f)'));
+  assert.ok(content.includes('cutscenes narrativas'));
+  assert.ok(content.includes('**O build final funciona 100% offline**'));
 });
 
 test('Racing V3.3 Gemini-review corrections preserve real frozen-world and evidence invariants', () => {
