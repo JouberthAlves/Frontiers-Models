@@ -143,8 +143,8 @@ Litoral mediterrâneo fictício. A volta tem **4 zonas, nesta ordem**:
 
 **Z3 — Vila**
 - Rua de 400 m ou mais entre casas, **sempre a céu aberto**, com o céu visível em qualquer ponto
-- Pelo menos **25 casas** de 2–3 andares a menos de 30 m da pista
-- **Distribuição mínima:** **≥ 4 casas distintas por janela completa de 100 m** da Z3, contadas pelo centro da implantação projetado na spline e a menos de 30 m da pista. As 25 casas totais continuam obrigatórias; concentrá-las apenas no começo ou no fim não atende.
+- Pelo menos **60 casas distintas** de 2–3 andares a menos de 30 m da pista, distribuídas ao longo da vila; geminadas/terraços são permitidos quando cada unidade tem volume e entrada arquitetonicamente distinguíveis, sem contar uma fachada contínua como dezenas de casas fictícias.
+- **Distribuição mínima:** **≥ 12 casas distintas por janela completa de 100 m** da Z3, contadas pelo centro da implantação projetado na spline e a menos de 30 m da pista. As **60 casas totais** continuam obrigatórias independentemente das janelas; distribuir a ocupação em ambas as margens onde houver solo e acesso, com fachadas próximas e quarteirões preenchidos, evitando grandes lacunas. Praças e aberturas intencionais são permitidas, mas não dispensam a cota da janela.
 - Marco: igreja com torre **ou** farol, visível de longe
 - Praça ou rotatória com vegetação
 
@@ -194,7 +194,7 @@ Cada casa perto da pista tem: janelas com recuo e moldura, porta, telhado de tel
 ### 5.4.1 Densidade e continuidade visual por trecho (V3.4.1)
 
 - **Medição:** dividir Z3 e Z4 em janelas consecutivas, não sobrepostas, de 100 m a partir da entrada de cada zona. Contar cada casa, árvore ou grupo de arbustos **uma vez**, pelo centro projetado na spline; não inflar a contagem com LODs, meshes internos, objetos ocultos ou cópias sobrepostas. Os limites de Z3/Z4 estão na seção 4. Registrar separadamente janelas completas e o trecho final residual.
-- **Composição:** a vila deve parecer um bairro preenchido, com fachadas sucessivas, esquinas, muros e detalhes de rua, não 25 casas amontoadas em um único ponto. O bosque deve ter camadas críveis de copas, troncos, arbustos e gramíneas perto, no plano médio e ao fundo; alternar espécies, tamanhos, distâncias e pequenas clareiras, sem repetição mecânica.
+- **Composição:** a vila deve parecer um bairro preenchido, com fachadas sucessivas, esquinas, muros e detalhes de rua, não 60 casas amontoadas em um único ponto. O bosque deve ter camadas críveis de copas, troncos, arbustos e gramíneas perto, no plano médio e ao fundo; alternar espécies, tamanhos, distâncias e pequenas clareiras, sem repetição mecânica.
 - **Continuidade na câmera:** na varredura de 25 m (seção 13.1, teste 9), nenhum quadro de Z3 ou do trecho plantável de Z4 pode revelar um longo vazio artificial na margem. Praças, mirantes, rocha, ponte, túnel e aberturas naturais para o mar são permitidos **quando intencionais e integrados à geografia**. Não transformar a vila ou o bosque em corredor fechado: céu e marcos seguem legíveis (seção 4). Z1/Z2 preservam suas vistas abertas.
 - **Orçamento de GPU:** manter essas silhuetas próximas e a leitura de continuidade também em Baixa; usar instancing, culling e LOD/impostors para objetos distantes. Densidade não justifica queda abaixo das metas da seção 11.
 
@@ -318,7 +318,7 @@ Construa nesta ordem. Em cada portão: rode `validateWorld()`, capture as screen
 | **P1 — Esqueleto** | `track.json`, estrada, terreno, colliders, carro-placeholder dirigível, câmera | `validateWorld()` sem erros; 1 volta dirigida sem atravessar nada; screenshot vista de cima mostrando a volta inteira |
 | **P2 — Luz e carro** | HDRI, sol, sombras, tone mapping, **carro final** com materiais | S2 comparável à ref 11; S1 com sombras visíveis e céu à vista |
 | **P3 — Orla completa** | Z1 com mar, praia, espuma, props | S1 e S3 comparáveis às refs 01, 02, 04. **Esta é a fatia vertical:** Z1 precisa parecer pronta antes de iniciar Z2 |
-| **P4 — Zonas 2–4** | Falésia, vila, bosque, ponte/túnel | S4–S7 aprovadas; `validateWorld()` sem erros; cotas de casas/árvores/arbustos por janela de 100 m da seção 4 e densidade de props cumpridas; inspeção da varredura de 25 m sem vazios artificiais |
+| **P4 — Zonas 2–4** | Falésia, vila, bosque, ponte/túnel | S4–S7 aprovadas; `validateWorld()` sem erros; cotas de casas/árvores/arbustos por janela de 100 m das seções 4 e 5.4.1 e densidade de props cumpridas; inspeção da varredura de 25 m sem vazios artificiais |
 | **P5 — Corrida** | IA, checkpoints, regras, áudio, UI | Testes 13.1 e 13.2 passando |
 | **P6 — Polimento** | Otimização, preset Baixa, ajustes finais | Seção 13 completa |
 
@@ -359,7 +359,7 @@ Sua autoavaliação **não conta como prova**. Quem avalia o benchmark vai rodar
    - **Detector de caixa:** algum mesh perto da pista for uma caixa (≤ 12 triângulos, ou BoxGeometry) com mais de 1 m em qualquer eixo, exceto colliders invisíveis
    - **Detector de cor chapada:** algum material de superfície visível perto da pista estiver sem mapa de albedo **e** sem mapa de normal, exceto vidro, emissivos e água
    - A contagem de casas, de variações de casa, de espécies de vegetação ou de props a cada 100 m estiver abaixo da seção 5
-   - Qualquer janela completa elegível de 100 m de Z3/Z4 não cumprir as cotas da seção 4; gravar em `scene-stats.json` as contagens por zona/janela, distância à pista, exclusões de ponte/túnel/rocha com justificativa e instâncias únicas, para auditoria reproduzível
+   - Qualquer janela completa elegível de 100 m de Z3/Z4 não cumprir as cotas das seções 4 e 5.4.1; gravar em `scene-stats.json` as contagens por zona/janela, distância à pista, exclusões de ponte/túnel/rocha com justificativa e instâncias únicas, para auditoria reproduzível
    - Alguma textura perto da pista tiver resolução abaixo da mínima
    - O motor de áudio do jogador não usar amostras (nenhum `AudioBuffer` ligado ao motor)
 9. **Varredura de câmera:** o verificador posiciona a câmera de perseguição a cada 25 m da volta inteira e captura uma miniatura de cada ponto (`verification/sweep/`, mais uma folha de contato `sweep-sheet.png`). Todas passam pelas métricas do teste 7. Inspecionar a folha de contato em Z3/Z4 e registrar no `REPORT.md` qualquer margem artificialmente vazia, cópias alinhadas, fachada descontínua ou perda de silhuetas na Baixa; não mascarar lacunas com névoa ou objeto grande. Assim nenhum trecho feio fica escondido entre as screenshots escolhidas.
