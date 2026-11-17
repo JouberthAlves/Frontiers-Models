@@ -38,7 +38,7 @@ Este é um benchmark de **acabamento visual, sonoro e de jogabilidade**. Quantid
 
 ### Fora (não implementar, nem parcialmente)
 
-Outros modos, modo Diretor, replay, photo mode, editor de pista, construtor/tuning de carro, dano mecânico, pit stop, simulação de pneus, ciclo dia/noite, chuva, clima dinâmico, nitro, multiplayer, backend, contas, conquistas, loja, cutscenes, "features assinatura" inventadas, cockpit/interior detalhado, mundo aberto, áreas internas.
+Outros modos, modo Diretor, replay, photo mode, editor de pista, construtor/tuning de carro, dano mecânico, pit stop, simulação de pneus, ciclo dia/noite, chuva, clima dinâmico, nitro, multiplayer, backend, contas, conquistas, loja, cutscenes narrativas (permitida somente a câmera rápida de ~5 s de apresentação do grid da seção 10), "features assinatura" inventadas, cockpit/interior detalhado, mundo aberto, áreas internas.
 
 Implementar algo desta lista conta contra a entrega.
 
@@ -156,7 +156,7 @@ Litoral mediterrâneo fictício. A volta tem **4 zonas, nesta ordem**:
 - Descida rápida entre pinheiros-mansos e oliveiras, integrada a uma **flora costeira com diversidade de espécies, estratos e cobertura do solo**, não árvores isoladas sobre terreno vazio.
 - **Densidade mínima nos trechos plantáveis:** **≥ 16 árvores distintas** com tronco e copa, **≥ 10 massas arbustivas** e **≥ 12 manchas de vegetação rasteira/forração**, por janela completa de 100 m da Z4, até 40 m da pista.
 - Distribuir as espécies em **agrupamentos irregulares**, alternando copas altas, árvores menores, arbustos e gramíneas no primeiro plano, médio plano e fundo, com variação de relevo e solo visível onde natural. Proibidas fileiras de clones e vazios artificiais.
-- Janela integralmente ocupada por ponte, interior de túnel ou rocha sem solo plantável pode ser excetuada somente com geometria e justificativa verificáveis na auditoria; não usar exceções para esvaziar o bosque.
+- **Janelas parcialmente plantáveis:** quando a ponte, o interior de túnel ou a rocha realmente sem solo plantável ocuparem uma parte da janela de 100 m, medir pela geometria derivada de `track.json` a extensão plantável `L` (em metros, entre 0 e 100) dentro da janela, e definir `f = L / 100`. As cotas mínimas dessa janela passam a ser `ceil(16 × f)` árvores, `ceil(10 × f)` massas arbustivas e `ceil(12 × f)` manchas de forração; `f = 0` isenta apenas aquela janela. Registrar `L`, `f`, cotas ajustadas, trechos excluídos e geometria justificadora em `scene-stats.json`. A redução não se aplica a clareiras artificiais, negligência de vegetação ou margem vazia com solo plantável; nenhuma exceção pode ser usada para esvaziar o bosque.
 - **Uma ponte ou um túnel**; um túnel tem no máximo 150 m e precisa de iluminação interna e saída visível.
 - Volta para a Z1.
 
@@ -292,6 +292,8 @@ Permitido **somente** CC0, empacotado localmente:
 
 Proibido carro pronto, código de jogos ou cenas de terceiros. Bibliotecas open source de engine são permitidas (Three.js, Babylon.js, Rapier, cannon-es, postprocessing etc.). Liste tudo em `ASSET-LICENSES.md`. Build de até **400 MB**; texturas comprimidas (KTX2/Basis) quando possível.
 
+**Fronteira de consulta e rede:** durante o desenvolvimento, é permitido consultar **documentação oficial** das APIs/bibliotecas e **baixar apenas assets CC0 das fontes autorizadas acima**, com licença conferida e arquivos empacotados localmente. É proibido consultar ou copiar implementações prontas de jogos/benchmarks em repositórios (GitHub/GitLab), fóruns ou tutoriais de jogos; acessar projetos externos não fornecidos como entrada; copiar código de jogo de terceiros; ou recorrer a serviços externos de IA generativa para criar assets. A consulta de documentação oficial e o uso das bibliotecas de engine explicitamente autorizadas não violam essa proibição. **O build final funciona 100% offline**, sem CDNs, requisições externas ou assets baixados em tempo de execução.
+
 ---
 
 ## 8. Jogabilidade
@@ -367,26 +369,26 @@ Sua autoavaliação **não conta como prova**. Quem avalia o benchmark vai rodar
 4. Anticorte: cortar a pista não conta volta
 5. IA: nenhuma IA parada/fora da pista por mais de 5 s; ao menos 1 ultrapassagem entre IAs
 6. **Integridade:** `validateWorld()` sem erros; durante as corridas dos testes 1 e 2, **zero** eventos de carro abaixo do terreno, atravessando collider ou caindo do mundo; câmera nunca dentro de geometria
-7. **Sanidade de imagem**, calculada sobre cada screenshot S1–S9:
-   - Céu visível ≥ 10% do quadro (exceto S7, se for túnel)
-   - Luminância média entre 0,25 e 0,75; desvio padrão ≥ 0,12 (sem imagem chapada, escura demais ou estourada)
-   - Nenhuma cor única ocupando > 30% do quadro
-   - Valores salvos em `verification/image-metrics.json`
+7. **Sanidade de imagem**, calculada sobre S1–S12 conforme o tipo de captura (incluindo S2 sem HUD, S10 em Baixa, S11 de escala e S12 como mapa de inspeção):
+   - **Céu visível ≥ 10%** do quadro em S1, S2, S4, S5, S6, S8 e S10; também em S7 se a câmera estiver no exterior. **Isentar apenas essa métrica** em S3 (close de praia/rochas), S9 (close de pista/zebra), S11 (escala), S12 (mapa) e S7 se a câmera estiver comprovadamente dentro de túnel.
+   - Nas capturas fotográficas S1–S11: luminância média entre 0,25 e 0,75; desvio padrão ≥ 0,12, evitando quadros chapados, escuros ou estourados. S12 é mapa de inspeção, não imagem fotográfica; registrar como `não aplicável` nas métricas de composição.
+   - Nas capturas fotográficas S1–S11, nenhuma **cor quantizada** (bucket RGB com **4 bits por canal**, `floor(R/16), floor(G/16), floor(B/16)`) pode ocupar mais de 30% do quadro. Não usar igualdade exata de RGB nem trocar a quantização entre execuções.
+   - Salvar em `verification/image-metrics.json` os valores por captura, os buckets e o motivo verificável de cada isenção. Isenções de céu não dispensam as demais métricas fotográficas.
 8. **Auditoria da cena** (lida do scene graph em runtime, gravada em `scene-stats.json`). Falha se:
    - Algum carro tiver < 15.000 triângulos no LOD0 ou < 6 materiais distintos
-   - **Detector de caixa:** algum mesh perto da pista for uma caixa (≤ 12 triângulos, ou BoxGeometry) com mais de 1 m em qualquer eixo, exceto colliders invisíveis
+   - **Detector de caixa:** uma casa ou carro ser representado por um único volume primitivo, ou um elemento visual principal perto da pista ser caixa (≤ 12 triângulos ou `BoxGeometry`) com **pelo menos dois eixos > 1,0 m** ou volume **> 1,0 m³**, sem composição arquitetônica/modelagem real. Excluir colliders invisíveis e **submeshes estruturais legítimos de objetos compostos e detalhados** (tábuas, meios-fios, muretas, degraus, vigas, paredes, lajes, postes e placas). A exclusão não permite classificar uma casa-cubo ou carro-caixa como estrutura detalhada; inspecionar o objeto completo e o veto visual da seção 5.8
    - **Detector de cor chapada:** algum material de superfície visível perto da pista estiver sem mapa de albedo **e** sem mapa de normal, exceto vidro, emissivos e água
    - A contagem de casas, de variações de casa, de espécies de vegetação ou de props a cada 100 m estiver abaixo da seção 5
-   - Qualquer janela completa elegível de 100 m de Z3/Z4 não cumprir os quantitativos separados das seções 4, 5.3, 5.4 e 5.4.1; registrar em `scene-stats.json` por zona/janela as 60 unidades totais, frentes urbanizadas, árvores, massas arbustivas, forração, espécies, distâncias à pista, instâncias únicas e exceções geométricas justificadas
+   - Qualquer janela completa elegível de 100 m de Z3/Z4 não cumprir os quantitativos separados das seções 4, 5.3, 5.4 e 5.4.1, **aplicando apenas em Z4 a proporcionalidade geométrica verificável da seção 4**; registrar em `scene-stats.json` por zona/janela as 60 unidades totais, frentes urbanizadas, árvores, massas arbustivas, forração, espécies, distâncias à pista, instâncias únicas e, para Z4, `L`, `f`, cotas ajustadas e geometrias justificadoras da área não plantável
    - Alguma textura perto da pista tiver resolução abaixo da mínima
    - O motor de áudio do jogador não usar amostras (nenhum `AudioBuffer` ligado ao motor)
-9. **Varredura de câmera:** o verificador posiciona a câmera de perseguição a cada 25 m da volta inteira e captura uma miniatura de cada ponto (`verification/sweep/`, mais uma folha de contato `sweep-sheet.png`). Todas passam pelas métricas do teste 7. Inspecionar visualmente Z3/Z4, em Alta e Baixa, registrando no `REPORT.md` qualquer casa isolada sem ruas/contexto, ausência de praça/esquina/travessa, fachada descontínua, flora sem estrato arbustivo/rasteiro, clones evidentes ou espaços artificiais vazios. A auditoria numérica de cena não substitui esse exame visual; não mascarar falhas com névoa ou objetos grandes.
+9. **Varredura de câmera:** o verificador posiciona a câmera de perseguição a cada 25 m da volta inteira e captura uma miniatura de cada ponto (`verification/sweep/`, mais uma folha de contato `sweep-sheet.png`). Todas passam pelas métricas fotográficas do teste 7; **somente a exigência de céu ≥ 10%** fica isenta nos pontos cuja câmera esteja **comprovadamente dentro de túnel** pela geometria do mundo (`track.json`), com justificativa registrada. Inspecionar visualmente Z3/Z4, em Alta e Baixa, registrando no `REPORT.md` qualquer casa isolada sem ruas/contexto, ausência de praça/esquina/travessa, fachada descontínua, flora sem estrato arbustivo/rasteiro, clones evidentes ou espaços artificiais vazios. A auditoria numérica de cena não substitui esse exame visual; não mascarar falhas com névoa ou objetos grandes.
 
-**13.2 Áudio:** grave o master durante 1 volta com as IAs (`verification/audio-volta.wav`). No `REPORT.md`: pico máximo em dBFS (≤ −1), máximo de vozes simultâneas, e instantes (mm:ss) de troca de marcha, derrapagem, colisão, túnel/ponte e passagem por uma IA. Após 3 reinícios, o número de vozes volta ao valor inicial.
+**13.2 Áudio:** após desbloqueio da Web Audio API por gesto real do usuário, grave o **PCM real do bus master após o limiter**, durante uma volta completa com as IAs, diretamente pelo grafo de áudio do navegador (por exemplo, tap `AudioWorklet` ou `MediaStreamAudioDestinationNode` + gravação/decodificação para PCM), e exporte WAV em `verification/audio-volta.wav`. A gravação deve funcionar em Playwright/headless **sem depender de dispositivos, loopback ou servidor de áudio virtual do sistema operacional**; não sintetizar arquivo falso de prova. No `REPORT.md`: pico máximo em dBFS (≤ −1), máximo de vozes simultâneas, e instantes (mm:ss) de troca de marcha, derrapagem, colisão, túnel/ponte e passagem por uma IA. Após 3 reinícios, o número de vozes volta ao valor inicial.
 
 **13.3 Desempenho:** FPS médio e 1% low em Alta e Baixa na Z3, com GPU, CPU, navegador e resolução informados.
 
-**13.4 Screenshots** durante corrida real, em Alta, 1920×1080, com HUD, IAs presentes e FPS no nome do arquivo. Posições de câmera definidas no código e reproduzíveis por script:
+**13.4 Screenshots:** gerar em 1920×1080, usando **exatamente os nomes fixos da tabela** (sem sufixo de FPS). S1 e S3–S9 são capturas de gameplay/composição em Alta, com HUD e IAs quando visíveis/aplicáveis; **S2 é apresentação do grid sem HUD**, **S10 é a mesma vista de S5 no preset Baixa**, **S11 é inspeção estática de escala** e **S12 é mapa aéreo da volta**, portanto S2/S11/S12 não exigem HUD ou rivais visíveis. Registrar FPS medido por captura no `verification/image-metrics.json` e no `REPORT.md` (ou `não aplicável` em capturas estáticas), sem mudar os caminhos de arquivo; pode aparecer no HUD quando cabível. Posições de câmera definidas no código e reproduzíveis por script:
 
 | # | Arquivo | Conteúdo | Compare com |
 | --- | --- | --- | --- |
