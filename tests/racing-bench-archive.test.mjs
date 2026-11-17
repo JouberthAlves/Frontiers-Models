@@ -195,6 +195,26 @@ test('Racing V3.4 prompt and 14 reference assets are present and pinned', () => 
   assert.deepEqual(registry.current_arena,['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4', 'gemini-4-hydrogen-v3.4']);
 });
 
+test('Racing V3.4.1 candidate pins continuous urban/forest density without rewriting V3.4', () => {
+  assert.equal(registry.current_prompt, 'racing-v3.4');
+  const historical = registry.prompts['racing-v3.4'];
+  const proposed = registry.prompts['racing-v3.4.1'];
+  assert.equal(historical.sha256, 'faee98a423dde53686d63b3d8df89ebfb930e69f6f0322866fc526c06415e867');
+  assert.equal(proposed.status, 'candidate-scenery-density-for-future-runs');
+  assert.equal(proposed.reference_directory, historical.reference_directory);
+  assert.equal(proposed.reference_images, 14);
+  const content = text('benchmarks/racing/' + proposed.path);
+  assert.equal(Buffer.byteLength(content), proposed.bytes);
+  assert.equal(content.split(String.fromCharCode(10)).length - 1, proposed.lines);
+  assert.equal(createHash('sha256').update(content).digest('hex'), proposed.sha256);
+  assert.ok(content.includes('≥ 4 casas distintas por janela completa de 100 m'));
+  assert.ok(content.includes('≥ 16 árvores distintas'));
+  assert.ok(content.includes('≥ 8 grupos de arbustos/grama'));
+  assert.ok(content.includes('varredura de 25 m'));
+  assert.ok(content.includes('scene-stats.json'));
+  assert.ok(content.includes('Preservar grupos próximos de árvores'));
+});
+
 test('Racing V3.3 Gemini-review corrections preserve real frozen-world and evidence invariants', () => {
   const content = text('benchmarks/racing/prompts/racing-v3.3.md').replace(/\r\n/g, '\n');
   assert.match(content, /Clock\/Photo Mode invariant/);
