@@ -207,7 +207,9 @@ test('Racing V3.4.1 candidate pins continuous urban/forest density without rewri
   assert.equal(Buffer.byteLength(content), proposed.bytes);
   assert.equal(content.split(String.fromCharCode(10)).length - 1, proposed.lines);
   assert.equal(createHash('sha256').update(content).digest('hex'), proposed.sha256);
-  assert.ok(content.includes('≥ 4 casas distintas por janela completa de 100 m'));
+  assert.ok(content.includes('≥ 12 casas distintas por janela completa de 100 m'));
+  assert.ok(content.includes('Pelo menos **60 casas distintas**'));
+  assert.ok(content.includes('As **60 casas totais** continuam obrigatórias'));
   assert.ok(content.includes('≥ 16 árvores distintas'));
   assert.ok(content.includes('≥ 8 grupos de arbustos/grama'));
   assert.ok(content.includes('varredura de 25 m'));
