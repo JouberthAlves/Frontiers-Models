@@ -29,3 +29,7 @@ Keep source manifests and verification scripts executable. Preserve links to ori
 - Preserve exact input prompts and hash/commit references.
 - Retain historical runs separately from current reference presentation.
 - Treat every run as an inspectable project; do not infer a universal ordering from archive membership.
+
+## 7. Racing execution resources (V3.4.1 onward)
+
+Record tokens and time when available using the [execution metrics policy](../benchmarks/racing/EXECUTION-METRICS.md). Subscription clients expose unequal and sometimes incomplete counters; preserve scope, cache accounting, time definitions, provenance and uncertainty. Missing measurements are not zero, and resource metrics are not quality scores. Keep all measurements outside the immutable source snapshot.

@@ -352,7 +352,34 @@
       "manifest": "runs/fable-5.2-v3.4.1/SOURCE-FILES.json",
       "source_file_count": 487,
       "source_bytes": 387397734,
-      "git_bundle": null
+      "git_bundle": null,
+      "execution_metrics": {
+        "status": "owner-reported-not-independently-verified",
+        "scope": "benchmark-only-target-model-until-delivery",
+        "client": "Claude Code (subscription)",
+        "source": "owner-supplied scoped local session-log summary",
+        "excluded_models": [
+          "Haiku 5.5",
+          "Sonnet 5.5"
+        ],
+        "started_at_utc": "2026-11-17T13:44:00Z",
+        "delivered_at_utc": "2026-11-18T05:17:00Z",
+        "wall_clock_minutes": 933,
+        "active_minutes_estimate": 660,
+        "active_minutes_estimate_range": [
+          582,
+          714
+        ],
+        "model_calls": 817,
+        "tokens": {
+          "input_uncached": 1654,
+          "output": 1981943,
+          "cache_write": 4531425,
+          "cache_read": 469228912,
+          "total": 475743934
+        },
+        "details": "EXECUTION-METRICS.md"
+      }
     },
     {
       "id": "gemini-4-hydrogen-v3.4",

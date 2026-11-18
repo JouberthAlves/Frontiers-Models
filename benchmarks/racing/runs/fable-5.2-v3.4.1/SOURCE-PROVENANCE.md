@@ -7,4 +7,6 @@
 - No live URL was supplied. Upstream gameplay and reported checks have not been independently reproduced.
 - Original asset attribution is preserved in [ASSET-LICENSES.md](./source/ASSET-LICENSES.md). No independent license certification is claimed.
 
+- Owner-reported benchmark-only token and time measurements: [execution metrics](../../EXECUTION-METRICS.md). Haiku, Sonnet and post-delivery conversations are excluded; measurements are not independently verified.
+
 The source tree is preserved exactly; metadata is outside the snapshot.
