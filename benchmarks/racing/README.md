@@ -11,8 +11,8 @@ The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference im
 | ☀️ **GPT-6.1 Sol** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) | — | — |
 | ✦ **GPT-6 Astra** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) | — | — |
 | ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) | — | — |
-| ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./runs/gemini-4-argon-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Play racing](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./runs/fable-5.2-v3.4.1/source/) | ~475.74M | ~11h |
+| ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./runs/gemini-4-argon-v3.4/source/) | — | — |
 | ⬡ **Gemini 4 Hydrogen** | [Play racing](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./runs/gemini-4-hydrogen-v3.4/source/) | — | — |
 
 *Since V3.4.1: total tokens (including cache) and estimated active execution time, when available. — = not recorded. [Metrics and limitations](./EXECUTION-METRICS.md).*
