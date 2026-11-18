@@ -25,7 +25,7 @@ test('Racing-bench V2.6 prompt is archived verbatim', () => {
 });
 
 test('Racing-bench source runs have provenance records, without claiming gameplay verification', () => {
-  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4'].sort());
+  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4'].sort());
   for (const run of registry.runs) {
     assert.equal(run.gameplay_verification, 'not-independently-verified');
     assert.ok(run.source_commit);
@@ -61,6 +61,11 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.id, 'gpt-6-astra-v3.4');
         assert.equal(run.live_url, 'https://racing-gpt-6-astra.biel.dev.br/', 'owner-provided Astra game URL');
         assert.match(run.site_status, /http-404-on-2026-11-05/);
+        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+      } else if (run.id === 'gpt-astra-6.2-v3.4.1') {
+        assert.equal(run.source_repository, null);
+        assert.equal(run.live_url, null);
+        assert.equal(run.source_file_count, 2394);
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else if (run.id === 'fable-5.2-v3.4.1') {
         assert.equal(run.source_repository, null);
@@ -201,7 +206,7 @@ test('Racing V3.4 prompt and 14 reference assets are present and pinned', () => 
   const refDir=resolve(root,'benchmarks/racing',p.reference_directory);
   assert.ok(existsSync(refDir));
   assert.equal(readdirSync(refDir).filter(x=>x.endsWith('.jpg')).length,14);
-  assert.deepEqual(registry.current_arena,['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
+  assert.deepEqual(registry.current_arena,['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
 });
 
 test('Racing V3.4.1 candidate pins continuous urban/forest density without rewriting V3.4', () => {

@@ -1,0 +1,22 @@
+{
+  "world": {
+    "ok": true,
+    "errors": [],
+    "length": 2969.25480253567,
+    "stations": 1188,
+    "minRadius": 27.9868197195292,
+    "maxGrade": 0.10397771656731107,
+    "maxBank": 3.490891239431569,
+    "maxTerrainAboveRoad": -0.03499999999998238,
+    "maxEdgeGap": 0.03500000000000014,
+    "objects": 0
+  },
+  "lap": {
+    "elapsed": 105.86666666669699,
+    "distance": 2969.4541545254856,
+    "length": 2969.25480253567,
+    "events": [],
+    "wheelGap": 0.0034883410609616305,
+    "bodyClearance": 0.21324855638783902
+  }
+}

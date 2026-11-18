@@ -1,0 +1,108 @@
+[
+  {
+    "asset": "coast_rocks_03",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/coast_rocks_03/coast_rocks_03_1k.gltf",
+    "mesh": "Plane1.001",
+    "triangles": 4828
+  },
+  {
+    "asset": "coastal_cliff_02",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/coastal_cliff_02/coastal_cliff_02_1k.gltf",
+    "mesh": "coastal_cliff_02_a.002",
+    "triangles": 2973
+  },
+  {
+    "asset": "shrub_02",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/shrub_02/shrub_02_1k.gltf",
+    "mesh": "Plane.036",
+    "triangles": 5188
+  },
+  {
+    "asset": "grass_medium_02",
+    "source": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/grass_medium_02/grass_medium_02_1k.gltf",
+    "mesh": "Plane.001",
+    "triangles": 714
+  },
+  {
+    "asset": "pine_tree_01",
+    "parts": [
+      "twig_diff",
+      "twig_alpha",
+      "twig_nor_gl",
+      "twig_rough"
+    ]
+  },
+  {
+    "asset": "jacaranda_tree",
+    "parts": [
+      "leaves_diff",
+      "leaves_alpha",
+      "leaves_nor_gl",
+      "leaves_rough"
+    ]
+  },
+  [
+    {
+      "name": "bark-color",
+      "asset": "palm_bark",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/palm_bark/palm_bark_diff_1k.jpg",
+      "md5": "89e6474313f1547e3c12c4b68410ee39",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "bark-normal",
+      "asset": "palm_bark",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/palm_bark/palm_bark_nor_gl_1k.jpg",
+      "md5": "47c13a26ef585fbb0d93f5593f8f711f",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "bark-rough",
+      "asset": "palm_bark",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/palm_bark/palm_bark_rough_1k.jpg",
+      "md5": "8ce664df74d422a570ed97cc9cffc2bf",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ],
+  [
+    {
+      "name": "pavers-color",
+      "asset": "seaworn_sandstone_brick",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/seaworn_sandstone_brick/seaworn_sandstone_brick_diff_1k.jpg",
+      "md5": "9e81bb5d1102d334c066f5c9f2c5a294",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "pavers-normal",
+      "asset": "seaworn_sandstone_brick",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/seaworn_sandstone_brick/seaworn_sandstone_brick_nor_gl_1k.jpg",
+      "md5": "5bc8867f0c9a39eb68fdbb44b8e74e03",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "pavers-rough",
+      "asset": "seaworn_sandstone_brick",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/seaworn_sandstone_brick/seaworn_sandstone_brick_rough_1k.jpg",
+      "md5": "9e9b0db912194d694fe6092e126f0561",
+      "size": [
+        1024,
+        1024
+      ]
+    }
+  ]
+]

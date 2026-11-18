@@ -15,9 +15,9 @@ test('Gemini 3.8 Flash V3.4 moves to Non-frontier, without deleting its archived
   assert.deepEqual(runs.non_frontier_runs, [source, 'sonnet-5.5-v3.4']);
   assert.ok(!runs.current_arena.includes(source));
   assert.ok(!runs.current_arena.includes('sonnet-5.5-v3.4'));
-  assert.equal(runs.current_arena.length, 6);
+  assert.equal(runs.current_arena.length, 7);
   assert.deepEqual(runs.current_arena, [
-    'gpt-6.1-sol-v3.4','gpt-6-astra-v3.4','opus-5.5-v3.4',
+    'gpt-6.1-sol-v3.4','gpt-6-astra-v3.4','gpt-astra-6.2-v3.4.1','opus-5.5-v3.4',
     'gemini-4-argon-v3.4','fable-5.2-v3.4.1','gemini-4-hydrogen-v3.4'
   ]);
   const gemini = runs.runs.find(r => r.id === source);
@@ -46,7 +46,7 @@ test('both languages place the V3.4 Gemini only below the current Racing listing
     const end=content.indexOf('\n\n',start);
     const current=content.slice(start,end);
     assert.doesNotMatch(current,/Gemini 3\.8 Flash|gemini-3\.8-v3\.4/);
-    assert.equal([...current.matchAll(/\*\*[^*]+\*\*/g)].length, 6);
+    assert.equal([...current.matchAll(/\*\*[^*]+\*\*/g)].length, 7);
     assert.doesNotMatch(current, /\*\*[^*]+\(V3\.4\)\*\*/);
     for (const [symbol, model] of [
       ['\u2600\ufe0f', 'GPT-6.1 Sol'], ['\u2726', 'GPT-6 Astra'],
@@ -78,9 +78,9 @@ test('both languages place the V3.4 Gemini only below the current Racing listing
 
 test('SVG is current-only and excludes both Gemini 3.8 visible text and ID', () => {
   const svg=read('assets/frontier-models-hero-v7.svg');
-  assert.equal([...svg.matchAll(/data-role="run" data-benchmark="racing"/g)].length,6);
+  assert.equal([...svg.matchAll(/data-role="run" data-benchmark="racing"/g)].length,7);
   assert.equal([...svg.matchAll(/data-role="run" data-benchmark="orbitarium"/g)].length,5);
   assert.ok(!svg.includes('Gemini 3.8 Flash'));
   assert.ok(!svg.includes('gemini-3.8-v3.4'));
-  assert.match(svg,/aria-label="11 current runs: 6 Racing and 5 Orbitarium"/);
+  assert.match(svg,/aria-label="12 current runs: 7 Racing and 5 Orbitarium"/);
 });

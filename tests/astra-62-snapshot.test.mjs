@@ -1,0 +1,19 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+const root='benchmarks/racing/';
+test('GPT Astra 6.2 snapshot tree and manifest are pinned to the original commit', () => {
+ const registry=JSON.parse(readFileSync(root+'RUNS.json'));
+ const r=registry.runs.find(x=>x.id==='gpt-astra-6.2-v3.4.1');
+ const m=JSON.parse(readFileSync(root+r.manifest));
+ assert.equal(r.source_commit,'8f1ff2b06cf9734f0f1b4663eeb53f4d72c723f6');
+ assert.equal(r.source_tree,'27478d849c8be81be707bda2036917357a2e39a5');
+ assert.equal(execFileSync('git',['rev-parse','HEAD:'+root+r.archive_path],{encoding:'utf8'}).trim(),r.source_tree);
+ assert.equal(m.files.length,2394);
+ assert.equal(m.files.reduce((sum,e)=>sum+e.bytes,0),515565667);
+ const listing=execFileSync('git',['ls-tree','-r','-z','HEAD:'+root+r.archive_path],{encoding:'utf8'}).split('\0').filter(Boolean);
+ assert.deepEqual(listing,m.files.map(e=>e.mode+' blob '+e.git_blob_sha1+'\t'+e.path));
+ const v=JSON.parse(execFileSync('git',['show','HEAD:'+root+r.archive_path+'/verification/run.json']));
+ assert.equal(Date.parse(v.finished)-Date.parse(v.started),170198);
+});

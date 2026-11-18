@@ -26,6 +26,18 @@ Starting with **V3.4.1**, record token usage and execution time when evidence is
 
 Source: owner-supplied summary of local Claude Code session usage records, scoped to November 17–18 through delivery. Active time is estimated from message gaps using different idle thresholds. The exact counters are transcribed from that summary, not independently audited against raw logs. Haiku 5.5 and Sonnet 5.5 usage and post-benchmark conversations are excluded; the scoped total already excludes them, so no second subtraction is performed. The separate rounded Claude Code usage report dated November 18 at 12:25 UTC has a different reporting scope, includes post-benchmark model usage, and does not reconcile to the scoped totals; it is not added to or subtracted from this record. Its API and wall timers and cost estimate are not benchmark-wide measurements. Earlier V3.4 runs have no execution metrics recorded here.
 
+### GPT Astra 6.2 (V3.4.1)
+
+| Measurement | Reported value |
+| --- | ---: |
+| Weekly Plus quota used | 30% (owner-reported) |
+| Reliable token count | Unavailable |
+| Active execution time | Unknown |
+| Observed elapsed interval | 5h 02m (08:21 to 13:23, Cuiabá UTC-4, 2026-11-18) |
+| Final verification | 2m 50s |
+
+The elapsed interval is between the owner-reported creation of track.json and the final verification finish, not the entire run or an active-time estimate. Work may precede or follow these markers. The archived [run.json](./runs/gpt-astra-6.2-v3.4.1/source/verification/run.json) records final verification start 17:20:36.162 UTC and finish 17:23:26.360 UTC (170.198 seconds). Quota percentage is a subscription-specific proxy, not a token count and not comparable directly with tokens or other plans.
+
 ## Português
 
 A partir da **V3.4.1**, registrar tokens e tempo de execução quando houver evidência disponível. São métricas descritivas de recursos, não notas. As execuções utilizam cotas de diferentes assinaturas e clientes, e não uma API tarifada padronizada. Disponibilidade, precisão, contabilização e cache podem variar. Valores ausentes são desconhecidos, não zero. Não inferir custo de API a partir do uso da assinatura.
@@ -51,3 +63,16 @@ A partir da **V3.4.1**, registrar tokens e tempo de execução quando houver evi
 | **Total de tokens informado** | **475.743.934** |
 
 Fonte: resumo fornecido pelo mantenedor dos registros locais de uso do Claude Code, limitado aos dias 17 e 18 de novembro até a entrega. O tempo ativo foi estimado por intervalos entre mensagens, com diferentes limiares de ociosidade. Os contadores foram transcritos do resumo, sem auditoria independente dos logs brutos. Haiku 5.5, Sonnet 5.5 e conversas pós-benchmark foram excluídos; o total delimitado já os exclui, portanto não há segundo desconto. O relatório separado e arredondado do Claude Code de 18/11 às 12:25 UTC tem outro escopo, inclui uso de modelos após o benchmark e não reconcilia com os totais delimitados; não foi somado nem subtraído. Seus contadores de tempo de API, sessão e estimativa de custo não representam a execução integral. Não constam métricas das execuções antigas V3.4.
+
+
+### GPT Astra 6.2 (V3.4.1)
+
+| Medida | Valor informado |
+| --- | ---: |
+| Cota semanal Plus consumida | 30% (informado pelo mantenedor) |
+| Contagem confiável de tokens | Indisponível |
+| Tempo ativo | Desconhecido |
+| Intervalo decorrido observado | 5 h 02 min (08h21 a 13h23, Cuiabá UTC-4, 18/11/2026) |
+| Verificação final | 2 min 50 s |
+
+O intervalo vai da criação de track.json informada pelo mantenedor ao término da verificação final; pode haver trabalho antes ou depois. Não representa tempo ativo nem duração total exata. O [run.json](./runs/gpt-astra-6.2-v3.4.1/source/verification/run.json) arquivado registra a verificação de 17:20:36.162 UTC a 17:23:26.360 UTC (170,198 s). Percentual de cota é uma medida alternativa específica da assinatura, não equivale a tokens nem permite comparação direta entre planos.

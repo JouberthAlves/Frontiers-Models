@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — independent Racing and Orbitarium benchmark collection with 11 current runs (6 Racing and 5 Orbitarium)" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — independent Racing and Orbitarium benchmark collection with 12 current runs (7 Racing and 5 Orbitarium)" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Current runs](https://img.shields.io/badge/current%20runs-11-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Current runs](https://img.shields.io/badge/current%20runs-12-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -22,16 +22,19 @@
 
 ### Racing-bench V3.4 / V3.4.1 — current race-first benchmark
 
-| Current model | Play | Source code | Tokens | Active time |
+| Current model | Play | Source code | Tokens | Time |
 | --- | --- | --- | ---: | ---: |
 | ☀️ **GPT-6.1 Sol** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) | — | — |
 | ✦ **GPT-6 Astra** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) | — | — |
+| ✦ **GPT Astra 6.2 (V3.4.1)** | — | [GPT Astra 6.2 (V3.4.1)](./benchmarks/racing/runs/gpt-astra-6.2-v3.4.1/source/) | 30%\* | ~5h |
 | ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Play racing](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475.74M | ~11h |
 | ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) | — | — |
 | ⬡ **Gemini 4 Hydrogen** | [Play racing](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/) | — | — |
 
 *Since V3.4.1: total tokens (including cache) and estimated active execution time, when available. — = not recorded. [Metrics and limitations](./benchmarks/racing/EXECUTION-METRICS.md).*
+
+\* GPT Astra 6.2: 30% of the Plus weekly quota.
 
 **V3.4 inputs:** [Racing prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 reference images](./benchmarks/racing/prompts/racing-v3.4/refs/) · [Operational addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
@@ -52,11 +55,11 @@
 ## How it fits together
 
 ```text
-FRONTIER MODELS                         2 benchmarks · 11 current runs
+FRONTIER MODELS                         2 benchmarks · 12 current runs
 │
-├── RACING-BENCH (V3.4 / V3.4.1)                 6 current runs
+├── RACING-BENCH (V3.4 / V3.4.1)                 7 current runs
 │   ├── inputs      racing-v3.4/ · 14 visual references
-│   ├── current     GPT-6.1 Sol · GPT-6 Astra · Opus 5.5 · Gemini 4 Argon · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen
+│   ├── current     GPT-6.1 Sol · GPT-6 Astra · GPT Astra 6.2 (V3.4.1) · Opus 5.5 · Gemini 4 Argon · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen
 │   └── history     V2.6 runs + earlier prompts
 │
 ├── ORBITARIUM-BENCH (Frontier V2)      5 current references
