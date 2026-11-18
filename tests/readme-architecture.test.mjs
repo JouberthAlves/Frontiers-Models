@@ -10,9 +10,9 @@ const read = path => readFileSync(resolve(root, path), 'utf8');
 
 for (const [path, arenaHeading, title, archivedHeading, labels] of [
   ['README.md', '## ⚔️ Current benchmark runs', '## How it fits together',
-    '## 🗂️ Other Orbitarium projects', ['6 current runs', '5 current references', 'ARCHIVE CONVENTIONS']],
+    '## 🗂️ Other Orbitarium projects', ['7 current runs', '5 current references', 'ARCHIVE CONVENTIONS']],
   ['README-PT-BR.md', '## ⚔️ Execuções atuais por benchmark', '## Como se organiza',
-    '## 🗂️ Outros projetos do Orbitarium', ['6 execuções atuais', '5 referências atuais', 'ORGANIZAÇÃO DO ACERVO']],
+    '## 🗂️ Outros projetos do Orbitarium', ['7 execuções atuais', '5 referências atuais', 'ORGANIZAÇÃO DO ACERVO']],
 ]) {
   test(path + ': benchmark-specific repository map sits between current and historical runs', () => {
     const content = read(path);

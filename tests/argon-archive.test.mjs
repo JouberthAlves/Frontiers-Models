@@ -33,7 +33,7 @@ test('collection SVG shows current Argon but excludes Non-frontier Gemini 3.8', 
   assert.ok(hero.includes('data-benchmark="orbitarium" data-model="gemini-4-argon-source"'));
   assert.ok(!hero.includes('data-benchmark="orbitarium" data-model="gemini-3.8-flash-high-frontier-v2"'));
   assert.equal([...hero.matchAll(/data-role="run" data-benchmark="orbitarium"/g)].length, 5);
-  assert.equal([...hero.matchAll(/data-role="run" data-benchmark="racing"/g)].length, 6);
+  assert.equal([...hero.matchAll(/data-role="run" data-benchmark="racing"/g)].length, 7);
   assert.equal(existsSync(resolve(root, 'assets/frontier-v2-scores-v6.svg')), false);
 });
 

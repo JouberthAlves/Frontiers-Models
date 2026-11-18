@@ -1,0 +1,30 @@
+{
+  "wav": {
+    "sampleRate": 48000,
+    "channels": 2,
+    "seconds": 106.01066666666667,
+    "peakDB": -2.981286760115432,
+    "rmsDB": -11.157494088010916
+  },
+  "webm": {
+    "tracks": [
+      {
+        "number": 1,
+        "type": 1,
+        "codec": "V_VP9",
+        "width": 1920,
+        "height": 1080,
+        "packets": 3172,
+        "seconds": 105.937
+      },
+      {
+        "number": 2,
+        "type": 2,
+        "codec": "A_OPUS",
+        "packets": 1766,
+        "seconds": 105.901
+      }
+    ],
+    "bytes": 83906364
+  }
+}

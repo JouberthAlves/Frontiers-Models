@@ -1,0 +1,164 @@
+[
+  {
+    "name": "road-color",
+    "asset": "asphalt_04",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_04/asphalt_04_diff_2k.jpg",
+    "md5": "a9c6f84cfd568368607898351fce9b51",
+    "size": [
+      2048,
+      2048
+    ]
+  },
+  {
+    "name": "road-normal",
+    "asset": "asphalt_04",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_04/asphalt_04_nor_gl_2k.jpg",
+    "md5": "7c908104ea09ed7749d287a85bdae485",
+    "size": [
+      2048,
+      2048
+    ]
+  },
+  {
+    "name": "road-rough",
+    "asset": "asphalt_04",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_04/asphalt_04_rough_2k.jpg",
+    "md5": "804e7744df23ce11b2936d1c657dd1a6",
+    "size": [
+      2048,
+      2048
+    ]
+  },
+  {
+    "name": "sand-color",
+    "asset": "coast_sand_01",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_01/coast_sand_01_diff_1k.jpg",
+    "md5": "a1e243fc8635806381505c7dc44b192a",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "sand-normal",
+    "asset": "coast_sand_01",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_01/coast_sand_01_nor_gl_1k.jpg",
+    "md5": "38bbe6863249a3d20d8417c9db207780",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "sand-rough",
+    "asset": "coast_sand_01",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_01/coast_sand_01_rough_1k.jpg",
+    "md5": "978aca9e374cf988095392a91d3a4f71",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "earth-color",
+    "asset": "brown_mud_dry",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_dry/brown_mud_dry_diff_1k.jpg",
+    "md5": "0c0ad82fec60f091690c69c23657cb74",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "earth-normal",
+    "asset": "brown_mud_dry",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_dry/brown_mud_dry_nor_gl_1k.jpg",
+    "md5": "a842517bea5187ccbceb69fd26629d1e",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "earth-rough",
+    "asset": "brown_mud_dry",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/brown_mud_dry/brown_mud_dry_rough_1k.jpg",
+    "md5": "4e047a601af768eded6468faab4ec615",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "rock-color",
+    "asset": "coast_sand_rocks_02",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_rocks_02/coast_sand_rocks_02_diff_1k.jpg",
+    "md5": "6fa7bee516a8c01a383a782d802b6a3b",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "rock-normal",
+    "asset": "coast_sand_rocks_02",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_rocks_02/coast_sand_rocks_02_nor_gl_1k.jpg",
+    "md5": "38045b4c257fb5a87b373e960e3cbb9c",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "rock-rough",
+    "asset": "coast_sand_rocks_02",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/coast_sand_rocks_02/coast_sand_rocks_02_rough_1k.jpg",
+    "md5": "fe1a6ef27aba14602724b26e549a2a5c",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "coastal-sky",
+    "asset": "kloppenheim_06_puresky",
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloppenheim_06_puresky_2k.hdr",
+    "md5": "590a829b3cf71216451655e601d542c6"
+  },
+  {
+    "name": "coastal-light",
+    "asset": "kloppenheim_06",
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloppenheim_06_2k.hdr",
+    "md5": "86deab62942f3ba6004fda4377769bf7"
+  },
+  {
+    "name": "meadow-color",
+    "asset": "leafy_grass",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_diff_1k.jpg",
+    "md5": "0dbc071e91d6905edfcfbe8eb785a1ab",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "meadow-normal",
+    "asset": "leafy_grass",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_nor_gl_1k.jpg",
+    "md5": "8279e096e204ea326d57a318869f99df",
+    "size": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "name": "meadow-rough",
+    "asset": "leafy_grass",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/leafy_grass/leafy_grass_rough_1k.jpg",
+    "md5": "05f6bb1383e12b327727d313c5899cf2",
+    "size": [
+      1024,
+      1024
+    ]
+  }
+]

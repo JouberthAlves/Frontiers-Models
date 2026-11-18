@@ -1,0 +1,13 @@
+{
+  "started": "2026-11-18T17:20:36.162Z",
+  "errors": [],
+  "console": [],
+  "requests": [],
+  "stages": [
+    "jornadas",
+    "PCM e vídeo",
+    "imagens e varredura",
+    "desempenho"
+  ],
+  "finished": "2026-11-18T17:23:26.360Z"
+}

@@ -23,21 +23,23 @@ const currentRunCount = racingRuns.length + orbitRuns.length;
 if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 ||
     !orbitRuns.some(run => run.model === 'Gemini 4 Argon') ||
     orbitRuns.some(run => run.model === 'Gemini 3.8 Flash') ||
-    racingRuns.length !== 6 ||
+    racingRuns.length !== 7 ||
     racingRuns[0].id !== 'gpt-6.1-sol-v3.4' ||
     racingRuns[1].id !== 'gpt-6-astra-v3.4' ||
-    racingRuns[2].id !== 'opus-5.5-v3.4' ||
-    racingRuns[2].live_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
-    racingRuns[2].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
-    racingRuns[3].id !== 'gemini-4-argon-v3.4' ||
-    racingRuns[3].live_url !== 'https://racing-gemini-4-argon.biel.dev.br/' ||
-    racingRuns[4].id !== 'fable-5.2-v3.4.1' ||
-    racingRuns[4].display_label !== 'Fable 5.2 (V3.4.1)' ||
-    racingRuns[4].live_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
-    racingRuns[4].site_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
-    racingRuns[5].id !== 'gemini-4-hydrogen-v3.4' ||
-    racingRuns[5].live_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
-    racingRuns[5].site_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
+    racingRuns[2].id !== 'gpt-astra-6.2-v3.4.1' ||
+    racingRuns[2].live_url !== null ||
+    racingRuns[3].id !== 'opus-5.5-v3.4' ||
+    racingRuns[3].live_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
+    racingRuns[3].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
+    racingRuns[4].id !== 'gemini-4-argon-v3.4' ||
+    racingRuns[4].live_url !== 'https://racing-gemini-4-argon.biel.dev.br/' ||
+    racingRuns[5].id !== 'fable-5.2-v3.4.1' ||
+    racingRuns[5].display_label !== 'Fable 5.2 (V3.4.1)' ||
+    racingRuns[5].live_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
+    racingRuns[5].site_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
+    racingRuns[6].id !== 'gemini-4-hydrogen-v3.4' ||
+    racingRuns[6].live_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
+    racingRuns[6].site_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
     racing.non_frontier_runs?.length !== 2 ||
     racing.non_frontier_runs[0] !== 'gemini-3.8-v3.4' ||
     racing.non_frontier_runs[1] !== 'sonnet-5.5-v3.4' ||
@@ -47,7 +49,7 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     orbitRuns.some(run => !run.live_url?.startsWith('https://')) ||
     racingRuns.some(run => !run.display_status.startsWith('current-') ||
       (run.live_url !== null && !run.live_url?.startsWith('https://')))) {
-  throw new Error('Hero expects six current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
+  throw new Error('Hero expects seven current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')
@@ -58,13 +60,13 @@ function badge({ run, x, y, width, accent, benchmark }) {
     <rect x="${x}" y="${y}" width="${width}" height="56" rx="11" fill="#0e2034" stroke="#25415d"/>
     <rect x="${x + 1}" y="${y + 1}" width="4" height="54" rx="2" fill="${accent}"/>
     <circle cx="${x + 20}" cy="${y + 28}" r="4" fill="${accent}"/>
-    <text x="${x + 36}" y="${y + 34}" font-size="18" font-weight="650" fill="#eef6ff">${escape(run.model)}</text>
+    <text x="${x + 36}" y="${y + 34}" font-size="${width < 200 ? 16 : 18}" font-weight="650" fill="#eef6ff">${escape(run.model)}</text>
   </g>`;
 }
 
 const racingBadges = racingRuns.map((run, i) =>
-  badge({ run, x: i < 3 ? 650 + i * 239 : 650 + (i - 3) * 239, y: i < 3 ? 173 : 235, width: 225,
-    accent: ['#facc6b', '#aaa7ff', '#ff99cc', '#8df0a4', '#f4a1ed', '#78dad1'][i], benchmark: 'racing' })
+  badge({ run, x: i < 4 ? 650 + i * 180 : 650 + (i - 4) * 239, y: i < 4 ? 173 : 235, width: i < 4 ? 170 : 225,
+    accent: ['#facc6b', '#aaa7ff', '#b5b2ff', '#ff99cc', '#8df0a4', '#f4a1ed', '#78dad1'][i], benchmark: 'racing' })
 ).join('\n    ');
 const orbitBadges = orbitRuns.map((run, i) =>
   badge({ run, x: i < 3 ? 650 + i * 239 : 769.5 + (i - 3) * 239, y: i < 3 ? 455 : 517,

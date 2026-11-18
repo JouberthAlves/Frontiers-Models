@@ -1,0 +1,128 @@
+[
+  {
+    "name": "ext-idle",
+    "author": "GiocoSound",
+    "id": 401552,
+    "page": "https://freesound.org/people/GiocoSound/sounds/401552/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/401/401552_5820033-hq.mp3",
+    "sha256": "b3a033013349b1886291bc30d0d76459f25aaa0f5e46015d3f2fad8fec2164b1"
+  },
+  {
+    "name": "ext-low",
+    "author": "GiocoSound",
+    "id": 401556,
+    "page": "https://freesound.org/people/GiocoSound/sounds/401556/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/401/401556_5820033-hq.mp3",
+    "sha256": "8e778dd772c0f1d8df27854d89b35e33dff4b887d076111bb2cb86351c9d6396"
+  },
+  {
+    "name": "ext-mid",
+    "author": "GiocoSound",
+    "id": 401555,
+    "page": "https://freesound.org/people/GiocoSound/sounds/401555/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/401/401555_5820033-hq.mp3",
+    "sha256": "7e1cbafd9e88ea5f83bf60315516744fa8710a89d69467886efde15c4f26ceeb"
+  },
+  {
+    "name": "ext-high",
+    "author": "GiocoSound",
+    "id": 401551,
+    "page": "https://freesound.org/people/GiocoSound/sounds/401551/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/401/401551_5820033-hq.mp3",
+    "sha256": "2b905450a59ee1eed51738af8ee829c3afd9e616f517b44938aa0a37e47d4b7f"
+  },
+  {
+    "name": "int-idle",
+    "author": "GiocoSound",
+    "id": 401550,
+    "page": "https://freesound.org/people/GiocoSound/sounds/401550/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/401/401550_5820033-hq.mp3",
+    "sha256": "c29188142340e0f0eb0f51efac641736ce6944d36b4867e2cb5d9747054810e8"
+  },
+  {
+    "name": "int-low",
+    "author": "GiocoSound",
+    "id": 401548,
+    "page": "https://freesound.org/people/GiocoSound/sounds/401548/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/401/401548_5820033-hq.mp3",
+    "sha256": "4643bf26a5170f7943b5992fd87d7d4d2a34ed3262efacc85776b127481a1496"
+  },
+  {
+    "name": "int-mid",
+    "author": "GiocoSound",
+    "id": 401547,
+    "page": "https://freesound.org/people/GiocoSound/sounds/401547/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/401/401547_5820033-hq.mp3",
+    "sha256": "9f2595faabe5ebcb5a97f900c79b86dc3728c224eff97f3f8223d087faf403f6"
+  },
+  {
+    "name": "int-high",
+    "author": "GiocoSound",
+    "id": 401549,
+    "page": "https://freesound.org/people/GiocoSound/sounds/401549/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/401/401549_5820033-hq.mp3",
+    "sha256": "36fb4db368aa4330877707bb4b4970a6f7c7d51a2dc8f9bd3c75d931239822ff"
+  },
+  {
+    "name": "tyre",
+    "author": "audible-edge",
+    "id": 71736,
+    "page": "https://freesound.org/people/audible-edge/sounds/71736/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/71/71736_995351-hq.mp3",
+    "sha256": "13d94db3651156da567c71bc6e7eed62db5db08d173c97f00752b54a43cf081f"
+  },
+  {
+    "name": "gravel",
+    "author": "seth-m",
+    "id": 341069,
+    "page": "https://freesound.org/people/seth-m/sounds/341069/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/341/341069_3366749-hq.mp3",
+    "sha256": "a8855a1a1ccadfb91ec9bc9db5e0a698765702384e24274f9572f68f48c34a5e"
+  },
+  {
+    "name": "impact",
+    "author": "newagesoup",
+    "id": 337833,
+    "page": "https://freesound.org/people/newagesoup/sounds/337833/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/337/337833_4067257-hq.mp3",
+    "sha256": "fe0f82176d078cef5bc37d2c7f63011f5a6a6e3538c6db4d94d03bf1b56164aa"
+  },
+  {
+    "name": "surf",
+    "author": "bassimat",
+    "id": 861755,
+    "page": "https://freesound.org/people/bassimat/sounds/861755/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/861/861755_15636277-hq.mp3",
+    "sha256": "25fdb0431090d8fb92ae65d594d4b0d3ec50709962e506153d6d8aec8dcacb41"
+  },
+  {
+    "name": "town",
+    "author": "Vital_Sounds",
+    "id": 534479,
+    "page": "https://freesound.org/people/Vital_Sounds/sounds/534479/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/534/534479_10944090-hq.mp3",
+    "sha256": "32c8135741aeb73694af3cc7bde78b571df6303faabc5a4c709c7cd252ac6c09"
+  },
+  {
+    "name": "forest",
+    "author": "SamuelGremaud",
+    "id": 543957,
+    "page": "https://freesound.org/people/SamuelGremaud/sounds/543957/",
+    "license": "CC0",
+    "preview": "https://cdn.freesound.org/previews/543/543957_8031303-hq.mp3",
+    "sha256": "e0e10a1ea7a9985de88a099d876bdd467b6cb726f441cd7346975a51bc2e45e2"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "page": "Costa Dourada — Estreito Racing",
+  "host": "http://127.0.0.1:4173",
+  "package": "dist",
+  "requestsLocal": 97,
+  "external": [],
+  "errors": [],
+  "maxDisplayedKMH": 36,
+  "selected": {
+    "car": 1,
+    "color": 2,
+    "laps": 6,
+    "difficulty": "dificil",
+    "quality": "low"
+  }
+}
