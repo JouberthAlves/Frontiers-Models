@@ -1,0 +1,291 @@
+{
+ "file": "audio-volta.wav",
+ "method": "AudioWorklet tap on the master bus, after the limiter (no audio device involved)",
+ "sampleRate": 48000,
+ "channels": 2,
+ "bits": 16,
+ "seconds": 126.38,
+ "peak": 0.47998,
+ "peakDb": -6.38,
+ "rmsDb": -24.82,
+ "peakDbInPage": -6.38,
+ "limiterMinGain": 1,
+ "maxSimultaneousVoices": 47,
+ "maxRivalEnginesAudible": 5,
+ "recordedSeconds": 126.4,
+ "lapTime": 122.1750000000433,
+ "lapTimeText": "02:02.2",
+ "startsAt": "first beep of the countdown (3 s before the green light)",
+ "scripted": [
+  {
+   "what": "raspão na barreira",
+   "s": 150
+  },
+  {
+   "what": "derrapagem",
+   "s": 598
+  },
+  {
+   "what": "alívio para ser ultrapassado",
+   "s": 1010
+  }
+ ],
+ "instants": {
+  "gearChanges": [
+   "00:07.3",
+   "00:10.8",
+   "00:24.8",
+   "00:25.9",
+   "00:32.8",
+   "00:36.1",
+   "00:39.6",
+   "00:42.5",
+   "00:45.5",
+   "00:47.7",
+   "00:48.6",
+   "00:52.6",
+   "00:56.4",
+   "01:01.4",
+   "01:05.9",
+   "01:11.8",
+   "01:13.6",
+   "01:14.1",
+   "01:17.6",
+   "01:21.0",
+   "01:23.2",
+   "01:26.3",
+   "01:30.9",
+   "01:33.4",
+   "01:38.7",
+   "01:41.9",
+   "01:43.4",
+   "01:46.4",
+   "01:52.5",
+   "01:54.8",
+   "01:55.8",
+   "01:56.3",
+   "01:57.3",
+   "02:02.3"
+  ],
+  "skids": [
+   "00:13.9",
+   "00:28.5"
+  ],
+  "collisions": [
+   "00:13.5 (barreira, 5.4 m/s)"
+  ],
+  "bridge": [
+   "01:51.2–01:54.4"
+  ],
+  "passes": [
+   "01:27.7 (IA 2, ultrapassada pelo jogador)",
+   "02:05.7 (IA 4, ultrapassada pelo jogador)"
+  ]
+ },
+ "events": [
+  {
+   "t": 7.29,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 10.76,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 13.5,
+   "type": "collision",
+   "strength": 5.4,
+   "with": "wall"
+  },
+  {
+   "t": 13.91,
+   "type": "skid"
+  },
+  {
+   "t": 24.84,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 25.87,
+   "type": "gear",
+   "gear": 1
+  },
+  {
+   "t": 28.51,
+   "type": "skid"
+  },
+  {
+   "t": 32.82,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 36.11,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 39.57,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 42.52,
+   "type": "gear",
+   "gear": 1
+  },
+  {
+   "t": 45.46,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 47.67,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 48.61,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 52.56,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 56.38,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 61.42,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 65.91,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 71.84,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 73.61,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 74.1,
+   "type": "gear",
+   "gear": 1
+  },
+  {
+   "t": 77.64,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 81,
+   "type": "gear",
+   "gear": 1
+  },
+  {
+   "t": 83.23,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 86.32,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 87.72,
+   "type": "pass",
+   "rival": "IA 2",
+   "by": "player"
+  },
+  {
+   "t": 90.93,
+   "type": "gear",
+   "gear": 4
+  },
+  {
+   "t": 93.43,
+   "type": "gear",
+   "gear": 5
+  },
+  {
+   "t": 98.72,
+   "type": "gear",
+   "gear": 4
+  },
+  {
+   "t": 101.86,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 103.44,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 106.39,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 111.18,
+   "type": "bridge-in"
+  },
+  {
+   "t": 112.52,
+   "type": "gear",
+   "gear": 4
+  },
+  {
+   "t": 114.41,
+   "type": "bridge-out"
+  },
+  {
+   "t": 114.81,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 115.83,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 116.29,
+   "type": "gear",
+   "gear": 1
+  },
+  {
+   "t": 117.29,
+   "type": "gear",
+   "gear": 2
+  },
+  {
+   "t": 122.32,
+   "type": "gear",
+   "gear": 3
+  },
+  {
+   "t": 125.66,
+   "type": "pass",
+   "rival": "IA 4",
+   "by": "player"
+  }
+ ]
+}

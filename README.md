@@ -20,18 +20,22 @@
 
 ## ⚔️ Current benchmark runs
 
-### Racing-bench V3.4 — current race-first benchmark
+### Racing-bench V3.4 / V3.4.1 — current race-first benchmark
 
-| Current model | Play | Source code |
-| --- | --- | --- |
-| ☀️ **GPT-6.1 Sol** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) |
-| ✦ **GPT-6 Astra** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
-| ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) |
-| ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) |
-| ✧ **Sonnet 5.5** | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./benchmarks/racing/runs/sonnet-5.5-v3.4/source/) |
-| ⬡ **Gemini 4 Hydrogen** | [Play racing](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/) |
+| Current model | Play | Source code | Tokens | Active time |
+| --- | --- | --- | ---: | ---: |
+| ☀️ **GPT-6.1 Sol** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) | — | — |
+| ✦ **GPT-6 Astra** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) | — | — |
+| ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) | — | — |
+| ✧ **Fable 5.2 (V3.4.1)** | [Play racing](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475.74M | ~11h |
+| ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) | — | — |
+| ⬡ **Gemini 4 Hydrogen** | [Play racing](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/) | — | — |
+
+*Since V3.4.1: total tokens (including cache) and estimated active execution time, when available. — = not recorded. [Metrics and limitations](./benchmarks/racing/EXECUTION-METRICS.md).*
 
 **V3.4 inputs:** [Racing prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 reference images](./benchmarks/racing/prompts/racing-v3.4/refs/) · [Operational addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).
+
+**Fable 5.2 input:** [V3.4.1](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.1.md).
 
 **Racing V2.6 archive:** [Historical runs and source](./benchmarks/racing/README.md).
 
@@ -50,9 +54,9 @@
 ```text
 FRONTIER MODELS                         2 benchmarks · 11 current runs
 │
-├── RACING-BENCH (V3.4)                 6 current runs
+├── RACING-BENCH (V3.4 / V3.4.1)                 6 current runs
 │   ├── inputs      racing-v3.4/ · 14 visual references
-│   ├── current     GPT-6.1 Sol · GPT-6 Astra · Opus 5.5 · Gemini 4 Argon · Sonnet 5.5 · Gemini 4 Hydrogen
+│   ├── current     GPT-6.1 Sol · GPT-6 Astra · Opus 5.5 · Gemini 4 Argon · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen
 │   └── history     V2.6 runs + earlier prompts
 │
 ├── ORBITARIUM-BENCH (Frontier V2)      5 current references
@@ -74,6 +78,7 @@ Browse [repository architecture](./docs/REPOSITORY-ARCHITECTURE.md) and the benc
 | Model | Category | Website | Source code |
 | --- | --- | --- | --- |
 | ◈ **Gemini 3.8 Flash** | Non-frontier | Deleted | [Code](./benchmarks/racing/runs/gemini-3.8-v3.4/source/) |
+| ✧ **Sonnet 5.5** | Non-frontier | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./benchmarks/racing/runs/sonnet-5.5-v3.4/source/) |
 
 ## 🗂️ Other Orbitarium projects
 

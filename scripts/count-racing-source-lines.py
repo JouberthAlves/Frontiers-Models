@@ -27,7 +27,7 @@ TEXT_EXTENSIONS = CODE_EXTENSIONS | {
 EXTERNAL_OR_GENERATED_ROOTS = {
     "node_modules", "vendor", "dist", "build", ".next",
     "coverage", "playwright-report", "verification", "assets",
-    "public", "benchmark", "racing-v3.4",
+    "public", "benchmark", "racing-v3.4", "lib",
 }
 CHUNK_SIZE = 32
 

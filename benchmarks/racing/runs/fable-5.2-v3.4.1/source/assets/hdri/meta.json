@@ -1,0 +1,69 @@
+{
+ "file": "qwantani_sunset_puresky_4k.hdr",
+ "width": 4096,
+ "height": 2048,
+ "sunU": 0.59994,
+ "sunElevationDeg": 6.08,
+ "sunPeak": 60319.1,
+ "sunDiscRGB": [
+  59879.02,
+  20586.94,
+  1383.35
+ ],
+ "sunAureoleRGB": [
+  31.653,
+  13.023,
+  2.553
+ ],
+ "sunGlowRGB": [
+  6.26,
+  4.191,
+  2.555
+ ],
+ "horizonSunRGB": [
+  97.151,
+  35.336,
+  4.112
+ ],
+ "horizonSideRGB": [
+  1.307,
+  1.078,
+  0.824
+ ],
+ "horizonAwayRGB": [
+  1.206,
+  1.269,
+  1.276
+ ],
+ "zenithRGB": [
+  0.225,
+  0.363,
+  0.621
+ ],
+ "midSkySunRGB": [
+  1.577,
+  1.969,
+  2.481
+ ],
+ "midSkyAwayRGB": [
+  0.471,
+  0.776,
+  1.311
+ ],
+ "belowHorizonRGB": [
+  0.224,
+  0.303,
+  0.443
+ ],
+ "irradianceUpAll": [
+  2.557,
+  2.635,
+  3.413
+ ],
+ "irradianceUpSky": [
+  1.869,
+  2.397,
+  3.397
+ ],
+ "medianSkyLum": 0.5275
+}

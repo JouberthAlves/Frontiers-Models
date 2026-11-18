@@ -34,7 +34,7 @@ test('hero presents two benchmarks and one accurate current-run total without an
 
 test('Racing first: all six V3.4 current source runs are in the hero', () => {
   assert.deepEqual(models('racing'), racing.current_arena);
-  assert.deepEqual(models('racing'), ['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4', 'gemini-4-hydrogen-v3.4']);
+  assert.deepEqual(models('racing'), ['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
   const entries = racing.runs;
   for (const id of models('racing')) {
     const run = entries.find(run => run.id === id);
@@ -44,8 +44,8 @@ test('Racing first: all six V3.4 current source runs are in the hero', () => {
   }
   for (const id of [...racing.legacy_runs, ...racing.non_frontier_runs]) assert.ok(!models('racing').includes(id));
   assert.ok(svg.indexOf('<g data-benchmark="racing">') < svg.indexOf('<g data-benchmark="orbitarium">'));
-  assert.match(svg, /V3\.4 CURRENT/);
-  assert.match(svg, />Racing-bench V3\.4<\/text>/);
+  assert.match(svg, /CURRENT RUNS/);
+  assert.match(svg, />Racing-bench<\/text>/);
 });
 
 test('Orbitarium second: all five current references preserved in registry order', () => {

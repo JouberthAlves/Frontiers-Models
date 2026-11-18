@@ -1,0 +1,59 @@
+[   0.3s] verify: chrome 150.0.7871.127 on Windows_NT 10.0.26300 x64, AMD Ryzen 7 5700G with Radeon Graphics (16 threads)
+[   0.3s] reference images: E:\Claude\refs
+[   0.3s] >> T1 Jornada: menu → carro → 3 voltas com 5 IAs → resultados → correr de novo
+[  28.8s]    scene audit: pass
+[  87.4s] << T1 PASS (87.1 s)
+[  87.4s] >> T2 Jornada com 6 voltas
+[ 209.1s] << T2 PASS (121.7 s)
+[ 209.1s] >> T5 IA: nenhuma parada ou fora da pista por mais de 5 s; ao menos 1 ultrapassagem entre IAs
+[ 209.1s] << T5 PASS (0 s)
+[ 209.1s] >> T6 Integridade: validateWorld sem erros; zero eventos nas corridas; câmera nunca dentro de geometria
+[ 209.1s] << T6 PASS (0 s)
+[ 209.1s] >> T8 Auditoria da cena lida em runtime (scene-stats.json)
+[ 209.1s] << T8 PASS (0 s)
+[ 209.1s] >> T3 Pausa/continuar, reiniciar no meio, voltar ao menu: sem estado antigo, sem áudio duplicado, heap estável
+[ 284.1s] << T3 PASS (75 s)
+[ 284.1s] >> T4 Anticorte: cortar a pista não conta volta
+[ 297.4s] << T4 PASS (13.3 s)
+[ 297.4s] >> T7 Capturas S1–S12 (1920×1080) e sanidade de imagem
+[ 312.6s]    S1 s1-reta-orla.png: sky 29.3 %, mean 0.416, std 0.275, bucket 10.1 %, fps 60
+[ 313.8s]    S2 s2-grid-3-4.png: sky 32.8 %, mean 0.356, std 0.216, bucket 9.8 %, fps -
+[ 317.6s]    S3 s3-praia-espuma.png: sky 45.9 %, mean 0.597, std 0.178, bucket 3.0 %, fps 60
+[ 321.4s]    S4 s4-falesia-mirante.png: sky 26.9 %, mean 0.369, std 0.232, bucket 8.2 %, fps 60
+[ 325.6s]    S5 s5-vila-rua.png: sky 14.9 %, mean 0.396, std 0.225, bucket 5.7 %, fps 60
+[ 329.4s]    S6 s6-bosque-luz.png: sky 23.3 %, mean 0.405, std 0.253, bucket 7.5 %, fps 60
+[ 333.1s]    S7 s7-ponte-ou-tunel.png: sky 32.0 %, mean 0.498, std 0.243, bucket 3.4 %, fps 60
+[ 337.0s]    S8 s8-disputa.png: sky 28.8 %, mean 0.405, std 0.283, bucket 10.3 %, fps 60
+[ 340.7s]    S9 s9-close-pista.png: sky 20.9 %, mean 0.282, std 0.176, bucket 7.0 %, fps 60
+[ 341.8s]    S11 s11-escala.png: sky 1.6 %, mean 0.340, std 0.140, bucket 7.5 %, fps -
+[ 342.8s]    S12 s12-mapa.png: sky 0.0 %, mean 0.300, std 0.122, bucket 13.3 %, fps -
+[ 358.1s]    S10 s10-baixa-vila.png: sky 14.9 %, mean 0.411, std 0.219, bucket 6.5 %, fps 60
+[ 358.1s] << T7 PASS (60.7 s)
+[ 358.1s] >> T9 Varredura de câmera a cada 25 m (Alta): métricas fotográficas em todos os pontos
+[ 387.4s]    sweep Alta: 135 points, sky min 12.4 %, mean 0.282..0.560, std min 0.174, bucket max 26.9 %, failing 0
+[ 387.4s] << T9 PASS (29.3 s)
+[ 387.4s] >> T9b Varredura de câmera a cada 25 m (Baixa)
+[ 414.9s]    sweep Baixa: 135 points, sky min 12.2 %, mean 0.284..0.556, std min 0.166, bucket max 26.6 %, failing 0
+[ 414.9s] << T9b PASS (27.5 s)
+[ 414.9s] >> A1 Vídeo da volta (volta.webm) e PCM do master após o limiter (audio-volta.wav)
+[ 560.9s]    lap 122.18 s; wav 126.38 s, peak -6.38 dBFS, rms -24.82 dB, voices max 47; webm 37.1 MB video/webm;codecs=vp9,opus
+[ 560.9s] << A1 PASS (146 s)
+[ 560.9s] >> P1 Desempenho em Z3 com 5 IAs, Alta e Baixa, 1920×1080
+[ 585.0s]    high: 60 fps, 1% low 55.4, frame mean 16.67 ms / p99 16.7 ms, cpu sim 0.15 ms + render 7.37 ms, 887 draw calls, internal 1920x1080
+[ 608.7s]    low: 60 fps, 1% low 59.8, frame mean 16.67 ms / p99 16.7 ms, cpu sim 0.15 ms + render 5.23 ms, 718 draw calls, internal 1344x756
+[ 608.7s] << P1 PASS (47.8 s)
+[ 609.5s] 
+[ 609.5s] PASS  T1   Jornada: menu → carro → 3 voltas com 5 IAs → resultados → correr de novo
+[ 609.5s] PASS  T2   Jornada com 6 voltas
+[ 609.5s] PASS  T5   IA: nenhuma parada ou fora da pista por mais de 5 s; ao menos 1 ultrapassagem entre IAs
+[ 609.5s] PASS  T6   Integridade: validateWorld sem erros; zero eventos nas corridas; câmera nunca dentro de geometria
+[ 609.5s] PASS  T8   Auditoria da cena lida em runtime (scene-stats.json)
+[ 609.5s] PASS  T3   Pausa/continuar, reiniciar no meio, voltar ao menu: sem estado antigo, sem áudio duplicado, heap estável
+[ 609.5s] PASS  T4   Anticorte: cortar a pista não conta volta
+[ 609.5s] PASS  T7   Capturas S1–S12 (1920×1080) e sanidade de imagem
+[ 609.5s] PASS  T9   Varredura de câmera a cada 25 m (Alta): métricas fotográficas em todos os pontos
+[ 609.5s] PASS  T9b  Varredura de câmera a cada 25 m (Baixa)
+[ 609.5s] PASS  A1   Vídeo da volta (volta.webm) e PCM do master após o limiter (audio-volta.wav)
+[ 609.5s] PASS  P1   Desempenho em Z3 com 5 IAs, Alta e Baixa, 1920×1080
+[ 609.5s] 
+all 12 tests passed

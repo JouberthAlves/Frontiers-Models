@@ -1,0 +1,77 @@
+{
+ "resolution": [
+  1920,
+  1080
+ ],
+ "place": "Z3 (vila), pelotão completo a partir de s = 1625 m, 10 s",
+ "note": "measured with the frame limiter of the verifier (?cap=60): 60 means the 16.7 ms budget is met; the figure without a limiter depends on the machine and is given in the README. A frame time is the interval between the starts of two consecutive frames (the step the game animates with); cpuMs is the mean over the measurement",
+ "presets": {
+  "high": {
+   "frames": 600,
+   "seconds": 10,
+   "fps": 60,
+   "low1": 55.4,
+   "frameMsMean": 16.67,
+   "frameMsP99": 16.7,
+   "frameMsMax": 21.9,
+   "frameTime": "interval between the starts of consecutive frames",
+   "cpuMs": {
+    "sim": 0.15,
+    "render": 7.37
+   },
+   "draw": {
+    "calls": 887,
+    "triangles": 2623224,
+    "shadowCalls": 294
+   },
+   "endS": 1866,
+   "zoneAtEnd": 3,
+   "quality": "high",
+   "internal": [
+    1920,
+    1080
+   ],
+   "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "low": {
+   "frames": 600,
+   "seconds": 10,
+   "fps": 60,
+   "low1": 59.8,
+   "frameMsMean": 16.67,
+   "frameMsP99": 16.7,
+   "frameMsMax": 16.8,
+   "frameTime": "interval between the starts of consecutive frames",
+   "cpuMs": {
+    "sim": 0.15,
+    "render": 5.23
+   },
+   "draw": {
+    "calls": 718,
+    "triangles": 1948625,
+    "shadowCalls": 236
+   },
+   "endS": 1866,
+   "zoneAtEnd": 3,
+   "quality": "low",
+   "internal": [
+    1344,
+    756
+   ],
+   "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  }
+ },
+ "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+ "cpu": "AMD Ryzen 7 5700G with Radeon Graphics (16 threads)",
+ "browser": "chrome 150.0.7871.127",
+ "os": "Windows_NT 10.0.26300 x64",
+ "environment": {
+  "date": "2026-11-18T04:46:42.623Z",
+  "browser": "chrome 150.0.7871.127",
+  "os": "Windows_NT 10.0.26300 x64",
+  "cpu": "AMD Ryzen 7 5700G with Radeon Graphics (16 threads)",
+  "memoryGB": 32,
+  "node": "v24.14.1",
+  "headless": true
+ }
+}

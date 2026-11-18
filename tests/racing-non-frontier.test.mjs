@@ -12,12 +12,13 @@ const source = 'gemini-3.8-v3.4';
 const site = null;
 
 test('Gemini 3.8 Flash V3.4 moves to Non-frontier, without deleting its archived source', () => {
-  assert.deepEqual(runs.non_frontier_runs, [source]);
+  assert.deepEqual(runs.non_frontier_runs, [source, 'sonnet-5.5-v3.4']);
   assert.ok(!runs.current_arena.includes(source));
+  assert.ok(!runs.current_arena.includes('sonnet-5.5-v3.4'));
   assert.equal(runs.current_arena.length, 6);
   assert.deepEqual(runs.current_arena, [
     'gpt-6.1-sol-v3.4','gpt-6-astra-v3.4','opus-5.5-v3.4',
-    'gemini-4-argon-v3.4','sonnet-5.5-v3.4','gemini-4-hydrogen-v3.4'
+    'gemini-4-argon-v3.4','fable-5.2-v3.4.1','gemini-4-hydrogen-v3.4'
   ]);
   const gemini = runs.runs.find(r => r.id === source);
   assert.equal(gemini.role, 'non-frontier-run');
@@ -50,12 +51,19 @@ test('both languages place the V3.4 Gemini only below the current Racing listing
     for (const [symbol, model] of [
       ['\u2600\ufe0f', 'GPT-6.1 Sol'], ['\u2726', 'GPT-6 Astra'],
       ['\u266c', 'Opus 5.5'], ['\u25c8', 'Gemini 4 Argon'],
-      ['\u2727', 'Sonnet 5.5'], ['\u2b21', 'Gemini 4 Hydrogen'],
+      ['\u2727', 'Fable 5.2 (V3.4.1)'], ['\u2b21', 'Gemini 4 Hydrogen'],
     ]) assert.ok(current.includes(symbol + ' **' + model + '**'), file + ': ' + model);
     const otherHeading=pt?'Racing não frontier':'Non-frontier Racing';
     const sectionStart=content.lastIndexOf(otherHeading);
     assert.ok(sectionStart>end,file+' Non-frontier section follows active table');
-    const nonfrontier=content.slice(sectionStart);
+    const nonfrontier=content.slice(sectionStart).split(/\n\n## /)[0];
+    assert.doesNotMatch(content, /## (?:Superseded Racing|Racing substitu)/);
+    assert.ok(!current.includes('Sonnet 5.5'));
+    const sonnetRow=nonfrontier.split('\n').find(line => line.includes('**Sonnet 5.5**'));
+    assert.ok(sonnetRow, file + ' Sonnet must be in the same table');
+    assert.ok(sonnetRow.includes(pt ? ' | Não frontier | ' : ' | Non-frontier | '));
+    assert.ok(sonnetRow.includes('https://racing-sonnet-5.5.biel.dev.br/'));
+    assert.ok(sonnetRow.includes('sonnet-5.5-v3.4/source/'));
     assert.ok(nonfrontier.includes('**Gemini 3.8 Flash**'));
     assert.ok(nonfrontier.includes(' | Deleted | '));
     assert.ok(nonfrontier.includes(pt?'Não frontier':'Non-frontier'));

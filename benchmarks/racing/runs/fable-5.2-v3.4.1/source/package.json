@@ -1,0 +1,19 @@
+{
+  "name": "costa-do-sol-racing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Racing-bench V3.4.1 entry: single-circuit coastal sunset racing game for the desktop browser.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "verify": "node scripts/verify.mjs",
+    "validate": "node scripts/validate-world.mjs"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "playwright": "1.65.1"
+  }
+}
