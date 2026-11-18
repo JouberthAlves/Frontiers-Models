@@ -1,0 +1,923 @@
+{
+ "generatedBy": "npm run verify",
+ "resolution": [
+  1920,
+  1080
+ ],
+ "frameRate": "measured live at each place for 2 s with the frame limiter of the verifier (?cap=60), so that the figure is comparable between machines; a frame time is the interval between the starts of two consecutive frames",
+ "limits": {
+  "sky": ">= 10 % (depth buffer at the far plane, measured on the 3D frame)",
+  "mean": "0.25..0.75",
+  "std": ">= 0.12",
+  "bucket": "<= 30 % (4 bits per channel)"
+ },
+ "shots": {
+  "S1": {
+   "file": "s1-reta-orla.png",
+   "content": "Reta da orla em velocidade, sol à frente",
+   "preset": "Alta",
+   "hud": true,
+   "state": "racing",
+   "camera": {
+    "mode": "chase",
+    "position": [
+     -76.84,
+     5.01,
+     -0.79
+    ],
+    "fov": 71.6
+   },
+   "player": {
+    "s": 182.8,
+    "d": -0.03,
+    "kmh": 199,
+    "place": 5
+   },
+   "rivalsWithin60m": 4,
+   "skyFraction": 0.2934,
+   "skyRequired": true,
+   "skyExemption": null,
+   "luminanceMean": 0.4157,
+   "luminanceStd": 0.2751,
+   "dominantBucketShare": 0.1007,
+   "dominantBucket": [
+    2,
+    2,
+    2
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      2,
+      2,
+      2
+     ],
+     "share": 0.1007
+    },
+    {
+     "bucket": [
+      1,
+      1,
+      1
+     ],
+     "share": 0.0665
+    },
+    {
+     "bucket": [
+      3,
+      3,
+      3
+     ],
+     "share": 0.0391
+    }
+   ],
+   "photoExemption": null,
+   "fps": 60,
+   "fpsLow1": 59.5,
+   "frameCpuMs": {
+    "sim": 0.24,
+    "render": 5.97
+   },
+   "drawCalls": 777,
+   "compare": "compare/s1.png",
+   "references": [
+    "01-golden-hour-palmeiras.jpg",
+    "02-costa-praia-falesia.jpg"
+   ],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S2": {
+   "file": "s2-grid-3-4.png",
+   "content": "Carro no grid, 3/4 frontal baixa (sem HUD)",
+   "preset": "Alta",
+   "hud": false,
+   "state": "grid",
+   "camera": {
+    "position": [
+     144.4,
+     3.83,
+     -0.15
+    ],
+    "fov": 40,
+    "check": {
+     "terrain": 0.6000000000000001,
+     "barrier": 7.85,
+     "s": 3322.358072694925
+    }
+   },
+   "skyFraction": 0.3282,
+   "skyRequired": true,
+   "skyExemption": null,
+   "luminanceMean": 0.3559,
+   "luminanceStd": 0.2158,
+   "dominantBucketShare": 0.0979,
+   "dominantBucket": [
+    2,
+    2,
+    2
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      2,
+      2,
+      2
+     ],
+     "share": 0.0979
+    },
+    {
+     "bucket": [
+      2,
+      2,
+      3
+     ],
+     "share": 0.0601
+    },
+    {
+     "bucket": [
+      3,
+      3,
+      3
+     ],
+     "share": 0.044
+    }
+   ],
+   "photoExemption": null,
+   "fps": "não aplicável (captura estática)",
+   "fpsLow1": "não aplicável",
+   "frameCpuMs": null,
+   "drawCalls": null,
+   "compare": "compare/s2.png",
+   "references": [
+    "11-carro-pintura-vidro-rodas.jpg"
+   ],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S3": {
+   "file": "s3-praia-espuma.png",
+   "content": "Câmera baixa: areia molhada, espuma, rochas",
+   "preset": "Alta",
+   "hud": true,
+   "state": "racing",
+   "camera": {
+    "mode": "free (track space)",
+    "position": [
+     16,
+     1.12,
+     51
+    ],
+    "fov": 55
+   },
+   "player": {
+    "s": 159.2,
+    "d": 1.14,
+    "kmh": 208,
+    "place": 5
+   },
+   "rivalsWithin60m": 4,
+   "skyFraction": 0.4593,
+   "skyRequired": false,
+   "skyExemption": "close de praia e rochas (isenção de céu prevista no teste 7)",
+   "luminanceMean": 0.5971,
+   "luminanceStd": 0.1777,
+   "dominantBucketShare": 0.0298,
+   "dominantBucket": [
+    8,
+    9,
+    10
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      8,
+      9,
+      10
+     ],
+     "share": 0.0298
+    },
+    {
+     "bucket": [
+      9,
+      10,
+      11
+     ],
+     "share": 0.0293
+    },
+    {
+     "bucket": [
+      13,
+      12,
+      11
+     ],
+     "share": 0.0216
+    }
+   ],
+   "photoExemption": null,
+   "fps": 60,
+   "fpsLow1": 59.9,
+   "frameCpuMs": {
+    "sim": 0.15,
+    "render": 3.24
+   },
+   "drawCalls": 198,
+   "compare": "compare/s3.png",
+   "references": [
+    "02-costa-praia-falesia.jpg",
+    "04-agua-margem-pedras.jpg"
+   ],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S4": {
+   "file": "s4-falesia-mirante.png",
+   "content": "Serpentina com o mar abaixo",
+   "preset": "Alta",
+   "hud": true,
+   "state": "racing",
+   "camera": {
+    "mode": "free (track space)",
+    "position": [
+     -136.3,
+     48.12,
+     -262.03
+    ],
+    "fov": 62
+   },
+   "player": {
+    "s": 879.1,
+    "d": 1.62,
+    "kmh": 78,
+    "place": 5
+   },
+   "rivalsWithin60m": 4,
+   "skyFraction": 0.2685,
+   "skyRequired": true,
+   "skyExemption": null,
+   "luminanceMean": 0.369,
+   "luminanceStd": 0.2322,
+   "dominantBucketShare": 0.0821,
+   "dominantBucket": [
+    3,
+    3,
+    3
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      3,
+      3,
+      3
+     ],
+     "share": 0.0821
+    },
+    {
+     "bucket": [
+      2,
+      2,
+      2
+     ],
+     "share": 0.0616
+    },
+    {
+     "bucket": [
+      3,
+      2,
+      2
+     ],
+     "share": 0.0537
+    }
+   ],
+   "photoExemption": null,
+   "fps": 60,
+   "fpsLow1": 54.3,
+   "frameCpuMs": {
+    "sim": 0.26,
+    "render": 7.24
+   },
+   "drawCalls": 737,
+   "compare": "compare/s4.png",
+   "references": [
+    "02-costa-praia-falesia.jpg"
+   ],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S5": {
+   "file": "s5-vila-rua.png",
+   "content": "Rua da vila com o marco visível",
+   "preset": "Alta",
+   "hud": true,
+   "state": "racing",
+   "camera": {
+    "mode": "chase",
+    "position": [
+     -331.28,
+     65.77,
+     -598.64
+    ],
+    "fov": 63.9
+   },
+   "player": {
+    "s": 1751,
+    "d": 1.78,
+    "kmh": 92,
+    "place": 5
+   },
+   "rivalsWithin60m": 4,
+   "skyFraction": 0.1493,
+   "skyRequired": true,
+   "skyExemption": null,
+   "luminanceMean": 0.3964,
+   "luminanceStd": 0.2252,
+   "dominantBucketShare": 0.0573,
+   "dominantBucket": [
+    3,
+    3,
+    4
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      3,
+      3,
+      4
+     ],
+     "share": 0.0573
+    },
+    {
+     "bucket": [
+      5,
+      6,
+      7
+     ],
+     "share": 0.0451
+    },
+    {
+     "bucket": [
+      4,
+      4,
+      5
+     ],
+     "share": 0.039
+    }
+   ],
+   "photoExemption": null,
+   "fps": 60,
+   "fpsLow1": 59.5,
+   "frameCpuMs": {
+    "sim": 0.29,
+    "render": 8.68
+   },
+   "drawCalls": 963,
+   "compare": "compare/s5.png",
+   "references": [
+    "05-vila-igreja-densidade.jpg",
+    "06-vila-pedra-disputa.jpg",
+    "07-vila-paredes-velocidade.jpg"
+   ],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S6": {
+   "file": "s6-bosque-luz.png",
+   "content": "Bosque com sol rasante",
+   "preset": "Alta",
+   "hud": true,
+   "state": "racing",
+   "camera": {
+    "mode": "chase",
+    "position": [
+     410.4,
+     18.64,
+     -323.33
+    ],
+    "fov": 67.3
+   },
+   "player": {
+    "s": 2796.7,
+    "d": 1.11,
+    "kmh": 133,
+    "place": 5
+   },
+   "rivalsWithin60m": 4,
+   "skyFraction": 0.2326,
+   "skyRequired": true,
+   "skyExemption": null,
+   "luminanceMean": 0.4046,
+   "luminanceStd": 0.2525,
+   "dominantBucketShare": 0.0752,
+   "dominantBucket": [
+    3,
+    3,
+    3
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      3,
+      3,
+      3
+     ],
+     "share": 0.0752
+    },
+    {
+     "bucket": [
+      4,
+      4,
+      4
+     ],
+     "share": 0.0608
+    },
+    {
+     "bucket": [
+      2,
+      2,
+      2
+     ],
+     "share": 0.0463
+    }
+   ],
+   "photoExemption": null,
+   "fps": 60,
+   "fpsLow1": 59.9,
+   "frameCpuMs": {
+    "sim": 0.24,
+    "render": 7.48
+   },
+   "drawCalls": 725,
+   "compare": "compare/s6.png",
+   "references": [
+    "08-vegetacao-densa.jpg",
+    "10-luz-rasante-floresta.jpg"
+   ],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S7": {
+   "file": "s7-ponte-ou-tunel.png",
+   "content": "Entrada da ponte ligada ao terreno",
+   "preset": "Alta",
+   "hud": true,
+   "state": "racing",
+   "camera": {
+    "mode": "free (track space)",
+    "position": [
+     385.19,
+     19.67,
+     -201.99
+    ],
+    "fov": 55
+   },
+   "player": {
+    "s": 2957.7,
+    "d": 1.1,
+    "kmh": 144,
+    "place": 5
+   },
+   "rivalsWithin60m": 4,
+   "skyFraction": 0.3204,
+   "skyRequired": true,
+   "skyExemption": null,
+   "luminanceMean": 0.4979,
+   "luminanceStd": 0.2433,
+   "dominantBucketShare": 0.0337,
+   "dominantBucket": [
+    6,
+    5,
+    4
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      6,
+      5,
+      4
+     ],
+     "share": 0.0337
+    },
+    {
+     "bucket": [
+      4,
+      4,
+      3
+     ],
+     "share": 0.0301
+    },
+    {
+     "bucket": [
+      5,
+      5,
+      4
+     ],
+     "share": 0.028
+    }
+   ],
+   "photoExemption": null,
+   "fps": 60,
+   "fpsLow1": 59.9,
+   "frameCpuMs": {
+    "sim": 0.17,
+    "render": 5.41
+   },
+   "drawCalls": 603,
+   "compare": "compare/s7.png",
+   "references": [
+    "14-ponte-terreno.jpg"
+   ],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S8": {
+   "file": "s8-disputa.png",
+   "content": "Jogador lado a lado com 2+ IAs",
+   "preset": "Alta",
+   "hud": true,
+   "state": "racing",
+   "camera": {
+    "mode": "chase",
+    "position": [
+     -145.73,
+     5.01,
+     -0.18
+    ],
+    "fov": 71.2
+   },
+   "player": {
+    "s": 251.7,
+    "d": -0.24,
+    "kmh": 190,
+    "place": 5
+   },
+   "rivalsWithin60m": 5,
+   "skyFraction": 0.2879,
+   "skyRequired": true,
+   "skyExemption": null,
+   "luminanceMean": 0.4054,
+   "luminanceStd": 0.2831,
+   "dominantBucketShare": 0.103,
+   "dominantBucket": [
+    2,
+    2,
+    2
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      2,
+      2,
+      2
+     ],
+     "share": 0.103
+    },
+    {
+     "bucket": [
+      1,
+      1,
+      1
+     ],
+     "share": 0.0603
+    },
+    {
+     "bucket": [
+      3,
+      3,
+      3
+     ],
+     "share": 0.0414
+    }
+   ],
+   "photoExemption": null,
+   "fps": 60,
+   "fpsLow1": 58.1,
+   "frameCpuMs": {
+    "sim": 0.27,
+    "render": 5.73
+   },
+   "drawCalls": 589,
+   "compare": "compare/s8.png",
+   "references": [
+    "09-vegetacao-curva-disputa.jpg",
+    "13-pelotao-ia-lado-a-lado.jpg"
+   ],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S9": {
+   "file": "s9-close-pista.png",
+   "content": "Close de asfalto, zebra e guardrail",
+   "preset": "Alta",
+   "hud": true,
+   "state": "racing",
+   "camera": {
+    "mode": "free (track space)",
+    "position": [
+     -404.74,
+     20.28,
+     -141.76
+    ],
+    "fov": 44
+   },
+   "player": {
+    "s": 523.2,
+    "d": 1.08,
+    "kmh": 72,
+    "place": 5
+   },
+   "rivalsWithin60m": 4,
+   "skyFraction": 0.2091,
+   "skyRequired": false,
+   "skyExemption": "close de pista e zebra (isenção de céu prevista no teste 7)",
+   "luminanceMean": 0.2819,
+   "luminanceStd": 0.1761,
+   "dominantBucketShare": 0.0696,
+   "dominantBucket": [
+    2,
+    2,
+    3
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      2,
+      2,
+      3
+     ],
+     "share": 0.0696
+    },
+    {
+     "bucket": [
+      3,
+      3,
+      4
+     ],
+     "share": 0.052
+    },
+    {
+     "bucket": [
+      1,
+      1,
+      1
+     ],
+     "share": 0.0513
+    }
+   ],
+   "photoExemption": null,
+   "fps": 60,
+   "fpsLow1": 59.9,
+   "frameCpuMs": {
+    "sim": 0.19,
+    "render": 6.51
+   },
+   "drawCalls": 748,
+   "compare": "compare/s9.png",
+   "references": [],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S11": {
+   "file": "s11-escala.png",
+   "content": "Carro parado ao lado de uma casa com porta",
+   "preset": "Alta",
+   "hud": false,
+   "state": "racing",
+   "camera": {
+    "mode": "free (track space)",
+    "position": [
+     -367.62,
+     65.38,
+     -602.84
+    ],
+    "fov": 40
+   },
+   "player": {
+    "s": 1710,
+    "d": 7.95,
+    "kmh": 0,
+    "place": 2
+   },
+   "rivalsWithin60m": 0,
+   "skyFraction": 0.0164,
+   "skyRequired": false,
+   "skyExemption": "inspeção estática de escala (isenção de céu prevista no teste 7)",
+   "luminanceMean": 0.34,
+   "luminanceStd": 0.1398,
+   "dominantBucketShare": 0.0752,
+   "dominantBucket": [
+    8,
+    5,
+    5
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      8,
+      5,
+      5
+     ],
+     "share": 0.0752
+    },
+    {
+     "bucket": [
+      6,
+      5,
+      5
+     ],
+     "share": 0.0529
+    },
+    {
+     "bucket": [
+      5,
+      5,
+      6
+     ],
+     "share": 0.0507
+    }
+   ],
+   "photoExemption": null,
+   "fps": "não aplicável (captura estática)",
+   "fpsLow1": "não aplicável",
+   "frameCpuMs": null,
+   "drawCalls": null,
+   "compare": "compare/s11.png",
+   "references": [],
+   "referencesMissing": [],
+   "scale": {
+    "s": 1709.644868198603,
+    "line": 9.399140996036206,
+    "unit": 68,
+    "archetype": "townhouse",
+    "floors": 2
+   },
+   "pass": true,
+   "failures": []
+  },
+  "S12": {
+   "file": "s12-mapa.png",
+   "content": "Vista de cima da volta inteira",
+   "preset": "Alta",
+   "hud": false,
+   "state": "racing",
+   "camera": {
+    "mode": "top view",
+    "position": [
+     -12.48,
+     2054.11,
+     -299.82
+    ],
+    "fov": 24
+   },
+   "player": {
+    "s": 3317.3,
+    "d": 2.7,
+    "kmh": 0,
+    "place": 2
+   },
+   "rivalsWithin60m": 5,
+   "skyFraction": 0,
+   "skyRequired": false,
+   "skyExemption": "mapa aéreo de inspeção",
+   "luminanceMean": "não aplicável",
+   "luminanceStd": "não aplicável",
+   "dominantBucketShare": "não aplicável",
+   "dominantBucket": [
+    0,
+    3,
+    5
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      0,
+      3,
+      5
+     ],
+     "share": 0.1327
+    },
+    {
+     "bucket": [
+      0,
+      4,
+      5
+     ],
+     "share": 0.1034
+    },
+    {
+     "bucket": [
+      0,
+      3,
+      4
+     ],
+     "share": 0.055
+    }
+   ],
+   "photoExemption": "mapa de inspeção, não é imagem fotográfica (métricas de composição: não aplicável)",
+   "measuredRaw": {
+    "mean": 0.3005,
+    "std": 0.122,
+    "bucketShare": 0.1327
+   },
+   "fps": "não aplicável (captura estática)",
+   "fpsLow1": "não aplicável",
+   "frameCpuMs": null,
+   "drawCalls": null,
+   "compare": "compare/s12.png",
+   "references": [],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  },
+  "S10": {
+   "file": "s10-baixa-vila.png",
+   "content": "Posição de S5 no preset Baixa",
+   "preset": "Baixa",
+   "hud": true,
+   "state": "racing",
+   "camera": {
+    "mode": "chase",
+    "position": [
+     -331.28,
+     65.77,
+     -598.64
+    ],
+    "fov": 63.9
+   },
+   "player": {
+    "s": 1751,
+    "d": 1.78,
+    "kmh": 92,
+    "place": 5
+   },
+   "rivalsWithin60m": 4,
+   "skyFraction": 0.1492,
+   "skyRequired": true,
+   "skyExemption": null,
+   "luminanceMean": 0.4111,
+   "luminanceStd": 0.2186,
+   "dominantBucketShare": 0.0653,
+   "dominantBucket": [
+    3,
+    3,
+    4
+   ],
+   "topBuckets": [
+    {
+     "bucket": [
+      3,
+      3,
+      4
+     ],
+     "share": 0.0653
+    },
+    {
+     "bucket": [
+      4,
+      4,
+      5
+     ],
+     "share": 0.0474
+    },
+    {
+     "bucket": [
+      5,
+      6,
+      7
+     ],
+     "share": 0.0424
+    }
+   ],
+   "photoExemption": null,
+   "fps": 60,
+   "fpsLow1": 59.9,
+   "frameCpuMs": {
+    "sim": 0.34,
+    "render": 4.98
+   },
+   "drawCalls": 864,
+   "compare": "compare/s10.png",
+   "references": [],
+   "referencesMissing": [],
+   "pass": true,
+   "failures": []
+  }
+ },
+ "environment": {
+  "date": "2026-11-18T04:46:42.623Z",
+  "browser": "chrome 150.0.7871.127",
+  "os": "Windows_NT 10.0.26300 x64",
+  "cpu": "AMD Ryzen 7 5700G with Radeon Graphics (16 threads)",
+  "memoryGB": 32,
+  "node": "v24.14.1",
+  "headless": true
+ }
+}

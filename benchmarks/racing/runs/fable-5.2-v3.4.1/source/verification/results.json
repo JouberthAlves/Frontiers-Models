@@ -1,0 +1,1596 @@
+{
+ "command": "npm run verify",
+ "partial": false,
+ "environment": {
+  "date": "2026-11-18T04:46:42.623Z",
+  "browser": "chrome 150.0.7871.127",
+  "os": "Windows_NT 10.0.26300 x64",
+  "cpu": "AMD Ryzen 7 5700G with Radeon Graphics (16 threads)",
+  "memoryGB": 32,
+  "node": "v24.14.1",
+  "headless": true
+ },
+ "references": "found",
+ "pass": true,
+ "tests": [
+  {
+   "id": "T1",
+   "title": "Jornada: menu → carro → 3 voltas com 5 IAs → resultados → correr de novo",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "laps": 3,
+    "car": "hatch",
+    "colour": 2,
+    "timeScale": 8,
+    "audioAtStart": {
+     "ready": true,
+     "unlocked": true,
+     "ctx": "running",
+     "sampleRate": 48000,
+     "voices": 49,
+     "maxVoices": 86,
+     "started": 129,
+     "aiActive": 5,
+     "maxAiActive": 5,
+     "peak": 0.26148930191993713,
+     "limiterMinGain": 1,
+     "base": 45,
+     "engineBuffers": 12,
+     "buffers": 40,
+     "tap": true
+    },
+    "sceneAudit": {
+     "pass": true,
+     "failures": []
+    },
+    "race": {
+     "clock": 344.15,
+     "overtakes": 4,
+     "aiOvertakes": 3,
+     "results": [
+      {
+       "place": 1,
+       "name": "IA 1",
+       "isPlayer": false,
+       "car": "gt",
+       "livery": "rosso",
+       "time": 332.12499999986227,
+       "projected": false,
+       "best": 108.93333333325778,
+       "laps": 3,
+       "lapTimes": [
+        114.20000000003695,
+        108.93333333325778,
+        108.99166666656754
+       ]
+      },
+      {
+       "place": 2,
+       "name": "IA 3",
+       "isPlayer": false,
+       "car": "gt",
+       "livery": "branco",
+       "time": 332.2999999998621,
+       "projected": false,
+       "best": 108.87499999990098,
+       "laps": 3,
+       "lapTimes": [
+        114.40833333337045,
+        109.01666666659068,
+        108.87499999990098
+       ]
+      },
+      {
+       "place": 3,
+       "name": "IA 4",
+       "isPlayer": false,
+       "car": "hatch",
+       "livery": "verde",
+       "time": 340.0249999998551,
+       "projected": false,
+       "best": 111.04999999991698,
+       "laps": 3,
+       "lapTimes": [
+        117.45000000003954,
+        111.04999999991698,
+        111.52499999989857
+       ]
+      },
+      {
+       "place": 4,
+       "name": "IA 5",
+       "isPlayer": false,
+       "car": "gt",
+       "livery": "grafite",
+       "time": 340.1833333331883,
+       "projected": false,
+       "best": 111.13333333324962,
+       "laps": 3,
+       "lapTimes": [
+        117.80833333337316,
+        111.13333333324962,
+        111.2416666665655
+       ]
+      },
+      {
+       "place": 5,
+       "name": "Você",
+       "isPlayer": true,
+       "car": "hatch",
+       "livery": "amarelo",
+       "time": 340.59166666652123,
+       "projected": false,
+       "best": 111.11666666658246,
+       "laps": 3,
+       "lapTimes": [
+        118.1083333333734,
+        111.11666666658246,
+        111.36666666656538
+       ]
+      },
+      {
+       "place": 6,
+       "name": "IA 2",
+       "isPlayer": false,
+       "car": "hatch",
+       "livery": "azul",
+       "time": 347.97984270024654,
+       "projected": true,
+       "best": 112.89166666657559,
+       "laps": 2,
+       "lapTimes": [
+        121.19166666670918,
+        112.89166666657559
+       ]
+      }
+     ],
+     "entries": [
+      {
+       "index": 0,
+       "name": "IA 1",
+       "player": false,
+       "place": 1,
+       "lapsDone": 3,
+       "cpNext": 6,
+       "best": 108.93333333325778,
+       "lapTimes": [
+        114.20000000003695,
+        108.93333333325778,
+        108.99166666656754
+       ],
+       "finished": true,
+       "finishTime": 332.12499999986227,
+       "projected": false,
+       "maxStuck": 0.21,
+       "maxOff": 0,
+       "progress": 10609.1
+      },
+      {
+       "index": 1,
+       "name": "IA 2",
+       "player": false,
+       "place": 6,
+       "lapsDone": 2,
+       "cpNext": 33,
+       "best": 112.89166666657559,
+       "lapTimes": [
+        121.19166666670918,
+        112.89166666657559
+       ],
+       "finished": false,
+       "finishTime": 347.97984270024654,
+       "projected": true,
+       "maxStuck": 0.18,
+       "maxOff": 0,
+       "progress": 9986.4
+      },
+      {
+       "index": 2,
+       "name": "IA 3",
+       "player": false,
+       "place": 2,
+       "lapsDone": 3,
+       "cpNext": 5,
+       "best": 108.87499999990098,
+       "lapTimes": [
+        114.40833333337045,
+        109.01666666659068,
+        108.87499999990098
+       ],
+       "finished": true,
+       "finishTime": 332.2999999998621,
+       "projected": false,
+       "maxStuck": 0.17,
+       "maxOff": 0,
+       "progress": 10592.5
+      },
+      {
+       "index": 3,
+       "name": "IA 4",
+       "player": false,
+       "place": 3,
+       "lapsDone": 3,
+       "cpNext": 2,
+       "best": 111.04999999991698,
+       "lapTimes": [
+        117.45000000003954,
+        111.04999999991698,
+        111.52499999989857
+       ],
+       "finished": true,
+       "finishTime": 340.0249999998551,
+       "projected": false,
+       "maxStuck": 0.21,
+       "maxOff": 0,
+       "progress": 10282.8
+      },
+      {
+       "index": 4,
+       "name": "IA 5",
+       "player": false,
+       "place": 4,
+       "lapsDone": 3,
+       "cpNext": 2,
+       "best": 111.13333333324962,
+       "lapTimes": [
+        117.80833333337316,
+        111.13333333324962,
+        111.2416666665655
+       ],
+       "finished": true,
+       "finishTime": 340.1833333331883,
+       "projected": false,
+       "maxStuck": 0.18,
+       "maxOff": 0,
+       "progress": 10282.7
+      },
+      {
+       "index": 5,
+       "name": "Você",
+       "player": true,
+       "place": 5,
+       "lapsDone": 3,
+       "cpNext": 2,
+       "best": 111.11666666658246,
+       "lapTimes": [
+        118.1083333333734,
+        111.11666666658246,
+        111.36666666656538
+       ],
+       "finished": true,
+       "finishTime": 340.59166666652123,
+       "projected": false,
+       "maxStuck": 0.15,
+       "maxOff": 0,
+       "progress": 10267.8
+      }
+     ]
+    },
+    "integrity": {
+     "underTerrain": 0,
+     "throughBarrier": 0,
+     "outOfWorld": 0,
+     "wheelFar": 0,
+     "cameraInside": 0
+    },
+    "cameraViolations": 0,
+    "resets": [],
+    "audio": {
+     "ready": true,
+     "unlocked": true,
+     "ctx": "running",
+     "sampleRate": 48000,
+     "voices": 47,
+     "maxVoices": 86,
+     "started": 283,
+     "aiActive": 2,
+     "maxAiActive": 5,
+     "peak": 0.44741931557655334,
+     "limiterMinGain": 1,
+     "base": 45,
+     "engineBuffers": 12,
+     "buffers": 40,
+     "tap": true
+    },
+    "playerLaps": [
+     118.11,
+     111.12,
+     111.37
+    ],
+    "bestLaps": [
+     {
+      "name": "IA 1",
+      "best": 108.93
+     },
+     {
+      "name": "IA 3",
+      "best": 108.87
+     },
+     {
+      "name": "IA 4",
+      "best": 111.05
+     },
+     {
+      "name": "IA 5",
+      "best": 111.13
+     },
+     {
+      "name": "Você",
+      "best": 111.12
+     },
+     {
+      "name": "IA 2",
+      "best": 112.89
+     }
+    ],
+    "raceAgain": {
+     "state": "racing",
+     "clock": 1.508,
+     "voices": 47
+    },
+    "console": []
+   },
+   "seconds": 87.1
+  },
+  {
+   "id": "T2",
+   "title": "Jornada com 6 voltas",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "laps": 6,
+    "car": "gt",
+    "colour": 4,
+    "timeScale": 8,
+    "audioAtStart": {
+     "ready": true,
+     "unlocked": true,
+     "ctx": "running",
+     "sampleRate": 48000,
+     "voices": 47,
+     "maxVoices": 82,
+     "started": 95,
+     "aiActive": 5,
+     "maxAiActive": 5,
+     "peak": 0.2652547061443329,
+     "limiterMinGain": 1,
+     "base": 45,
+     "engineBuffers": 10,
+     "buffers": 40,
+     "tap": true
+    },
+    "race": {
+     "clock": 665.492,
+     "overtakes": 6,
+     "aiOvertakes": 4,
+     "results": [
+      {
+       "place": 1,
+       "name": "IA 3",
+       "isPlayer": false,
+       "car": "hatch",
+       "livery": "amarelo",
+       "time": 641.399999999581,
+       "projected": false,
+       "best": 105.89999999990368,
+       "laps": 6,
+       "lapTimes": [
+        111.56666666670152,
+        105.90833333326502,
+        105.89999999990368,
+        105.92499999990366,
+        106.17499999990349,
+        105.92499999990366
+       ]
+      },
+      {
+       "place": 2,
+       "name": "IA 1",
+       "isPlayer": false,
+       "car": "hatch",
+       "livery": "rosso",
+       "time": 660.8999999995633,
+       "projected": false,
+       "best": 108.96666666656762,
+       "laps": 6,
+       "lapTimes": [
+        114.79166666670409,
+        109.64166666658946,
+        109.18333333323403,
+        108.98333333323421,
+        108.96666666656762,
+        109.3333333332339
+       ]
+      },
+      {
+       "place": 3,
+       "name": "IA 5",
+       "isPlayer": false,
+       "car": "hatch",
+       "livery": "grafite",
+       "time": 661.3833333328962,
+       "projected": false,
+       "best": 108.96666666656762,
+       "laps": 6,
+       "lapTimes": [
+        115.60000000003807,
+        109.08333333325525,
+        109.34166666656722,
+        109.01666666656752,
+        108.96666666656762,
+        109.37499999990052
+       ]
+      },
+      {
+       "place": 4,
+       "name": "Você",
+       "isPlayer": true,
+       "car": "gt",
+       "livery": "verde",
+       "time": 661.8249999995625,
+       "projected": false,
+       "best": 106.56666666658462,
+       "laps": 6,
+       "lapTimes": [
+        119.26666666670765,
+        106.56666666658462,
+        108.99999999990087,
+        108.63333333323453,
+        108.89999999990101,
+        109.45833333323378
+       ]
+      },
+      {
+       "place": 5,
+       "name": "IA 2",
+       "isPlayer": false,
+       "car": "gt",
+       "livery": "azul",
+       "time": 684.29044168421,
+       "projected": true,
+       "best": 112.75833333323078,
+       "laps": 5,
+       "lapTimes": [
+        119.25833333337431,
+        112.90833333324554,
+        112.77499999989743,
+        112.75833333323078,
+        112.84999999989742
+       ]
+      },
+      {
+       "place": 6,
+       "name": "IA 4",
+       "isPlayer": false,
+       "car": "gt",
+       "livery": "branco",
+       "time": 684.5576555573599,
+       "projected": true,
+       "best": 112.32499999991077,
+       "laps": 5,
+       "lapTimes": [
+        120.40833333337523,
+        112.32499999991077,
+        112.53333333323098,
+        112.85833333323069,
+        112.75833333323084
+       ]
+      }
+     ],
+     "entries": [
+      {
+       "index": 0,
+       "name": "IA 1",
+       "player": false,
+       "place": 2,
+       "lapsDone": 6,
+       "cpNext": 3,
+       "best": 108.96666666656762,
+       "lapTimes": [
+        114.79166666670409,
+        109.64166666658946,
+        109.18333333323403,
+        108.98333333323421,
+        108.96666666656762,
+        109.3333333332339
+       ],
+       "finished": true,
+       "finishTime": 660.8999999995633,
+       "projected": false,
+       "maxStuck": 0.19,
+       "maxOff": 0,
+       "progress": 20410.6
+      },
+      {
+       "index": 1,
+       "name": "IA 2",
+       "player": false,
+       "place": 5,
+       "lapsDone": 5,
+       "cpNext": 29,
+       "best": 112.75833333323078,
+       "lapTimes": [
+        119.25833333337431,
+        112.90833333324554,
+        112.77499999989743,
+        112.75833333323078,
+        112.84999999989742
+       ],
+       "finished": false,
+       "finishTime": 684.29044168421,
+       "projected": true,
+       "maxStuck": 0.21,
+       "maxOff": 0,
+       "progress": 19649.1
+      },
+      {
+       "index": 2,
+       "name": "IA 3",
+       "player": false,
+       "place": 1,
+       "lapsDone": 6,
+       "cpNext": 9,
+       "best": 105.89999999990368,
+       "lapTimes": [
+        111.56666666670152,
+        105.90833333326502,
+        105.89999999990368,
+        105.92499999990366,
+        106.17499999990349,
+        105.92499999990366
+       ],
+       "finished": true,
+       "finishTime": 641.399999999581,
+       "projected": false,
+       "maxStuck": 0.16,
+       "maxOff": 0,
+       "progress": 21026.7
+      },
+      {
+       "index": 3,
+       "name": "IA 4",
+       "player": false,
+       "place": 6,
+       "lapsDone": 5,
+       "cpNext": 29,
+       "best": 112.32499999991077,
+       "lapTimes": [
+        120.40833333337523,
+        112.32499999991077,
+        112.53333333323098,
+        112.85833333323069,
+        112.75833333323084
+       ],
+       "finished": false,
+       "finishTime": 684.5576555573599,
+       "projected": true,
+       "maxStuck": 0.22,
+       "maxOff": 0,
+       "progress": 19640.9
+      },
+      {
+       "index": 4,
+       "name": "IA 5",
+       "player": false,
+       "place": 3,
+       "lapsDone": 6,
+       "cpNext": 2,
+       "best": 108.96666666656762,
+       "lapTimes": [
+        115.60000000003807,
+        109.08333333325525,
+        109.34166666656722,
+        109.01666666656752,
+        108.96666666656762,
+        109.37499999990052
+       ],
+       "finished": true,
+       "finishTime": 661.3833333328962,
+       "projected": false,
+       "maxStuck": 0.17,
+       "maxOff": 0,
+       "progress": 20393.1
+      },
+      {
+       "index": 5,
+       "name": "Você",
+       "player": true,
+       "place": 4,
+       "lapsDone": 6,
+       "cpNext": 2,
+       "best": 106.56666666658462,
+       "lapTimes": [
+        119.26666666670765,
+        106.56666666658462,
+        108.99999999990087,
+        108.63333333323453,
+        108.89999999990101,
+        109.45833333323378
+       ],
+       "finished": true,
+       "finishTime": 661.8249999995625,
+       "projected": false,
+       "maxStuck": 0.17,
+       "maxOff": 0,
+       "progress": 20372.7
+      }
+     ]
+    },
+    "integrity": {
+     "underTerrain": 0,
+     "throughBarrier": 0,
+     "outOfWorld": 0,
+     "wheelFar": 0,
+     "cameraInside": 0
+    },
+    "cameraViolations": 0,
+    "resets": [],
+    "audio": {
+     "ready": true,
+     "unlocked": true,
+     "ctx": "running",
+     "sampleRate": 48000,
+     "voices": 45,
+     "maxVoices": 82,
+     "started": 317,
+     "aiActive": 2,
+     "maxAiActive": 5,
+     "peak": 0.4564051628112793,
+     "limiterMinGain": 1,
+     "base": 45,
+     "engineBuffers": 10,
+     "buffers": 40,
+     "tap": true
+    },
+    "playerLaps": [
+     119.27,
+     106.57,
+     109,
+     108.63,
+     108.9,
+     109.46
+    ],
+    "bestLaps": [
+     {
+      "name": "IA 3",
+      "best": 105.9
+     },
+     {
+      "name": "IA 1",
+      "best": 108.97
+     },
+     {
+      "name": "IA 5",
+      "best": 108.97
+     },
+     {
+      "name": "Você",
+      "best": 106.57
+     },
+     {
+      "name": "IA 2",
+      "best": 112.76
+     },
+     {
+      "name": "IA 4",
+      "best": 112.32
+     }
+    ],
+    "raceAgain": {
+     "state": "racing",
+     "clock": 1.508,
+     "voices": 45
+    },
+    "console": []
+   },
+   "seconds": 121.7
+  },
+  {
+   "id": "T5",
+   "title": "IA: nenhuma parada ou fora da pista por mais de 5 s; ao menos 1 ultrapassagem entre IAs",
+   "pass": true,
+   "failures": [],
+   "details": [
+    {
+     "race": "3 voltas",
+     "rivals": [
+      {
+       "name": "IA 1",
+       "laps": 3,
+       "best": 108.93,
+       "longestStop": 0.21,
+       "longestOffTrack": 0
+      },
+      {
+       "name": "IA 2",
+       "laps": 2,
+       "best": 112.89,
+       "longestStop": 0.18,
+       "longestOffTrack": 0
+      },
+      {
+       "name": "IA 3",
+       "laps": 3,
+       "best": 108.87,
+       "longestStop": 0.17,
+       "longestOffTrack": 0
+      },
+      {
+       "name": "IA 4",
+       "laps": 3,
+       "best": 111.05,
+       "longestStop": 0.21,
+       "longestOffTrack": 0
+      },
+      {
+       "name": "IA 5",
+       "laps": 3,
+       "best": 111.13,
+       "longestStop": 0.18,
+       "longestOffTrack": 0
+      }
+     ],
+     "overtakes": 4,
+     "overtakesBetweenRivals": 3,
+     "resets": []
+    },
+    {
+     "race": "6 voltas",
+     "rivals": [
+      {
+       "name": "IA 1",
+       "laps": 6,
+       "best": 108.97,
+       "longestStop": 0.19,
+       "longestOffTrack": 0
+      },
+      {
+       "name": "IA 2",
+       "laps": 5,
+       "best": 112.76,
+       "longestStop": 0.21,
+       "longestOffTrack": 0
+      },
+      {
+       "name": "IA 3",
+       "laps": 6,
+       "best": 105.9,
+       "longestStop": 0.16,
+       "longestOffTrack": 0
+      },
+      {
+       "name": "IA 4",
+       "laps": 5,
+       "best": 112.32,
+       "longestStop": 0.22,
+       "longestOffTrack": 0
+      },
+      {
+       "name": "IA 5",
+       "laps": 6,
+       "best": 108.97,
+       "longestStop": 0.17,
+       "longestOffTrack": 0
+      }
+     ],
+     "overtakes": 6,
+     "overtakesBetweenRivals": 4,
+     "resets": []
+    }
+   ],
+   "seconds": 0
+  },
+  {
+   "id": "T6",
+   "title": "Integridade: validateWorld sem erros; zero eventos nas corridas; câmera nunca dentro de geometria",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "validateWorld": {
+     "ok": true,
+     "errors": []
+    },
+    "races": [
+     {
+      "race": "3 voltas",
+      "counters": {
+       "underTerrain": 0,
+       "throughBarrier": 0,
+       "outOfWorld": 0,
+       "wheelFar": 0,
+       "cameraInside": 0
+      },
+      "cameraFramesInsideGeometry": 0,
+      "resetsLogged": []
+     },
+     {
+      "race": "6 voltas",
+      "counters": {
+       "underTerrain": 0,
+       "throughBarrier": 0,
+       "outOfWorld": 0,
+       "wheelFar": 0,
+       "cameraInside": 0
+      },
+      "cameraFramesInsideGeometry": 0,
+      "resetsLogged": []
+     }
+    ]
+   },
+   "seconds": 0
+  },
+  {
+   "id": "T8",
+   "title": "Auditoria da cena lida em runtime (scene-stats.json)",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "file": "scene-stats.json",
+    "cars": [
+     {
+      "model": "gt",
+      "trianglesLod0": 262806,
+      "materials": 12
+     },
+     {
+      "model": "hatch",
+      "trianglesLod0": 270225,
+      "materials": 12
+     }
+    ],
+    "buildings": {
+     "units": 159,
+     "trianglesMin": 450,
+     "trianglesMean": 2123,
+     "trianglesMax": 4568,
+     "materialsMin": 9,
+     "materialsMax": 15,
+     "simplest": [
+      {
+       "id": 1979,
+       "type": "kiosk",
+       "archetype": "kiosk",
+       "floors": 1,
+       "triangles": 450,
+       "materials": 10,
+       "footprint": [
+        6.8,
+        5.2
+       ]
+      },
+      {
+       "id": 1972,
+       "type": "kiosk",
+       "archetype": "kiosk",
+       "floors": 1,
+       "triangles": 534,
+       "materials": 10,
+       "footprint": [
+        6.8,
+        5.2
+       ]
+      },
+      {
+       "id": 1968,
+       "type": "kiosk",
+       "archetype": "kiosk",
+       "floors": 1,
+       "triangles": 574,
+       "materials": 10,
+       "footprint": [
+        6.8,
+        5.2
+       ]
+      }
+     ]
+    },
+    "prototypes": 120,
+    "flatColourFlagged": 0,
+    "texturesFlagged": 0,
+    "counts": {
+     "objects": 20243,
+     "uniqueIds": 20243,
+     "byKind": {
+      "house": 160,
+      "prop": 947,
+      "tree": 1914,
+      "shrub": 3478,
+      "rock": 1609,
+      "ground": 12135
+     },
+     "houses": 154,
+     "houseVariations": 9,
+     "treeSpecies": 5,
+     "shrubTypes": 5,
+     "groundCoverTypes": 5,
+     "propsPer100mMin": 14,
+     "scatter": {
+      "instances": 21773,
+      "meshes": 5414,
+      "mergedVertices": 3130923,
+      "mergedMeshes": 2506,
+      "instancedMeshes": 2908,
+      "shadowProxies": 311,
+      "shadowVertices": 1480487
+     },
+     "sceneMeshes": {
+      "meshes": 1170,
+      "triangles": 3560705
+     }
+    },
+    "engineAudio": true
+   },
+   "seconds": 0
+  },
+  {
+   "id": "T3",
+   "title": "Pausa/continuar, reiniciar no meio, voltar ao menu: sem estado antigo, sem áudio duplicado, heap estável",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "restarts": [
+     {
+      "k": 1,
+      "voices": 45,
+      "heap": 724612479
+     },
+     {
+      "k": 2,
+      "voices": 45,
+      "heap": 724690907
+     },
+     {
+      "k": 3,
+      "voices": 45,
+      "heap": 724789783
+     }
+    ],
+    "pause": {
+     "paused": true,
+     "screen": "pause",
+     "stepsWhilePaused": 0
+    },
+    "baseline": {
+     "voices": 45,
+     "heap": 724313663
+    },
+    "heapGrowthMB": 0.45,
+    "voices": {
+     "before": 45,
+     "afterRestarts": [
+      45,
+      45,
+      45
+     ],
+     "permanent": 45
+    },
+    "menu": {
+     "screen": "menu",
+     "phase": "idle",
+     "hud": false
+    },
+    "afterMenu": {
+     "voices": 45,
+     "heap": 724864564
+    },
+    "console": []
+   },
+   "seconds": 75
+  },
+  {
+   "id": "T4",
+   "title": "Anticorte: cortar a pista não conta volta",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "checkpoints": 34,
+    "steps": [
+     {
+      "label": "drove 420 m from the grid",
+      "s": 420.1,
+      "lapsDone": 0,
+      "cpNext": 5,
+      "progress": 420.1,
+      "place": 3
+     },
+     {
+      "label": "teleported to 60 m before the line and crossed it",
+      "s": 20,
+      "lapsDone": 0,
+      "cpNext": 5,
+      "progress": 396.1,
+      "place": 6
+     },
+     {
+      "label": "crossed the line a second time",
+      "s": 15.2,
+      "lapsDone": 0,
+      "cpNext": 5,
+      "progress": 396.1,
+      "place": 6
+     },
+     {
+      "label": "skipped from the cliff road to the bridge and crossed the line",
+      "s": 15.4,
+      "lapsDone": 0,
+      "cpNext": 5,
+      "progress": 396.1,
+      "place": 6
+     },
+     {
+      "label": "returned to the missed checkpoint and completed the lap",
+      "s": 0.2,
+      "lapsDone": 1,
+      "cpNext": 1,
+      "progress": 3367,
+      "place": 6
+     }
+    ],
+    "cutCounted": false,
+    "cpKept": true,
+    "backForthCounted": false,
+    "skipCounted": false,
+    "honestCounted": true,
+    "state": "results"
+   },
+   "seconds": 13.3
+  },
+  {
+   "id": "T7",
+   "title": "Capturas S1–S12 (1920×1080) e sanidade de imagem",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "file": "image-metrics.json",
+    "shots": {
+     "S1": {
+      "sky": 0.2934,
+      "mean": 0.4157,
+      "std": 0.2751,
+      "bucket": 0.1007,
+      "fps": 60,
+      "pass": true
+     },
+     "S2": {
+      "sky": 0.3282,
+      "mean": 0.3559,
+      "std": 0.2158,
+      "bucket": 0.0979,
+      "fps": "não aplicável (captura estática)",
+      "pass": true
+     },
+     "S3": {
+      "sky": 0.4593,
+      "mean": 0.5971,
+      "std": 0.1777,
+      "bucket": 0.0298,
+      "fps": 60,
+      "pass": true
+     },
+     "S4": {
+      "sky": 0.2685,
+      "mean": 0.369,
+      "std": 0.2322,
+      "bucket": 0.0821,
+      "fps": 60,
+      "pass": true
+     },
+     "S5": {
+      "sky": 0.1493,
+      "mean": 0.3964,
+      "std": 0.2252,
+      "bucket": 0.0573,
+      "fps": 60,
+      "pass": true
+     },
+     "S6": {
+      "sky": 0.2326,
+      "mean": 0.4046,
+      "std": 0.2525,
+      "bucket": 0.0752,
+      "fps": 60,
+      "pass": true
+     },
+     "S7": {
+      "sky": 0.3204,
+      "mean": 0.4979,
+      "std": 0.2433,
+      "bucket": 0.0337,
+      "fps": 60,
+      "pass": true
+     },
+     "S8": {
+      "sky": 0.2879,
+      "mean": 0.4054,
+      "std": 0.2831,
+      "bucket": 0.103,
+      "fps": 60,
+      "pass": true
+     },
+     "S9": {
+      "sky": 0.2091,
+      "mean": 0.2819,
+      "std": 0.1761,
+      "bucket": 0.0696,
+      "fps": 60,
+      "pass": true
+     },
+     "S11": {
+      "sky": 0.0164,
+      "mean": 0.34,
+      "std": 0.1398,
+      "bucket": 0.0752,
+      "fps": "não aplicável (captura estática)",
+      "pass": true
+     },
+     "S12": {
+      "sky": 0,
+      "mean": "não aplicável",
+      "std": "não aplicável",
+      "bucket": "não aplicável",
+      "fps": "não aplicável (captura estática)",
+      "pass": true
+     },
+     "S10": {
+      "sky": 0.1492,
+      "mean": 0.4111,
+      "std": 0.2186,
+      "bucket": 0.0653,
+      "fps": 60,
+      "pass": true
+     }
+    }
+   },
+   "seconds": 60.7
+  },
+  {
+   "id": "T9",
+   "title": "Varredura de câmera a cada 25 m (Alta): métricas fotográficas em todos os pontos",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "preset": "Alta",
+    "step": 25,
+    "points": 135,
+    "viewport": [
+     640,
+     360
+    ],
+    "camera": "chase (same camera as the game), player at 28 m/s on the centre line, rivals removed from the frame",
+    "tunnel": "none on this circuit (the crossing of the inlet is an open bridge): no point is exempt from the sky rule",
+    "skyMin": 0.1236,
+    "meanMin": 0.2816,
+    "meanMax": 0.5597,
+    "stdMin": 0.1737,
+    "bucketMax": 0.2693,
+    "failing": 0
+   },
+   "seconds": 29.3
+  },
+  {
+   "id": "T9b",
+   "title": "Varredura de câmera a cada 25 m (Baixa)",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "preset": "Baixa",
+    "step": 25,
+    "points": 135,
+    "viewport": [
+     640,
+     360
+    ],
+    "camera": "chase (same camera as the game), player at 28 m/s on the centre line, rivals removed from the frame",
+    "tunnel": "none on this circuit (the crossing of the inlet is an open bridge): no point is exempt from the sky rule",
+    "skyMin": 0.1219,
+    "meanMin": 0.2843,
+    "meanMax": 0.5562,
+    "stdMin": 0.166,
+    "bucketMax": 0.2662,
+    "failing": 0
+   },
+   "seconds": 27.5
+  },
+  {
+   "id": "A1",
+   "title": "Vídeo da volta (volta.webm) e PCM do master após o limiter (audio-volta.wav)",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "video": {
+     "file": "volta.webm",
+     "bytes": 38869781,
+     "seconds": 126.7,
+     "mime": "video/webm;codecs=vp9,opus",
+     "width": 1280,
+     "height": 720,
+     "audio": true,
+     "preset": "Alta",
+     "camera": "perseguição",
+     "lap": 122.1750000000433
+    },
+    "audio": {
+     "file": "audio-volta.wav",
+     "method": "AudioWorklet tap on the master bus, after the limiter (no audio device involved)",
+     "sampleRate": 48000,
+     "channels": 2,
+     "bits": 16,
+     "seconds": 126.38,
+     "peak": 0.47998,
+     "peakDb": -6.38,
+     "rmsDb": -24.82,
+     "peakDbInPage": -6.38,
+     "limiterMinGain": 1,
+     "maxSimultaneousVoices": 47,
+     "maxRivalEnginesAudible": 5,
+     "recordedSeconds": 126.4,
+     "lapTime": 122.1750000000433,
+     "lapTimeText": "02:02.2",
+     "startsAt": "first beep of the countdown (3 s before the green light)",
+     "scripted": [
+      {
+       "what": "raspão na barreira",
+       "s": 150
+      },
+      {
+       "what": "derrapagem",
+       "s": 598
+      },
+      {
+       "what": "alívio para ser ultrapassado",
+       "s": 1010
+      }
+     ],
+     "instants": {
+      "gearChanges": [
+       "00:07.3",
+       "00:10.8",
+       "00:24.8",
+       "00:25.9",
+       "00:32.8",
+       "00:36.1",
+       "00:39.6",
+       "00:42.5",
+       "00:45.5",
+       "00:47.7",
+       "00:48.6",
+       "00:52.6",
+       "00:56.4",
+       "01:01.4",
+       "01:05.9",
+       "01:11.8",
+       "01:13.6",
+       "01:14.1",
+       "01:17.6",
+       "01:21.0",
+       "01:23.2",
+       "01:26.3",
+       "01:30.9",
+       "01:33.4",
+       "01:38.7",
+       "01:41.9",
+       "01:43.4",
+       "01:46.4",
+       "01:52.5",
+       "01:54.8",
+       "01:55.8",
+       "01:56.3",
+       "01:57.3",
+       "02:02.3"
+      ],
+      "skids": [
+       "00:13.9",
+       "00:28.5"
+      ],
+      "collisions": [
+       "00:13.5 (barreira, 5.4 m/s)"
+      ],
+      "bridge": [
+       "01:51.2–01:54.4"
+      ],
+      "passes": [
+       "01:27.7 (IA 2, ultrapassada pelo jogador)",
+       "02:05.7 (IA 4, ultrapassada pelo jogador)"
+      ]
+     },
+     "events": [
+      {
+       "t": 7.29,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 10.76,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 13.5,
+       "type": "collision",
+       "strength": 5.4,
+       "with": "wall"
+      },
+      {
+       "t": 13.91,
+       "type": "skid"
+      },
+      {
+       "t": 24.84,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 25.87,
+       "type": "gear",
+       "gear": 1
+      },
+      {
+       "t": 28.51,
+       "type": "skid"
+      },
+      {
+       "t": 32.82,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 36.11,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 39.57,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 42.52,
+       "type": "gear",
+       "gear": 1
+      },
+      {
+       "t": 45.46,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 47.67,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 48.61,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 52.56,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 56.38,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 61.42,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 65.91,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 71.84,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 73.61,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 74.1,
+       "type": "gear",
+       "gear": 1
+      },
+      {
+       "t": 77.64,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 81,
+       "type": "gear",
+       "gear": 1
+      },
+      {
+       "t": 83.23,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 86.32,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 87.72,
+       "type": "pass",
+       "rival": "IA 2",
+       "by": "player"
+      },
+      {
+       "t": 90.93,
+       "type": "gear",
+       "gear": 4
+      },
+      {
+       "t": 93.43,
+       "type": "gear",
+       "gear": 5
+      },
+      {
+       "t": 98.72,
+       "type": "gear",
+       "gear": 4
+      },
+      {
+       "t": 101.86,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 103.44,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 106.39,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 111.18,
+       "type": "bridge-in"
+      },
+      {
+       "t": 112.52,
+       "type": "gear",
+       "gear": 4
+      },
+      {
+       "t": 114.41,
+       "type": "bridge-out"
+      },
+      {
+       "t": 114.81,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 115.83,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 116.29,
+       "type": "gear",
+       "gear": 1
+      },
+      {
+       "t": 117.29,
+       "type": "gear",
+       "gear": 2
+      },
+      {
+       "t": 122.32,
+       "type": "gear",
+       "gear": 3
+      },
+      {
+       "t": 125.66,
+       "type": "pass",
+       "rival": "IA 4",
+       "by": "player"
+      }
+     ]
+    },
+    "lap": {
+     "lap": 122.1750000000433,
+     "place": 4,
+     "clock": 123.45833333337765,
+     "integrity": {
+      "underTerrain": 0,
+      "throughBarrier": 0,
+      "outOfWorld": 0,
+      "wheelFar": 0,
+      "cameraInside": 0
+     },
+     "log": []
+    }
+   },
+   "seconds": 146
+  },
+  {
+   "id": "P1",
+   "title": "Desempenho em Z3 com 5 IAs, Alta e Baixa, 1920×1080",
+   "pass": true,
+   "failures": [],
+   "details": {
+    "resolution": [
+     1920,
+     1080
+    ],
+    "place": "Z3 (vila), pelotão completo a partir de s = 1625 m, 10 s",
+    "note": "measured with the frame limiter of the verifier (?cap=60): 60 means the 16.7 ms budget is met; the figure without a limiter depends on the machine and is given in the README. A frame time is the interval between the starts of two consecutive frames (the step the game animates with); cpuMs is the mean over the measurement",
+    "presets": {
+     "high": {
+      "frames": 600,
+      "seconds": 10,
+      "fps": 60,
+      "low1": 55.4,
+      "frameMsMean": 16.67,
+      "frameMsP99": 16.7,
+      "frameMsMax": 21.9,
+      "frameTime": "interval between the starts of consecutive frames",
+      "cpuMs": {
+       "sim": 0.15,
+       "render": 7.37
+      },
+      "draw": {
+       "calls": 887,
+       "triangles": 2623224,
+       "shadowCalls": 294
+      },
+      "endS": 1866,
+      "zoneAtEnd": 3,
+      "quality": "high",
+      "internal": [
+       1920,
+       1080
+      ],
+      "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+     },
+     "low": {
+      "frames": 600,
+      "seconds": 10,
+      "fps": 60,
+      "low1": 59.8,
+      "frameMsMean": 16.67,
+      "frameMsP99": 16.7,
+      "frameMsMax": 16.8,
+      "frameTime": "interval between the starts of consecutive frames",
+      "cpuMs": {
+       "sim": 0.15,
+       "render": 5.23
+      },
+      "draw": {
+       "calls": 718,
+       "triangles": 1948625,
+       "shadowCalls": 236
+      },
+      "endS": 1866,
+      "zoneAtEnd": 3,
+      "quality": "low",
+      "internal": [
+       1344,
+       756
+      ],
+      "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+     }
+    },
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "cpu": "AMD Ryzen 7 5700G with Radeon Graphics (16 threads)",
+    "browser": "chrome 150.0.7871.127",
+    "os": "Windows_NT 10.0.26300 x64"
+   },
+   "seconds": 47.8
+  }
+ ]
+}

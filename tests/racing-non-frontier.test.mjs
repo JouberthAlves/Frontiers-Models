@@ -17,7 +17,7 @@ test('Gemini 3.8 Flash V3.4 moves to Non-frontier, without deleting its archived
   assert.equal(runs.current_arena.length, 6);
   assert.deepEqual(runs.current_arena, [
     'gpt-6.1-sol-v3.4','gpt-6-astra-v3.4','opus-5.5-v3.4',
-    'gemini-4-argon-v3.4','sonnet-5.5-v3.4','gemini-4-hydrogen-v3.4'
+    'gemini-4-argon-v3.4','fable-5.2-v3.4.1','gemini-4-hydrogen-v3.4'
   ]);
   const gemini = runs.runs.find(r => r.id === source);
   assert.equal(gemini.role, 'non-frontier-run');
@@ -50,7 +50,7 @@ test('both languages place the V3.4 Gemini only below the current Racing listing
     for (const [symbol, model] of [
       ['\u2600\ufe0f', 'GPT-6.1 Sol'], ['\u2726', 'GPT-6 Astra'],
       ['\u266c', 'Opus 5.5'], ['\u25c8', 'Gemini 4 Argon'],
-      ['\u2727', 'Sonnet 5.5'], ['\u2b21', 'Gemini 4 Hydrogen'],
+      ['\u2727', 'Fable 5.2 (V3.4.1)'], ['\u2b21', 'Gemini 4 Hydrogen'],
     ]) assert.ok(current.includes(symbol + ' **' + model + '**'), file + ': ' + model);
     const otherHeading=pt?'Racing não frontier':'Non-frontier Racing';
     const sectionStart=content.lastIndexOf(otherHeading);

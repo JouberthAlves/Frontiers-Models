@@ -20,7 +20,7 @@
 
 ## ⚔️ Execuções atuais por benchmark
 
-### Racing-bench V3.4 — versão atual, focada na corrida
+### Racing-bench V3.4 / V3.4.1 — versão atual, focada na corrida
 
 | Modelo atual | Jogar | Código-fonte |
 | --- | --- | --- |
@@ -28,10 +28,12 @@
 | ✦ **GPT-6 Astra** | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
 | ♬ **Opus 5.5** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) |
 | ◈ **Gemini 4 Argon** | [Jogar](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) |
-| ✧ **Sonnet 5.5** | [Jogar](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./benchmarks/racing/runs/sonnet-5.5-v3.4/source/) |
+| ✧ **Fable 5.2 (V3.4.1)** | — | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) |
 | ⬡ **Gemini 4 Hydrogen** | [Jogar](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/) |
 
 **Entradas V3.4:** [Prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens](./benchmarks/racing/prompts/racing-v3.4/refs/) · [Anexo operacional](./benchmarks/racing/EXECUTION-ADDENDUM.md).
+
+**Entrada do Fable 5.2:** [V3.4.1](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.1.md).
 
 **Arquivo Racing V2.6:** [Execuções históricas e código](./benchmarks/racing/README-PT-BR.md).
 
@@ -50,9 +52,9 @@
 ```text
 FRONTIER MODELS                         2 benchmarks · 11 execuções atuais
 │
-├── RACING-BENCH (V3.4)                 6 execuções atuais
+├── RACING-BENCH (V3.4 / V3.4.1)                 6 execuções atuais
 │   ├── entradas    racing-v3.4/ · 14 referências visuais
-│   ├── atuais      GPT-6.1 Sol · GPT-6 Astra · Opus 5.5 · Gemini 4 Argon · Sonnet 5.5 · Gemini 4 Hydrogen
+│   ├── atuais      GPT-6.1 Sol · GPT-6 Astra · Opus 5.5 · Gemini 4 Argon · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen
 │   └── histórico   execuções V2.6 + prompts anteriores
 │
 ├── ORBITARIUM-BENCH (Frontier V2)      5 referências atuais
@@ -68,6 +70,12 @@ FRONTIER MODELS                         2 benchmarks · 11 execuções atuais
 ```
 
 Explore a [arquitetura do repositório](./docs/REPOSITORY-ARCHITECTURE.md) e as pastas dos benchmarks.
+
+## Racing substituído
+
+| Modelo | Jogar | Código-fonte |
+| --- | --- | --- |
+| **Sonnet 5.5** | [Jogar](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./benchmarks/racing/runs/sonnet-5.5-v3.4/source/) |
 
 ## 🗂️ Racing não frontier
 

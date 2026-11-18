@@ -27,7 +27,7 @@ TEXT_EXTENSIONS = CODE_EXTENSIONS | {
 EXTERNAL_OR_GENERATED_ROOTS = {
     "node_modules", "vendor", "dist", "build", ".next",
     "coverage", "playwright-report", "verification", "assets",
-    "public", "benchmark", "racing-v3.4",
+    "public", "benchmark", "racing-v3.4", "lib",
 }
 CHUNK_SIZE = 32
 
@@ -104,7 +104,7 @@ def count(run: dict) -> dict:
 if __name__ == "__main__":
     catalog = json.loads((ROOT / "benchmarks/racing/RUNS.json").read_text(encoding="utf-8"))
     indexed = {run["id"]: run for run in catalog["runs"]}
-    results = [count(indexed[name]) for name in [*catalog["current_arena"], *catalog.get("non_frontier_runs", [])]]
+    results = [count(indexed[name]) for name in [*catalog["current_arena"], *catalog.get("superseded_runs", []), *catalog.get("non_frontier_runs", [])]]
     print(json.dumps({
         "method": "Pinned Git blobs, physical lines (blank/comment lines included); own-code excludes vendored, generated, verification, media and data artifacts; JSON/lockfiles excluded from code",
         "runs": results,

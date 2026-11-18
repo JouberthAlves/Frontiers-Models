@@ -18,6 +18,7 @@ const expectedOrbit = [
 const expectedRacing = [
   ...racing.legacy_runs.map(id => racing.runs.find(run => run.id === id)),
   ...racing.current_arena.map(id => racing.runs.find(run => run.id === id)),
+  ...racing.superseded_runs.map(id => racing.runs.find(run => run.id === id)),
   ...racing.non_frontier_runs.map(id => racing.runs.find(run => run.id === id)),
 ];
 
@@ -29,6 +30,7 @@ function displayName(run) {
 
 function classification(run, isRacing, pt) {
   if (isRacing) {
+    if (racing.superseded_runs.includes(run.id)) return pt ? 'Substituído' : 'Superseded';
     if (racing.non_frontier_runs.includes(run.id)) return 'Non-frontier';
     return racing.current_arena.includes(run.id) ? (pt ? 'Atual' : 'Current') : (pt ? 'Legado' : 'Legacy');
   }

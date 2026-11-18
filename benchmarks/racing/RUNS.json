@@ -316,7 +316,7 @@
       "provenance": "runs/sonnet-5.5-v3.4/SOURCE-PROVENANCE.md",
       "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
       "gameplay_verification": "not-independently-verified",
-      "display_status": "current-archived-source-owner-provided-site",
+      "display_status": "superseded-archived-source",
       "archive_path": "runs/sonnet-5.5-v3.4/source",
       "manifest": "runs/sonnet-5.5-v3.4/SOURCE-FILES.json",
       "source_file_count": 2085,
@@ -328,7 +328,31 @@
         "low_preset_average_fps": 174.3,
         "hardware": "rtx-3070-ti-1080p",
         "full_benchmark_acceptance": "not-independently-verified"
-      }
+      },
+      "role": "superseded-run"
+    },
+    {
+      "id": "fable-5.2-v3.4.1",
+      "model": "Fable 5.2",
+      "display_label": "Fable 5.2 (V3.4.1)",
+      "live_url": null,
+      "site_url": null,
+      "site_status": "not-provided",
+      "source_repository": null,
+      "source_branch": "main",
+      "source_commit": "6de1bddaae4b66868e0004098a5bce4132a6ee14",
+      "source_tree": "fb67cb8a19667dd68abdae4cb800b6f8a66b7ab4",
+      "prompt": "prompts/racing-v3.4/racing-v3.4.1.md",
+      "prompt_association": "upstream README identifies V3.4.1; original prompt and reference delivery not independently verified",
+      "provenance": "runs/fable-5.2-v3.4.1/SOURCE-PROVENANCE.md",
+      "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
+      "gameplay_verification": "not-independently-verified",
+      "display_status": "current-archived-source-no-site-provided",
+      "archive_path": "runs/fable-5.2-v3.4.1/source",
+      "manifest": "runs/fable-5.2-v3.4.1/SOURCE-FILES.json",
+      "source_file_count": 487,
+      "source_bytes": 387397734,
+      "git_bundle": null
     },
     {
       "id": "gemini-4-hydrogen-v3.4",
@@ -371,10 +395,13 @@
     "gpt-6-astra-v3.4",
     "opus-5.5-v3.4",
     "gemini-4-argon-v3.4",
-    "sonnet-5.5-v3.4",
+    "fable-5.2-v3.4.1",
     "gemini-4-hydrogen-v3.4"
   ],
   "non_frontier_runs": [
     "gemini-3.8-v3.4"
+  ],
+  "superseded_runs": [
+    "sonnet-5.5-v3.4"
   ]
 }

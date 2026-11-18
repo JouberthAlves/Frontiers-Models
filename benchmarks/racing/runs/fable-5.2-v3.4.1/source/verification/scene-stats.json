@@ -1,0 +1,5714 @@
+{
+ "source": "runtime scene graph and the objects that built it",
+ "failures": [],
+ "cars": [
+  {
+   "model": "gt",
+   "name": "Aurora GT",
+   "trianglesLod0": 262806,
+   "bodyTriangles": 244342,
+   "wheelTriangles": 17664,
+   "detailTriangles": 800,
+   "lodBodyTriangles": [
+    244342,
+    64842,
+    15534
+   ],
+   "bodyGroups": {
+    "glass": 23096,
+    "drl": 515,
+    "lamp": 1267,
+    "tail": 816,
+    "trim": 87993,
+    "paint": 93595,
+    "interior": 37060
+   },
+   "meshesLod0": 27,
+   "materials": [
+    "car_brake_disc",
+    "car_caliper",
+    "car_chrome",
+    "car_glass",
+    "car_headlight_emissive",
+    "car_interior",
+    "car_lamp_housing",
+    "car_paint_clearcoat",
+    "car_plastic_matte",
+    "car_rim_silver",
+    "car_rubber",
+    "car_taillight_emissive"
+   ],
+   "materialCount": 12,
+   "size": [
+    4.56,
+    1.24,
+    1.94
+   ],
+   "pass": true
+  },
+  {
+   "model": "hatch",
+   "name": "Vento RS",
+   "trianglesLod0": 270225,
+   "bodyTriangles": 252161,
+   "wheelTriangles": 17664,
+   "detailTriangles": 400,
+   "lodBodyTriangles": [
+    252161,
+    69260,
+    15406
+   ],
+   "bodyGroups": {
+    "glass": 22826,
+    "drl": 483,
+    "lamp": 1163,
+    "tail": 1112,
+    "trim": 77343,
+    "paint": 95517,
+    "interior": 53717
+   },
+   "meshesLod0": 25,
+   "materials": [
+    "car_brake_disc",
+    "car_caliper",
+    "car_chrome",
+    "car_glass",
+    "car_headlight_emissive",
+    "car_interior",
+    "car_lamp_housing",
+    "car_paint_clearcoat",
+    "car_plastic_matte",
+    "car_rim_silver",
+    "car_rubber",
+    "car_taillight_emissive"
+   ],
+   "materialCount": 12,
+   "size": [
+    4.18,
+    1.42,
+    1.84
+   ],
+   "pass": true
+  }
+ ],
+ "boxDetector": {
+  "rule": "an object with <= 12 triangles (or a BoxGeometry) that is larger than 1 m in two axes or 1 m³ in volume",
+  "objects": [
+   {
+    "name": "gantry",
+    "meshes": 8,
+    "triangles": 3876,
+    "size": [
+     1,
+     7.14,
+     20
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "bridge",
+    "meshes": 2,
+    "triangles": 1030,
+    "size": [
+     15.96,
+     23.09,
+     124.81
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "lighthouse",
+    "meshes": 7,
+    "triangles": 2348,
+    "size": [
+     6.38,
+     27.8,
+     6.38
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "car_hatch_amarelo",
+    "meshes": 39,
+    "triangles": 354893,
+    "size": [
+     4.85,
+     1.43,
+     2.39
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "car_gt_branco",
+    "meshes": 41,
+    "triangles": 343184,
+    "size": [
+     5.29,
+     1.24,
+     2.52
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "car_hatch_verde",
+    "meshes": 39,
+    "triangles": 354893,
+    "size": [
+     4.85,
+     1.42,
+     2.39
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "car_gt_grafite",
+    "meshes": 41,
+    "triangles": 343184,
+    "size": [
+     5.29,
+     1.24,
+     2.52
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "car_gt_rosso",
+    "meshes": 41,
+    "triangles": 343184,
+    "size": [
+     5.29,
+     1.23,
+     2.52
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "car_hatch_azul",
+    "meshes": 39,
+    "triangles": 354893,
+    "size": [
+     4.85,
+     1.42,
+     2.39
+    ],
+    "boxLike": false
+   }
+  ],
+  "batches": [
+   {
+    "name": "merged_tree",
+    "kind": "tree",
+    "meshes": 163,
+    "triangles": 230780
+   },
+   {
+    "name": "building_detail_wood",
+    "kind": "building",
+    "meshes": 9,
+    "triangles": 106200
+   },
+   {
+    "name": "building_base_plaster",
+    "kind": "building",
+    "meshes": 16,
+    "triangles": 91156
+   },
+   {
+    "name": "merged_rock",
+    "kind": "rock",
+    "meshes": 15,
+    "triangles": 90880
+   },
+   {
+    "name": "merged_prop",
+    "kind": "prop",
+    "meshes": 129,
+    "triangles": 86298
+   },
+   {
+    "name": "barrier_guardrail",
+    "kind": "barrier",
+    "meshes": 30,
+    "triangles": 78024
+   },
+   {
+    "name": "building_detail_woodgrey",
+    "kind": "building",
+    "meshes": 7,
+    "triangles": 46752
+   },
+   {
+    "name": "terrain_6_",
+    "kind": "terrain",
+    "meshes": 9,
+    "triangles": 45792
+   },
+   {
+    "name": "terrain_7_",
+    "kind": "terrain",
+    "meshes": 9,
+    "triangles": 45792
+   },
+   {
+    "name": "terrain_8_",
+    "kind": "terrain",
+    "meshes": 9,
+    "triangles": 45792
+   },
+   {
+    "name": "barrier_woodfence",
+    "kind": "barrier",
+    "meshes": 24,
+    "triangles": 35832
+   },
+   {
+    "name": "terrain_5_",
+    "kind": "terrain",
+    "meshes": 9,
+    "triangles": 35248
+   },
+   {
+    "name": "terrain_9_",
+    "kind": "terrain",
+    "meshes": 9,
+    "triangles": 35248
+   },
+   {
+    "name": "building_base_stoneblock",
+    "kind": "building",
+    "meshes": 9,
+    "triangles": 21056
+   },
+   {
+    "name": "building_detail_iron",
+    "kind": "building",
+    "meshes": 9,
+    "triangles": 20304
+   },
+   {
+    "name": "barrier_rockwall",
+    "kind": "barrier",
+    "meshes": 17,
+    "triangles": 16056
+   },
+   {
+    "name": "terrain_4_",
+    "kind": "terrain",
+    "meshes": 9,
+    "triangles": 16048
+   },
+   {
+    "name": "terrain_10_",
+    "kind": "terrain",
+    "meshes": 6,
+    "triangles": 13824
+   },
+   {
+    "name": "merged_shrub",
+    "kind": "shrub",
+    "meshes": 50,
+    "triangles": 13580
+   },
+   {
+    "name": "terrain_3_",
+    "kind": "terrain",
+    "meshes": 8,
+    "triangles": 13440
+   },
+   {
+    "name": "barrier_concrete",
+    "kind": "barrier",
+    "meshes": 10,
+    "triangles": 13104
+   },
+   {
+    "name": "road_skirt",
+    "kind": "road",
+    "meshes": 1,
+    "triangles": 13020
+   },
+   {
+    "name": "merged_ground",
+    "kind": "ground",
+    "meshes": 17,
+    "triangles": 12818
+   },
+   {
+    "name": "merged_pebble",
+    "kind": "pebble",
+    "meshes": 4,
+    "triangles": 10800
+   },
+   {
+    "name": "aprons_concrete",
+    "kind": "road",
+    "meshes": 1,
+    "triangles": 8906
+   },
+   {
+    "name": "barrier_seawall",
+    "kind": "barrier",
+    "meshes": 18,
+    "triangles": 8862
+   },
+   {
+    "name": "barrier_closure",
+    "kind": "barrier",
+    "meshes": 25,
+    "triangles": 8454
+   },
+   {
+    "name": "kerbs",
+    "kind": "kerb",
+    "meshes": 1,
+    "triangles": 8102
+   },
+   {
+    "name": "terrain_2_",
+    "kind": "terrain",
+    "meshes": 7,
+    "triangles": 7808
+   },
+   {
+    "name": "building_base_woodgrey",
+    "kind": "building",
+    "meshes": 7,
+    "triangles": 7792
+   },
+   {
+    "name": "building_base_plasterochre",
+    "kind": "building",
+    "meshes": 4,
+    "triangles": 7736
+   },
+   {
+    "name": "building_base_rubble",
+    "kind": "building",
+    "meshes": 5,
+    "triangles": 7388
+   },
+   {
+    "name": "sidewalks",
+    "kind": "road",
+    "meshes": 1,
+    "triangles": 7342
+   },
+   {
+    "name": "road",
+    "kind": "road",
+    "meshes": 1,
+    "triangles": 6734
+   },
+   {
+    "name": "palm_1",
+    "kind": "tree",
+    "meshes": 14,
+    "triangles": 6622
+   },
+   {
+    "name": "palm_2",
+    "kind": "tree",
+    "meshes": 14,
+    "triangles": 6622
+   },
+   {
+    "name": "building_base_rooftile",
+    "kind": "building",
+    "meshes": 20,
+    "triangles": 6102
+   },
+   {
+    "name": "building_base_plasterworn",
+    "kind": "building",
+    "meshes": 4,
+    "triangles": 5964
+   },
+   {
+    "name": "palm_0",
+    "kind": "tree",
+    "meshes": 12,
+    "triangles": 5676
+   },
+   {
+    "name": "terrain_far",
+    "kind": "terrain",
+    "meshes": 1,
+    "triangles": 5180
+   },
+   {
+    "name": "building_base_wood",
+    "kind": "building",
+    "meshes": 9,
+    "triangles": 4998
+   },
+   {
+    "name": "barrier_stonewall",
+    "kind": "barrier",
+    "meshes": 6,
+    "triangles": 4608
+   },
+   {
+    "name": "barrier_bridgeparapet",
+    "kind": "barrier",
+    "meshes": 16,
+    "triangles": 4444
+   },
+   {
+    "name": "terrain_1_",
+    "kind": "terrain",
+    "meshes": 6,
+    "triangles": 3840
+   },
+   {
+    "name": "rock_3",
+    "kind": "rock",
+    "meshes": 13,
+    "triangles": 3180
+   },
+   {
+    "name": "building_base_iron",
+    "kind": "building",
+    "meshes": 5,
+    "triangles": 2970
+   },
+   {
+    "name": "rock_2",
+    "kind": "rock",
+    "meshes": 12,
+    "triangles": 2860
+   },
+   {
+    "name": "pine_2",
+    "kind": "tree",
+    "meshes": 6,
+    "triangles": 2754
+   },
+   {
+    "name": "building_base_windowglass",
+    "kind": "building",
+    "meshes": 9,
+    "triangles": 2653
+   },
+   {
+    "name": "rock_4",
+    "kind": "rock",
+    "meshes": 12,
+    "triangles": 2580
+   },
+   {
+    "name": "rock_0",
+    "kind": "rock",
+    "meshes": 10,
+    "triangles": 2360
+   },
+   {
+    "name": "rock_1",
+    "kind": "rock",
+    "meshes": 10,
+    "triangles": 2360
+   },
+   {
+    "name": "olive_2",
+    "kind": "tree",
+    "meshes": 6,
+    "triangles": 2340
+   },
+   {
+    "name": "barrier_parapet",
+    "kind": "barrier",
+    "meshes": 6,
+    "triangles": 1960
+   },
+   {
+    "name": "building_detail_leaf:flower",
+    "kind": "building",
+    "meshes": 5,
+    "triangles": 1732
+   },
+   {
+    "name": "olive_0",
+    "kind": "tree",
+    "meshes": 4,
+    "triangles": 1560
+   },
+   {
+    "name": "building_detail_plaster",
+    "kind": "building",
+    "meshes": 5,
+    "triangles": 1184
+   },
+   {
+    "name": "building_detail_lampglass",
+    "kind": "building",
+    "meshes": 9,
+    "triangles": 984
+   },
+   {
+    "name": "pine_0",
+    "kind": "tree",
+    "meshes": 2,
+    "triangles": 972
+   },
+   {
+    "name": "tyrestack",
+    "kind": "prop",
+    "meshes": 16,
+    "triangles": 816
+   },
+   {
+    "name": "building_base_windowlit",
+    "kind": "building",
+    "meshes": 5,
+    "triangles": 714
+   },
+   {
+    "name": "building_base_door",
+    "kind": "building",
+    "meshes": 5,
+    "triangles": 625
+   },
+   {
+    "name": "building_base_fabric",
+    "kind": "building",
+    "meshes": 9,
+    "triangles": 600
+   },
+   {
+    "name": "building_detail_paintmetal",
+    "kind": "building",
+    "meshes": 1,
+    "triangles": 400
+   },
+   {
+    "name": "building_base_woodblue",
+    "kind": "building",
+    "meshes": 2,
+    "triangles": 118
+   },
+   {
+    "name": "building_base_signs",
+    "kind": "building",
+    "meshes": 9,
+    "triangles": 94
+   },
+   {
+    "name": "building_base_woodgreen",
+    "kind": "building",
+    "meshes": 1,
+    "triangles": 92
+   }
+  ],
+  "prototypes": [
+   {
+    "name": "rock_0",
+    "category": "rock",
+    "instances": 235,
+    "triangles": 320,
+    "parts": 1,
+    "size": [
+     1.74,
+     1.26,
+     1.98
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "rock_1",
+    "category": "rock",
+    "instances": 226,
+    "triangles": 320,
+    "parts": 1,
+    "size": [
+     1.56,
+     0.98,
+     1.8
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "rock_2",
+    "category": "rock",
+    "instances": 226,
+    "triangles": 320,
+    "parts": 1,
+    "size": [
+     1.7,
+     1.53,
+     2.09
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "rock_3",
+    "category": "rock",
+    "instances": 217,
+    "triangles": 320,
+    "parts": 1,
+    "size": [
+     1.53,
+     1.23,
+     1.76
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "rock_4",
+    "category": "rock",
+    "instances": 232,
+    "triangles": 320,
+    "parts": 1,
+    "size": [
+     1.79,
+     1.46,
+     1.6
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pebble_0",
+    "category": "ground",
+    "instances": 104,
+    "triangles": 80,
+    "parts": 1,
+    "size": [
+     1.36,
+     1.34,
+     1.88
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pebble_1",
+    "category": "ground",
+    "instances": 73,
+    "triangles": 80,
+    "parts": 1,
+    "size": [
+     1.56,
+     1.15,
+     1.75
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pebble_2",
+    "category": "ground",
+    "instances": 95,
+    "triangles": 80,
+    "parts": 1,
+    "size": [
+     1.59,
+     1.37,
+     1.78
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pebble_3",
+    "category": "ground",
+    "instances": 107,
+    "triangles": 80,
+    "parts": 1,
+    "size": [
+     1.52,
+     1.31,
+     1.69
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pebble_4",
+    "category": "ground",
+    "instances": 94,
+    "triangles": 80,
+    "parts": 1,
+    "size": [
+     1.82,
+     1.08,
+     1.57
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "oak_0",
+    "category": "tree",
+    "instances": 88,
+    "triangles": 954,
+    "parts": 2,
+    "size": [
+     7.52,
+     7.8,
+     7.66
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "oak_1",
+    "category": "tree",
+    "instances": 106,
+    "triangles": 900,
+    "parts": 2,
+    "size": [
+     8.98,
+     8.21,
+     9
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "oak_2",
+    "category": "tree",
+    "instances": 78,
+    "triangles": 900,
+    "parts": 2,
+    "size": [
+     7.67,
+     8.33,
+     8.15
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "olive_0",
+    "category": "tree",
+    "instances": 174,
+    "triangles": 780,
+    "parts": 2,
+    "size": [
+     5.27,
+     6.45,
+     5.56
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "olive_1",
+    "category": "tree",
+    "instances": 197,
+    "triangles": 780,
+    "parts": 2,
+    "size": [
+     6.79,
+     7.25,
+     6.62
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "olive_2",
+    "category": "tree",
+    "instances": 194,
+    "triangles": 780,
+    "parts": 2,
+    "size": [
+     4.95,
+     5.53,
+     5.18
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "cypress_0",
+    "category": "tree",
+    "instances": 93,
+    "triangles": 300,
+    "parts": 2,
+    "size": [
+     2.56,
+     10.33,
+     2.64
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "cypress_1",
+    "category": "tree",
+    "instances": 96,
+    "triangles": 300,
+    "parts": 2,
+    "size": [
+     2.58,
+     10.96,
+     2.46
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "cypress_2",
+    "category": "tree",
+    "instances": 108,
+    "triangles": 300,
+    "parts": 2,
+    "size": [
+     2.67,
+     14.35,
+     2.62
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "broom_0",
+    "category": "shrub",
+    "instances": 203,
+    "triangles": 32,
+    "parts": 1,
+    "size": [
+     1.69,
+     1.66,
+     1.81
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "broom_1",
+    "category": "shrub",
+    "instances": 213,
+    "triangles": 32,
+    "parts": 1,
+    "size": [
+     1.83,
+     1.64,
+     1.83
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "broom_2",
+    "category": "shrub",
+    "instances": 213,
+    "triangles": 32,
+    "parts": 1,
+    "size": [
+     1.73,
+     1.76,
+     1.73
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "oleander_0",
+    "category": "shrub",
+    "instances": 184,
+    "triangles": 40,
+    "parts": 1,
+    "size": [
+     1.89,
+     1.89,
+     1.89
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "oleander_1",
+    "category": "shrub",
+    "instances": 197,
+    "triangles": 40,
+    "parts": 1,
+    "size": [
+     2.05,
+     2.11,
+     2.04
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "oleander_2",
+    "category": "shrub",
+    "instances": 214,
+    "triangles": 40,
+    "parts": 1,
+    "size": [
+     2.38,
+     2.09,
+     2.38
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "rosemary_0",
+    "category": "shrub",
+    "instances": 210,
+    "triangles": 28,
+    "parts": 1,
+    "size": [
+     1.33,
+     1.06,
+     1.4
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "rosemary_1",
+    "category": "shrub",
+    "instances": 217,
+    "triangles": 28,
+    "parts": 1,
+    "size": [
+     1.47,
+     1.1,
+     1.62
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "rosemary_2",
+    "category": "shrub",
+    "instances": 196,
+    "triangles": 28,
+    "parts": 1,
+    "size": [
+     1.15,
+     1.11,
+     1.07
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pine_0",
+    "category": "tree",
+    "instances": 210,
+    "triangles": 972,
+    "parts": 2,
+    "size": [
+     8.05,
+     10.94,
+     8.18
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pine_1",
+    "category": "tree",
+    "instances": 230,
+    "triangles": 1026,
+    "parts": 2,
+    "size": [
+     7.09,
+     10.41,
+     7.07
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pine_2",
+    "category": "tree",
+    "instances": 211,
+    "triangles": 918,
+    "parts": 2,
+    "size": [
+     9.1,
+     13.4,
+     8.93
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "palm_0",
+    "category": "tree",
+    "instances": 42,
+    "triangles": 946,
+    "parts": 2,
+    "size": [
+     7.29,
+     10.11,
+     6.7
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "palm_1",
+    "category": "tree",
+    "instances": 50,
+    "triangles": 946,
+    "parts": 2,
+    "size": [
+     7.15,
+     9.51,
+     6.62
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "palm_2",
+    "category": "tree",
+    "instances": 37,
+    "triangles": 946,
+    "parts": 2,
+    "size": [
+     6.92,
+     11.67,
+     6.88
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "beachgrass_0",
+    "category": "ground",
+    "instances": 94,
+    "triangles": 24,
+    "parts": 1,
+    "size": [
+     1.17,
+     0.87,
+     1.21
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "beachgrass_1",
+    "category": "ground",
+    "instances": 62,
+    "triangles": 24,
+    "parts": 1,
+    "size": [
+     1.3,
+     0.9,
+     1
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "beachgrass_2",
+    "category": "ground",
+    "instances": 89,
+    "triangles": 24,
+    "parts": 1,
+    "size": [
+     1.66,
+     0.84,
+     1.19
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "lentisk_0",
+    "category": "shrub",
+    "instances": 404,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     2.07,
+     1.51,
+     2.05
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "lentisk_1",
+    "category": "shrub",
+    "instances": 454,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.81,
+     1.46,
+     1.8
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "lentisk_2",
+    "category": "shrub",
+    "instances": 441,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.48,
+     1.49,
+     1.6
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "drygrass_0",
+    "category": "ground",
+    "instances": 767,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.76,
+     0.94,
+     1.62
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "drygrass_1",
+    "category": "ground",
+    "instances": 785,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.82,
+     0.82,
+     1.81
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "drygrass_2",
+    "category": "ground",
+    "instances": 843,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     2.19,
+     0.91,
+     1.51
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "grasstuft_0",
+    "category": "ground",
+    "instances": 1542,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.03,
+     0.54,
+     1.87
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "grasstuft_1",
+    "category": "ground",
+    "instances": 1596,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.38,
+     0.46,
+     1.38
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "grasstuft_2",
+    "category": "ground",
+    "instances": 1589,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.57,
+     0.54,
+     1.82
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "flowers_0",
+    "category": "ground",
+    "instances": 760,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.73,
+     0.46,
+     1.28
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "flowers_1",
+    "category": "ground",
+    "instances": 856,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.88,
+     0.41,
+     1.72
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "flowers_2",
+    "category": "ground",
+    "instances": 787,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     1.5,
+     0.41,
+     1.51
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "herbs_0",
+    "category": "ground",
+    "instances": 790,
+    "triangles": 30,
+    "parts": 1,
+    "size": [
+     1.46,
+     0.32,
+     1.26
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "herbs_1",
+    "category": "ground",
+    "instances": 780,
+    "triangles": 30,
+    "parts": 1,
+    "size": [
+     1.73,
+     0.32,
+     1.43
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "herbs_2",
+    "category": "ground",
+    "instances": 795,
+    "triangles": 30,
+    "parts": 1,
+    "size": [
+     1.61,
+     0.34,
+     1.63
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "agave_0",
+    "category": "shrub",
+    "instances": 126,
+    "triangles": 90,
+    "parts": 1,
+    "size": [
+     1.64,
+     0.55,
+     1.27
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "agave_1",
+    "category": "shrub",
+    "instances": 108,
+    "triangles": 90,
+    "parts": 1,
+    "size": [
+     1.43,
+     0.51,
+     1.27
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "agave_2",
+    "category": "shrub",
+    "instances": 98,
+    "triangles": 90,
+    "parts": 1,
+    "size": [
+     1.61,
+     0.47,
+     1.33
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "fountain_0",
+    "category": "prop",
+    "instances": 1,
+    "triangles": 724,
+    "parts": 2,
+    "size": [
+     4.56,
+     2.66,
+     4.56
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "bench_0",
+    "category": "prop",
+    "instances": 33,
+    "triangles": 216,
+    "parts": 2,
+    "size": [
+     0.54,
+     0.87,
+     1.96
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "lamp_0",
+    "category": "prop",
+    "instances": 38,
+    "triangles": 350,
+    "parts": 2,
+    "size": [
+     1.35,
+     5.2,
+     0.4
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "planter_0",
+    "category": "prop",
+    "instances": 2,
+    "triangles": 64,
+    "parts": 3,
+    "size": [
+     0.8,
+     1.41,
+     1.98
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "planter_1",
+    "category": "prop",
+    "instances": 63,
+    "triangles": 264,
+    "parts": 3,
+    "size": [
+     1,
+     1.47,
+     0.97
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "planter_2",
+    "category": "prop",
+    "instances": 4,
+    "triangles": 268,
+    "parts": 3,
+    "size": [
+     1.4,
+     1.5,
+     1.4
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "bin_0",
+    "category": "prop",
+    "instances": 15,
+    "triangles": 284,
+    "parts": 2,
+    "size": [
+     0.58,
+     0.87,
+     0.58
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "stall_0",
+    "category": "prop",
+    "instances": 1,
+    "triangles": 196,
+    "parts": 3,
+    "size": [
+     1.7,
+     2.38,
+     2.8
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "stall_1",
+    "category": "prop",
+    "instances": 1,
+    "triangles": 196,
+    "parts": 3,
+    "size": [
+     1.7,
+     2.38,
+     2.8
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "stall_2",
+    "category": "prop",
+    "instances": 1,
+    "triangles": 196,
+    "parts": 3,
+    "size": [
+     1.7,
+     2.38,
+     2.8
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "cafetable_0",
+    "category": "prop",
+    "instances": 10,
+    "triangles": 364,
+    "parts": 2,
+    "size": [
+     1.6,
+     0.88,
+     1.06
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "cafetable_1",
+    "category": "prop",
+    "instances": 9,
+    "triangles": 476,
+    "parts": 2,
+    "size": [
+     1.6,
+     0.88,
+     1.51
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "crate_0",
+    "category": "prop",
+    "instances": 6,
+    "triangles": 312,
+    "parts": 1,
+    "size": [
+     1.69,
+     0.86,
+     1.29
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "crate_1",
+    "category": "prop",
+    "instances": 11,
+    "triangles": 468,
+    "parts": 1,
+    "size": [
+     1.69,
+     1.46,
+     1.29
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "clothesline_0",
+    "category": "prop",
+    "instances": 8,
+    "triangles": 120,
+    "parts": 2,
+    "size": [
+     0.06,
+     4.4,
+     4.55
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "clothesline_1",
+    "category": "prop",
+    "instances": 2,
+    "triangles": 120,
+    "parts": 2,
+    "size": [
+     0.06,
+     4.4,
+     4.55
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "clothesline_2",
+    "category": "prop",
+    "instances": 5,
+    "triangles": 120,
+    "parts": 2,
+    "size": [
+     0.06,
+     4.4,
+     4.55
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "barrel_0",
+    "category": "prop",
+    "instances": 6,
+    "triangles": 240,
+    "parts": 2,
+    "size": [
+     0.69,
+     0.94,
+     0.69
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "barrel_1",
+    "category": "prop",
+    "instances": 13,
+    "triangles": 480,
+    "parts": 2,
+    "size": [
+     1.41,
+     0.94,
+     0.89
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "barrel_2",
+    "category": "prop",
+    "instances": 3,
+    "triangles": 240,
+    "parts": 2,
+    "size": [
+     0.69,
+     0.94,
+     0.69
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "barrel_3",
+    "category": "prop",
+    "instances": 1,
+    "triangles": 720,
+    "parts": 2,
+    "size": [
+     1.41,
+     0.94,
+     1.59
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "woodsign_0",
+    "category": "prop",
+    "instances": 6,
+    "triangles": 38,
+    "parts": 2,
+    "size": [
+     0.15,
+     2.2,
+     1.24
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "woodsign_1",
+    "category": "prop",
+    "instances": 3,
+    "triangles": 38,
+    "parts": 2,
+    "size": [
+     0.15,
+     2.2,
+     1.24
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "woodsign_2",
+    "category": "prop",
+    "instances": 6,
+    "triangles": 38,
+    "parts": 2,
+    "size": [
+     0.15,
+     2.2,
+     1.24
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "woodsign_3",
+    "category": "prop",
+    "instances": 2,
+    "triangles": 38,
+    "parts": 2,
+    "size": [
+     0.15,
+     2.2,
+     1.24
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "woodsign_4",
+    "category": "prop",
+    "instances": 3,
+    "triangles": 38,
+    "parts": 2,
+    "size": [
+     0.15,
+     2.2,
+     1.24
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "woodsign_5",
+    "category": "prop",
+    "instances": 2,
+    "triangles": 38,
+    "parts": 2,
+    "size": [
+     0.15,
+     2.2,
+     1.24
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "telescope_0",
+    "category": "prop",
+    "instances": 2,
+    "triangles": 132,
+    "parts": 2,
+    "size": [
+     0.52,
+     1.57,
+     0.34
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "flagpole_0",
+    "category": "prop",
+    "instances": 4,
+    "triangles": 152,
+    "parts": 2,
+    "size": [
+     0.18,
+     7.32,
+     1.63
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "flagpole_1",
+    "category": "prop",
+    "instances": 4,
+    "triangles": 152,
+    "parts": 2,
+    "size": [
+     0.18,
+     7.32,
+     1.63
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "flagpole_2",
+    "category": "prop",
+    "instances": 2,
+    "triangles": 152,
+    "parts": 2,
+    "size": [
+     0.18,
+     7.32,
+     1.63
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "flagpole_3",
+    "category": "prop",
+    "instances": 4,
+    "triangles": 152,
+    "parts": 2,
+    "size": [
+     0.18,
+     7.32,
+     1.63
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "parasol_0",
+    "category": "prop",
+    "instances": 11,
+    "triangles": 224,
+    "parts": 2,
+    "size": [
+     2.76,
+     2.36,
+     2.76
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "parasol_1",
+    "category": "prop",
+    "instances": 12,
+    "triangles": 224,
+    "parts": 2,
+    "size": [
+     2.76,
+     2.36,
+     2.76
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "parasol_2",
+    "category": "prop",
+    "instances": 15,
+    "triangles": 224,
+    "parts": 2,
+    "size": [
+     2.76,
+     2.36,
+     2.76
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "parasol_3",
+    "category": "prop",
+    "instances": 15,
+    "triangles": 224,
+    "parts": 2,
+    "size": [
+     2.76,
+     2.36,
+     2.76
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "sunbed_0",
+    "category": "prop",
+    "instances": 105,
+    "triangles": 230,
+    "parts": 2,
+    "size": [
+     1.9,
+     0.65,
+     0.66
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "slatfence_0",
+    "category": "prop",
+    "instances": 53,
+    "triangles": 276,
+    "parts": 1,
+    "size": [
+     0.14,
+     1.58,
+     2.49
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "boat_1",
+    "category": "prop",
+    "instances": 2,
+    "triangles": 628,
+    "parts": 2,
+    "size": [
+     4.3,
+     0.9,
+     1.51
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "boat_2",
+    "category": "prop",
+    "instances": 2,
+    "triangles": 628,
+    "parts": 2,
+    "size": [
+     4.3,
+     0.9,
+     1.51
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "lifeguard_0",
+    "category": "prop",
+    "instances": 1,
+    "triangles": 774,
+    "parts": 2,
+    "size": [
+     4.76,
+     6.06,
+     2.6
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "bollardstone_0",
+    "category": "prop",
+    "instances": 82,
+    "triangles": 80,
+    "parts": 1,
+    "size": [
+     0.34,
+     1.05,
+     0.34
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "sign_0",
+    "category": "prop",
+    "instances": 18,
+    "triangles": 28,
+    "parts": 2,
+    "size": [
+     0.07,
+     2.5,
+     1.6
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "sign_1",
+    "category": "prop",
+    "instances": 9,
+    "triangles": 28,
+    "parts": 2,
+    "size": [
+     0.07,
+     2.5,
+     0.72
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "sign_2",
+    "category": "prop",
+    "instances": 13,
+    "triangles": 28,
+    "parts": 2,
+    "size": [
+     0.07,
+     2.5,
+     0.72
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "sign_3",
+    "category": "prop",
+    "instances": 15,
+    "triangles": 28,
+    "parts": 2,
+    "size": [
+     0.07,
+     2.5,
+     0.72
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "sign_4",
+    "category": "prop",
+    "instances": 14,
+    "triangles": 28,
+    "parts": 2,
+    "size": [
+     0.07,
+     2.5,
+     1.6
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "sign_5",
+    "category": "prop",
+    "instances": 8,
+    "triangles": 28,
+    "parts": 2,
+    "size": [
+     0.07,
+     2.5,
+     0.72
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "utilitypole_0",
+    "category": "prop",
+    "instances": 7,
+    "triangles": 276,
+    "parts": 2,
+    "size": [
+     0.61,
+     9,
+     2.2
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "utilitypole_1",
+    "category": "prop",
+    "instances": 8,
+    "triangles": 281,
+    "parts": 2,
+    "size": [
+     1.18,
+     9,
+     2.2
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "utilitypole_2",
+    "category": "prop",
+    "instances": 3,
+    "triangles": 276,
+    "parts": 2,
+    "size": [
+     0.61,
+     9,
+     2.2
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "cairn_0",
+    "category": "prop",
+    "instances": 12,
+    "triangles": 280,
+    "parts": 1,
+    "size": [
+     0.73,
+     0.78,
+     0.74
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "cairn_1",
+    "category": "prop",
+    "instances": 9,
+    "triangles": 336,
+    "parts": 1,
+    "size": [
+     0.74,
+     0.84,
+     0.75
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "cairn_2",
+    "category": "prop",
+    "instances": 7,
+    "triangles": 392,
+    "parts": 1,
+    "size": [
+     0.73,
+     0.87,
+     0.68
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "milestone_0",
+    "category": "prop",
+    "instances": 27,
+    "triangles": 46,
+    "parts": 1,
+    "size": [
+     0.14,
+     0.84,
+     0.4
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "milestone_1",
+    "category": "prop",
+    "instances": 28,
+    "triangles": 46,
+    "parts": 1,
+    "size": [
+     0.14,
+     0.84,
+     0.4
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "delineator_0",
+    "category": "prop",
+    "instances": 48,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     0.08,
+     1.2,
+     0.11
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "delineator_1",
+    "category": "prop",
+    "instances": 54,
+    "triangles": 36,
+    "parts": 1,
+    "size": [
+     0.08,
+     1.2,
+     0.11
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "logpile_0",
+    "category": "prop",
+    "instances": 7,
+    "triangles": 288,
+    "parts": 2,
+    "size": [
+     2.46,
+     0.95,
+     1.42
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "logpile_1",
+    "category": "prop",
+    "instances": 16,
+    "triangles": 288,
+    "parts": 2,
+    "size": [
+     2.35,
+     0.97,
+     1.46
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "trough_0",
+    "category": "prop",
+    "instances": 16,
+    "triangles": 64,
+    "parts": 2,
+    "size": [
+     0.84,
+     0.66,
+     1.9
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pile_0",
+    "category": "prop",
+    "instances": 20,
+    "triangles": 48,
+    "parts": 1,
+    "size": [
+     0.26,
+     1,
+     0.26
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pile_1",
+    "category": "prop",
+    "instances": 21,
+    "triangles": 48,
+    "parts": 1,
+    "size": [
+     0.26,
+     1,
+     0.26
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "pile_2",
+    "category": "prop",
+    "instances": 16,
+    "triangles": 48,
+    "parts": 1,
+    "size": [
+     0.26,
+     1,
+     0.26
+    ],
+    "boxLike": false
+   },
+   {
+    "name": "tyrestack",
+    "category": "prop",
+    "instances": 1692,
+    "triangles": 640,
+    "parts": 1,
+    "size": [
+     0.55,
+     0.8,
+     0.52
+    ],
+    "boxLike": false
+   }
+  ],
+  "buildings": {
+   "units": 159,
+   "trianglesMin": 450,
+   "trianglesMean": 2123,
+   "trianglesMax": 4568,
+   "materialsMin": 9,
+   "materialsMax": 15,
+   "simplest": [
+    {
+     "id": 1979,
+     "type": "kiosk",
+     "archetype": "kiosk",
+     "floors": 1,
+     "triangles": 450,
+     "materials": 10,
+     "footprint": [
+      6.8,
+      5.2
+     ]
+    },
+    {
+     "id": 1972,
+     "type": "kiosk",
+     "archetype": "kiosk",
+     "floors": 1,
+     "triangles": 534,
+     "materials": 10,
+     "footprint": [
+      6.8,
+      5.2
+     ]
+    },
+    {
+     "id": 1968,
+     "type": "kiosk",
+     "archetype": "kiosk",
+     "floors": 1,
+     "triangles": 574,
+     "materials": 10,
+     "footprint": [
+      6.8,
+      5.2
+     ]
+    }
+   ]
+  },
+  "flagged": [],
+  "pass": true
+ },
+ "flatColour": {
+  "rule": "a visible surface material near the track without albedo map and without normal map (glass, emissive lamps and water excepted)",
+  "materials": [
+   {
+    "name": "terrain",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [
+     "tLayA",
+     "tLayN"
+    ],
+    "meshes": 82,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "asphalt",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [
+     "tAsphalt2"
+    ],
+    "meshes": 1,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "kerb",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "apron_concrete",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "sidewalk_paving",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "road_skirt",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "sea_water",
+    "type": "ShaderMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": "water",
+    "flat": true
+   },
+   {
+    "name": "galv",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 31,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "cliff",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 17,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "rubble",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 14,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "woodgrey",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 51,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "stone",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 9,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "stoneblock",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 38,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "iron",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 49,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "lampglass",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 29,
+    "exception": "glass",
+    "flat": true
+   },
+   {
+    "name": "concrete",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 23,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "plasterworn",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 8,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "rooftile",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 11,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "door",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 7,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "rubber",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 16,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "rockfar",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 19,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "foliage_palm",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 19,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "bark_palm_tree_bark",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 19,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "foliage_broadleaf",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 52,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "bark_bark_willow",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 28,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "foliage_conifer",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 27,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "bark_pine_bark",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 26,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "bark_bark_brown_02",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 17,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "wood",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 38,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "steel",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 11,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "fabric",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 27,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "woodblue",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 8,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "rock",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 57,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "foliage_grass",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 17,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "foliage_palm",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 20,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "bark_palm_tree_bark",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 20,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "signs",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 16,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "foliage_broadleaf",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 5,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "bark_bark_willow",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 5,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "foliage_conifer",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 4,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "bark_pine_bark",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 4,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "foliage_flower",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 32,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "paintmetal",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 5,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "plaster2",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 16,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "plasterochre",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 4,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "windowglass",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 10,
+    "exception": "glass",
+    "flat": true
+   },
+   {
+    "name": "windowlit",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 5,
+    "exception": "glass",
+    "flat": true
+   },
+   {
+    "name": "plaster",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 7,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "rooftile2",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 6,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "rooftile3",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 6,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "woodgreen",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "blackmetal",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 2,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "banner",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "start_lamp",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "start_lamp",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "start_lamp",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "start_lamp",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "start_lamp",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "ShaderMaterial",
+    "type": "ShaderMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 1,
+    "exception": "particles (smoke and dust sprites)",
+    "flat": true
+   },
+   {
+    "name": "car_glass",
+    "type": "MeshPhysicalMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 18,
+    "exception": "glass",
+    "flat": true
+   },
+   {
+    "name": "car_headlight_emissive",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 18,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "car_lamp_housing",
+    "type": "MeshPhysicalMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 18,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_taillight_emissive",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "car_plastic_matte",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 18,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_paint_clearcoat",
+    "type": "MeshPhysicalMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_interior",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 12,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_chrome",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 18,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_rubber",
+    "type": "MeshStandardMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 24,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_rim_gunmetal",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 8,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_brake_disc",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 24,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_caliper",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 4,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_contact_shadow",
+    "type": "MeshBasicMaterial",
+    "albedoMap": true,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 6,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_taillight_emissive",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "car_paint_clearcoat",
+    "type": "MeshPhysicalMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_caliper",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 4,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_taillight_emissive",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "car_paint_clearcoat",
+    "type": "MeshPhysicalMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_rim_silver",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 16,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_caliper",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 4,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_taillight_emissive",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "car_paint_clearcoat",
+    "type": "MeshPhysicalMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_caliper",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 4,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_taillight_emissive",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "car_paint_clearcoat",
+    "type": "MeshPhysicalMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_caliper",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 4,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_taillight_emissive",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": false,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": "emissive lamp",
+    "flat": true
+   },
+   {
+    "name": "car_paint_clearcoat",
+    "type": "MeshPhysicalMaterial",
+    "albedoMap": true,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 3,
+    "exception": null,
+    "flat": false
+   },
+   {
+    "name": "car_caliper",
+    "type": "MeshStandardMaterial",
+    "albedoMap": false,
+    "normalMap": true,
+    "layerTextures": [],
+    "meshes": 4,
+    "exception": null,
+    "flat": false
+   }
+  ],
+  "flagged": [],
+  "pass": true
+ },
+ "textures": {
+  "rule": "albedo / normal / layer textures of surfaces near the track at least 1024 px, the asphalt 2048 px",
+  "list": [
+   {
+    "name": "(procedural)",
+    "width": 256,
+    "height": 1,
+    "roles": [
+     "utility:tHorizon"
+    ],
+    "materials": [
+     "terrain",
+     "asphalt",
+     "kerb",
+     "apron_concrete",
+     "sidewalk_paving",
+     "road_skirt",
+     "sea_water",
+     "galv",
+     "cliff",
+     "rubble",
+     "woodgrey",
+     "stone",
+     "stoneblock",
+     "iron",
+     "lampglass",
+     "concrete",
+     "plasterworn",
+     "rooftile",
+     "door",
+     "rubber",
+     "rockfar",
+     "foliage_palm",
+     "bark_palm_tree_bark",
+     "foliage_broadleaf",
+     "bark_bark_willow",
+     "foliage_conifer",
+     "bark_pine_bark",
+     "bark_bark_brown_02",
+     "wood",
+     "steel",
+     "fabric",
+     "woodblue",
+     "rock",
+     "foliage_grass",
+     "signs",
+     "foliage_flower",
+     "paintmetal",
+     "plaster2",
+     "plasterochre",
+     "windowglass",
+     "windowlit",
+     "plaster",
+     "rooftile2",
+     "rooftile3",
+     "woodgreen",
+     "blackmetal",
+     "banner",
+     "start_lamp",
+     "car_glass",
+     "car_headlight_emissive",
+     "car_lamp_housing",
+     "car_taillight_emissive",
+     "car_plastic_matte",
+     "car_paint_clearcoat",
+     "car_interior",
+     "car_chrome",
+     "car_rubber",
+     "car_rim_gunmetal",
+     "car_brake_disc",
+     "car_caliper",
+     "car_rim_silver"
+    ],
+    "minimum": null,
+    "note": "lighting data",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 801,
+    "height": 537,
+    "roles": [
+     "utility:tTerrainShadow"
+    ],
+    "materials": [
+     "terrain",
+     "asphalt",
+     "kerb",
+     "apron_concrete",
+     "sidewalk_paving",
+     "road_skirt",
+     "sea_water",
+     "galv",
+     "cliff",
+     "rubble",
+     "woodgrey",
+     "stone",
+     "stoneblock",
+     "iron",
+     "lampglass",
+     "concrete",
+     "plasterworn",
+     "rooftile",
+     "door",
+     "rubber",
+     "rockfar",
+     "foliage_palm",
+     "bark_palm_tree_bark",
+     "foliage_broadleaf",
+     "bark_bark_willow",
+     "foliage_conifer",
+     "bark_pine_bark",
+     "bark_bark_brown_02",
+     "wood",
+     "steel",
+     "fabric",
+     "woodblue",
+     "rock",
+     "foliage_grass",
+     "signs",
+     "foliage_flower",
+     "paintmetal",
+     "plaster2",
+     "plasterochre",
+     "windowglass",
+     "windowlit",
+     "plaster",
+     "rooftile2",
+     "rooftile3",
+     "woodgreen",
+     "blackmetal",
+     "banner",
+     "start_lamp",
+     "car_glass",
+     "car_headlight_emissive",
+     "car_lamp_housing",
+     "car_taillight_emissive",
+     "car_plastic_matte",
+     "car_paint_clearcoat",
+     "car_interior",
+     "car_chrome",
+     "car_rubber",
+     "car_rim_gunmetal",
+     "car_brake_disc",
+     "car_caliper",
+     "car_rim_silver"
+    ],
+    "minimum": null,
+    "note": "lighting data",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 801,
+    "height": 537,
+    "roles": [
+     "utility:tMaskA"
+    ],
+    "materials": [
+     "terrain"
+    ],
+    "minimum": null,
+    "note": "terrain layer masks at the resolution of the height field (2 m)",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 801,
+    "height": 537,
+    "roles": [
+     "utility:tMaskB"
+    ],
+    "materials": [
+     "terrain"
+    ],
+    "minimum": null,
+    "note": "terrain layer masks at the resolution of the height field (2 m)",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 256,
+    "height": 256,
+    "roles": [
+     "utility:tNoise"
+    ],
+    "materials": [
+     "terrain",
+     "asphalt",
+     "sea_water"
+    ],
+    "minimum": null,
+    "note": "tiling noise used to break repetition",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "layer:tLayA"
+    ],
+    "materials": [
+     "terrain"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "layer:tLayN"
+    ],
+    "materials": [
+     "terrain"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "kerb"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "kerb"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 801,
+    "height": 537,
+    "roles": [
+     "utility:tHeight"
+    ],
+    "materials": [
+     "sea_water"
+    ],
+    "minimum": null,
+    "note": "sea-bed depth of the height field",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 512,
+    "roles": [
+     "utility:tSkyEq"
+    ],
+    "materials": [
+     "sea_water"
+    ],
+    "minimum": null,
+    "note": "sky panorama",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 512,
+    "height": 512,
+    "roles": [
+     "utility:tWaterN"
+    ],
+    "materials": [
+     "sea_water"
+    ],
+    "minimum": null,
+    "note": "water (excepted by the brief)",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1600,
+    "height": 1072,
+    "roles": [
+     "utility:tFoam"
+    ],
+    "materials": [
+     "sea_water"
+    ],
+    "minimum": null,
+    "note": "shore-distance field for the foam",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 512,
+    "height": 512,
+    "roles": [
+     "utility:tFoamTex"
+    ],
+    "materials": [
+     "sea_water"
+    ],
+    "minimum": null,
+    "note": "water (excepted by the brief)",
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "galv"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "galv"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "rubber"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "rubber"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "foliage_palm"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "foliage_broadleaf"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "foliage_conifer"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "fabric"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "fabric"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "foliage_grass"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "signs"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "signs"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "foliage_flower"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 2048,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "banner"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "car_lamp_housing",
+     "car_plastic_matte",
+     "car_paint_clearcoat",
+     "car_interior",
+     "car_chrome",
+     "car_rim_gunmetal",
+     "car_caliper",
+     "car_rim_silver"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "car_paint_clearcoat"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "car_rubber"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "car_rubber"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "car_brake_disc"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo"
+    ],
+    "materials": [
+     "car_contact_shadow"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "car_paint_clearcoat"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "car_paint_clearcoat"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "car_paint_clearcoat"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "car_paint_clearcoat"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "(procedural)",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "car_paint_clearcoat"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "DFG_LUT",
+    "width": 16,
+    "height": 16,
+    "roles": [
+     "utility:dfgLUT"
+    ],
+    "materials": [
+     "terrain",
+     "asphalt",
+     "kerb",
+     "apron_concrete",
+     "sidewalk_paving",
+     "road_skirt",
+     "galv",
+     "cliff",
+     "rubble",
+     "woodgrey",
+     "stone",
+     "stoneblock",
+     "iron",
+     "lampglass",
+     "concrete",
+     "plasterworn",
+     "rooftile",
+     "door",
+     "rubber",
+     "rockfar",
+     "foliage_palm",
+     "bark_palm_tree_bark",
+     "foliage_broadleaf",
+     "bark_bark_willow",
+     "foliage_conifer",
+     "bark_pine_bark",
+     "bark_bark_brown_02",
+     "wood",
+     "steel",
+     "fabric",
+     "woodblue",
+     "rock",
+     "foliage_grass",
+     "signs",
+     "foliage_flower",
+     "paintmetal",
+     "plaster2",
+     "plasterochre",
+     "windowglass",
+     "windowlit",
+     "plaster",
+     "rooftile2",
+     "rooftile3",
+     "woodgreen",
+     "blackmetal",
+     "banner",
+     "start_lamp",
+     "car_glass",
+     "car_headlight_emissive",
+     "car_lamp_housing",
+     "car_taillight_emissive",
+     "car_plastic_matte",
+     "car_paint_clearcoat",
+     "car_interior",
+     "car_chrome",
+     "car_rubber",
+     "car_rim_gunmetal",
+     "car_brake_disc",
+     "car_caliper",
+     "car_rim_silver"
+    ],
+    "minimum": null,
+    "note": "BRDF lookup table of three.js",
+    "pass": true
+   },
+   {
+    "name": "asphalt_02_diff",
+    "width": 2048,
+    "height": 2048,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "asphalt"
+    ],
+    "minimum": 2048,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "asphalt_02_nra",
+    "width": 2048,
+    "height": 2048,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "asphalt"
+    ],
+    "minimum": 2048,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "asphalt_04_diff",
+    "width": 2048,
+    "height": 2048,
+    "roles": [
+     "layer:tAsphalt2"
+    ],
+    "materials": [
+     "asphalt"
+    ],
+    "minimum": 2048,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "bark_brown_02_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "bark_bark_brown_02"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "bark_brown_02_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "bark_bark_brown_02"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "bark_willow_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "bark_bark_willow"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "bark_willow_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "bark_bark_willow"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "blue_painted_planks_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "woodblue"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "blue_painted_planks_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "woodblue"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "brushed_concrete_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "apron_concrete"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "brushed_concrete_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "road_skirt"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "brushed_concrete_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "apron_concrete"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "brushed_concrete_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "road_skirt"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "clay_roof_tiles_02_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "rooftile"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "clay_roof_tiles_02_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "rooftile"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "clay_roof_tiles_03_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "rooftile2"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "clay_roof_tiles_03_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "rooftile2"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "cliff_side_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "cliff"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "cliff_side_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "cliff"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "concrete_wall_008_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "concrete"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "concrete_wall_008_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "concrete"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "corrugated_iron_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "iron"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "corrugated_iron_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "steel"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "corrugated_iron_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "blackmetal"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "corrugated_iron_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "iron"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "corrugated_iron_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "steel"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "corrugated_iron_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "blackmetal"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "grass_path_2_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "terrain"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "grass_path_2_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "terrain"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "green_rough_planks_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "woodgreen"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "green_rough_planks_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "woodgreen"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "old_stone_wall_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "stone"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "old_stone_wall_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "stone"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "painted_plaster_wall_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "plaster2"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "painted_plaster_wall_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "plaster2"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "palm_tree_bark_diff",
+    "width": 1024,
+    "height": 2048,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "bark_palm_tree_bark"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "palm_tree_bark_nra",
+    "width": 1024,
+    "height": 2048,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "bark_palm_tree_bark"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "pine_bark_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "bark_pine_bark"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "pine_bark_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "bark_pine_bark"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "rock_face_03_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "rockfar",
+     "rock"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "rock_face_03_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "rockfar",
+     "rock"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "roof_tiles_14_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "rooftile3"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "roof_tiles_14_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "rooftile3"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "rough_pine_door_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "door"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "rough_pine_door_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "door"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "rustic_stone_wall_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "rubble"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "rustic_stone_wall_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "rubble"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "rusty_metal_02_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "paintmetal"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "rusty_metal_02_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "paintmetal"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "stone_pavers_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "sidewalk_paving"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "stone_pavers_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "sidewalk_paving"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "weathered_brown_planks_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "wood"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "weathered_brown_planks_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "wood"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "white_stucco_02_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "plaster"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "white_stucco_02_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "plaster"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "wood_planks_grey_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "woodgrey"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "wood_planks_grey_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "woodgrey"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "worn_plaster_wall_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "plasterworn"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "worn_plaster_wall_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "plasterworn"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "yellow_plaster_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "plasterochre"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "yellow_plaster_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "plasterochre"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "yellow_stone_wall_diff",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "albedo",
+     "layer:map"
+    ],
+    "materials": [
+     "stoneblock"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   },
+   {
+    "name": "yellow_stone_wall_nra",
+    "width": 1024,
+    "height": 1024,
+    "roles": [
+     "normal",
+     "layer:normalMap"
+    ],
+    "materials": [
+     "stoneblock"
+    ],
+    "minimum": 1024,
+    "note": null,
+    "pass": true
+   }
+  ],
+  "flagged": [],
+  "pass": true
+ },
+ "world": {
+  "pass": true,
+  "failures": [],
+  "zones": [
+   {
+    "id": "Z1",
+    "name": "Orla",
+    "from": 3122.8,
+    "length": 562,
+    "minY": 3.2,
+    "maxY": 6.6
+   },
+   {
+    "id": "Z2",
+    "name": "Falésia",
+    "from": 318,
+    "length": 1291.5,
+    "minY": 3.2,
+    "maxY": 63.1
+   },
+   {
+    "id": "Z3",
+    "name": "Vila",
+    "from": 1609.5,
+    "length": 444.6,
+    "minY": 61.3,
+    "maxY": 64
+   },
+   {
+    "id": "Z4",
+    "name": "Bosque",
+    "from": 2054.1,
+    "length": 1068.7,
+    "minY": 6.7,
+    "maxY": 61.3
+   }
+  ],
+  "cliffClimb": 59.9,
+  "cliffCurves": 5,
+  "props": {
+   "total": 947,
+   "min": 14,
+   "windows": [
+    {
+     "from": 0,
+     "to": 100,
+     "length": 100,
+     "complete": true,
+     "props": 80,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 100,
+     "to": 200,
+     "length": 100,
+     "complete": true,
+     "props": 52,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 200,
+     "to": 300,
+     "length": 100,
+     "complete": true,
+     "props": 50,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 300,
+     "to": 400,
+     "length": 100,
+     "complete": true,
+     "props": 17,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 400,
+     "to": 500,
+     "length": 100,
+     "complete": true,
+     "props": 17,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 500,
+     "to": 600,
+     "length": 100,
+     "complete": true,
+     "props": 16,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 600,
+     "to": 700,
+     "length": 100,
+     "complete": true,
+     "props": 19,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 700,
+     "to": 800,
+     "length": 100,
+     "complete": true,
+     "props": 18,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 800,
+     "to": 900,
+     "length": 100,
+     "complete": true,
+     "props": 31,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 900,
+     "to": 1000,
+     "length": 100,
+     "complete": true,
+     "props": 27,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1000,
+     "to": 1100,
+     "length": 100,
+     "complete": true,
+     "props": 18,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1100,
+     "to": 1200,
+     "length": 100,
+     "complete": true,
+     "props": 19,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1200,
+     "to": 1300,
+     "length": 100,
+     "complete": true,
+     "props": 19,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1300,
+     "to": 1400,
+     "length": 100,
+     "complete": true,
+     "props": 17,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1400,
+     "to": 1500,
+     "length": 100,
+     "complete": true,
+     "props": 19,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1500,
+     "to": 1600,
+     "length": 100,
+     "complete": true,
+     "props": 19,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1600,
+     "to": 1700,
+     "length": 100,
+     "complete": true,
+     "props": 23,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1700,
+     "to": 1800,
+     "length": 100,
+     "complete": true,
+     "props": 50,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1800,
+     "to": 1900,
+     "length": 100,
+     "complete": true,
+     "props": 21,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 1900,
+     "to": 2000,
+     "length": 100,
+     "complete": true,
+     "props": 17,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2000,
+     "to": 2100,
+     "length": 100,
+     "complete": true,
+     "props": 30,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2100,
+     "to": 2200,
+     "length": 100,
+     "complete": true,
+     "props": 18,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2200,
+     "to": 2300,
+     "length": 100,
+     "complete": true,
+     "props": 14,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2300,
+     "to": 2400,
+     "length": 100,
+     "complete": true,
+     "props": 14,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2400,
+     "to": 2500,
+     "length": 100,
+     "complete": true,
+     "props": 18,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2500,
+     "to": 2600,
+     "length": 100,
+     "complete": true,
+     "props": 18,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2600,
+     "to": 2700,
+     "length": 100,
+     "complete": true,
+     "props": 18,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2700,
+     "to": 2800,
+     "length": 100,
+     "complete": true,
+     "props": 18,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2800,
+     "to": 2900,
+     "length": 100,
+     "complete": true,
+     "props": 19,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 2900,
+     "to": 3000,
+     "length": 100,
+     "complete": true,
+     "props": 36,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 3000,
+     "to": 3100,
+     "length": 100,
+     "complete": true,
+     "props": 37,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 3100,
+     "to": 3200,
+     "length": 100,
+     "complete": true,
+     "props": 43,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 3200,
+     "to": 3300,
+     "length": 100,
+     "complete": true,
+     "props": 69,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 3300,
+     "to": 3366.8,
+     "length": 66.8,
+     "complete": false,
+     "props": 46,
+     "need": 9,
+     "pass": true
+    }
+   ]
+  },
+  "village": {
+   "streetLength": 444.6,
+   "units": 154,
+   "unitsWithin30m": 145,
+   "fronts": 120,
+   "variations": [
+    "arcade",
+    "fisher",
+    "townhouse",
+    "stone",
+    "cafe",
+    "tall",
+    "shop",
+    "public",
+    "church"
+   ],
+   "wallColours": 16,
+   "floorsMin": 2,
+   "floorsMax": 3,
+   "sideStreets": 5,
+   "sideStreetUnits": [
+    6,
+    6,
+    6,
+    7,
+    5
+   ],
+   "plaza": true,
+   "landmark": "church with bell tower",
+   "withBalcony": 29,
+   "withAwning": 42,
+   "withFlowerBoxes": 75,
+   "withChimney": 100,
+   "frontGardens": 12,
+   "windows": [
+    {
+     "from": 0,
+     "to": 100,
+     "length": 100,
+     "complete": true,
+     "units": 27,
+     "fronts": 23,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 100,
+     "to": 200,
+     "length": 100,
+     "complete": true,
+     "units": 30,
+     "fronts": 23,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 200,
+     "to": 300,
+     "length": 100,
+     "complete": true,
+     "units": 31,
+     "fronts": 27,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 300,
+     "to": 400,
+     "length": 100,
+     "complete": true,
+     "units": 33,
+     "fronts": 25,
+     "need": 12,
+     "pass": true
+    },
+    {
+     "from": 400,
+     "to": 444.6,
+     "length": 44.6,
+     "complete": false,
+     "units": 14,
+     "fronts": 12,
+     "need": 0,
+     "pass": true
+    }
+   ]
+  },
+  "wood": {
+   "length": 1068.7,
+   "windows": [
+    {
+     "from": 0,
+     "to": 100,
+     "length": 100,
+     "complete": true,
+     "L": 100,
+     "f": 1,
+     "trees": 66,
+     "shrubs": 104,
+     "ground": 258,
+     "species": {
+      "olive": 9,
+      "pine": 33,
+      "cypress": 9,
+      "oak": 15
+     },
+     "need": {
+      "trees": 16,
+      "shrubs": 10,
+      "ground": 12
+     },
+     "pass": true
+    },
+    {
+     "from": 100,
+     "to": 200,
+     "length": 100,
+     "complete": true,
+     "L": 100,
+     "f": 1,
+     "trees": 86,
+     "shrubs": 97,
+     "ground": 285,
+     "species": {
+      "pine": 24,
+      "oak": 12,
+      "olive": 39,
+      "cypress": 11
+     },
+     "need": {
+      "trees": 16,
+      "shrubs": 10,
+      "ground": 12
+     },
+     "pass": true
+    },
+    {
+     "from": 200,
+     "to": 300,
+     "length": 100,
+     "complete": true,
+     "L": 100,
+     "f": 1,
+     "trees": 71,
+     "shrubs": 114,
+     "ground": 311,
+     "species": {
+      "pine": 40,
+      "olive": 12,
+      "oak": 10,
+      "cypress": 9
+     },
+     "need": {
+      "trees": 16,
+      "shrubs": 10,
+      "ground": 12
+     },
+     "pass": true
+    },
+    {
+     "from": 300,
+     "to": 400,
+     "length": 100,
+     "complete": true,
+     "L": 100,
+     "f": 1,
+     "trees": 80,
+     "shrubs": 114,
+     "ground": 287,
+     "species": {
+      "pine": 30,
+      "cypress": 11,
+      "olive": 23,
+      "oak": 16
+     },
+     "need": {
+      "trees": 16,
+      "shrubs": 10,
+      "ground": 12
+     },
+     "pass": true
+    },
+    {
+     "from": 400,
+     "to": 500,
+     "length": 100,
+     "complete": true,
+     "L": 100,
+     "f": 1,
+     "trees": 75,
+     "shrubs": 104,
+     "ground": 314,
+     "species": {
+      "oak": 11,
+      "olive": 25,
+      "cypress": 15,
+      "pine": 24
+     },
+     "need": {
+      "trees": 16,
+      "shrubs": 10,
+      "ground": 12
+     },
+     "pass": true
+    },
+    {
+     "from": 500,
+     "to": 600,
+     "length": 100,
+     "complete": true,
+     "L": 100,
+     "f": 1,
+     "trees": 81,
+     "shrubs": 102,
+     "ground": 300,
+     "species": {
+      "oak": 11,
+      "pine": 40,
+      "cypress": 12,
+      "olive": 18
+     },
+     "need": {
+      "trees": 16,
+      "shrubs": 10,
+      "ground": 12
+     },
+     "pass": true
+    },
+    {
+     "from": 600,
+     "to": 700,
+     "length": 100,
+     "complete": true,
+     "L": 100,
+     "f": 1,
+     "trees": 80,
+     "shrubs": 106,
+     "ground": 285,
+     "species": {
+      "pine": 20,
+      "oak": 14,
+      "olive": 31,
+      "cypress": 15
+     },
+     "need": {
+      "trees": 16,
+      "shrubs": 10,
+      "ground": 12
+     },
+     "pass": true
+    },
+    {
+     "from": 700,
+     "to": 800,
+     "length": 100,
+     "complete": true,
+     "L": 100,
+     "f": 1,
+     "trees": 89,
+     "shrubs": 101,
+     "ground": 305,
+     "species": {
+      "pine": 27,
+      "cypress": 17,
+      "oak": 20,
+      "olive": 25
+     },
+     "need": {
+      "trees": 16,
+      "shrubs": 10,
+      "ground": 12
+     },
+     "pass": true
+    },
+    {
+     "from": 800,
+     "to": 900,
+     "length": 100,
+     "complete": true,
+     "L": 92,
+     "f": 0.92,
+     "trees": 70,
+     "shrubs": 94,
+     "ground": 280,
+     "species": {
+      "cypress": 12,
+      "oak": 11,
+      "pine": 16,
+      "olive": 31
+     },
+     "need": {
+      "trees": 15,
+      "shrubs": 10,
+      "ground": 12
+     },
+     "pass": true
+    },
+    {
+     "from": 900,
+     "to": 1000,
+     "length": 100,
+     "complete": true,
+     "L": 0,
+     "f": 0,
+     "trees": 0,
+     "shrubs": 1,
+     "ground": 8,
+     "species": {},
+     "need": {
+      "trees": 0,
+      "shrubs": 0,
+      "ground": 0
+     },
+     "pass": true
+    },
+    {
+     "from": 1000,
+     "to": 1068.7,
+     "length": 68.7,
+     "complete": false,
+     "L": 65.7,
+     "f": 0.657,
+     "trees": 48,
+     "shrubs": 54,
+     "ground": 172,
+     "species": {
+      "pine": 20,
+      "oak": 11,
+      "cypress": 6,
+      "olive": 11
+     },
+     "need": {
+      "trees": 11,
+      "shrubs": 7,
+      "ground": 8
+     },
+     "pass": true
+    }
+   ],
+   "bridge": {
+    "from": 2945.4,
+    "to": 3056,
+    "length": 110.6
+   }
+  },
+  "flora": {
+   "treeSpecies": {
+    "oak": 272,
+    "olive": 565,
+    "cypress": 297,
+    "pine": 651,
+    "palm": 129
+   },
+   "shrubTypes": [
+    "broom",
+    "oleander",
+    "rosemary",
+    "lentisk",
+    "agave"
+   ],
+   "groundTypes": [
+    "beachgrass",
+    "drygrass",
+    "grasstuft",
+    "flowers",
+    "herbs"
+   ]
+  },
+  "objects": {
+   "house": 160,
+   "prop": 947,
+   "tree": 1914,
+   "shrub": 3478,
+   "rock": 1609,
+   "ground": 12135
+  }
+ },
+ "counts": {
+  "objects": 20243,
+  "uniqueIds": 20243,
+  "byKind": {
+   "house": 160,
+   "prop": 947,
+   "tree": 1914,
+   "shrub": 3478,
+   "rock": 1609,
+   "ground": 12135
+  },
+  "houses": 154,
+  "houseVariations": 9,
+  "treeSpecies": 5,
+  "shrubTypes": 5,
+  "groundCoverTypes": 5,
+  "propsPer100mMin": 14,
+  "scatter": {
+   "instances": 21773,
+   "meshes": 5414,
+   "mergedVertices": 3130923,
+   "mergedMeshes": 2506,
+   "instancedMeshes": 2908,
+   "shadowProxies": 311,
+   "shadowVertices": 1480487
+  },
+  "sceneMeshes": {
+   "meshes": 1170,
+   "triangles": 3560705
+  }
+ },
+ "engineAudio": {
+  "graphStarted": true,
+  "playerModel": "hatch",
+  "playerEngineSources": [
+   {
+    "rpm": 840,
+    "audioBuffer": true,
+    "seconds": 2.15,
+    "loop": true
+   },
+   {
+    "rpm": 1478,
+    "audioBuffer": true,
+    "seconds": 1.63,
+    "loop": true
+   },
+   {
+    "rpm": 2012,
+    "audioBuffer": true,
+    "seconds": 2.03,
+    "loop": true
+   },
+   {
+    "rpm": 2550,
+    "audioBuffer": true,
+    "seconds": 1.52,
+    "loop": true
+   },
+   {
+    "rpm": 3093,
+    "audioBuffer": true,
+    "seconds": 0.5,
+    "loop": true
+   },
+   {
+    "rpm": 4171,
+    "audioBuffer": true,
+    "seconds": 0.55,
+    "loop": true
+   },
+   {
+    "rpm": 5496,
+    "audioBuffer": true,
+    "seconds": 0.55,
+    "loop": true
+   },
+   {
+    "rpm": 6588,
+    "audioBuffer": true,
+    "seconds": 0.53,
+    "loop": true
+   },
+   {
+    "rpm": 842,
+    "audioBuffer": true,
+    "seconds": 2.15,
+    "loop": true
+   },
+   {
+    "rpm": 1477,
+    "audioBuffer": true,
+    "seconds": 1.59,
+    "loop": true
+   },
+   {
+    "rpm": 2013,
+    "audioBuffer": true,
+    "seconds": 2.03,
+    "loop": true
+   },
+   {
+    "rpm": 2548,
+    "audioBuffer": true,
+    "seconds": 1.5,
+    "loop": true
+   }
+  ],
+  "timbres": {
+   "gt": {
+    "source": "Chippy569 (Freesound, CC0)",
+    "onThrottleBands": [
+     1295,
+     2011,
+     2860,
+     4619,
+     5396,
+     5868,
+     6214
+    ],
+    "overrunBands": [
+     1421,
+     2556,
+     6215
+    ],
+    "decoded": true
+   },
+   "hatch": {
+    "source": "GiocoSound, Chippy569 (Freesound, CC0)",
+    "onThrottleBands": [
+     840,
+     1478,
+     2012,
+     2550,
+     3093,
+     4171,
+     5496,
+     6588
+    ],
+    "overrunBands": [
+     842,
+     1477,
+     2013,
+     2548
+    ],
+    "decoded": true
+   }
+  },
+  "pass": true
+ },
+ "validation": {
+  "ok": true,
+  "errors": []
+ },
+ "pass": true
+}

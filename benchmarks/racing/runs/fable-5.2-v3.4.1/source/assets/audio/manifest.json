@@ -1,0 +1,301 @@
+{
+ "engines": {
+  "gt": {
+   "on": [
+    {
+     "file": "gt_on_0.wav",
+     "seconds": 1.487,
+     "rate": 44100,
+     "firingHz": 43.17,
+     "rpm": 1295,
+     "seam": 0.959
+    },
+    {
+     "file": "gt_on_1.wav",
+     "seconds": 0.268,
+     "rate": 44100,
+     "firingHz": 67.04,
+     "rpm": 2011,
+     "seam": 0.717
+    },
+    {
+     "file": "gt_on_2.wav",
+     "seconds": 0.472,
+     "rate": 44100,
+     "firingHz": 95.34,
+     "rpm": 2860,
+     "seam": 0.721
+    },
+    {
+     "file": "gt_on_3.wav",
+     "seconds": 0.448,
+     "rate": 44100,
+     "firingHz": 153.98,
+     "rpm": 4619,
+     "seam": 0.6
+    },
+    {
+     "file": "gt_on_4.wav",
+     "seconds": 0.488,
+     "rate": 44100,
+     "firingHz": 179.85,
+     "rpm": 5396,
+     "seam": 0.52
+    },
+    {
+     "file": "gt_on_5.wav",
+     "seconds": 0.348,
+     "rate": 44100,
+     "firingHz": 195.59,
+     "rpm": 5868,
+     "seam": 0.38
+    },
+    {
+     "file": "gt_on_6.wav",
+     "seconds": 1.2,
+     "rate": 44100,
+     "firingHz": 207.15,
+     "rpm": 6214,
+     "seam": 0.527
+    }
+   ],
+   "off": [
+    {
+     "file": "gt_off_0.wav",
+     "seconds": 1.559,
+     "rate": 44100,
+     "firingHz": 47.36,
+     "rpm": 1421,
+     "seam": 0.854
+    },
+    {
+     "file": "gt_off_1.wav",
+     "seconds": 1.596,
+     "rate": 44100,
+     "firingHz": 85.21,
+     "rpm": 2556,
+     "seam": 0.985
+    },
+    {
+     "file": "gt_off_2.wav",
+     "seconds": 1.199,
+     "rate": 44100,
+     "firingHz": 207.16,
+     "rpm": 6215,
+     "seam": 0.655
+    }
+   ],
+   "cylinders": 4,
+   "source": "Chippy569 (Freesound, CC0)"
+  },
+  "hatch": {
+   "on": [
+    {
+     "file": "hatch_on_0.wav",
+     "seconds": 2.151,
+     "rate": 44100,
+     "firingHz": 28.0,
+     "rpm": 840,
+     "seam": 0.982
+    },
+    {
+     "file": "hatch_on_1.wav",
+     "seconds": 1.626,
+     "rate": 44100,
+     "firingHz": 49.26,
+     "rpm": 1478,
+     "seam": 0.958
+    },
+    {
+     "file": "hatch_on_2.wav",
+     "seconds": 2.032,
+     "rate": 44100,
+     "firingHz": 67.05,
+     "rpm": 2012,
+     "seam": 0.906
+    },
+    {
+     "file": "hatch_on_3.wav",
+     "seconds": 1.518,
+     "rate": 44100,
+     "firingHz": 84.99,
+     "rpm": 2550,
+     "seam": 0.686
+    },
+    {
+     "file": "hatch_on_4.wav",
+     "seconds": 0.504,
+     "rate": 44100,
+     "firingHz": 103.11,
+     "rpm": 3093,
+     "seam": 0.684
+    },
+    {
+     "file": "hatch_on_5.wav",
+     "seconds": 0.552,
+     "rate": 44100,
+     "firingHz": 139.02,
+     "rpm": 4171,
+     "seam": 0.438
+    },
+    {
+     "file": "hatch_on_6.wav",
+     "seconds": 0.551,
+     "rate": 44100,
+     "firingHz": 183.21,
+     "rpm": 5496,
+     "seam": 0.649
+    },
+    {
+     "file": "hatch_on_7.wav",
+     "seconds": 0.527,
+     "rate": 44100,
+     "firingHz": 219.61,
+     "rpm": 6588,
+     "seam": 0.64
+    }
+   ],
+   "off": [
+    {
+     "file": "hatch_off_0.wav",
+     "seconds": 2.154,
+     "rate": 44100,
+     "firingHz": 28.08,
+     "rpm": 842,
+     "seam": 0.977
+    },
+    {
+     "file": "hatch_off_1.wav",
+     "seconds": 1.586,
+     "rate": 44100,
+     "firingHz": 49.24,
+     "rpm": 1477,
+     "seam": 0.968
+    },
+    {
+     "file": "hatch_off_2.wav",
+     "seconds": 2.032,
+     "rate": 44100,
+     "firingHz": 67.1,
+     "rpm": 2013,
+     "seam": 0.987
+    },
+    {
+     "file": "hatch_off_3.wav",
+     "seconds": 1.495,
+     "rate": 44100,
+     "firingHz": 84.93,
+     "rpm": 2548,
+     "seam": 0.841
+    }
+   ],
+   "cylinders": 4,
+   "source": "GiocoSound, Chippy569 (Freesound, CC0)"
+  }
+ },
+ "sounds": {
+  "squeal": {
+   "file": "squeal.wav",
+   "seconds": 1.3,
+   "rate": 32000,
+   "loop": true
+  },
+  "scrub": {
+   "file": "scrub.wav",
+   "seconds": 1.55,
+   "rate": 32000,
+   "loop": true
+  },
+  "roll_asphalt": {
+   "file": "roll_asphalt.wav",
+   "seconds": 4.0,
+   "rate": 32000,
+   "loop": true
+  },
+  "roll_kerb": {
+   "file": "roll_kerb.wav",
+   "seconds": 4.0,
+   "rate": 32000,
+   "loop": true
+  },
+  "roll_gravel": {
+   "file": "roll_gravel.wav",
+   "seconds": 4.0,
+   "rate": 32000,
+   "loop": true
+  },
+  "roll_grass": {
+   "file": "roll_grass.wav",
+   "seconds": 4.0,
+   "rate": 32000,
+   "loop": true
+  },
+  "wind": {
+   "file": "wind.wav",
+   "seconds": 10.0,
+   "rate": 32000,
+   "loop": true
+  },
+  "crash_0": {
+   "file": "crash_0.wav",
+   "seconds": 0.9,
+   "rate": 32000
+  },
+  "crash_1": {
+   "file": "crash_1.wav",
+   "seconds": 0.3,
+   "rate": 32000
+  },
+  "crash_2": {
+   "file": "crash_2.wav",
+   "seconds": 0.7,
+   "rate": 32000
+  },
+  "scrape": {
+   "file": "scrape.wav",
+   "seconds": 1.55,
+   "rate": 32000,
+   "loop": true
+  },
+  "shift": {
+   "file": "shift.wav",
+   "seconds": 0.3,
+   "rate": 32000
+  },
+  "amb_sea": {
+   "file": "amb_sea.wav",
+   "seconds": 20.5,
+   "rate": 32000,
+   "loop": true
+  },
+  "amb_gulls": {
+   "file": "amb_gulls.wav",
+   "seconds": 8.2,
+   "rate": 32000,
+   "loop": true
+  },
+  "amb_village": {
+   "file": "amb_village.wav",
+   "seconds": 16.5,
+   "rate": 32000,
+   "loop": true
+  },
+  "amb_bells": {
+   "file": "amb_bells.wav",
+   "seconds": 7.503,
+   "rate": 32000
+  },
+  "amb_birds": {
+   "file": "amb_birds.wav",
+   "seconds": 19.8,
+   "rate": 32000,
+   "loop": true
+  },
+  "amb_cicadas": {
+   "file": "amb_cicadas.wav",
+   "seconds": 11.0,
+   "rate": 32000,
+   "loop": true
+  }
+ }
+}

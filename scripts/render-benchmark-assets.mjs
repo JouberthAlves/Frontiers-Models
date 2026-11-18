@@ -31,9 +31,10 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     racingRuns[2].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
     racingRuns[3].id !== 'gemini-4-argon-v3.4' ||
     racingRuns[3].live_url !== 'https://racing-gemini-4-argon.biel.dev.br/' ||
-    racingRuns[4].id !== 'sonnet-5.5-v3.4' ||
-    racingRuns[4].live_url !== 'https://racing-sonnet-5.5.biel.dev.br/' ||
-    racingRuns[4].site_url !== 'https://racing-sonnet-5.5.biel.dev.br/' ||
+    racingRuns[4].id !== 'fable-5.2-v3.4.1' ||
+    racingRuns[4].display_label !== 'Fable 5.2 (V3.4.1)' ||
+    racingRuns[4].live_url !== null ||
+    racingRuns[4].site_url !== null ||
     racingRuns[5].id !== 'gemini-4-hydrogen-v3.4' ||
     racingRuns[5].live_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
     racingRuns[5].site_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
@@ -71,7 +72,7 @@ const orbitBadges = orbitRuns.map((run, i) =>
 
 const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">${currentRunCount} current runs across two benchmarks: ${racingRuns.length} Racing V3.4 (${escape(racingRuns.map(run => run.model).join(', '))}) and ${orbitRuns.length} Orbitarium (${escape(orbitRuns.map(run => run.model).join(', '))}).</desc>
+  <desc id="desc">${currentRunCount} current runs across two benchmarks: ${racingRuns.length} Racing (${escape(racingRuns.map(run => run.model).join(', '))}) and ${orbitRuns.length} Orbitarium (${escape(orbitRuns.map(run => run.model).join(', '))}).</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -117,12 +118,12 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" rol
     <g data-benchmark="racing">
       <rect x="613" y="51" width="775" height="280" rx="22" fill="url(#race)" stroke="#7d5565" stroke-opacity=".8"/>
       <path d="M649 67H929" stroke="#fdaf6d" stroke-width="3" stroke-linecap="round"/>
-      <text x="1200" y="84" font-size="17" font-weight="700" fill="#ffc99d">V3.4 CURRENT</text>
+      <text x="1335" y="84" text-anchor="end" font-size="17" font-weight="700" fill="#ffc99d">CURRENT RUNS</text>
       <g stroke="#ec9b70" fill="none" stroke-linecap="round" opacity=".27">
         <path d="M1050 88h283M1135 99h199M1224 111h111" stroke-width="2"/>
         <path d="M1000 143l29 -25 40 19 22 -17 46 19 32 -20 65 25 46 -20 46 20" stroke-width="1.4"/>
       </g>
-      <text x="649" y="137" font-size="38" font-weight="800" fill="#fff5ed">Racing-bench V3.4</text>
+      <text x="649" y="137" font-size="38" font-weight="800" fill="#fff5ed">Racing-bench</text>
       ${racingBadges}
     </g>
     <g data-benchmark="orbitarium">

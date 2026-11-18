@@ -1,0 +1,2314 @@
+{
+ "preset": "Baixa",
+ "step": 25,
+ "points": 135,
+ "viewport": [
+  640,
+  360
+ ],
+ "camera": "chase (same camera as the game), player at 28 m/s on the centre line, rivals removed from the frame",
+ "tunnel": "none on this circuit (the crossing of the inlet is an open bridge): no point is exempt from the sky rule",
+ "skyMin": 0.1219,
+ "meanMin": 0.2843,
+ "meanMax": 0.5562,
+ "stdMin": 0.166,
+ "bucketMax": 0.2662,
+ "failing": 0,
+ "frames": [
+  {
+   "s": 0,
+   "file": "s0000.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2692,
+   "luminanceMean": 0.4304,
+   "luminanceStd": 0.2658,
+   "dominantBucketShare": 0.1278,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 8
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 25,
+   "file": "s0025.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2547,
+   "luminanceMean": 0.424,
+   "luminanceStd": 0.2633,
+   "dominantBucketShare": 0.1506,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 8.39
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 50,
+   "file": "s0050.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2648,
+   "luminanceMean": 0.4453,
+   "luminanceStd": 0.2514,
+   "dominantBucketShare": 0.1027,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 8.4
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 75,
+   "file": "s0075.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2738,
+   "luminanceMean": 0.4347,
+   "luminanceStd": 0.2652,
+   "dominantBucketShare": 0.1315,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 7.96
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 100,
+   "file": "s0100.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2801,
+   "luminanceMean": 0.4344,
+   "luminanceStd": 0.264,
+   "dominantBucketShare": 0.1182,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 7.85
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 125,
+   "file": "s0125.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2733,
+   "luminanceMean": 0.4266,
+   "luminanceStd": 0.266,
+   "dominantBucketShare": 0.1507,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 7.75
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 150,
+   "file": "s0150.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2515,
+   "luminanceMean": 0.4238,
+   "luminanceStd": 0.2604,
+   "dominantBucketShare": 0.1093,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 175,
+   "file": "s0175.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2824,
+   "luminanceMean": 0.4242,
+   "luminanceStd": 0.2726,
+   "dominantBucketShare": 0.1534,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 200,
+   "file": "s0200.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2711,
+   "luminanceMean": 0.4363,
+   "luminanceStd": 0.2639,
+   "dominantBucketShare": 0.1038,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 225,
+   "file": "s0225.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2757,
+   "luminanceMean": 0.4466,
+   "luminanceStd": 0.2539,
+   "dominantBucketShare": 0.1131,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 250,
+   "file": "s0250.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2726,
+   "luminanceMean": 0.4286,
+   "luminanceStd": 0.2637,
+   "dominantBucketShare": 0.1065,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 275,
+   "file": "s0275.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2839,
+   "luminanceMean": 0.4173,
+   "luminanceStd": 0.2763,
+   "dominantBucketShare": 0.1737,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 300,
+   "file": "s0300.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2863,
+   "luminanceMean": 0.4377,
+   "luminanceStd": 0.2668,
+   "dominantBucketShare": 0.1354,
+   "cameraClearance": {
+    "terrain": 1.81,
+    "barrier": 12.03
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 325,
+   "file": "s0325.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2703,
+   "luminanceMean": 0.4132,
+   "luminanceStd": 0.2597,
+   "dominantBucketShare": 0.1116,
+   "cameraClearance": {
+    "terrain": 1.87,
+    "barrier": 12.55
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 350,
+   "file": "s0350.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2577,
+   "luminanceMean": 0.3764,
+   "luminanceStd": 0.2593,
+   "dominantBucketShare": 0.154,
+   "cameraClearance": {
+    "terrain": 2,
+    "barrier": 16.64
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 375,
+   "file": "s0375.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2423,
+   "luminanceMean": 0.3517,
+   "luminanceStd": 0.2458,
+   "dominantBucketShare": 0.1459,
+   "cameraClearance": {
+    "terrain": 2.09,
+    "barrier": 18.34
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 400,
+   "file": "s0400.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2096,
+   "luminanceMean": 0.3147,
+   "luminanceStd": 0.2273,
+   "dominantBucketShare": 0.1649,
+   "cameraClearance": {
+    "terrain": 2.15,
+    "barrier": 18.32
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 425,
+   "file": "s0425.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1979,
+   "luminanceMean": 0.3287,
+   "luminanceStd": 0.2244,
+   "dominantBucketShare": 0.1499,
+   "cameraClearance": {
+    "terrain": 2.21,
+    "barrier": 8.25
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 450,
+   "file": "s0450.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2045,
+   "luminanceMean": 0.3187,
+   "luminanceStd": 0.2404,
+   "dominantBucketShare": 0.1256,
+   "cameraClearance": {
+    "terrain": 2.39,
+    "barrier": 7.52
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 475,
+   "file": "s0475.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2002,
+   "luminanceMean": 0.3202,
+   "luminanceStd": 0.2324,
+   "dominantBucketShare": 0.1216,
+   "cameraClearance": {
+    "terrain": 2.52,
+    "barrier": 6.97
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 500,
+   "file": "s0500.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1826,
+   "luminanceMean": 0.3064,
+   "luminanceStd": 0.2223,
+   "dominantBucketShare": 0.1004,
+   "cameraClearance": {
+    "terrain": 2.44,
+    "barrier": 7.01
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 525,
+   "file": "s0525.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1403,
+   "luminanceMean": 0.287,
+   "luminanceStd": 0.1842,
+   "dominantBucketShare": 0.1738,
+   "cameraClearance": {
+    "terrain": 2.17,
+    "barrier": 7.1
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 550,
+   "file": "s0550.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1219,
+   "luminanceMean": 0.2843,
+   "luminanceStd": 0.166,
+   "dominantBucketShare": 0.1237,
+   "cameraClearance": {
+    "terrain": 2.06,
+    "barrier": 7.44
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 575,
+   "file": "s0575.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1233,
+   "luminanceMean": 0.29,
+   "luminanceStd": 0.1772,
+   "dominantBucketShare": 0.1983,
+   "cameraClearance": {
+    "terrain": 2.03,
+    "barrier": 7.47
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 600,
+   "file": "s0600.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1381,
+   "luminanceMean": 0.2886,
+   "luminanceStd": 0.1904,
+   "dominantBucketShare": 0.1488,
+   "cameraClearance": {
+    "terrain": 2.03,
+    "barrier": 7.48
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 625,
+   "file": "s0625.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1631,
+   "luminanceMean": 0.2963,
+   "luminanceStd": 0.1849,
+   "dominantBucketShare": 0.1572,
+   "cameraClearance": {
+    "terrain": 2.08,
+    "barrier": 7.82
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 650,
+   "file": "s0650.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2073,
+   "luminanceMean": 0.3151,
+   "luminanceStd": 0.1788,
+   "dominantBucketShare": 0.2066,
+   "cameraClearance": {
+    "terrain": 2.11,
+    "barrier": 7.06
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 675,
+   "file": "s0675.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.205,
+   "luminanceMean": 0.2974,
+   "luminanceStd": 0.1933,
+   "dominantBucketShare": 0.0856,
+   "cameraClearance": {
+    "terrain": 2.14,
+    "barrier": 6.76
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 700,
+   "file": "s0700.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2215,
+   "luminanceMean": 0.3105,
+   "luminanceStd": 0.188,
+   "dominantBucketShare": 0.0862,
+   "cameraClearance": {
+    "terrain": 2.16,
+    "barrier": 7.01
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 725,
+   "file": "s0725.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2287,
+   "luminanceMean": 0.3208,
+   "luminanceStd": 0.1806,
+   "dominantBucketShare": 0.1319,
+   "cameraClearance": {
+    "terrain": 2.15,
+    "barrier": 7.25
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 750,
+   "file": "s0750.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2783,
+   "luminanceMean": 0.3352,
+   "luminanceStd": 0.1915,
+   "dominantBucketShare": 0.133,
+   "cameraClearance": {
+    "terrain": 2.13,
+    "barrier": 6.95
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 775,
+   "file": "s0775.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2833,
+   "luminanceMean": 0.3337,
+   "luminanceStd": 0.1953,
+   "dominantBucketShare": 0.1939,
+   "cameraClearance": {
+    "terrain": 2.09,
+    "barrier": 6.95
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 800,
+   "file": "s0800.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.283,
+   "luminanceMean": 0.3388,
+   "luminanceStd": 0.1973,
+   "dominantBucketShare": 0.1843,
+   "cameraClearance": {
+    "terrain": 2.03,
+    "barrier": 7.03
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 825,
+   "file": "s0825.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2767,
+   "luminanceMean": 0.3247,
+   "luminanceStd": 0.2046,
+   "dominantBucketShare": 0.2662,
+   "cameraClearance": {
+    "terrain": 1.94,
+    "barrier": 7.19
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 850,
+   "file": "s0850.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2653,
+   "luminanceMean": 0.3432,
+   "luminanceStd": 0.1924,
+   "dominantBucketShare": 0.1682,
+   "cameraClearance": {
+    "terrain": 1.95,
+    "barrier": 7.86
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 875,
+   "file": "s0875.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2367,
+   "luminanceMean": 0.3065,
+   "luminanceStd": 0.1942,
+   "dominantBucketShare": 0.2267,
+   "cameraClearance": {
+    "terrain": 1.93,
+    "barrier": 7.89
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 900,
+   "file": "s0900.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2179,
+   "luminanceMean": 0.3099,
+   "luminanceStd": 0.2051,
+   "dominantBucketShare": 0.221,
+   "cameraClearance": {
+    "terrain": 1.93,
+    "barrier": 7.88
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 925,
+   "file": "s0925.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2502,
+   "luminanceMean": 0.3858,
+   "luminanceStd": 0.2451,
+   "dominantBucketShare": 0.1442,
+   "cameraClearance": {
+    "terrain": 1.94,
+    "barrier": 7.86
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 950,
+   "file": "s0950.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2352,
+   "luminanceMean": 0.3716,
+   "luminanceStd": 0.2578,
+   "dominantBucketShare": 0.1355,
+   "cameraClearance": {
+    "terrain": 1.96,
+    "barrier": 7.57
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 975,
+   "file": "s0975.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2365,
+   "luminanceMean": 0.3941,
+   "luminanceStd": 0.2613,
+   "dominantBucketShare": 0.1111,
+   "cameraClearance": {
+    "terrain": 1.94,
+    "barrier": 6.99
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1000,
+   "file": "s1000.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2367,
+   "luminanceMean": 0.4005,
+   "luminanceStd": 0.2612,
+   "dominantBucketShare": 0.0993,
+   "cameraClearance": {
+    "terrain": 1.94,
+    "barrier": 6.8
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1025,
+   "file": "s1025.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2358,
+   "luminanceMean": 0.3856,
+   "luminanceStd": 0.2631,
+   "dominantBucketShare": 0.1574,
+   "cameraClearance": {
+    "terrain": 1.94,
+    "barrier": 6.82
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1050,
+   "file": "s1050.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2417,
+   "luminanceMean": 0.4035,
+   "luminanceStd": 0.2568,
+   "dominantBucketShare": 0.1465,
+   "cameraClearance": {
+    "terrain": 1.95,
+    "barrier": 7.08
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1075,
+   "file": "s1075.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2714,
+   "luminanceMean": 0.4176,
+   "luminanceStd": 0.2647,
+   "dominantBucketShare": 0.1477,
+   "cameraClearance": {
+    "terrain": 1.96,
+    "barrier": 7.26
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1100,
+   "file": "s1100.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2825,
+   "luminanceMean": 0.4291,
+   "luminanceStd": 0.263,
+   "dominantBucketShare": 0.1837,
+   "cameraClearance": {
+    "terrain": 1.97,
+    "barrier": 7.01
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1125,
+   "file": "s1125.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2842,
+   "luminanceMean": 0.4071,
+   "luminanceStd": 0.2731,
+   "dominantBucketShare": 0.1382,
+   "cameraClearance": {
+    "terrain": 1.98,
+    "barrier": 6.98
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1150,
+   "file": "s1150.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2448,
+   "luminanceMean": 0.39,
+   "luminanceStd": 0.2651,
+   "dominantBucketShare": 0.1571,
+   "cameraClearance": {
+    "terrain": 2,
+    "barrier": 6.98
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1175,
+   "file": "s1175.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2766,
+   "luminanceMean": 0.391,
+   "luminanceStd": 0.28,
+   "dominantBucketShare": 0.2097,
+   "cameraClearance": {
+    "terrain": 2.01,
+    "barrier": 6.99
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1200,
+   "file": "s1200.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2621,
+   "luminanceMean": 0.3893,
+   "luminanceStd": 0.2694,
+   "dominantBucketShare": 0.1679,
+   "cameraClearance": {
+    "terrain": 2.04,
+    "barrier": 7.01
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1225,
+   "file": "s1225.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2787,
+   "luminanceMean": 0.3919,
+   "luminanceStd": 0.2641,
+   "dominantBucketShare": 0.1263,
+   "cameraClearance": {
+    "terrain": 2.1,
+    "barrier": 7.65
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1250,
+   "file": "s1250.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2492,
+   "luminanceMean": 0.3421,
+   "luminanceStd": 0.2441,
+   "dominantBucketShare": 0.1251,
+   "cameraClearance": {
+    "terrain": 2.17,
+    "barrier": 7.67
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1275,
+   "file": "s1275.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2598,
+   "luminanceMean": 0.3266,
+   "luminanceStd": 0.2255,
+   "dominantBucketShare": 0.2131,
+   "cameraClearance": {
+    "terrain": 2.19,
+    "barrier": 7.68
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1300,
+   "file": "s1300.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2411,
+   "luminanceMean": 0.2981,
+   "luminanceStd": 0.2072,
+   "dominantBucketShare": 0.1279,
+   "cameraClearance": {
+    "terrain": 2.17,
+    "barrier": 7.71
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1325,
+   "file": "s1325.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2219,
+   "luminanceMean": 0.2945,
+   "luminanceStd": 0.1942,
+   "dominantBucketShare": 0.254,
+   "cameraClearance": {
+    "terrain": 2.17,
+    "barrier": 7.39
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1350,
+   "file": "s1350.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.276,
+   "luminanceMean": 0.3257,
+   "luminanceStd": 0.2042,
+   "dominantBucketShare": 0.1951,
+   "cameraClearance": {
+    "terrain": 2.17,
+    "barrier": 7.62
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1375,
+   "file": "s1375.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2638,
+   "luminanceMean": 0.3299,
+   "luminanceStd": 0.2049,
+   "dominantBucketShare": 0.195,
+   "cameraClearance": {
+    "terrain": 2.19,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1400,
+   "file": "s1400.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2757,
+   "luminanceMean": 0.3442,
+   "luminanceStd": 0.1995,
+   "dominantBucketShare": 0.1816,
+   "cameraClearance": {
+    "terrain": 2.18,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1425,
+   "file": "s1425.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2728,
+   "luminanceMean": 0.3354,
+   "luminanceStd": 0.1968,
+   "dominantBucketShare": 0.136,
+   "cameraClearance": {
+    "terrain": 2.16,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1450,
+   "file": "s1450.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2464,
+   "luminanceMean": 0.3232,
+   "luminanceStd": 0.1989,
+   "dominantBucketShare": 0.1555,
+   "cameraClearance": {
+    "terrain": 2.13,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1475,
+   "file": "s1475.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2561,
+   "luminanceMean": 0.3298,
+   "luminanceStd": 0.2053,
+   "dominantBucketShare": 0.2556,
+   "cameraClearance": {
+    "terrain": 2.08,
+    "barrier": 7.75
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1500,
+   "file": "s1500.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2781,
+   "luminanceMean": 0.3351,
+   "luminanceStd": 0.2104,
+   "dominantBucketShare": 0.2447,
+   "cameraClearance": {
+    "terrain": 2.02,
+    "barrier": 7.75
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1525,
+   "file": "s1525.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2786,
+   "luminanceMean": 0.3223,
+   "luminanceStd": 0.2107,
+   "dominantBucketShare": 0.1764,
+   "cameraClearance": {
+    "terrain": 1.95,
+    "barrier": 7.04
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1550,
+   "file": "s1550.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2509,
+   "luminanceMean": 0.3541,
+   "luminanceStd": 0.2074,
+   "dominantBucketShare": 0.1572,
+   "cameraClearance": {
+    "terrain": 1.91,
+    "barrier": 6.92
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1575,
+   "file": "s1575.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2013,
+   "luminanceMean": 0.3953,
+   "luminanceStd": 0.2085,
+   "dominantBucketShare": 0.1979,
+   "cameraClearance": {
+    "terrain": 1.9,
+    "barrier": 7.99
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1600,
+   "file": "s1600.png",
+   "zone": "Z2",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.154,
+   "luminanceMean": 0.3734,
+   "luminanceStd": 0.1892,
+   "dominantBucketShare": 0.1927,
+   "cameraClearance": {
+    "terrain": 1.88,
+    "barrier": 8.7
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1625,
+   "file": "s1625.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1277,
+   "luminanceMean": 0.429,
+   "luminanceStd": 0.1976,
+   "dominantBucketShare": 0.0957,
+   "cameraClearance": {
+    "terrain": 1.86,
+    "barrier": 9.26
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1650,
+   "file": "s1650.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1312,
+   "luminanceMean": 0.471,
+   "luminanceStd": 0.1782,
+   "dominantBucketShare": 0.123,
+   "cameraClearance": {
+    "terrain": 1.86,
+    "barrier": 9.3
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1675,
+   "file": "s1675.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1481,
+   "luminanceMean": 0.4617,
+   "luminanceStd": 0.1984,
+   "dominantBucketShare": 0.0861,
+   "cameraClearance": {
+    "terrain": 1.84,
+    "barrier": 9.18
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1700,
+   "file": "s1700.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1356,
+   "luminanceMean": 0.4514,
+   "luminanceStd": 0.1998,
+   "dominantBucketShare": 0.1499,
+   "cameraClearance": {
+    "terrain": 1.83,
+    "barrier": 9.12
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1725,
+   "file": "s1725.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1322,
+   "luminanceMean": 0.4481,
+   "luminanceStd": 0.2145,
+   "dominantBucketShare": 0.1493,
+   "cameraClearance": {
+    "terrain": 1.82,
+    "barrier": 9.39
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1750,
+   "file": "s1750.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1625,
+   "luminanceMean": 0.4572,
+   "luminanceStd": 0.1987,
+   "dominantBucketShare": 0.1474,
+   "cameraClearance": {
+    "terrain": 1.79,
+    "barrier": 9.24
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1775,
+   "file": "s1775.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1931,
+   "luminanceMean": 0.4531,
+   "luminanceStd": 0.1905,
+   "dominantBucketShare": 0.1783,
+   "cameraClearance": {
+    "terrain": 1.78,
+    "barrier": 9.26
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1800,
+   "file": "s1800.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1447,
+   "luminanceMean": 0.4534,
+   "luminanceStd": 0.1772,
+   "dominantBucketShare": 0.1438,
+   "cameraClearance": {
+    "terrain": 1.76,
+    "barrier": 9.19
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1825,
+   "file": "s1825.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1523,
+   "luminanceMean": 0.4398,
+   "luminanceStd": 0.193,
+   "dominantBucketShare": 0.1187,
+   "cameraClearance": {
+    "terrain": 1.72,
+    "barrier": 9.41
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1850,
+   "file": "s1850.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1328,
+   "luminanceMean": 0.4351,
+   "luminanceStd": 0.1871,
+   "dominantBucketShare": 0.1191,
+   "cameraClearance": {
+    "terrain": 1.73,
+    "barrier": 9.26
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1875,
+   "file": "s1875.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1408,
+   "luminanceMean": 0.3995,
+   "luminanceStd": 0.1865,
+   "dominantBucketShare": 0.1181,
+   "cameraClearance": {
+    "terrain": 1.77,
+    "barrier": 9.25
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1900,
+   "file": "s1900.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1311,
+   "luminanceMean": 0.3953,
+   "luminanceStd": 0.203,
+   "dominantBucketShare": 0.1209,
+   "cameraClearance": {
+    "terrain": 1.77,
+    "barrier": 9.25
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1925,
+   "file": "s1925.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1363,
+   "luminanceMean": 0.4147,
+   "luminanceStd": 0.2025,
+   "dominantBucketShare": 0.0975,
+   "cameraClearance": {
+    "terrain": 1.76,
+    "barrier": 9.33
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1950,
+   "file": "s1950.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.144,
+   "luminanceMean": 0.4245,
+   "luminanceStd": 0.2008,
+   "dominantBucketShare": 0.1515,
+   "cameraClearance": {
+    "terrain": 1.76,
+    "barrier": 9.18
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 1975,
+   "file": "s1975.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1323,
+   "luminanceMean": 0.4186,
+   "luminanceStd": 0.2053,
+   "dominantBucketShare": 0.1049,
+   "cameraClearance": {
+    "terrain": 1.76,
+    "barrier": 9.15
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2000,
+   "file": "s2000.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1565,
+   "luminanceMean": 0.4476,
+   "luminanceStd": 0.2165,
+   "dominantBucketShare": 0.0922,
+   "cameraClearance": {
+    "terrain": 1.76,
+    "barrier": 9.15
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2025,
+   "file": "s2025.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1414,
+   "luminanceMean": 0.3992,
+   "luminanceStd": 0.1986,
+   "dominantBucketShare": 0.1384,
+   "cameraClearance": {
+    "terrain": 1.75,
+    "barrier": 9.18
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2050,
+   "file": "s2050.png",
+   "zone": "Z3",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1342,
+   "luminanceMean": 0.423,
+   "luminanceStd": 0.193,
+   "dominantBucketShare": 0.1499,
+   "cameraClearance": {
+    "terrain": 1.73,
+    "barrier": 9.31
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2075,
+   "file": "s2075.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1514,
+   "luminanceMean": 0.3615,
+   "luminanceStd": 0.2047,
+   "dominantBucketShare": 0.123,
+   "cameraClearance": {
+    "terrain": 1.65,
+    "barrier": 9.27
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2100,
+   "file": "s2100.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1752,
+   "luminanceMean": 0.3635,
+   "luminanceStd": 0.2075,
+   "dominantBucketShare": 0.1263,
+   "cameraClearance": {
+    "terrain": 1.55,
+    "barrier": 9.32
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2125,
+   "file": "s2125.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.189,
+   "luminanceMean": 0.3663,
+   "luminanceStd": 0.2138,
+   "dominantBucketShare": 0.098,
+   "cameraClearance": {
+    "terrain": 1.48,
+    "barrier": 9.41
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2150,
+   "file": "s2150.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.252,
+   "luminanceMean": 0.3939,
+   "luminanceStd": 0.2224,
+   "dominantBucketShare": 0.1446,
+   "cameraClearance": {
+    "terrain": 1.48,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2175,
+   "file": "s2175.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.206,
+   "luminanceMean": 0.3832,
+   "luminanceStd": 0.202,
+   "dominantBucketShare": 0.1112,
+   "cameraClearance": {
+    "terrain": 1.51,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2200,
+   "file": "s2200.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1913,
+   "luminanceMean": 0.3814,
+   "luminanceStd": 0.2083,
+   "dominantBucketShare": 0.1315,
+   "cameraClearance": {
+    "terrain": 1.54,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2225,
+   "file": "s2225.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2125,
+   "luminanceMean": 0.3714,
+   "luminanceStd": 0.2118,
+   "dominantBucketShare": 0.1485,
+   "cameraClearance": {
+    "terrain": 1.55,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2250,
+   "file": "s2250.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1516,
+   "luminanceMean": 0.3365,
+   "luminanceStd": 0.198,
+   "dominantBucketShare": 0.1099,
+   "cameraClearance": {
+    "terrain": 1.56,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2275,
+   "file": "s2275.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1777,
+   "luminanceMean": 0.3564,
+   "luminanceStd": 0.2006,
+   "dominantBucketShare": 0.1581,
+   "cameraClearance": {
+    "terrain": 1.56,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2300,
+   "file": "s2300.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2183,
+   "luminanceMean": 0.3643,
+   "luminanceStd": 0.2242,
+   "dominantBucketShare": 0.099,
+   "cameraClearance": {
+    "terrain": 1.56,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2325,
+   "file": "s2325.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2544,
+   "luminanceMean": 0.3867,
+   "luminanceStd": 0.2237,
+   "dominantBucketShare": 0.1309,
+   "cameraClearance": {
+    "terrain": 1.54,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2350,
+   "file": "s2350.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1946,
+   "luminanceMean": 0.359,
+   "luminanceStd": 0.2087,
+   "dominantBucketShare": 0.0892,
+   "cameraClearance": {
+    "terrain": 1.52,
+    "barrier": 9.5
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2375,
+   "file": "s2375.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1908,
+   "luminanceMean": 0.3745,
+   "luminanceStd": 0.1997,
+   "dominantBucketShare": 0.1612,
+   "cameraClearance": {
+    "terrain": 1.53,
+    "barrier": 9.46
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2400,
+   "file": "s2400.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1914,
+   "luminanceMean": 0.3545,
+   "luminanceStd": 0.2154,
+   "dominantBucketShare": 0.0998,
+   "cameraClearance": {
+    "terrain": 1.54,
+    "barrier": 9.47
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2425,
+   "file": "s2425.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2272,
+   "luminanceMean": 0.3721,
+   "luminanceStd": 0.2202,
+   "dominantBucketShare": 0.1065,
+   "cameraClearance": {
+    "terrain": 1.54,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2450,
+   "file": "s2450.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2028,
+   "luminanceMean": 0.3616,
+   "luminanceStd": 0.2151,
+   "dominantBucketShare": 0.106,
+   "cameraClearance": {
+    "terrain": 1.54,
+    "barrier": 9.48
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2475,
+   "file": "s2475.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1834,
+   "luminanceMean": 0.3635,
+   "luminanceStd": 0.2031,
+   "dominantBucketShare": 0.0892,
+   "cameraClearance": {
+    "terrain": 1.54,
+    "barrier": 9.48
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2500,
+   "file": "s2500.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.147,
+   "luminanceMean": 0.3587,
+   "luminanceStd": 0.1886,
+   "dominantBucketShare": 0.1235,
+   "cameraClearance": {
+    "terrain": 1.52,
+    "barrier": 9.49
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2525,
+   "file": "s2525.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1475,
+   "luminanceMean": 0.3679,
+   "luminanceStd": 0.1806,
+   "dominantBucketShare": 0.1263,
+   "cameraClearance": {
+    "terrain": 1.51,
+    "barrier": 9.56
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2550,
+   "file": "s2550.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2029,
+   "luminanceMean": 0.367,
+   "luminanceStd": 0.2088,
+   "dominantBucketShare": 0.1225,
+   "cameraClearance": {
+    "terrain": 1.57,
+    "barrier": 9.55
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2575,
+   "file": "s2575.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1895,
+   "luminanceMean": 0.3637,
+   "luminanceStd": 0.2076,
+   "dominantBucketShare": 0.1123,
+   "cameraClearance": {
+    "terrain": 1.63,
+    "barrier": 11.22
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2600,
+   "file": "s2600.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2165,
+   "luminanceMean": 0.3898,
+   "luminanceStd": 0.2031,
+   "dominantBucketShare": 0.1342,
+   "cameraClearance": {
+    "terrain": 1.67,
+    "barrier": 11.9
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2625,
+   "file": "s2625.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1631,
+   "luminanceMean": 0.3729,
+   "luminanceStd": 0.189,
+   "dominantBucketShare": 0.1241,
+   "cameraClearance": {
+    "terrain": 1.68,
+    "barrier": 15.22
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2650,
+   "file": "s2650.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.21,
+   "luminanceMean": 0.4038,
+   "luminanceStd": 0.2058,
+   "dominantBucketShare": 0.0973,
+   "cameraClearance": {
+    "terrain": 1.69,
+    "barrier": 15.44
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2675,
+   "file": "s2675.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2231,
+   "luminanceMean": 0.4411,
+   "luminanceStd": 0.2111,
+   "dominantBucketShare": 0.0818,
+   "cameraClearance": {
+    "terrain": 1.67,
+    "barrier": 15.44
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2700,
+   "file": "s2700.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2188,
+   "luminanceMean": 0.4244,
+   "luminanceStd": 0.2337,
+   "dominantBucketShare": 0.0813,
+   "cameraClearance": {
+    "terrain": 1.64,
+    "barrier": 15.45
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2725,
+   "file": "s2725.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1777,
+   "luminanceMean": 0.4558,
+   "luminanceStd": 0.2262,
+   "dominantBucketShare": 0.0498,
+   "cameraClearance": {
+    "terrain": 1.6,
+    "barrier": 8.34
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2750,
+   "file": "s2750.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1764,
+   "luminanceMean": 0.4105,
+   "luminanceStd": 0.227,
+   "dominantBucketShare": 0.1036,
+   "cameraClearance": {
+    "terrain": 1.46,
+    "barrier": 8.8
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2775,
+   "file": "s2775.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1924,
+   "luminanceMean": 0.4317,
+   "luminanceStd": 0.2349,
+   "dominantBucketShare": 0.1008,
+   "cameraClearance": {
+    "terrain": 1.5,
+    "barrier": 9.09
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2800,
+   "file": "s2800.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2063,
+   "luminanceMean": 0.4459,
+   "luminanceStd": 0.2336,
+   "dominantBucketShare": 0.0521,
+   "cameraClearance": {
+    "terrain": 1.5,
+    "barrier": 8.98
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2825,
+   "file": "s2825.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1711,
+   "luminanceMean": 0.4121,
+   "luminanceStd": 0.2218,
+   "dominantBucketShare": 0.1377,
+   "cameraClearance": {
+    "terrain": 1.55,
+    "barrier": 9.36
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2850,
+   "file": "s2850.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2271,
+   "luminanceMean": 0.4376,
+   "luminanceStd": 0.2229,
+   "dominantBucketShare": 0.142,
+   "cameraClearance": {
+    "terrain": 1.58,
+    "barrier": 9.45
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2875,
+   "file": "s2875.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2271,
+   "luminanceMean": 0.4328,
+   "luminanceStd": 0.2095,
+   "dominantBucketShare": 0.1782,
+   "cameraClearance": {
+    "terrain": 1.61,
+    "barrier": 9.43
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2900,
+   "file": "s2900.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2653,
+   "luminanceMean": 0.4214,
+   "luminanceStd": 0.2321,
+   "dominantBucketShare": 0.1047,
+   "cameraClearance": {
+    "terrain": 1.65,
+    "barrier": 9.4
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2925,
+   "file": "s2925.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.3443,
+   "luminanceMean": 0.4779,
+   "luminanceStd": 0.2378,
+   "dominantBucketShare": 0.1164,
+   "cameraClearance": {
+    "terrain": 1.7,
+    "barrier": 8.53
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2950,
+   "file": "s2950.png",
+   "zone": "Z4",
+   "bridge": true,
+   "tunnel": false,
+   "skyFraction": 0.3364,
+   "luminanceMean": 0.4934,
+   "luminanceStd": 0.2339,
+   "dominantBucketShare": 0.1269,
+   "cameraClearance": {
+    "terrain": 1.74,
+    "barrier": 6.16
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 2975,
+   "file": "s2975.png",
+   "zone": "Z4",
+   "bridge": true,
+   "tunnel": false,
+   "skyFraction": 0.3279,
+   "luminanceMean": 0.4707,
+   "luminanceStd": 0.2452,
+   "dominantBucketShare": 0.0975,
+   "cameraClearance": {
+    "terrain": 1.76,
+    "barrier": 6.1
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3000,
+   "file": "s3000.png",
+   "zone": "Z4",
+   "bridge": true,
+   "tunnel": false,
+   "skyFraction": 0.3123,
+   "luminanceMean": 0.4811,
+   "luminanceStd": 0.2266,
+   "dominantBucketShare": 0.1822,
+   "cameraClearance": {
+    "terrain": 1.76,
+    "barrier": 6.1
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3025,
+   "file": "s3025.png",
+   "zone": "Z4",
+   "bridge": true,
+   "tunnel": false,
+   "skyFraction": 0.2675,
+   "luminanceMean": 0.4456,
+   "luminanceStd": 0.2267,
+   "dominantBucketShare": 0.0958,
+   "cameraClearance": {
+    "terrain": 1.75,
+    "barrier": 6.11
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3050,
+   "file": "s3050.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2414,
+   "luminanceMean": 0.4652,
+   "luminanceStd": 0.2047,
+   "dominantBucketShare": 0.0804,
+   "cameraClearance": {
+    "terrain": 1.71,
+    "barrier": 6.37
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3075,
+   "file": "s3075.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.1984,
+   "luminanceMean": 0.4164,
+   "luminanceStd": 0.2298,
+   "dominantBucketShare": 0.0741,
+   "cameraClearance": {
+    "terrain": 1.5,
+    "barrier": 9.18
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3100,
+   "file": "s3100.png",
+   "zone": "Z4",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2573,
+   "luminanceMean": 0.5008,
+   "luminanceStd": 0.24,
+   "dominantBucketShare": 0.0649,
+   "cameraClearance": {
+    "terrain": 1.55,
+    "barrier": 13.81
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3125,
+   "file": "s3125.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2988,
+   "luminanceMean": 0.5562,
+   "luminanceStd": 0.2434,
+   "dominantBucketShare": 0.0704,
+   "cameraClearance": {
+    "terrain": 1.56,
+    "barrier": 16.61
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3150,
+   "file": "s3150.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2915,
+   "luminanceMean": 0.4946,
+   "luminanceStd": 0.255,
+   "dominantBucketShare": 0.0895,
+   "cameraClearance": {
+    "terrain": 1.57,
+    "barrier": 13.81
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3175,
+   "file": "s3175.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2685,
+   "luminanceMean": 0.4652,
+   "luminanceStd": 0.2589,
+   "dominantBucketShare": 0.0946,
+   "cameraClearance": {
+    "terrain": 1.77,
+    "barrier": 7.68
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3200,
+   "file": "s3200.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2911,
+   "luminanceMean": 0.441,
+   "luminanceStd": 0.2672,
+   "dominantBucketShare": 0.1264,
+   "cameraClearance": {
+    "terrain": 1.77,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3225,
+   "file": "s3225.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2618,
+   "luminanceMean": 0.4262,
+   "luminanceStd": 0.2666,
+   "dominantBucketShare": 0.1513,
+   "cameraClearance": {
+    "terrain": 1.78,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3250,
+   "file": "s3250.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.261,
+   "luminanceMean": 0.4428,
+   "luminanceStd": 0.2518,
+   "dominantBucketShare": 0.0997,
+   "cameraClearance": {
+    "terrain": 1.78,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3275,
+   "file": "s3275.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2679,
+   "luminanceMean": 0.4364,
+   "luminanceStd": 0.2615,
+   "dominantBucketShare": 0.1121,
+   "cameraClearance": {
+    "terrain": 1.79,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3300,
+   "file": "s3300.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.272,
+   "luminanceMean": 0.4323,
+   "luminanceStd": 0.264,
+   "dominantBucketShare": 0.1048,
+   "cameraClearance": {
+    "terrain": 1.8,
+    "barrier": 7.74
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3325,
+   "file": "s3325.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2876,
+   "luminanceMean": 0.4374,
+   "luminanceStd": 0.2666,
+   "dominantBucketShare": 0.1288,
+   "cameraClearance": {
+    "terrain": 1.8,
+    "barrier": 7.82
+   },
+   "pass": true,
+   "failures": []
+  },
+  {
+   "s": 3350,
+   "file": "s3350.png",
+   "zone": "Z1",
+   "bridge": false,
+   "tunnel": false,
+   "skyFraction": 0.2149,
+   "luminanceMean": 0.4068,
+   "luminanceStd": 0.258,
+   "dominantBucketShare": 0.129,
+   "cameraClearance": {
+    "terrain": 1.8,
+    "barrier": 7.94
+   },
+   "pass": true,
+   "failures": []
+  }
+ ]
+}
