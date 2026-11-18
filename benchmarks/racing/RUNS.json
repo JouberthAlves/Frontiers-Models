@@ -378,7 +378,8 @@
           "cache_read": 469228912,
           "total": 475743934
         },
-        "details": "EXECUTION-METRICS.md"
+        "details": "EXECUTION-METRICS.md",
+        "primary_time_metric": "active_minutes_estimate"
       }
     },
     {

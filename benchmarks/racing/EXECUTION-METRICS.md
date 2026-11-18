@@ -5,7 +5,7 @@
 Starting with **V3.4.1**, record token usage and execution time when evidence is available. These are descriptive resource measurements, not scores. Runs use different subscription plans and clients rather than a uniform metered API. Availability, precision, accounting and cache behavior can differ. Missing values are unknown, never zero. Do not infer API spend from subscription usage.
 
 - Scope: target model's benchmark execution, from start to delivery. Exclude unrelated runs, post-delivery conversation, and usage attributed to other models from the target-model totals. If those components cannot be separated, report the limitation rather than claiming a precise total.
-- Time: wall-clock duration includes idle periods and tool execution. Active time may be an estimate; label the method and uncertainty. Do not substitute an API processing timer or an unrelated client session timer.
+- Time: **active execution time is the primary displayed metric**. Estimate it from benchmark activity when necessary and report the method and uncertainty. Wall-clock duration, including idle periods, is supplementary context only. Do not substitute an API processing timer or an unrelated client session timer for active time.
 - Tokens: report uncached input, output, cache writes and cache reads separately when exposed; total is their sum only when the counters are non-overlapping. Cache reads count repeated context reads, not newly generated text. If a client exposes only approximate or partial data, label it as such.
 - Evidence: retain source, scope, units and confidence in the run registry. Do not treat different providers' totals as directly comparable without checking accounting definitions.
 
@@ -15,8 +15,8 @@ Starting with **V3.4.1**, record token usage and execution time when evidence is
 | --- | ---: |
 | Start (UTC) | 2026-11-17 13:44 |
 | Delivery (UTC) | 2026-11-18 05:17 |
-| Wall-clock time | 15h 33m (~15.5h) |
-| Estimated active time | ~11h (9.7–11.9h) |
+| **Estimated active execution time** | **~11h (9.7–11.9h)** |
+| Wall-clock time (supplementary) | 15h 33m (~15.5h) |
 | Model calls | 817 |
 | Uncached input tokens | 1,654 |
 | Output tokens | 1,981,943 |
@@ -31,7 +31,7 @@ Source: owner-supplied summary of local Claude Code session usage records, scope
 A partir da **V3.4.1**, registrar tokens e tempo de execução quando houver evidência disponível. São métricas descritivas de recursos, não notas. As execuções utilizam cotas de diferentes assinaturas e clientes, e não uma API tarifada padronizada. Disponibilidade, precisão, contabilização e cache podem variar. Valores ausentes são desconhecidos, não zero. Não inferir custo de API a partir do uso da assinatura.
 
 - Escopo: execução do benchmark pelo modelo avaliado, do início à entrega. Excluir outras execuções, conversas posteriores e uso atribuído a outros modelos do total do modelo avaliado. Se não for possível separar, declarar a limitação.
-- Tempo: tempo de relógio inclui ociosidade e ferramentas. Tempo ativo pode ser estimado; informar método e incerteza. Não substituí-lo por um contador de API ou de outra sessão.
+- Tempo: **o tempo ativo de execução é a métrica principal exibida**. Estimar pela atividade do benchmark quando necessário e informar método e incerteza. O tempo de relógio, incluindo ociosidade, serve somente como contexto complementar. Não substituir o tempo ativo por um contador de API ou de outra sessão.
 - Tokens: separar entrada sem cache, saída, escrita e leitura de cache quando disponíveis. Somar apenas contadores sem sobreposição. Leitura de cache representa releitura de contexto, não texto novo. Identificar valores aproximados ou parciais.
 - Evidência: registrar fonte, escopo, unidades e confiabilidade no catálogo. Não presumir comparabilidade direta entre provedores sem verificar as convenções de contabilização.
 
@@ -41,8 +41,8 @@ A partir da **V3.4.1**, registrar tokens e tempo de execução quando houver evi
 | --- | ---: |
 | Início (UTC) | 17/11/2026 13:44 |
 | Entrega (UTC) | 18/11/2026 05:17 |
-| Tempo de relógio | 15 h 33 min (~15,5 h) |
-| Tempo ativo estimado | ~11 h (9,7–11,9 h) |
+| **Tempo ativo estimado de execução** | **~11 h (9,7–11,9 h)** |
+| Tempo de relógio (complementar) | 15 h 33 min (~15,5 h) |
 | Chamadas ao modelo | 817 |
 | Tokens de entrada sem cache | 1.654 |
 | Tokens de saída | 1.981.943 |
