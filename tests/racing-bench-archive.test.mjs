@@ -64,7 +64,8 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else if (run.id === 'fable-5.2-v3.4.1') {
         assert.equal(run.source_repository, null);
-        assert.equal(run.live_url, null);
+        assert.equal(run.live_url, 'https://racing-fable-5.2.biel.dev.br/');
+        assert.equal(run.site_url, run.live_url);
         assert.equal(run.source_file_count, 487);
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else if (run.id === 'gemini-4-argon-v3.4') {

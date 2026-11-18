@@ -33,8 +33,8 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     racingRuns[3].live_url !== 'https://racing-gemini-4-argon.biel.dev.br/' ||
     racingRuns[4].id !== 'fable-5.2-v3.4.1' ||
     racingRuns[4].display_label !== 'Fable 5.2 (V3.4.1)' ||
-    racingRuns[4].live_url !== null ||
-    racingRuns[4].site_url !== null ||
+    racingRuns[4].live_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
+    racingRuns[4].site_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
     racingRuns[5].id !== 'gemini-4-hydrogen-v3.4' ||
     racingRuns[5].live_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
     racingRuns[5].site_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||

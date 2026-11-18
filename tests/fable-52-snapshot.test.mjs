@@ -15,7 +15,8 @@ test('Fable 5.2 V3.4.1 replaces Sonnet; pinned tree and all 487 blobs preserved'
   assert.equal(run.prompt, 'prompts/racing-v3.4/racing-v3.4.1.md');
   assert.equal(run.source_commit, '6de1bddaae4b66868e0004098a5bce4132a6ee14');
   assert.equal(run.source_tree, 'fb67cb8a19667dd68abdae4cb800b6f8a66b7ab4');
-  assert.equal(run.live_url, null);
+  assert.equal(run.live_url, 'https://racing-fable-5.2.biel.dev.br/');
+  assert.equal(run.site_url, run.live_url);
   assert.equal(execFileSync('git', ['rev-parse', 'HEAD:' + dir + run.archive_path], {encoding:'utf8'}).trim(), run.source_tree);
   const manifest = JSON.parse(readFileSync(dir + run.manifest));
   assert.equal(manifest.file_count, 487);
@@ -42,5 +43,6 @@ test('Fable has a model-named local link and plain model name in SVG and version
   for (const p of ['README.md','README-PT-BR.md','benchmarks/racing/README.md','benchmarks/racing/README-PT-BR.md']) {
     const source = (p.startsWith('benchmarks/') ? './runs/' : './benchmarks/racing/runs/') + id + '/source/';
     assert.ok(readFileSync(p,'utf8').includes('[Fable 5.2 (V3.4.1)](' + source + ')'));
+    assert.ok(readFileSync(p,'utf8').includes('](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)]'));
   }
 });

@@ -28,7 +28,7 @@
 | ✦ **GPT-6 Astra** | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) | — | — |
 | ♬ **Opus 5.5** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) | — | — |
 | ◈ **Gemini 4 Argon** | [Jogar](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) | — | — |
-| ✧ **Fable 5.2 (V3.4.1)** | — | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475,74 M | 15 h 33 min |
+| ✧ **Fable 5.2 (V3.4.1)** | [Jogar](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475,74 M | 15 h 33 min |
 | ⬡ **Gemini 4 Hydrogen** | [Jogar](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/) | — | — |
 
 *Desde a V3.4.1: tokens totais (incluindo cache) e tempo de relógio, quando disponíveis. — = não registrado. [Métricas e limitações](./benchmarks/racing/EXECUTION-METRICS.md).*
