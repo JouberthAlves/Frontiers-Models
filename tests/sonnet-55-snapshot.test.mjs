@@ -30,7 +30,7 @@ function walk(dir, prefix = '') {
 test('Sonnet 5.5: complete Git-tracked source is byte-exact, self-contained, and linkable locally', () => {
   const id = 'sonnet-5.5-v3.4';
   const run = registry.runs.find(r => r.id === id);
-  assert.ok(run && registry.superseded_runs.includes(id) && !registry.current_arena.includes(id));
+  assert.ok(run && registry.non_frontier_runs.includes(id) && !registry.current_arena.includes(id));
   assert.equal(run.model, 'Sonnet 5.5');
   assert.equal(run.source_repository, null);
   assert.equal(run.source_commit, 'f2400ade4bb8485c768adfa379fd1b4f0d958807');

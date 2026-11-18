@@ -71,17 +71,12 @@ FRONTIER MODELS                         2 benchmarks · 11 current runs
 
 Browse [repository architecture](./docs/REPOSITORY-ARCHITECTURE.md) and the benchmark folders.
 
-## Superseded Racing
-
-| Model | Play | Source |
-| --- | --- | --- |
-| **Sonnet 5.5** | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./benchmarks/racing/runs/sonnet-5.5-v3.4/source/) |
-
 ## 🗂️ Non-frontier Racing
 
 | Model | Category | Website | Source code |
 | --- | --- | --- | --- |
 | ◈ **Gemini 3.8 Flash** | Non-frontier | Deleted | [Code](./benchmarks/racing/runs/gemini-3.8-v3.4/source/) |
+| ✧ **Sonnet 5.5** | Non-frontier | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./benchmarks/racing/runs/sonnet-5.5-v3.4/source/) |
 
 ## 🗂️ Other Orbitarium projects
 

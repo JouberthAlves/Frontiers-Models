@@ -27,14 +27,9 @@ The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference im
 
 For historical V2.6 reproduction, the [original prompt](./prompts/racing-v2.6.md) and [operational execution addendum](./EXECUTION-ADDENDUM.md) are required **BOTH** together. Prompts [V3.1](./prompts/racing-v3.1.md), [V3.2](./prompts/racing-v3.2.md) and [V3.3](./prompts/racing-v3.3.md) are preserved byte-for-byte.
 
-## Superseded Racing
-
-| Model | Play | Source |
-| --- | --- | --- |
-| **Sonnet 5.5** | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./runs/sonnet-5.5-v3.4/source/) |
-
 ## Non-frontier Racing
 
 | Model | Category | Website | Source code |
 | --- | --- | --- | --- |
 | ◈ **Gemini 3.8 Flash** | Non-frontier | Deleted | [Code](./runs/gemini-3.8-v3.4/source/) |
+| ✧ **Sonnet 5.5** | Non-frontier | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./runs/sonnet-5.5-v3.4/source/) |

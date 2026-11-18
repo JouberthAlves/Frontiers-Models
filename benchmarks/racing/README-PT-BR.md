@@ -27,14 +27,9 @@ O [prompt V3.4](./prompts/racing-v3.4/racing-v3.4.md), junto às [14 imagens de 
 
 Para reproduzir a V2.6, forneça **OS DOIS** documentos: o [prompt original](./prompts/racing-v2.6.md) e o [adendo operacional atemporal](./EXECUTION-ADDENDUM.md). Os prompts [V3.1](./prompts/racing-v3.1.md), [V3.2](./prompts/racing-v3.2.md) e [V3.3](./prompts/racing-v3.3.md) permanecem intactos.
 
-## Racing substituído
-
-| Modelo | Jogar | Código-fonte |
-| --- | --- | --- |
-| **Sonnet 5.5** | [Jogar](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./runs/sonnet-5.5-v3.4/source/) |
-
 ## Racing não frontier
 
 | Modelo | Categoria | Site | Código-fonte |
 | --- | --- | --- | --- |
 | ◈ **Gemini 3.8 Flash** | Não frontier | Deleted | [Código](./runs/gemini-3.8-v3.4/source/) |
+| ✧ **Sonnet 5.5** | Não frontier | [Jogar](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./runs/sonnet-5.5-v3.4/source/) |

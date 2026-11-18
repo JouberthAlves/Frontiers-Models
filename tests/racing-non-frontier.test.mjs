@@ -12,8 +12,9 @@ const source = 'gemini-3.8-v3.4';
 const site = null;
 
 test('Gemini 3.8 Flash V3.4 moves to Non-frontier, without deleting its archived source', () => {
-  assert.deepEqual(runs.non_frontier_runs, [source]);
+  assert.deepEqual(runs.non_frontier_runs, [source, 'sonnet-5.5-v3.4']);
   assert.ok(!runs.current_arena.includes(source));
+  assert.ok(!runs.current_arena.includes('sonnet-5.5-v3.4'));
   assert.equal(runs.current_arena.length, 6);
   assert.deepEqual(runs.current_arena, [
     'gpt-6.1-sol-v3.4','gpt-6-astra-v3.4','opus-5.5-v3.4',
@@ -55,7 +56,14 @@ test('both languages place the V3.4 Gemini only below the current Racing listing
     const otherHeading=pt?'Racing não frontier':'Non-frontier Racing';
     const sectionStart=content.lastIndexOf(otherHeading);
     assert.ok(sectionStart>end,file+' Non-frontier section follows active table');
-    const nonfrontier=content.slice(sectionStart);
+    const nonfrontier=content.slice(sectionStart).split(/\n\n## /)[0];
+    assert.doesNotMatch(content, /## (?:Superseded Racing|Racing substitu)/);
+    assert.ok(!current.includes('Sonnet 5.5'));
+    const sonnetRow=nonfrontier.split('\n').find(line => line.includes('**Sonnet 5.5**'));
+    assert.ok(sonnetRow, file + ' Sonnet must be in the same table');
+    assert.ok(sonnetRow.includes(pt ? ' | Não frontier | ' : ' | Non-frontier | '));
+    assert.ok(sonnetRow.includes('https://racing-sonnet-5.5.biel.dev.br/'));
+    assert.ok(sonnetRow.includes('sonnet-5.5-v3.4/source/'));
     assert.ok(nonfrontier.includes('**Gemini 3.8 Flash**'));
     assert.ok(nonfrontier.includes(' | Deleted | '));
     assert.ok(nonfrontier.includes(pt?'Não frontier':'Non-frontier'));

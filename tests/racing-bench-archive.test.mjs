@@ -35,21 +35,23 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
       assert.ok(run.manifest);
       assert.ok(run.git_bundle);
     } else if (registry.non_frontier_runs.includes(run.id)) {
-      assert.equal(run.id, 'gemini-3.8-v3.4');
       assert.equal(run.role, 'non-frontier-run');
-      assert.equal(run.display_status, 'non-frontier-archived-source-site-deleted');
       assert.ok(!registry.current_arena.includes(run.id));
-      assert.equal(run.live_url, null);
-      assert.equal(run.site_url, null);
-      assert.match(run.site_status, /owner-reported-deleted-2026-11-16/);
-      assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
       assert.ok(run.manifest && run.provenance);
-    } else if (registry.superseded_runs.includes(run.id)) {
-      assert.equal(run.id, 'sonnet-5.5-v3.4');
-      assert.equal(run.display_status, 'superseded-archived-source');
-      assert.ok(!registry.current_arena.includes(run.id));
-      assert.equal(run.source_file_count, 2085);
-      assert.ok(run.manifest && run.provenance);
+      if (run.id === 'gemini-3.8-v3.4') {
+        assert.equal(run.display_status, 'non-frontier-archived-source-site-deleted');
+        assert.equal(run.live_url, null);
+        assert.equal(run.site_url, null);
+        assert.match(run.site_status, /owner-reported-deleted-2026-11-16/);
+        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
+      } else {
+        assert.equal(run.id, 'sonnet-5.5-v3.4');
+        assert.equal(run.display_status, 'non-frontier-archived-source-site-owner-provided');
+        assert.equal(run.live_url, 'https://racing-sonnet-5.5.biel.dev.br/');
+        assert.equal(run.site_url, run.live_url);
+        assert.equal(run.source_file_count, 2085);
+        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+      }
     } else {
       assert.ok(registry.current_arena.includes(run.id));
       if (run.id === 'gpt-6.1-sol-v3.4') {

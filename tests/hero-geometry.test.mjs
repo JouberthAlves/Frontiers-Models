@@ -42,7 +42,7 @@ test('Racing first: all six V3.4 current source runs are in the hero', () => {
     assert.ok(run.display_status.startsWith('current-'));
     assert.match(svg, new RegExp('>' + run.model.replace(/[.*+?^$()|[\]{}]/g, '\\$&') + '<'));
   }
-  for (const id of [...racing.legacy_runs, ...racing.non_frontier_runs, ...racing.superseded_runs]) assert.ok(!models('racing').includes(id));
+  for (const id of [...racing.legacy_runs, ...racing.non_frontier_runs]) assert.ok(!models('racing').includes(id));
   assert.ok(svg.indexOf('<g data-benchmark="racing">') < svg.indexOf('<g data-benchmark="orbitarium">'));
   assert.match(svg, /CURRENT RUNS/);
   assert.match(svg, />Racing-bench<\/text>/);

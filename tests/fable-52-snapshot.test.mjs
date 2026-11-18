@@ -9,7 +9,7 @@ const registry = JSON.parse(readFileSync(dir + 'RUNS.json'));
 const run = registry.runs.find(x => x.id === id);
 test('Fable 5.2 V3.4.1 replaces Sonnet; pinned tree and all 487 blobs preserved', () => {
   assert.ok(registry.current_arena.includes(id));
-  assert.ok(registry.superseded_runs.includes('sonnet-5.5-v3.4'));
+  assert.ok(registry.non_frontier_runs.includes('sonnet-5.5-v3.4'));
   assert.ok(!registry.current_arena.includes('sonnet-5.5-v3.4'));
   assert.equal(run.display_label, 'Fable 5.2 (V3.4.1)');
   assert.equal(run.prompt, 'prompts/racing-v3.4/racing-v3.4.1.md');
