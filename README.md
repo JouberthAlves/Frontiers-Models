@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — independent Racing and Orbitarium benchmark collection with 12 current runs (7 Racing and 5 Orbitarium)" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — independent Racing and Orbitarium benchmark collection with 11 featured runs (6 Racing and 5 Orbitarium)" width="100%" />
 
 <br/>
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com 12 execuções atuais (7 Racing e 5 Orbitarium)" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com 11 execuções em destaque (6 Racing e 5 Orbitarium)" width="100%" />
 
 <br/>
 
