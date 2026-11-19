@@ -35,7 +35,7 @@
 
 *Since V3.4.1: total tokens (including cache) and estimated active execution time, when available. — = not recorded. [Metrics and limitations](./benchmarks/racing/EXECUTION-METRICS.md).*
 
-\* GPT-6.2 Astra: ~21% of the Plus weekly quota. Report: 21.55% of the weekly quota for the chat, with 98% model share attributed to Astra; approximate.
+\* GPT-6.2 Astra: ~21% of the Plus weekly quota.
 
 **V3.5 inputs:** [Prompt](./benchmarks/racing/prompts/racing-v3.5/racing-v3.5.md) · [14 reference images](./benchmarks/racing/prompts/racing-v3.5/refs/).
 
