@@ -8,11 +8,9 @@ The current package is the [V3.5 prompt](./prompts/racing-v3.5/racing-v3.5.md) w
 
 | Current model | Play | Source | Tokens | Time |
 | --- | --- | --- | ---: | ---: |
-| ☀️ **GPT-6.1 Sol** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) | — | — |
 | ✦ **GPT-6.2 Astra (V3.4.1)** | [Play racing](https://racing-gpt-6.2-astra.biel.dev.br/) | [GPT-6.2 Astra (V3.4.1)](./runs/gpt-astra-6.2-v3.4.1/source/) | ~21%\* | 5h 02m\* |
 | ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Play racing](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./runs/fable-5.2-v3.4.1/source/) | ~475.74M | ~11h |
-| ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./runs/gemini-4-argon-v3.4/source/) | — | — |
 | ⬡ **Gemini 4 Hydrogen** | [Play racing](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./runs/gemini-4-hydrogen-v3.4/source/) | — | — |
 | ☀️ **GPT-6.2 Sol (V3.5)** | — | [GPT-6.2 Sol (V3.5)](./runs/gpt-6.2-sol-v3.5/source/) | — | — |
 | ◈ **Gemini 4 Neon (V3.5)** | — | [Gemini 4 Neon (V3.5)](./runs/gemini-4-neon-v3.5/source/) | — | — |
@@ -40,3 +38,5 @@ For historical V2.6 reproduction, the [original prompt](./prompts/racing-v2.6.md
 | ◈ **Gemini 3.8 Flash** | Non-frontier | Deleted | [Code](./runs/gemini-3.8-v3.4/source/) |
 | ✧ **Sonnet 5.5** | Non-frontier | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./runs/sonnet-5.5-v3.4/source/) |
 | ✦ **GPT-6 Astra** | Non-frontier | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) |
+| ☀️ **GPT-6.1 Sol** | Non-frontier | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) |
+| ◈ **Gemini 4 Argon** | Non-frontier | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./runs/gemini-4-argon-v3.4/source/) |

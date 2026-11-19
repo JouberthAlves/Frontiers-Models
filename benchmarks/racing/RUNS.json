@@ -218,12 +218,13 @@
       "provenance": "runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md",
       "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
       "gameplay_verification": "not-independently-verified",
-      "display_status": "current-archived-source-owner-provided-site",
+      "display_status": "non-frontier-archived-source-site-owner-provided",
       "archive_path": "runs/gpt-6.1-sol-v3.4/source",
       "manifest": "runs/gpt-6.1-sol-v3.4/SOURCE-FILES.json",
       "source_file_count": 104,
       "source_bytes": 142958723,
-      "git_bundle": null
+      "git_bundle": null,
+      "role": "non-frontier-run"
     },
     {
       "id": "gpt-6-astra-v3.4",
@@ -345,7 +346,7 @@
       "provenance": "runs/gemini-4-argon-v3.4/SOURCE-PROVENANCE.md",
       "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
       "gameplay_verification": "not-independently-verified",
-      "display_status": "current-archived-source-owner-provided-site",
+      "display_status": "non-frontier-archived-source-site-owner-provided",
       "archive_path": "runs/gemini-4-argon-v3.4/source",
       "manifest": "runs/gemini-4-argon-v3.4/SOURCE-FILES.json",
       "source_file_count": 450,
@@ -357,7 +358,8 @@
         "low_preset_average_fps": 60.0,
         "hardware": "rtx-3070-ti-1080p",
         "full_benchmark_acceptance": "not-independently-verified"
-      }
+      },
+      "role": "non-frontier-run"
     },
     {
       "id": "sonnet-5.5-v3.4",
@@ -523,10 +525,8 @@
     "gpt-6-astra"
   ],
   "current_arena": [
-    "gpt-6.1-sol-v3.4",
     "gpt-astra-6.2-v3.4.1",
     "opus-5.5-v3.4",
-    "gemini-4-argon-v3.4",
     "fable-5.2-v3.4.1",
     "gemini-4-hydrogen-v3.4",
     "gpt-6.2-sol-v3.5",
@@ -535,6 +535,8 @@
   "non_frontier_runs": [
     "gemini-3.8-v3.4",
     "sonnet-5.5-v3.4",
-    "gpt-6-astra-v3.4"
+    "gpt-6-astra-v3.4",
+    "gpt-6.1-sol-v3.4",
+    "gemini-4-argon-v3.4"
   ]
 }

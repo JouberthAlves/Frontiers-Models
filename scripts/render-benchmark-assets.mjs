@@ -23,36 +23,35 @@ const currentRunCount = racingRuns.length + orbitRuns.length;
 if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 ||
     !orbitRuns.some(run => run.model === 'Gemini 4 Argon') ||
     orbitRuns.some(run => run.model === 'Gemini 3.8 Flash') ||
-    racingRuns.length !== 8 ||
-    racingRuns[0].id !== 'gpt-6.1-sol-v3.4' ||
-    racingRuns[1].id !== 'gpt-astra-6.2-v3.4.1' ||
-    racingRuns[1].live_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
-    racingRuns[1].site_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
-    racingRuns[2].id !== 'opus-5.5-v3.4' ||
-    racingRuns[2].live_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
-    racingRuns[2].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
-    racingRuns[3].id !== 'gemini-4-argon-v3.4' ||
-    racingRuns[3].live_url !== 'https://racing-gemini-4-argon.biel.dev.br/' ||
-    racingRuns[4].id !== 'fable-5.2-v3.4.1' ||
-    racingRuns[4].display_label !== 'Fable 5.2 (V3.4.1)' ||
-    racingRuns[4].live_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
-    racingRuns[4].site_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
-    racingRuns[5].id !== 'gemini-4-hydrogen-v3.4' ||
-    racingRuns[5].live_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
-    racingRuns[5].site_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
-    racingRuns[6].id !== 'gpt-6.2-sol-v3.5' ||
-    racingRuns[7].id !== 'gemini-4-neon-v3.5' ||
-    racing.non_frontier_runs?.length !== 3 ||
+    racingRuns.length !== 6 ||
+    racingRuns[0].id !== 'gpt-astra-6.2-v3.4.1' ||
+    racingRuns[0].live_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
+    racingRuns[0].site_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
+    racingRuns[1].id !== 'opus-5.5-v3.4' ||
+    racingRuns[1].live_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
+    racingRuns[1].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
+    racingRuns[2].id !== 'fable-5.2-v3.4.1' ||
+    racingRuns[2].display_label !== 'Fable 5.2 (V3.4.1)' ||
+    racingRuns[2].live_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
+    racingRuns[2].site_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
+    racingRuns[3].id !== 'gemini-4-hydrogen-v3.4' ||
+    racingRuns[3].live_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
+    racingRuns[3].site_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
+    racingRuns[4].id !== 'gpt-6.2-sol-v3.5' ||
+    racingRuns[5].id !== 'gemini-4-neon-v3.5' ||
+    racing.non_frontier_runs?.length !== 5 ||
     racing.non_frontier_runs[0] !== 'gemini-3.8-v3.4' ||
     racing.non_frontier_runs[1] !== 'sonnet-5.5-v3.4' ||
     racing.non_frontier_runs[2] !== 'gpt-6-astra-v3.4' ||
+    racing.non_frontier_runs[3] !== 'gpt-6.1-sol-v3.4' ||
+    racing.non_frontier_runs[4] !== 'gemini-4-argon-v3.4' ||
     racingRuns.some(run => racing.non_frontier_runs.includes(run.id)) ||
     racing.current_prompt !== 'racing-v3.5' ||
     racing.legacy_runs.length !== 3 || racing.legacy_runs.some(id => racing.current_arena.includes(id)) ||
     orbitRuns.some(run => !run.live_url?.startsWith('https://')) ||
     racingRuns.some(run => !run.display_status.startsWith('current-') ||
       (run.live_url !== null && !run.live_url?.startsWith('https://')))) {
-  throw new Error('Hero expects eight current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
+  throw new Error('Hero expects six current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')
@@ -68,8 +67,8 @@ function badge({ run, x, y, width, accent, benchmark }) {
 }
 
 const racingBadges = racingRuns.map((run, i) =>
-  badge({ run, x: 650 + (i % 4) * 180, y: i < 4 ? 173 : 235, width: 170,
-    accent: ['#facc6b', '#b5b2ff', '#ff99cc', '#8df0a4', '#f4a1ed', '#78dad1', '#facc6b', '#a2f7b6'][i], benchmark: 'racing' })
+  badge({ run, x: 650 + (i % 3) * 239, y: i < 3 ? 173 : 235, width: 225,
+    accent: ['#b5b2ff', '#ff99cc', '#f4a1ed', '#78dad1', '#facc6b', '#a2f7b6'][i], benchmark: 'racing' })
 ).join('\n    ');
 const orbitBadges = orbitRuns.map((run, i) =>
   badge({ run, x: i < 3 ? 650 + i * 239 : 769.5 + (i - 3) * 239, y: i < 3 ? 455 : 517,

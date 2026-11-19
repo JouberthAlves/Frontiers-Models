@@ -51,6 +51,11 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.live_url, 'https://racing-gpt-6-astra.biel.dev.br/', 'owner-provided Astra game URL');
         assert.match(run.site_status, /http-404-on-2026-11-05/);
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+      } else if (['gpt-6.1-sol-v3.4','gemini-4-argon-v3.4'].includes(run.id)) {
+        assert.equal(run.display_status,'non-frontier-archived-source-site-owner-provided');
+        assert.equal(run.site_url,run.live_url);
+        assert.equal(run.source_file_count,run.id==='gpt-6.1-sol-v3.4'?104:450);
+        assert.equal(run.archival_status,'complete-tracked-git-snapshot-no-history-bundle');
       } else {
         assert.equal(run.id, 'sonnet-5.5-v3.4');
         assert.equal(run.display_status, 'non-frontier-archived-source-site-owner-provided');
@@ -61,10 +66,7 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
       }
     } else {
       assert.ok(registry.current_arena.includes(run.id));
-      if (run.id === 'gpt-6.1-sol-v3.4') {
-        assert.equal(run.live_url, 'https://racing-gpt-6.1-sol.biel.dev.br/');
-        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
-      } else if (run.id === 'gpt-astra-6.2-v3.4.1') {
+      if (run.id === 'gpt-astra-6.2-v3.4.1') {
         assert.equal(run.source_repository, null);
         assert.equal(run.live_url, 'https://racing-gpt-6.2-astra.biel.dev.br/');
         assert.equal(run.site_url, run.live_url);
@@ -75,11 +77,6 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.live_url, 'https://racing-fable-5.2.biel.dev.br/');
         assert.equal(run.site_url, run.live_url);
         assert.equal(run.source_file_count, 487);
-        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
-      } else if (run.id === 'gemini-4-argon-v3.4') {
-        assert.equal(run.source_repository, null);
-        assert.equal(run.live_url, 'https://racing-gemini-4-argon.biel.dev.br/');
-        assert.equal(run.source_file_count, 450);
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else if (run.id === 'gemini-4-hydrogen-v3.4') {
         assert.equal(run.model, 'Gemini 4 Hydrogen');
@@ -214,7 +211,7 @@ test('Racing V3.4 prompt and 14 reference assets are present and pinned', () => 
   const refDir=resolve(root,'benchmarks/racing',p.reference_directory);
   assert.ok(existsSync(refDir));
   assert.equal(readdirSync(refDir).filter(x=>x.endsWith('.jpg')).length,14);
-  assert.deepEqual(registry.current_arena,['gpt-6.1-sol-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4', 'gpt-6.2-sol-v3.5', 'gemini-4-neon-v3.5']);
+  assert.deepEqual(registry.current_arena,['gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4', 'gpt-6.2-sol-v3.5', 'gemini-4-neon-v3.5']);
 });
 
 test('Racing V3.4.1 candidate pins continuous urban/forest density without rewriting V3.4', () => {
