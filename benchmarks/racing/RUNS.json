@@ -67,7 +67,7 @@
     },
     "racing-v3.4": {
       "path": "prompts/racing-v3.4/racing-v3.4.md",
-      "status": "current-race-first-visual-with-14-reference-images",
+      "status": "historical-race-first-visual-with-14-reference-images",
       "sha256": "faee98a423dde53686d63b3d8df89ebfb930e69f6f0322866fc526c06415e867",
       "bytes": 25790,
       "lines": 406,
@@ -94,6 +94,17 @@
       "attachment_purpose": "narrow operational tools-only clarification",
       "attachment_sha256": "3df727c4c471b02f8c83ea85af616b7c0316e84763af48a2d98f3498149e5963",
       "attachment_bytes": 699
+    },
+    "racing-v3.5": {
+      "path": "prompts/racing-v3.5/racing-v3.5.md",
+      "status": "current-procedural-craft-full-race",
+      "sha256": "feb07b3f3bde403633e4b24cb2b2106a9aa24423d4af5f80f3f16cf9326dc874",
+      "bytes": 45194,
+      "lines": 501,
+      "source_filename": "racing-v3.5.md",
+      "reference_directory": "prompts/racing-v3.5/refs",
+      "reference_images": 14,
+      "required_input": "prompt-plus-14-visual-references"
     }
   },
   "execution_addendum": {
@@ -207,12 +218,13 @@
       "provenance": "runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md",
       "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
       "gameplay_verification": "not-independently-verified",
-      "display_status": "current-archived-source-owner-provided-site",
+      "display_status": "non-frontier-archived-source-site-owner-provided",
       "archive_path": "runs/gpt-6.1-sol-v3.4/source",
       "manifest": "runs/gpt-6.1-sol-v3.4/SOURCE-FILES.json",
       "source_file_count": 104,
       "source_bytes": 142958723,
-      "git_bundle": null
+      "git_bundle": null,
+      "role": "non-frontier-run"
     },
     {
       "id": "gpt-6-astra-v3.4",
@@ -334,7 +346,7 @@
       "provenance": "runs/gemini-4-argon-v3.4/SOURCE-PROVENANCE.md",
       "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
       "gameplay_verification": "not-independently-verified",
-      "display_status": "current-archived-source-owner-provided-site",
+      "display_status": "non-frontier-archived-source-site-owner-provided",
       "archive_path": "runs/gemini-4-argon-v3.4/source",
       "manifest": "runs/gemini-4-argon-v3.4/SOURCE-FILES.json",
       "source_file_count": 450,
@@ -346,7 +358,8 @@
         "low_preset_average_fps": 60.0,
         "hardware": "rtx-3070-ti-1080p",
         "full_benchmark_acceptance": "not-independently-verified"
-      }
+      },
+      "role": "non-frontier-run"
     },
     {
       "id": "sonnet-5.5-v3.4",
@@ -457,25 +470,108 @@
         "hardware": "rtx-3070-ti-1080p-vsync-60hz",
         "full_benchmark_acceptance": "not-independently-verified"
       }
+    },
+    {
+      "id": "gpt-6.2-sol-v3.5",
+      "model": "GPT-6.2 Sol",
+      "display_label": "GPT-6.2 Sol (V3.5)",
+      "live_url": "https://racing-gpt-6.2-sol.biel.dev.br/",
+      "site_url": "https://racing-gpt-6.2-sol.biel.dev.br/",
+      "site_status": "owner-provided-url-reachability-not-independently-verified",
+      "source_repository": null,
+      "source_branch": "main",
+      "source_commit": "30b991965c38d82c31a3d4a5423dd25129e1b889",
+      "source_tree": "1f58b8853028da4a11313384a7cb93cf1af883db",
+      "prompt": "prompts/racing-v3.5/racing-v3.5.md",
+      "prompt_association": "owner-reported V3.5 input; supplied package verified, model delivery not independently audited",
+      "provenance": "runs/gpt-6.2-sol-v3.5/SOURCE-PROVENANCE.md",
+      "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
+      "gameplay_verification": "not-independently-verified",
+      "display_status": "current-archived-source-site-owner-provided",
+      "archive_path": "runs/gpt-6.2-sol-v3.5/source",
+      "manifest": "runs/gpt-6.2-sol-v3.5/SOURCE-FILES.json",
+      "source_file_count": 553,
+      "source_bytes": 458536992,
+      "git_bundle": null,
+      "execution_metrics": {
+        "status": "owner-reported-not-independently-verified",
+        "scope": "benchmark-only",
+        "primary_time_metric": "reported_execution_minutes",
+        "reported_execution_minutes": 82,
+        "active_minutes_estimate": null,
+        "tokens": null,
+        "weekly_quota_percent": 5.75,
+        "quota_period": "weekly",
+        "quota_plan": null,
+        "quota_source": "owner-confirmed-exact-reported-value",
+        "details": "EXECUTION-METRICS.md"
+      }
+    },
+    {
+      "id": "gemini-4-neon-v3.5",
+      "model": "Gemini 4 Neon",
+      "display_label": "Gemini 4 Neon (V3.5)",
+      "live_url": "https://racing-gemini-4-neon.biel.dev.br/",
+      "site_url": "https://racing-gemini-4-neon.biel.dev.br/",
+      "site_status": "owner-provided-url-reachability-not-independently-verified",
+      "source_repository": null,
+      "source_branch": "main",
+      "source_commit": "514c63c3ffea2cc538cc7ebb1b52d262af17a855",
+      "source_tree": "4ccc5fb42e260614b31684634839ee9befe0a59d",
+      "prompt": "prompts/racing-v3.5/racing-v3.5.md",
+      "prompt_association": "owner-reported V3.5 input; supplied package verified, model delivery not independently audited",
+      "provenance": "runs/gemini-4-neon-v3.5/SOURCE-PROVENANCE.md",
+      "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
+      "gameplay_verification": "not-independently-verified",
+      "display_status": "current-archived-source-site-owner-provided",
+      "archive_path": "runs/gemini-4-neon-v3.5/source",
+      "manifest": "runs/gemini-4-neon-v3.5/SOURCE-FILES.json",
+      "source_file_count": 319,
+      "source_bytes": 304909004,
+      "git_bundle": null,
+      "execution_metrics": {
+        "status": "local-transcript-verified",
+        "scope": "benchmark-only-session-steps-0-through-481",
+        "primary_time_metric": "reported_total_execution_seconds",
+        "reported_total_execution_seconds": 10999,
+        "started_at_utc": "2026-11-19T03:59:45Z",
+        "delivered_at_utc": "2026-11-19T07:03:04Z",
+        "active_minutes_estimate": null,
+        "tokens": {
+          "input_uncached": 3611993,
+          "cache_read": 29075830,
+          "output": 388367,
+          "total": 33076190
+        },
+        "token_subtotal_input_output": 4000360,
+        "model_calls": 139,
+        "checkpoint_tokens": {
+          "input_uncached": 389898,
+          "output": 9118
+        },
+        "details": "EXECUTION-METRICS.md"
+      }
     }
   ],
-  "current_prompt": "racing-v3.4",
+  "current_prompt": "racing-v3.5",
   "legacy_runs": [
     "gpt-6.1-sol",
     "gemini-3.8-flash",
     "gpt-6-astra"
   ],
   "current_arena": [
-    "gpt-6.1-sol-v3.4",
     "gpt-astra-6.2-v3.4.1",
     "opus-5.5-v3.4",
-    "gemini-4-argon-v3.4",
     "fable-5.2-v3.4.1",
-    "gemini-4-hydrogen-v3.4"
+    "gemini-4-hydrogen-v3.4",
+    "gpt-6.2-sol-v3.5",
+    "gemini-4-neon-v3.5"
   ],
   "non_frontier_runs": [
     "gemini-3.8-v3.4",
     "sonnet-5.5-v3.4",
-    "gpt-6-astra-v3.4"
+    "gpt-6-astra-v3.4",
+    "gpt-6.1-sol-v3.4",
+    "gemini-4-argon-v3.4"
   ]
 }

@@ -22,20 +22,24 @@
 
 ## ⚔️ Current benchmark runs
 
-### Racing-bench V3.4 / V3.4.1 — current race-first benchmark
+### Racing-bench V3.4 / V3.4.1 / V3.5 — current race-first benchmark
 
 | Current model | Play | Source code | Tokens | Time |
 | --- | --- | --- | ---: | ---: |
-| ☀️ **GPT-6.1 Sol** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) | — | — |
 | ✦ **GPT-6.2 Astra (V3.4.1)** | [Play racing](https://racing-gpt-6.2-astra.biel.dev.br/) | [GPT-6.2 Astra (V3.4.1)](./benchmarks/racing/runs/gpt-astra-6.2-v3.4.1/source/) | ~21%\* | ~5h |
 | ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Play racing](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475.74M | ~11h |
-| ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) | — | — |
 | ⬡ **Gemini 4 Hydrogen** | [Play racing](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/) | — | — |
+| ☀️ **GPT-6.2 Sol (V3.5)** | [Play racing](https://racing-gpt-6.2-sol.biel.dev.br/) | [GPT-6.2 Sol (V3.5)](./benchmarks/racing/runs/gpt-6.2-sol-v3.5/source/) | 5.75%\* | 1h 22m |
+| ◈ **Gemini 4 Neon (V3.5)** | [Play racing](https://racing-gemini-4-neon.biel.dev.br/) | [Gemini 4 Neon (V3.5)](./benchmarks/racing/runs/gemini-4-neon-v3.5/source/) | ~33.08M | 3h 03m 19s |
 
 *Since V3.4.1: total tokens (including cache) and estimated active execution time, when available. — = not recorded. [Metrics and limitations](./benchmarks/racing/EXECUTION-METRICS.md).*
 
-\* GPT-6.2 Astra: ~21% of the Plus weekly quota. Report: 21.55% of the weekly quota for the chat, with 98% model share attributed to Astra; approximate.
+\* GPT-6.2 Astra: ~21% of the Plus weekly quota.
+
+\* GPT-6.2 Sol: 5.75% of the weekly quota, as confirmed by the maintainer; token count and plan unspecified. Sol: reported duration; Neon: transcript-verified total execution time, not isolated active time.
+
+**V3.5 inputs:** [Prompt](./benchmarks/racing/prompts/racing-v3.5/racing-v3.5.md) · [14 reference images](./benchmarks/racing/prompts/racing-v3.5/refs/).
 
 **V3.4 inputs:** [Racing prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 reference images](./benchmarks/racing/prompts/racing-v3.4/refs/) · [Operational addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
@@ -58,9 +62,9 @@
 ```text
 FRONTIER MODELS                         2 benchmarks · 11 current runs
 │
-├── RACING-BENCH (V3.4 / V3.4.1)                 6 current runs
-│   ├── inputs      racing-v3.4/ · 14 visual references
-│   ├── current     GPT-6.1 Sol · GPT-6.2 Astra (V3.4.1) · Opus 5.5 · Gemini 4 Argon · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen
+├── RACING-BENCH (V3.4 / V3.4.1 / V3.5)                 6 current runs
+│   ├── inputs      racing-v3.5/ · 14 visual references
+│   ├── current     GPT-6.2 Astra (V3.4.1) · Opus 5.5 · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen · GPT-6.2 Sol (V3.5) · Gemini 4 Neon (V3.5)
 │   └── history     V2.6 runs + earlier prompts
 │
 ├── ORBITARIUM-BENCH (Frontier V2)      5 current references
@@ -84,6 +88,8 @@ Browse [repository architecture](./docs/REPOSITORY-ARCHITECTURE.md) and the benc
 | ◈ **Gemini 3.8 Flash** | Non-frontier | Deleted | [Code](./benchmarks/racing/runs/gemini-3.8-v3.4/source/) |
 | ✧ **Sonnet 5.5** | Non-frontier | [Play racing](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./benchmarks/racing/runs/sonnet-5.5-v3.4/source/) |
 | ✦ **GPT-6 Astra** | Non-frontier | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
+| ☀️ **GPT-6.1 Sol** | Non-frontier | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) |
+| ◈ **Gemini 4 Argon** | Non-frontier | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) |
 
 ## 🗂️ Other Orbitarium projects
 

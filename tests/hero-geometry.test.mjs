@@ -37,7 +37,7 @@ test('Racing first: six current runs exclude the non-frontier Racing Astra', () 
   assert.deepEqual(models('racing'), racing.current_arena);
   assert.ok(racing.non_frontier_runs.includes('gpt-6-astra-v3.4'));
   assert.ok(!racing.current_arena.includes('gpt-6-astra-v3.4'));
-  assert.deepEqual(models('racing'), ['gpt-6.1-sol-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
+  assert.deepEqual(models('racing'), ['gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4', 'gpt-6.2-sol-v3.5', 'gemini-4-neon-v3.5']);
   const entries = racing.runs;
   for (const id of models('racing')) {
     const run = entries.find(run => run.id === id);

@@ -109,7 +109,7 @@ function requireSeparator() { return process.platform === 'win32' ? '\\' : '/'; 
 // This run is a separate V3.4 snapshot; never overwrite the historical GPT-6.1 Sol V2.6 archive.
 test('GPT-6.1 Sol V3.4: all 104 upstream Git-tracked blobs archived byte-exactly', () => {
   const run = registry.runs.find(run => run.id === 'gpt-6.1-sol-v3.4');
-  assert.ok(run && registry.current_arena.includes(run.id));
+  assert.ok(run && registry.non_frontier_runs.includes(run.id) && !registry.current_arena.includes(run.id));
   assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
   assert.equal(run.git_bundle, null);
   assert.equal(run.source_commit, '1ab34b18cbe30145a161b78674ce1b682a9750d0');
@@ -236,7 +236,7 @@ test('Opus 5.5 V3.4: all 2,100 upstream Git blobs archived byte-exactly with own
 
 test('Gemini 4 Argon V3.4: 450 exact source blobs archived locally without original repository link', () => {
   const run = registry.runs.find(x => x.id === 'gemini-4-argon-v3.4');
-  assert.ok(run && registry.current_arena.includes(run.id));
+  assert.ok(run && registry.non_frontier_runs.includes(run.id) && !registry.current_arena.includes(run.id));
   assert.equal(run.source_commit, '88632a836928ac314ab0e26b492d5360382b980f');
   assert.equal(run.source_tree, '22f7d5a2fae93ea3e92d67a37a4ea23d0bb6e5d8');
   assert.equal(run.source_repository, null);
