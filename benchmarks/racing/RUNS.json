@@ -271,10 +271,10 @@
         "scope": "benchmark-only",
         "client": "Codex (ChatGPT Plus subscription)",
         "tokens": null,
-        "weekly_quota_percent": 30,
+        "weekly_quota_percent": 21,
         "quota_period": "weekly",
         "quota_plan": "Plus",
-        "quota_source": "owner-reported",
+        "quota_source": "owner-provided usage report screenshot; rounded owner-selected model estimate",
         "active_minutes_estimate": null,
         "observed_elapsed_minutes": 302,
         "observed_start_local": "2026-11-18T08:21:00-04:00",
@@ -284,7 +284,10 @@
         "final_verification_seconds": 170.198,
         "final_verification_source": "source/verification/run.json",
         "primary_time_metric": "active_minutes_estimate",
-        "details": "EXECUTION-METRICS.md"
+        "details": "EXECUTION-METRICS.md",
+        "quota_is_approximate": true,
+        "quota_reported_chat_weekly_percent": 21.55,
+        "quota_reported_astra_model_share_percent": 98
       }
     },
     {
