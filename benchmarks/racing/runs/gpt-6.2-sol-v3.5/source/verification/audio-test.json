@@ -1,0 +1,43 @@
+{
+  "lapSeconds": 107.37500000003253,
+  "recordSeconds": 108.65066666666667,
+  "sampleRate": 48000,
+  "masterPeakDb": -2.8083515599773383,
+  "maxVoices": 32,
+  "audioBytes": 20860972,
+  "videoBytes": 84755921,
+  "cues": [
+    {
+      "label": "Gear shift",
+      "seconds": 2.021333333333333,
+      "raceTime": 2.0333333333333288
+    },
+    {
+      "label": "Nitro boost",
+      "seconds": 2.48,
+      "raceTime": 2.4916666666666605
+    },
+    {
+      "label": "Tire slip",
+      "seconds": 8.490666666666666,
+      "raceTime": 8.508333333333491
+    },
+    {
+      "label": "Impact",
+      "seconds": 9.221333333333334,
+      "raceTime": 9.241666666666783
+    },
+    {
+      "label": "Bridge entry",
+      "seconds": 90.16000000000001,
+      "raceTime": 90.17500000001783
+    },
+    {
+      "label": "AI pass",
+      "seconds": 10.210666666666668,
+      "raceTime": 10.216666666666727
+    }
+  ],
+  "resets": [],
+  "muxed": true
+}

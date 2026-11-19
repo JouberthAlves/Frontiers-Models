@@ -25,7 +25,7 @@ test('Racing-bench V2.6 prompt is archived verbatim', () => {
 });
 
 test('Racing-bench source runs have provenance records, without claiming gameplay verification', () => {
-  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4'].sort());
+  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4', 'gpt-6.2-sol-v3.5', 'gemini-4-neon-v3.5'].sort());
   for (const run of registry.runs) {
     assert.equal(run.gameplay_verification, 'not-independently-verified');
     assert.ok(run.source_commit);
@@ -46,7 +46,7 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
       } else if (run.id === 'gpt-6-astra-v3.4') {
         assert.equal(run.display_status, 'non-frontier-archived-source-site-owner-provided');
-        assert.equal(run.source_file_count, 1183);
+        assert.equal(run.source_file_count, 1383);
         assert.equal(run.site_url, run.live_url);
         assert.equal(run.live_url, 'https://racing-gpt-6-astra.biel.dev.br/', 'owner-provided Astra game URL');
         assert.match(run.site_status, /http-404-on-2026-11-05/);
@@ -89,6 +89,11 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.source_commit, 'dd66f1157269126af067faacef0e7f1725d3c7d6');
         assert.equal(run.source_file_count, 319);
         assert.equal(run.source_bytes, 379164707);
+        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+      } else if (['gpt-6.2-sol-v3.5','gemini-4-neon-v3.5'].includes(run.id)) {
+        assert.equal(run.live_url, null);
+        assert.equal(run.site_url, null);
+        assert.equal(run.prompt, 'prompts/racing-v3.5/racing-v3.5.md');
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else {
         assert.equal(run.id, 'opus-5.5-v3.4');
@@ -144,7 +149,7 @@ test('Racing-bench V3.1 remains byte-exact in the historical archive', () => {
 });
 
 test('Racing-bench V3.2 remains byte-exact and historically archived', () => {
-  assert.equal(registry.current_prompt, 'racing-v3.4');
+  assert.equal(registry.current_prompt, 'racing-v3.5');
   const p = registry.prompts['racing-v3.2'];
   assert.equal(p.status, 'historical-frozen-archived');
   assert.equal(p.required_attachment, 'prompts/racing-v3.2-attach.md');
@@ -175,7 +180,7 @@ test('Racing-bench V3.2 remains byte-exact and historically archived', () => {
 
 
 test('Racing V3.3 frozen prompt preserves all legacy scopes and requires coastal world art', () => {
-  assert.equal(registry.current_prompt, 'racing-v3.4');
+  assert.equal(registry.current_prompt, 'racing-v3.5');
   const p=registry.prompts['racing-v3.3'];
   assert.equal(p.status,'historical-frozen-archived-unchanged');
   assert.equal(p.required_attachment,'prompts/racing-v3.3-attach.md');
@@ -209,11 +214,11 @@ test('Racing V3.4 prompt and 14 reference assets are present and pinned', () => 
   const refDir=resolve(root,'benchmarks/racing',p.reference_directory);
   assert.ok(existsSync(refDir));
   assert.equal(readdirSync(refDir).filter(x=>x.endsWith('.jpg')).length,14);
-  assert.deepEqual(registry.current_arena,['gpt-6.1-sol-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
+  assert.deepEqual(registry.current_arena,['gpt-6.1-sol-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4', 'gpt-6.2-sol-v3.5', 'gemini-4-neon-v3.5']);
 });
 
 test('Racing V3.4.1 candidate pins continuous urban/forest density without rewriting V3.4', () => {
-  assert.equal(registry.current_prompt, 'racing-v3.4');
+  assert.equal(registry.current_prompt, 'racing-v3.5');
   const historical = registry.prompts['racing-v3.4'];
   const proposed = registry.prompts['racing-v3.4.1'];
   assert.equal(historical.sha256, 'faee98a423dde53686d63b3d8df89ebfb930e69f6f0322866fc526c06415e867');

@@ -1,0 +1,137 @@
+{
+  "world": {
+    "errors": [],
+    "minRadius": 25.461277664372673,
+    "maxGrade": 0.1166355002246553,
+    "maxBank": 4.099994734373669,
+    "maxEdgeStep": 0,
+    "maxTerrainPoke": 0
+  },
+  "pipeline": {
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "quality": "high",
+    "cascades": [
+      [
+        2048,
+        2048
+      ],
+      [
+        2048,
+        2048
+      ],
+      [
+        2048,
+        2048
+      ]
+    ],
+    "csmLights": 3,
+    "gtao": {
+      "active": true,
+      "size": [
+        1037,
+        583
+      ],
+      "depth": true
+    },
+    "toneMap": "AgX",
+    "msaa": 4,
+    "bloom": true,
+    "passes": [
+      "RenderPass",
+      "FrameAO",
+      "ShaderPass",
+      "UnrealBloomPass",
+      "OutputPass"
+    ],
+    "calls": 1049,
+    "renderedTriangles": 1353341,
+    "memory": {
+      "geometries": 327,
+      "textures": 47
+    }
+  },
+  "cars": [
+    {
+      "model": "Veloce GT",
+      "triangles": 55154,
+      "materialCount": 18,
+      "materials": [
+        "Cockpit suede",
+        "Graphite aero trim",
+        "Machined aluminum",
+        "Livery accent",
+        "Illuminated gauge display",
+        "Metallic clearcoat",
+        "Wheel wells and inlets",
+        "Lamp housing",
+        "Tail and brake LEDs",
+        "Reverse lamp lenses",
+        "Headlamp LED",
+        "Tinted reflective glazing",
+        "Number stencil",
+        "Fasteners",
+        "Profiled tire rubber",
+        "Tire tread relief",
+        "Brake rotor",
+        "Calipers"
+      ],
+      "directWheelHubs": 4,
+      "interior": true,
+      "steeringWheel": true,
+      "instrumentDisplay": true
+    },
+    {
+      "model": "Nerita RS",
+      "triangles": 53090,
+      "materialCount": 18,
+      "materials": [
+        "Cockpit suede",
+        "Graphite aero trim",
+        "Machined aluminum",
+        "Livery accent",
+        "Illuminated gauge display",
+        "Metallic clearcoat",
+        "Wheel wells and inlets",
+        "Lamp housing",
+        "Tail and brake LEDs",
+        "Reverse lamp lenses",
+        "Headlamp LED",
+        "Tinted reflective glazing",
+        "Number stencil",
+        "Fasteners",
+        "Profiled tire rubber",
+        "Tire tread relief",
+        "Brake rotor",
+        "Calipers"
+      ],
+      "directWheelHubs": 4,
+      "interior": true,
+      "steeringWheel": true,
+      "instrumentDisplay": true
+    }
+  ],
+  "poses": {
+    "s2-grid-3-4.png": {
+      "steer": 0,
+      "wheel": 0,
+      "period": "golden"
+    },
+    "gates/p2-nerita.png": {
+      "steer": 0,
+      "wheel": 0,
+      "period": "golden"
+    },
+    "s15-cockpit.png": {
+      "steer": 0.07060128127526566,
+      "wheel": 0.2082737797620337,
+      "period": "golden"
+    },
+    "gates/p2-night.png": {
+      "steer": 0,
+      "wheel": 0,
+      "period": "night"
+    }
+  },
+  "errors": []
+}

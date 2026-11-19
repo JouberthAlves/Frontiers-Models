@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-11-19T06:55:34.802Z",
+  "renderer": {
+    "calls": 1193,
+    "triangles": 9725468,
+    "geometries": 402,
+    "textures": 115,
+    "maxAnisotropy": 16
+  },
+  "worldValidation": {
+    "ok": true,
+    "errors": [],
+    "metrics": {
+      "trackLengthM": 3278,
+      "minCornerRadiusM": 29.6,
+      "maxGradePct": 10.6,
+      "maxBankingDeg": 5,
+      "maxTerrainPokeAboveRoadM": 0,
+      "maxRoadEdgeStepM": 0.123,
+      "obstaclesInExclusionZone": 0,
+      "floatingObjectsCount": 0,
+      "overlappingBuildingsCount": 0,
+      "checkpointErrors": 0
+    }
+  },
+  "cars": {
+    "aurelia_gtr": {
+      "triangles": 22432,
+      "materials": 20,
+      "hasParentedWheels": true,
+      "hasCockpit": true,
+      "hasSteeringWheel": true
+    },
+    "solara_corsa": {
+      "triangles": 24128,
+      "materials": 18,
+      "hasParentedWheels": true,
+      "hasCockpit": true,
+      "hasSteeringWheel": true
+    }
+  },
+  "pipeline": {
+    "quality": "high",
+    "csmActive": true,
+    "csmCascades": 3,
+    "csmShadowMapSize": 2048,
+    "aoActive": true,
+    "aoMethod": "N8AO (GTAO/HBAO)",
+    "toneMapping": "AgX",
+    "antiAliasing": "WebGL2 MSAA 4x + SMAA",
+    "msaaSamples": 4,
+    "smaaActive": true,
+    "bloomActive": true,
+    "backgroundMotionBlurActive": true,
+    "roadAnisotropy": 16,
+    "roadAsphaltResolution": [
+      2048,
+      2048
+    ],
+    "triplanarCliffActive": true,
+    "foliageTranslucencyActive": true
+  },
+  "materials": {
+    "totalPrimaryTexturedMats": 40,
+    "syntheticNoisePrimaryMaps": 0,
+    "materialsBelowMinRes": 0
+  },
+  "villageZ3": {
+    "unitCount": 238,
+    "archetypes": [
+      "terracotta_house",
+      "coastal_shop",
+      "hillside_villa",
+      "blue_plaster_cottage",
+      "stone_palazzo",
+      "coastal_church"
+    ],
+    "archetypeCount": 6,
+    "tierCounts": {
+      "tier1": 113,
+      "tier2": 65,
+      "tier3": 59
+    },
+    "hasMultiLayerDepth": true,
+    "alleyCount": 4
+  },
+  "woodsZ4": {
+    "treeSpecies": [
+      "stone_pine",
+      "coastal_palm",
+      "mediterranean_olive",
+      "tuscan_cypress"
+    ],
+    "treeSpeciesCount": 4,
+    "hasTrees": true,
+    "hasShrubs": true,
+    "hasGroundcover": true,
+    "totalTrees": 1161,
+    "totalShrubs": 1656,
+    "totalGrassTufts": 2677
+  },
+  "props": {
+    "totalProps": 1391,
+    "propsPer100m": 42.4
+  },
+  "audio": {
+    "unlocked": true,
+    "playerEngineBandsGT": 6,
+    "playerEngineBandsCorsa": 4,
+    "usesRealAudioBuffers": true,
+    "activeVoicesNow": 21,
+    "maxSimultaneousVoices": 21,
+    "masterPeakDbfs": -15.9,
+    "events": [
+      {
+        "timeSec": 0.02,
+        "type": "ai_passby",
+        "detail": "ai=ai_3 dist=12.8m"
+      }
+    ]
+  }
+}

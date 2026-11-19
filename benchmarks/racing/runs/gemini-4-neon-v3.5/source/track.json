@@ -1,0 +1,250 @@
+{
+  "name": "Costa Dorada GP",
+  "seed": 20260401,
+  "version": "4.0.0",
+  "seaLevel": 0,
+  "startFinishS": 160,
+  "sunDirectionGoldenHour": [
+    -0.46,
+    0.16,
+    -0.87
+  ],
+  "moonDirectionNight": [
+    -0.38,
+    0.4,
+    -0.83
+  ],
+  "zones": [
+    {
+      "id": "Z1",
+      "name": "Waterfront Promenade",
+      "startS": 0,
+      "endS": 737
+    },
+    {
+      "id": "Z2",
+      "name": "Limestone Cliffside",
+      "startS": 737,
+      "endS": 1718
+    },
+    {
+      "id": "Z3",
+      "name": "San Marco Coastal Village",
+      "startS": 1718,
+      "endS": 2659
+    },
+    {
+      "id": "Z4",
+      "name": "Pine Woods & Viaduct",
+      "startS": 2659,
+      "endS": 3278
+    }
+  ],
+  "bridge": {
+    "startS": 2961.3,
+    "endS": 3098.4,
+    "deckThickness": 1.8,
+    "ravineDepth": 15
+  },
+  "plaza": {
+    "s": 2155.3,
+    "side": -1,
+    "offset": 23,
+    "radius": 21
+  },
+  "checkpointCount": 24,
+  "controlPoints": [
+    {
+      "x": 0,
+      "y": 2.8,
+      "z": 380,
+      "width": 12,
+      "bankDeg": 0,
+      "zone": "Z1"
+    },
+    {
+      "x": -5,
+      "y": 2.8,
+      "z": 220,
+      "width": 12,
+      "bankDeg": 0,
+      "zone": "Z1"
+    },
+    {
+      "x": -8,
+      "y": 2.8,
+      "z": 45,
+      "width": 12,
+      "bankDeg": 0,
+      "zone": "Z1"
+    },
+    {
+      "x": -5,
+      "y": 2.8,
+      "z": -135,
+      "width": 12,
+      "bankDeg": 0,
+      "zone": "Z1"
+    },
+    {
+      "x": 8,
+      "y": 3.2,
+      "z": -315,
+      "width": 11.8,
+      "bankDeg": 1.5,
+      "zone": "Z1"
+    },
+    {
+      "x": 60,
+      "y": 9,
+      "z": -465,
+      "width": 11.2,
+      "bankDeg": 4.5,
+      "zone": "Z2"
+    },
+    {
+      "x": 180,
+      "y": 17.5,
+      "z": -540,
+      "width": 11,
+      "bankDeg": 4.5,
+      "zone": "Z2"
+    },
+    {
+      "x": 315,
+      "y": 26,
+      "z": -515,
+      "width": 11,
+      "bankDeg": 4,
+      "zone": "Z2"
+    },
+    {
+      "x": 405,
+      "y": 34,
+      "z": -420,
+      "width": 10.8,
+      "bankDeg": 5,
+      "zone": "Z2"
+    },
+    {
+      "x": 355,
+      "y": 41,
+      "z": -305,
+      "width": 10.8,
+      "bankDeg": -4.5,
+      "zone": "Z2"
+    },
+    {
+      "x": 340,
+      "y": 45.5,
+      "z": -215,
+      "width": 10.8,
+      "bankDeg": 4.5,
+      "zone": "Z2"
+    },
+    {
+      "x": 420,
+      "y": 50,
+      "z": -178,
+      "width": 10.8,
+      "bankDeg": 3,
+      "zone": "Z2"
+    },
+    {
+      "x": 530,
+      "y": 54,
+      "z": -195,
+      "width": 10.8,
+      "bankDeg": 2,
+      "zone": "Z2"
+    },
+    {
+      "x": 660,
+      "y": 54.8,
+      "z": -120,
+      "width": 10.6,
+      "bankDeg": 1.5,
+      "zone": "Z3"
+    },
+    {
+      "x": 705,
+      "y": 53.8,
+      "z": 15,
+      "width": 10.6,
+      "bankDeg": 1,
+      "zone": "Z3"
+    },
+    {
+      "x": 625,
+      "y": 52.2,
+      "z": 150,
+      "width": 11.6,
+      "bankDeg": 0,
+      "zone": "Z3"
+    },
+    {
+      "x": 710,
+      "y": 51,
+      "z": 295,
+      "width": 10.6,
+      "bankDeg": -2,
+      "zone": "Z3"
+    },
+    {
+      "x": 640,
+      "y": 48.2,
+      "z": 435,
+      "width": 10.6,
+      "bankDeg": 2.5,
+      "zone": "Z3"
+    },
+    {
+      "x": 520,
+      "y": 44.5,
+      "z": 525,
+      "width": 10.8,
+      "bankDeg": 3,
+      "zone": "Z3"
+    },
+    {
+      "x": 380,
+      "y": 38,
+      "z": 555,
+      "width": 11.2,
+      "bankDeg": 2.5,
+      "zone": "Z4"
+    },
+    {
+      "x": 268,
+      "y": 29.5,
+      "z": 492,
+      "width": 11.2,
+      "bankDeg": -2.5,
+      "zone": "Z4"
+    },
+    {
+      "x": 155,
+      "y": 21.5,
+      "z": 505,
+      "width": 11.4,
+      "bankDeg": 0,
+      "zone": "Z4"
+    },
+    {
+      "x": 56,
+      "y": 12.5,
+      "z": 510,
+      "width": 11.6,
+      "bankDeg": 3.5,
+      "zone": "Z4"
+    },
+    {
+      "x": 8,
+      "y": 5.2,
+      "z": 450,
+      "width": 12,
+      "bankDeg": 3.5,
+      "zone": "Z4"
+    }
+  ]
+}

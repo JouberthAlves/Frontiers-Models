@@ -1,0 +1,26 @@
+{
+  "name": "corsa-di-vetra",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "play": "node scripts/serve.mjs",
+    "verify": "npm run build && node scripts/verify.mjs",
+    "gate:p1": "node scripts/gate-p1.mjs",
+    "gate:p2": "node scripts/gate-p2.mjs",
+    "gate:p3": "node scripts/gate-p3.mjs",
+    "gate:p4": "node scripts/gate-p4.mjs",
+    "gate:p5": "node scripts/gate-p5.mjs",
+    "gate:audio": "node scripts/gate-audio.mjs"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  },
+  "devDependencies": {
+    "playwright": "1.65.1",
+    "sharp": "0.35.5",
+    "vite": "8.3.8"
+  }
+}

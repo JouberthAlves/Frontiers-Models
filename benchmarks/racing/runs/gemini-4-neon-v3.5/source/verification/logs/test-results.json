@@ -1,0 +1,249 @@
+{
+  "startedAt": "2026-11-19T06:55:25.281Z",
+  "hardware": {
+    "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+    "cores": 16,
+    "platform": "win32 10.0.26300",
+    "browserVersion": "159.0.8154.6",
+    "resolution": "1920x1080",
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+  },
+  "tests": {
+    "sceneAssetPipelineAudit": {
+      "pass": true,
+      "failures": [],
+      "summary": {
+        "trackLengthM": 3278,
+        "minCornerRadiusM": 29.6,
+        "maxGradePct": 10.6,
+        "maxBankingDeg": 5,
+        "maxTerrainPokeAboveRoadM": 0,
+        "maxRoadEdgeStepM": 0.123,
+        "obstaclesInExclusionZone": 0,
+        "floatingObjectsCount": 0,
+        "overlappingBuildingsCount": 0,
+        "checkpointErrors": 0
+      }
+    },
+    "steeringAndNitroIntegrity": {
+      "pass": true,
+      "rightTurn": {
+        "spdBefore": 45.4,
+        "dLat": 1.854,
+        "dYawDeg": -28.07
+      },
+      "leftTurn": {
+        "spdBefore": 66.9,
+        "dLat": -2.017,
+        "dYawDeg": 26.13
+      },
+      "nitroOff": {
+        "speedKmh": 82.4,
+        "nitro": 0.856
+      },
+      "nitroOn": {
+        "speedKmh": 95.1,
+        "nitro": 0.1
+      }
+    },
+    "antiCut": {
+      "pass": true,
+      "lapAfterCut": 1,
+      "checkpointsPassed": 0
+    },
+    "fullRace3LapsGoldenHour": {
+      "pass": true,
+      "raceElapsedSec": 341,
+      "bestLapSec": 112.3,
+      "aiOvertakes": 31,
+      "aiMaxStuckSec": 0.17,
+      "totalResetsAllCars": 0,
+      "cameraClipViolations": 0,
+      "resultsVisible": true,
+      "raceAgainScreen": "grid_intro"
+    },
+    "extended6LapAndNightBoot": {
+      "pass": true,
+      "raceElapsedSec": 668.8,
+      "bestLapSec": 109.1,
+      "totalResetsAllCars": 0
+    },
+    "stateAndMemoryHygiene": {
+      "pass": true,
+      "voicesBefore": 0,
+      "voicesAfter": 0,
+      "heapStartMB": 803,
+      "heapEndMB": 803,
+      "heapDeltaMB": 0
+    },
+    "trackSweep25m": {
+      "pass": true,
+      "thumbnailCount": 132
+    }
+  },
+  "fps": {
+    "highGoldenHourZ3": {
+      "avgFps": 51.7,
+      "low1PctFps": 20,
+      "samples": 192
+    },
+    "highNightZ3": {
+      "avgFps": 58.8,
+      "low1PctFps": 30,
+      "samples": 191
+    },
+    "lowGoldenHourZ3": {
+      "avgFps": 60,
+      "low1PctFps": 59.5,
+      "samples": 195
+    }
+  },
+  "audio": {
+    "durationSec": 116.48,
+    "sampleRate": 48000,
+    "masterPeakDbfs": -7.2,
+    "peakBelowMinus1Dbfs": true,
+    "maxSimultaneousVoices": 21,
+    "events": [
+      {
+        "timeSec": 0.02,
+        "type": "ai_passby",
+        "detail": "ai=ai_3 dist=12.8m"
+      },
+      {
+        "timeSec": 3.07,
+        "type": "gear_shift",
+        "detail": "gear 2"
+      },
+      {
+        "timeSec": 4.02,
+        "type": "ai_passby",
+        "detail": "ai=ai_3 dist=13.6m"
+      },
+      {
+        "timeSec": 5.18,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 7.51,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 8.03,
+        "type": "ai_passby",
+        "detail": "ai=ai_4 dist=7.1m"
+      },
+      {
+        "timeSec": 9.71,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 11.76,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 13.92,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 16.16,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 18.21,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 36.72,
+        "type": "ai_passby",
+        "detail": "ai=ai_3 dist=13.8m"
+      },
+      {
+        "timeSec": 42.16,
+        "type": "ai_passby",
+        "detail": "ai=ai_3 dist=15.9m"
+      },
+      {
+        "timeSec": 43.96,
+        "type": "gear_shift",
+        "detail": "gear 1"
+      },
+      {
+        "timeSec": 48.76,
+        "type": "ai_passby",
+        "detail": "ai=ai_5 dist=14.3m"
+      },
+      {
+        "timeSec": 56.31,
+        "type": "gear_shift",
+        "detail": "gear 3"
+      },
+      {
+        "timeSec": 63.94,
+        "type": "ai_passby",
+        "detail": "ai=ai_3 dist=15.9m"
+      },
+      {
+        "timeSec": 80.56,
+        "type": "ai_passby",
+        "detail": "ai=ai_5 dist=15.8m"
+      },
+      {
+        "timeSec": 82.03,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 84.26,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 86.26,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 88.31,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 100.28,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 100.73,
+        "type": "bridge_transition"
+      },
+      {
+        "timeSec": 102.83,
+        "type": "ai_passby",
+        "detail": "ai=ai_3 dist=16.0m"
+      },
+      {
+        "timeSec": 103.44,
+        "type": "gear_shift",
+        "detail": "gear 2"
+      },
+      {
+        "timeSec": 109.08,
+        "type": "ai_passby",
+        "detail": "ai=ai_5 dist=15.1m"
+      },
+      {
+        "timeSec": 111.24,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 113.48,
+        "type": "nitro_boost"
+      },
+      {
+        "timeSec": 115.53,
+        "type": "nitro_boost"
+      }
+    ],
+    "lapTimeSec": 116.7,
+    "resetsDuringLap": 0
+  },
+  "consoleErrors": [],
+  "pageErrors": [],
+  "finishedAt": "2026-11-19T06:59:30.704Z"
+}

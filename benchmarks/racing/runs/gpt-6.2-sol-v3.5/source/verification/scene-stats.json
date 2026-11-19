@@ -1,0 +1,3305 @@
+{
+  "lengthMeters": 2637.958268994363,
+  "day": {
+    "world": {
+      "errors": [],
+      "lengthMeters": 2637.958268994363,
+      "minRadius": 25.461277664372673,
+      "maxGrade": 0.1166355002246553,
+      "maxBank": 4.099994734373669,
+      "maxEdgeStep": 0,
+      "maxTerrainPoke": 0
+    },
+    "pipeline": {
+      "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "quality": "high",
+      "cascades": [
+        [
+          2048,
+          2048
+        ],
+        [
+          2048,
+          2048
+        ],
+        [
+          2048,
+          2048
+        ]
+      ],
+      "csmLights": 3,
+      "gtao": {
+        "active": true,
+        "size": [
+          1037,
+          583
+        ],
+        "depth": true
+      },
+      "toneMap": "AgX",
+      "msaa": 4,
+      "bloom": true,
+      "passes": [
+        {
+          "effect": "Scene render",
+          "enabled": true
+        },
+        {
+          "effect": "GTAO",
+          "enabled": true
+        },
+        {
+          "effect": "Distance-masked motion blur and flare",
+          "enabled": true
+        },
+        {
+          "effect": "Thresholded bloom",
+          "enabled": true
+        },
+        {
+          "effect": "AgX output",
+          "enabled": true
+        }
+      ],
+      "calls": 2529,
+      "renderedTriangles": 3833853,
+      "memory": {
+        "geometries": 2000,
+        "textures": 117
+      }
+    },
+    "cars": [
+      {
+        "model": "Veloce GT",
+        "triangles": 55200,
+        "materialCount": 19,
+        "materials": [
+          "Cockpit suede",
+          "Graphite aero trim",
+          "Machined aluminum",
+          "Livery accent",
+          "Illuminated gauge display",
+          "Metallic clearcoat",
+          "Wheel wells and inlets",
+          "Lamp housing",
+          "Tail and brake LEDs",
+          "Reverse lamp lenses",
+          "Headlamp LED",
+          "Tinted reflective glazing",
+          "Number stencil",
+          "Fasteners",
+          "Profiled tire rubber",
+          "Tire tread relief",
+          "Brake rotor",
+          "Calipers",
+          "Headlight atmospheric scattering"
+        ],
+        "directWheelHubs": 4,
+        "interior": true,
+        "steeringWheel": true,
+        "instrumentDisplay": true
+      },
+      {
+        "model": "Nerita RS",
+        "triangles": 53136,
+        "materialCount": 19,
+        "materials": [
+          "Cockpit suede",
+          "Graphite aero trim",
+          "Machined aluminum",
+          "Livery accent",
+          "Illuminated gauge display",
+          "Metallic clearcoat",
+          "Wheel wells and inlets",
+          "Lamp housing",
+          "Tail and brake LEDs",
+          "Reverse lamp lenses",
+          "Headlamp LED",
+          "Tinted reflective glazing",
+          "Number stencil",
+          "Fasteners",
+          "Profiled tire rubber",
+          "Tire tread relief",
+          "Brake rotor",
+          "Calipers",
+          "Headlight atmospheric scattering"
+        ],
+        "directWheelHubs": 4,
+        "interior": true,
+        "steeringWheel": true,
+        "instrumentDisplay": true
+      }
+    ],
+    "plants": {
+      "palm": 81,
+      "pine": 319,
+      "olive": 264,
+      "cypress": 241,
+      "shrub": 857,
+      "grass": 477
+    },
+    "coastalPlants": {
+      "palm": 81,
+      "pine": 319,
+      "olive": 264,
+      "cypress": 241,
+      "shrub": 857,
+      "grass": 477
+    },
+    "coastProps": 224,
+    "rockFoamSources": 30,
+    "road": {
+      "anisotropy": 16,
+      "resolution": 2048
+    },
+    "triplanar": true,
+    "foliageTransmission": 0.71,
+    "village": {
+      "units": 203,
+      "styles": [
+        "San Celso church",
+        "Ochre town house",
+        "Terraced villa",
+        "Market shop",
+        "Limestone court house",
+        "Fisher house"
+      ],
+      "tiers": [
+        2,
+        1,
+        3
+      ],
+      "alleys": 3
+    },
+    "lights": {
+      "streetlights": 0,
+      "headlights": 0
+    },
+    "bridge": {
+      "from": 2272.1062676758206,
+      "to": 2316.1062676758206
+    },
+    "cliffProps": 301,
+    "woodsProps": 71,
+    "primary": [
+      {
+        "name": "Ground, coastal sand and triplanar cliff",
+        "kind": "terrain",
+        "albedo": {
+          "file": "./assets/earth-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/earth-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "layers": [
+          {
+            "layer": "shore",
+            "albedo": {
+              "file": "./assets/sand-a.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            },
+            "normal": {
+              "file": "./assets/sand-n.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            }
+          },
+          {
+            "layer": "three-axis cliff",
+            "albedo": {
+              "file": "./assets/limestone-a.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            },
+            "normal": {
+              "file": "./assets/limestone-n.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            }
+          },
+          {
+            "layer": "coastal grass",
+            "albedo": {
+              "file": "./assets/grassland-a.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            },
+            "normal": {
+              "file": "./assets/grassland-n.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            }
+          }
+        ]
+      },
+      {
+        "name": "Asphalt with rubber and sandy shoulder",
+        "kind": "asphalt",
+        "albedo": {
+          "file": "./assets/asphalt-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/asphalt-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Sea-cut sandstone",
+        "kind": "Sea-cut sandstone",
+        "albedo": {
+          "file": "./assets/stone-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/stone-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Galvanized track hardware",
+        "kind": "Galvanized track hardware",
+        "albedo": {
+          "file": "./assets/metal-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/metal-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Weathered wood",
+        "kind": "Weathered wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Weathered limestone",
+        "kind": "Weathered limestone",
+        "albedo": {
+          "file": "./assets/limestone-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/limestone-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "grass leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "grass leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "grass leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "palm bark",
+        "kind": "bark",
+        "albedo": {
+          "file": "./assets/palm-a.webp",
+          "width": 1024,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/palm-n.webp",
+          "width": 1024,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "palm leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "shrub leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/frond-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/frond-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "shrub leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/frond-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/frond-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "shrub leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/frond-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/frond-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "palm leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "palm leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "bark bark",
+        "kind": "bark",
+        "albedo": {
+          "file": "./assets/bark-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/bark-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "olive leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/leaves-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/leaves-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "olive leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/leaves-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/leaves-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "olive leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/leaves-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/leaves-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Village laid stone pavers",
+        "kind": "pavers",
+        "albedo": {
+          "file": "./assets/pavers-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/pavers-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Shaped window stone",
+        "kind": "stone",
+        "albedo": {
+          "file": "./assets/stone-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/stone-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "San Celso church stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Recessed doors and arcades",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Glazing mullions",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "San Celso church painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "San Celso church tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Roof edge stone",
+        "kind": "stone",
+        "albedo": {
+          "file": "./assets/stone-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/stone-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ochre town house stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ochre town house painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ochre town house tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Terraced villa stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Terraced villa painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Terraced villa tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ivory linen awnings",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ocher linen awnings",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Market shop stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Market shop painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Market shop tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Limestone court house stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Limestone court house painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Limestone court house tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Window-box leaves",
+        "kind": "frond",
+        "albedo": {
+          "file": "./assets/frond-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/frond-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Fisher house stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Fisher house painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Fisher house tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "cypress leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "cypress leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "cypress leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "pine bark",
+        "kind": "bark",
+        "albedo": {
+          "file": "./assets/pine-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/pine-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "pine leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "pine leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "pine leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      }
+    ],
+    "audio": {
+      "state": "running",
+      "decoded": 32,
+      "bands": [
+        {
+          "rpm": 1120,
+          "models": [
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 98640
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 84240
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 101040
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 103440
+              }
+            ]
+          ]
+        },
+        {
+          "rpm": 2400,
+          "models": [
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 28560
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 54720
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 33120
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 45120
+              }
+            ]
+          ]
+        },
+        {
+          "rpm": 4000,
+          "models": [
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 36720
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 32400
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 41040
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 32640
+              }
+            ]
+          ]
+        },
+        {
+          "rpm": 5670,
+          "models": [
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 35760
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 32880
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 29040
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 30240
+              }
+            ]
+          ]
+        },
+        {
+          "rpm": 7500,
+          "models": [
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 36240
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 27120
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": true,
+                "samples": 51360
+              },
+              {
+                "realAudioBuffer": true,
+                "samples": 36240
+              }
+            ]
+          ]
+        }
+      ],
+      "activeVoices": 25,
+      "maxVoices": 25,
+      "aiVoices": 5
+    }
+  },
+  "night": {
+    "world": {
+      "errors": [],
+      "lengthMeters": 2637.958268994363,
+      "minRadius": 25.461277664372673,
+      "maxGrade": 0.1166355002246553,
+      "maxBank": 4.099994734373669,
+      "maxEdgeStep": 0,
+      "maxTerrainPoke": 0
+    },
+    "pipeline": {
+      "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "quality": "high",
+      "cascades": [
+        [
+          2048,
+          2048
+        ],
+        [
+          2048,
+          2048
+        ],
+        [
+          2048,
+          2048
+        ]
+      ],
+      "csmLights": 3,
+      "gtao": {
+        "active": true,
+        "size": [
+          1037,
+          583
+        ],
+        "depth": true
+      },
+      "toneMap": "AgX",
+      "msaa": 4,
+      "bloom": true,
+      "passes": [
+        {
+          "effect": "Scene render",
+          "enabled": true
+        },
+        {
+          "effect": "GTAO",
+          "enabled": true
+        },
+        {
+          "effect": "Distance-masked motion blur and flare",
+          "enabled": true
+        },
+        {
+          "effect": "Thresholded bloom",
+          "enabled": true
+        },
+        {
+          "effect": "AgX output",
+          "enabled": true
+        }
+      ],
+      "calls": 2404,
+      "renderedTriangles": 3702565,
+      "memory": {
+        "geometries": 2000,
+        "textures": 117
+      }
+    },
+    "cars": [
+      {
+        "model": "Veloce GT",
+        "triangles": 55200,
+        "materialCount": 19,
+        "materials": [
+          "Cockpit suede",
+          "Graphite aero trim",
+          "Machined aluminum",
+          "Livery accent",
+          "Illuminated gauge display",
+          "Metallic clearcoat",
+          "Wheel wells and inlets",
+          "Lamp housing",
+          "Tail and brake LEDs",
+          "Reverse lamp lenses",
+          "Headlamp LED",
+          "Tinted reflective glazing",
+          "Number stencil",
+          "Fasteners",
+          "Profiled tire rubber",
+          "Tire tread relief",
+          "Brake rotor",
+          "Calipers",
+          "Headlight atmospheric scattering"
+        ],
+        "directWheelHubs": 4,
+        "interior": true,
+        "steeringWheel": true,
+        "instrumentDisplay": true
+      },
+      {
+        "model": "Nerita RS",
+        "triangles": 53136,
+        "materialCount": 19,
+        "materials": [
+          "Cockpit suede",
+          "Graphite aero trim",
+          "Machined aluminum",
+          "Livery accent",
+          "Illuminated gauge display",
+          "Metallic clearcoat",
+          "Wheel wells and inlets",
+          "Lamp housing",
+          "Tail and brake LEDs",
+          "Reverse lamp lenses",
+          "Headlamp LED",
+          "Tinted reflective glazing",
+          "Number stencil",
+          "Fasteners",
+          "Profiled tire rubber",
+          "Tire tread relief",
+          "Brake rotor",
+          "Calipers",
+          "Headlight atmospheric scattering"
+        ],
+        "directWheelHubs": 4,
+        "interior": true,
+        "steeringWheel": true,
+        "instrumentDisplay": true
+      }
+    ],
+    "plants": {
+      "palm": 81,
+      "pine": 319,
+      "olive": 264,
+      "cypress": 241,
+      "shrub": 857,
+      "grass": 477
+    },
+    "coastalPlants": {
+      "palm": 81,
+      "pine": 319,
+      "olive": 264,
+      "cypress": 241,
+      "shrub": 857,
+      "grass": 477
+    },
+    "coastProps": 224,
+    "rockFoamSources": 30,
+    "road": {
+      "anisotropy": 16,
+      "resolution": 2048
+    },
+    "triplanar": true,
+    "foliageTransmission": 0.035,
+    "village": {
+      "units": 203,
+      "styles": [
+        "San Celso church",
+        "Ochre town house",
+        "Terraced villa",
+        "Market shop",
+        "Limestone court house",
+        "Fisher house"
+      ],
+      "tiers": [
+        2,
+        1,
+        3
+      ],
+      "alleys": 3
+    },
+    "lights": {
+      "streetlights": 8,
+      "headlights": 6
+    },
+    "bridge": {
+      "from": 2272.1062676758206,
+      "to": 2316.1062676758206
+    },
+    "cliffProps": 301,
+    "woodsProps": 71,
+    "primary": [
+      {
+        "name": "Ground, coastal sand and triplanar cliff",
+        "kind": "terrain",
+        "albedo": {
+          "file": "./assets/earth-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/earth-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "layers": [
+          {
+            "layer": "shore",
+            "albedo": {
+              "file": "./assets/sand-a.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            },
+            "normal": {
+              "file": "./assets/sand-n.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            }
+          },
+          {
+            "layer": "three-axis cliff",
+            "albedo": {
+              "file": "./assets/limestone-a.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            },
+            "normal": {
+              "file": "./assets/limestone-n.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            }
+          },
+          {
+            "layer": "coastal grass",
+            "albedo": {
+              "file": "./assets/grassland-a.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            },
+            "normal": {
+              "file": "./assets/grassland-n.webp",
+              "width": 1024,
+              "height": 1024,
+              "procedural": false,
+              "anisotropy": 16
+            }
+          }
+        ]
+      },
+      {
+        "name": "Asphalt with rubber and sandy shoulder",
+        "kind": "asphalt",
+        "albedo": {
+          "file": "./assets/asphalt-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/asphalt-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Sea-cut sandstone",
+        "kind": "Sea-cut sandstone",
+        "albedo": {
+          "file": "./assets/stone-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/stone-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Galvanized track hardware",
+        "kind": "Galvanized track hardware",
+        "albedo": {
+          "file": "./assets/metal-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/metal-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Weathered wood",
+        "kind": "Weathered wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Weathered limestone",
+        "kind": "Weathered limestone",
+        "albedo": {
+          "file": "./assets/limestone-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/limestone-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "grass leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "grass leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "grass leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "palm bark",
+        "kind": "bark",
+        "albedo": {
+          "file": "./assets/palm-a.webp",
+          "width": 1024,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/palm-n.webp",
+          "width": 1024,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "palm leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "shrub leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/frond-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/frond-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "shrub leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/frond-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/frond-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "shrub leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/frond-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/frond-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "palm leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "palm leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/grass-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/grass-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "bark bark",
+        "kind": "bark",
+        "albedo": {
+          "file": "./assets/bark-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/bark-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "olive leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/leaves-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/leaves-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "olive leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/leaves-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/leaves-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "olive leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/leaves-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/leaves-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Village laid stone pavers",
+        "kind": "pavers",
+        "albedo": {
+          "file": "./assets/pavers-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/pavers-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Shaped window stone",
+        "kind": "stone",
+        "albedo": {
+          "file": "./assets/stone-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/stone-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "San Celso church stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Recessed doors and arcades",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Glazing mullions",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "San Celso church painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "San Celso church tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Roof edge stone",
+        "kind": "stone",
+        "albedo": {
+          "file": "./assets/stone-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/stone-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ochre town house stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ochre town house painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ochre town house tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Terraced villa stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Terraced villa painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Terraced villa tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ivory linen awnings",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Ocher linen awnings",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Market shop stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Market shop painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Market shop tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Limestone court house stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Limestone court house painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Limestone court house tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Window-box leaves",
+        "kind": "frond",
+        "albedo": {
+          "file": "./assets/frond-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/frond-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Fisher house stucco",
+        "kind": "plaster",
+        "albedo": {
+          "file": "./assets/plaster-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/plaster-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Fisher house painted shutters",
+        "kind": "wood",
+        "albedo": {
+          "file": "./assets/wood-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/wood-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Fisher house tiles",
+        "kind": "tile",
+        "albedo": {
+          "file": "./assets/tile-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tile-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "cypress leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "cypress leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "cypress leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "pine bark",
+        "kind": "bark",
+        "albedo": {
+          "file": "./assets/pine-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/pine-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "pine leaf layer 3",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "pine leaf layer 2",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "pine leaf layer 1",
+        "kind": "foliage",
+        "albedo": {
+          "file": "./assets/needles-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/needles-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Cockpit suede",
+        "kind": "suede",
+        "albedo": {
+          "file": "./assets/suede-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/suede-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Profiled tire rubber",
+        "kind": "rubber",
+        "albedo": {
+          "file": "./assets/rubber-a.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/rubber-n.webp",
+          "width": 1024,
+          "height": 1024,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      },
+      {
+        "name": "Tire tread relief",
+        "kind": "tread",
+        "albedo": {
+          "file": "./assets/tread-a.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        },
+        "normal": {
+          "file": "./assets/tread-n.webp",
+          "width": 2048,
+          "height": 2048,
+          "procedural": false,
+          "anisotropy": 16
+        }
+      }
+    ],
+    "audio": {
+      "state": "locked",
+      "decoded": 0,
+      "bands": [
+        {
+          "rpm": 1120,
+          "models": [
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ]
+          ]
+        },
+        {
+          "rpm": 2400,
+          "models": [
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ]
+          ]
+        },
+        {
+          "rpm": 4000,
+          "models": [
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ]
+          ]
+        },
+        {
+          "rpm": 5670,
+          "models": [
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ]
+          ]
+        },
+        {
+          "rpm": 7500,
+          "models": [
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ],
+            [
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              },
+              {
+                "realAudioBuffer": false,
+                "samples": 0
+              }
+            ]
+          ]
+        }
+      ],
+      "activeVoices": 0,
+      "maxVoices": 0,
+      "aiVoices": 0
+    }
+  },
+  "browser": "159.0.8154.6",
+  "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         "
+}

@@ -1,0 +1,476 @@
+{
+  "results": [
+    {
+      "name": "3-lap journey and AI",
+      "status": "Pass",
+      "data": {
+        "result": {
+          "phase": "results",
+          "mode": "chase",
+          "period": "golden",
+          "quality": "high",
+          "time": 317.2499999998758,
+          "laps": 3,
+          "player": {
+            "lap": 3,
+            "lastLap": 105.0333333332378,
+            "bestLap": 105.0333333332378,
+            "speed": 25.114873923029588,
+            "rpm": 6709.06908940593,
+            "steer": 0.0013554813222537616,
+            "wheel": 0.003998669900648597,
+            "nitro": 1,
+            "lateral": -2.1990055465517004,
+            "heading": 0.000790115154476613,
+            "progress": 7913.975026807046,
+            "s": 84.10021982193257,
+            "x": -381.1687594114687,
+            "z": 283.82603082083745,
+            "finish": 317.2499999998758,
+            "validLap": true
+          },
+          "ai": [
+            {
+              "id": 1,
+              "lap": 2,
+              "progress": 7590.859668156685,
+              "longestOff": 0
+            },
+            {
+              "id": 2,
+              "lap": 2,
+              "progress": 7829.365387623624,
+              "longestOff": 0
+            },
+            {
+              "id": 3,
+              "lap": 2,
+              "progress": 7659.1211528258145,
+              "longestOff": 0
+            },
+            {
+              "id": 4,
+              "lap": 2,
+              "progress": 7847.717811792783,
+              "longestOff": 0
+            },
+            {
+              "id": 5,
+              "lap": 3,
+              "progress": 7987.244929733731,
+              "longestOff": 0
+            }
+          ],
+          "resets": [],
+          "overtakes": 17,
+          "events": 62,
+          "minClearance": 0.07056119693307394,
+          "cameraClearance": 1.1551736644993387,
+          "audio": {
+            "state": "running",
+            "decoded": 32,
+            "bands": [
+              {
+                "rpm": 1120,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 394560
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 336960
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 404160
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 413760
+                    }
+                  ]
+                ]
+              },
+              {
+                "rpm": 2400,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 114240
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 218880
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 132480
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 180480
+                    }
+                  ]
+                ]
+              },
+              {
+                "rpm": 4000,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 146880
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 129600
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 164160
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 130560
+                    }
+                  ]
+                ]
+              },
+              {
+                "rpm": 5670,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 143040
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 131520
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 116160
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 120960
+                    }
+                  ]
+                ]
+              },
+              {
+                "rpm": 7500,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 144960
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 108480
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 205440
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 144960
+                    }
+                  ]
+                ]
+              }
+            ],
+            "activeVoices": 0,
+            "maxVoices": 25,
+            "aiVoices": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "Pause, restart and menu cleanup",
+      "status": "Pass",
+      "data": {
+        "baseline": 25,
+        "voiceCounts": [
+          25,
+          25,
+          25
+        ],
+        "heapBefore": 379191702,
+        "heapAfter": 376198105
+      }
+    },
+    {
+      "name": "Steering direction and nitro",
+      "status": "Pass",
+      "data": {
+        "outcomes": [
+          {
+            "key": "d",
+            "displacement": 3.0041357191173104,
+            "yaw": 0.6521161299897894
+          },
+          {
+            "key": "a",
+            "displacement": -3.3450133636190857,
+            "yaw": -0.6758900806171327
+          },
+          {
+            "key": "ArrowRight",
+            "displacement": 3.0041357191173104,
+            "yaw": 0.6521161299897894
+          },
+          {
+            "key": "ArrowLeft",
+            "displacement": -3.3450133636190857,
+            "yaw": -0.6758900806171327
+          }
+        ],
+        "acceleration": [
+          {
+            "speed": 17.441042239359287,
+            "nitro": 1
+          },
+          {
+            "speed": 18.813388007046623,
+            "nitro": 0.8349999999999982
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sequential-checkpoint cut rejection",
+      "status": "Pass",
+      "data": {
+        "lap": 0,
+        "usableLap": false,
+        "nextCheckpoint": 2
+      }
+    },
+    {
+      "name": "6-lap journey, night start and world integrity",
+      "status": "Pass",
+      "data": {
+        "result": {
+          "phase": "results",
+          "mode": "chase",
+          "period": "night",
+          "quality": "high",
+          "time": 632.3583333329226,
+          "laps": 6,
+          "player": {
+            "lap": 6,
+            "lastLap": 105.0333333332378,
+            "bestLap": 105.0333333332378,
+            "speed": 25.11487392543133,
+            "rpm": 6709.069090020376,
+            "steer": 0.001347916440345096,
+            "wheel": 0.003976353499018034,
+            "nitro": 1,
+            "lateral": -2.1990745566940655,
+            "heading": 0.0007951316493785762,
+            "progress": 15827.798266991691,
+            "s": 84.04865303456745,
+            "x": -381.22031591982505,
+            "z": 283.8269328456383,
+            "finish": 632.3583333329226,
+            "validLap": true
+          },
+          "ai": [
+            {
+              "id": 1,
+              "lap": 5,
+              "progress": 15172.753225024759,
+              "longestOff": 0
+            },
+            {
+              "id": 2,
+              "lap": 5,
+              "progress": 15638.489869618768,
+              "longestOff": 0
+            },
+            {
+              "id": 3,
+              "lap": 5,
+              "progress": 15354.30021063041,
+              "longestOff": 0
+            },
+            {
+              "id": 4,
+              "lap": 5,
+              "progress": 15774.632739317954,
+              "longestOff": 0
+            },
+            {
+              "id": 5,
+              "lap": 6,
+              "progress": 16024.302475328668,
+              "longestOff": 0
+            }
+          ],
+          "resets": [],
+          "overtakes": 13,
+          "events": 91,
+          "minClearance": 0.07040810318419588,
+          "cameraClearance": 1.7235105258256596,
+          "audio": {
+            "state": "running",
+            "decoded": 32,
+            "bands": [
+              {
+                "rpm": 1120,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 394560
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 336960
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 404160
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 413760
+                    }
+                  ]
+                ]
+              },
+              {
+                "rpm": 2400,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 114240
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 218880
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 132480
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 180480
+                    }
+                  ]
+                ]
+              },
+              {
+                "rpm": 4000,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 146880
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 129600
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 164160
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 130560
+                    }
+                  ]
+                ]
+              },
+              {
+                "rpm": 5670,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 143040
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 131520
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 116160
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 120960
+                    }
+                  ]
+                ]
+              },
+              {
+                "rpm": 7500,
+                "models": [
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 144960
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 108480
+                    }
+                  ],
+                  [
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 205440
+                    },
+                    {
+                      "realAudioBuffer": true,
+                      "samples": 144960
+                    }
+                  ]
+                ]
+              }
+            ],
+            "activeVoices": 0,
+            "maxVoices": 25,
+            "aiVoices": 0
+          }
+        },
+        "nightBoot": {
+          "streetlights": 8,
+          "headlights": 6
+        }
+      }
+    }
+  ],
+  "errors": []
+}

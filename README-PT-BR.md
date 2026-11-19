@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com 11 execuções em destaque (6 Racing e 5 Orbitarium)" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com 13 execuções em destaque (8 Racing e 5 Orbitarium)" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-11-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-13-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -22,7 +22,7 @@
 
 ## ⚔️ Execuções atuais por benchmark
 
-### Racing-bench V3.4 / V3.4.1 — versão atual, focada na corrida
+### Racing-bench V3.4 / V3.4.1 / V3.5 — versão atual, focada na corrida
 
 | Modelo atual | Jogar | Código-fonte | Tokens | Tempo |
 | --- | --- | --- | ---: | ---: |
@@ -32,10 +32,14 @@
 | ✧ **Fable 5.2 (V3.4.1)** | [Jogar](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475,74 M | ~11 h |
 | ◈ **Gemini 4 Argon** | [Jogar](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) | — | — |
 | ⬡ **Gemini 4 Hydrogen** | [Jogar](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/) | — | — |
+| ☀️ **GPT-6.2 Sol (V3.5)** | — | [GPT-6.2 Sol (V3.5)](./benchmarks/racing/runs/gpt-6.2-sol-v3.5/source/) | — | — |
+| ◈ **Gemini 4 Neon (V3.5)** | — | [Gemini 4 Neon (V3.5)](./benchmarks/racing/runs/gemini-4-neon-v3.5/source/) | — | — |
 
 *Desde a V3.4.1: tokens totais (incluindo cache) e tempo ativo estimado de execução, quando disponíveis. — = não registrado. [Métricas e limitações](./benchmarks/racing/EXECUTION-METRICS.md).*
 
 \* GPT-6.2 Astra: ~21% da cota semanal do Plus (informado pelo mantenedor; sem contagem de tokens). 5 h 02 min = intervalo decorrido observado, não tempo ativo comprovado. Relatório: 21,55% da cota semanal do chat, com 98% de participação atribuída ao Astra; valor aproximado.
+
+**Entradas V3.5:** [Prompt](./benchmarks/racing/prompts/racing-v3.5/racing-v3.5.md) · [14 referências](./benchmarks/racing/prompts/racing-v3.5/refs/).
 
 **Entradas V3.4:** [Prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens](./benchmarks/racing/prompts/racing-v3.4/refs/) · [Anexo operacional](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
@@ -56,11 +60,11 @@
 ## Como se organiza
 
 ```text
-FRONTIER MODELS                         2 benchmarks · 11 execuções atuais
+FRONTIER MODELS                         2 benchmarks · 13 execuções atuais
 │
-├── RACING-BENCH (V3.4 / V3.4.1)                 6 execuções atuais
-│   ├── entradas    racing-v3.4/ · 14 referências visuais
-│   ├── atuais      GPT-6.1 Sol · GPT-6.2 Astra (V3.4.1) · Opus 5.5 · Gemini 4 Argon · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen
+├── RACING-BENCH (V3.4 / V3.4.1 / V3.5)                 8 execuções atuais
+│   ├── entradas    racing-v3.5/ · 14 referências visuais
+│   ├── atuais      GPT-6.1 Sol · GPT-6.2 Astra (V3.4.1) · Opus 5.5 · Gemini 4 Argon · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen · GPT-6.2 Sol (V3.5) · Gemini 4 Neon (V3.5)
 │   └── histórico   execuções V2.6 + prompts anteriores
 │
 ├── ORBITARIUM-BENCH (Frontier V2)      5 referências atuais

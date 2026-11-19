@@ -1,17 +1,18 @@
 # Racing-bench — official prompt archive
 
-**Current: [Racing-bench V3.4](./racing-v3.4/racing-v3.4.md)** plus [14 original packaged visual references](./racing-v3.4/refs/). The V3.3 specification is archived unchanged.
+**Current: [Racing-bench V3.5](./racing-v3.5/racing-v3.5.md)** plus [14 original packaged visual references](./racing-v3.5/refs/). The V3.3 specification is archived unchanged.
 
 | Prompt | Status | UTF-8 bytes | Lines | SHA-256 |
 | --- | --- | ---: | ---: | --- |
+| **[racing-v3.5.md](./racing-v3.5/racing-v3.5.md)** | **Current — Procedural Craft & Full-Race Edition; 14 references** | **45,194** | **501** | `feb07b3f3bde403633e4b24cb2b2106a9aa24423d4af5f80f3f16cf9326dc874` |
 | [racing-v3.4.1.md](./racing-v3.4/racing-v3.4.1.md) | **Candidate — coherent village / diverse flora + verified review fixes; shares 14 V3.4 refs** | **37,497** | **437** | `113137d261d58188e42b18ecfd7efabbc002209ad0fb0dedd36cd65f4ad985fe` |
-| **[racing-v3.4.md](./racing-v3.4/racing-v3.4.md)** | **Current, race-first + 14 visual references** | **25,790** | **406** | `faee98a423dde53686d63b3d8df89ebfb930e69f6f0322866fc526c06415e867` |
+| **[racing-v3.4.md](./racing-v3.4/racing-v3.4.md)** | Historical, race-first + 14 visual references | **25,790** | **406** | `faee98a423dde53686d63b3d8df89ebfb930e69f6f0322866fc526c06415e867` |
 | [racing-v3.3.md](./racing-v3.3.md) | Historical, frozen; G1–G13 | **269,102** | **1,263** | `4e532514d322f59d70912285b292a2fae569a516bb9581c5c8f60036fe99dcd7` |
 | [racing-v3.2.md](./racing-v3.2.md) | Historical, frozen | 252,906 | 1,195 | `bacdc4f7ad93881c6159bdbb353a421ca59aacd2450a08a88e0b700530ccf3ed` |
 | [racing-v3.1.md](./racing-v3.1.md) | Historical, frozen | 223,685 | 1,072 | `2b0ce465048b9edacc8ba943d3bbf09aeee223410bf9eb3c4012f515d7fb93b5` |
 | [racing-v2.6.md](./racing-v2.6.md) | Legacy, archived verbatim | 80,309 | 429 | `8dc65f23a8eaa35a06a7833a7929763fd16aa3cde2ff563561bffac7d7d69248` |
 
-**V3.4.1 is **proposed only** in this PR: it retains V3.4's race scope and 14 reference JPGs, adding reproducible per-segment scenery-density requirements. Existing V3.4 runs and their exact input remain unchanged; `current_prompt` stays V3.4 until an explicit promotion.
+**V3.4.1 is preserved as a separate revision of V3.4: it retains V3.4's race scope and 14 reference JPGs, adding reproducible per-segment scenery-density requirements. Existing V3.4 runs and their exact input remain unchanged; the current prompt is V3.5.
 
 For every new V3.4 run, provide its complete standalone prompt, all 14 JPG visual references, and the three-paragraph [version-independent operational companion](../EXECUTION-ADDENDUM.md).** Do not supply unrelated context, earlier implementations or model output.
 

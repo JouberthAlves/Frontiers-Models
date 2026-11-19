@@ -1,10 +1,10 @@
-# Racing-bench V3.4 / V3.4.1
+# Racing-bench V3.4 / V3.4.1 / V3.5
 
-**Benchmark 002 — current race-first specification**
+**Benchmark 002 — current specification**
 
 ## Current prompt and model
 
-The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference images](./prompts/racing-v3.4/refs/) are the current benchmark input package: one coastal circuit, five AI opponents, 3/6 laps.
+The current package is the [V3.5 prompt](./prompts/racing-v3.5/racing-v3.5.md) with [14 references](./prompts/racing-v3.5/refs/). Previous prompts remain unchanged.
 
 | Current model | Play | Source | Tokens | Time |
 | --- | --- | --- | ---: | ---: |
@@ -14,6 +14,8 @@ The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference im
 | ✧ **Fable 5.2 (V3.4.1)** | [Play racing](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./runs/fable-5.2-v3.4.1/source/) | ~475.74M | ~11h |
 | ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./runs/gemini-4-argon-v3.4/source/) | — | — |
 | ⬡ **Gemini 4 Hydrogen** | [Play racing](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./runs/gemini-4-hydrogen-v3.4/source/) | — | — |
+| ☀️ **GPT-6.2 Sol (V3.5)** | — | [GPT-6.2 Sol (V3.5)](./runs/gpt-6.2-sol-v3.5/source/) | — | — |
+| ◈ **Gemini 4 Neon (V3.5)** | — | [Gemini 4 Neon (V3.5)](./runs/gemini-4-neon-v3.5/source/) | — | — |
 
 *Since V3.4.1: total tokens (including cache) and estimated active execution time, when available. — = not recorded. [Metrics and limitations](./EXECUTION-METRICS.md).*
 

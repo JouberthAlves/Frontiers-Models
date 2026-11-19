@@ -1,0 +1,129 @@
+{
+  "world": {
+    "errors": [],
+    "minRadius": 25.461277664372673,
+    "maxGrade": 0.1166355002246553,
+    "maxBank": 4.099994734373669,
+    "maxEdgeStep": 0,
+    "maxTerrainPoke": 0
+  },
+  "pipeline": {
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "quality": "high",
+    "cascades": [
+      [
+        2048,
+        2048
+      ],
+      [
+        2048,
+        2048
+      ],
+      [
+        2048,
+        2048
+      ]
+    ],
+    "csmLights": 3,
+    "gtao": {
+      "active": true,
+      "size": [
+        1037,
+        583
+      ],
+      "depth": true
+    },
+    "toneMap": "AgX",
+    "msaa": 4,
+    "bloom": true,
+    "passes": [
+      "RenderPass",
+      "FrameAO",
+      "ShaderPass",
+      "UnrealBloomPass",
+      "OutputPass"
+    ],
+    "calls": 1282,
+    "renderedTriangles": 1869901,
+    "memory": {
+      "geometries": 518,
+      "textures": 91
+    }
+  },
+  "cars": [
+    {
+      "model": "Veloce GT",
+      "triangles": 55154,
+      "materialCount": 18,
+      "materials": [
+        "Cockpit suede",
+        "Graphite aero trim",
+        "Machined aluminum",
+        "Livery accent",
+        "Illuminated gauge display",
+        "Metallic clearcoat",
+        "Wheel wells and inlets",
+        "Lamp housing",
+        "Tail and brake LEDs",
+        "Reverse lamp lenses",
+        "Headlamp LED",
+        "Tinted reflective glazing",
+        "Number stencil",
+        "Fasteners",
+        "Profiled tire rubber",
+        "Tire tread relief",
+        "Brake rotor",
+        "Calipers"
+      ],
+      "directWheelHubs": 4,
+      "interior": true,
+      "steeringWheel": true,
+      "instrumentDisplay": true
+    },
+    {
+      "model": "Nerita RS",
+      "triangles": 53090,
+      "materialCount": 18,
+      "materials": [
+        "Cockpit suede",
+        "Graphite aero trim",
+        "Machined aluminum",
+        "Livery accent",
+        "Illuminated gauge display",
+        "Metallic clearcoat",
+        "Wheel wells and inlets",
+        "Lamp housing",
+        "Tail and brake LEDs",
+        "Reverse lamp lenses",
+        "Headlamp LED",
+        "Tinted reflective glazing",
+        "Number stencil",
+        "Fasteners",
+        "Profiled tire rubber",
+        "Tire tread relief",
+        "Brake rotor",
+        "Calipers"
+      ],
+      "directWheelHubs": 4,
+      "interior": true,
+      "steeringWheel": true,
+      "instrumentDisplay": true
+    }
+  ],
+  "coastalPlants": {
+    "palm": 51,
+    "pine": 0,
+    "olive": 20,
+    "cypress": 0,
+    "shrub": 200,
+    "grass": 121
+  },
+  "coastProps": 224,
+  "rockFoamSources": 30,
+  "road": {
+    "anisotropy": 16,
+    "resolution": 2048
+  },
+  "errors": []
+}

@@ -1,0 +1,43 @@
+{
+  "conditions": {
+    "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "browser": "159.0.8154.6",
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "measures": [
+    {
+      "quality": "high",
+      "period": "Golden hour",
+      "opponents": 5,
+      "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "average": 87.09032158805634,
+      "onePercentLow": 45.97701149424775,
+      "frames": 566,
+      "seconds": 6.4989999999910655
+    },
+    {
+      "quality": "high",
+      "period": "Night",
+      "opponents": 5,
+      "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "average": 92.96598430053173,
+      "onePercentLow": 49.75124378108012,
+      "frames": 604,
+      "seconds": 6.496999999994034
+    },
+    {
+      "quality": "low",
+      "period": "Golden hour",
+      "opponents": 5,
+      "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "average": 97.16511910811343,
+      "onePercentLow": 26.850786344454534,
+      "frames": 631,
+      "seconds": 6.494100000000006
+    }
+  ]
+}
