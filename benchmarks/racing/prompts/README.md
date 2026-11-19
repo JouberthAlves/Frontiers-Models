@@ -12,9 +12,11 @@
 | [racing-v3.1.md](./racing-v3.1.md) | Historical, frozen | 223,685 | 1,072 | `2b0ce465048b9edacc8ba943d3bbf09aeee223410bf9eb3c4012f515d7fb93b5` |
 | [racing-v2.6.md](./racing-v2.6.md) | Legacy, archived verbatim | 80,309 | 429 | `8dc65f23a8eaa35a06a7833a7929763fd16aa3cde2ff563561bffac7d7d69248` |
 
-**V3.4.1 is preserved as a separate revision of V3.4: it retains V3.4's race scope and 14 reference JPGs, adding reproducible per-segment scenery-density requirements. Existing V3.4 runs and their exact input remain unchanged; the current prompt is V3.5.
+V3.4.1 is preserved as a separate revision of V3.4: it retains V3.4's race scope and 14 reference JPGs, adding reproducible per-segment scenery-density requirements. Existing V3.4 runs and their exact input remain unchanged; the current prompt is V3.5.
 
-For every new V3.4 run, provide its complete standalone prompt, all 14 JPG visual references, and the three-paragraph [version-independent operational companion](../EXECUTION-ADDENDUM.md).** Do not supply unrelated context, earlier implementations or model output.
+For V3.5, use the complete V3.5 prompt and its 14 packaged images.
+
+**For historical V3.4 reproduction, provide its complete standalone prompt, all 14 JPG visual references, and the three-paragraph [version-independent operational companion](../EXECUTION-ADDENDUM.md).** Do not supply unrelated context, earlier implementations or model output.
 
 **For historical V3.3 reproduction, attach exactly two files:** the complete [V3.3 official prompt](./racing-v3.3.md) and the short [V3.3 operational clarification](./racing-v3.3-attach.md) allowing necessary browser, Playwright, DevTools and build/test tools. Do not attach audit context, older runner addenda or review notes.
 

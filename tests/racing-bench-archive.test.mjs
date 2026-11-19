@@ -46,7 +46,7 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
       } else if (run.id === 'gpt-6-astra-v3.4') {
         assert.equal(run.display_status, 'non-frontier-archived-source-site-owner-provided');
-        assert.equal(run.source_file_count, 1383);
+        assert.equal(run.source_file_count, 1183);
         assert.equal(run.site_url, run.live_url);
         assert.equal(run.live_url, 'https://racing-gpt-6-astra.biel.dev.br/', 'owner-provided Astra game URL');
         assert.match(run.site_status, /http-404-on-2026-11-05/);

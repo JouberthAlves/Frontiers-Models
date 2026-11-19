@@ -35,7 +35,7 @@ for (const [path, arenaHeading, title, archivedHeading, labels] of [
       'two benchmark branches followed by shared archive conventions');
     for (const required of [
       '2 benchmarks', ...labels.slice(0, 2), 'GPT-6.1 Sol', 'GPT-6.2 Astra', 'Opus 5.5', 'Gemini 4 Argon', 'Fable 5.2 (V3.4.1)', 'Gemini 4 Hydrogen',
-      'V2.6', 'frontier-v2.md', 'racing-v3.4/', '14', 'RUNS.json', 'prompts/',
+      'V2.6', 'frontier-v2.md', 'racing-v3.5/', '14', 'RUNS.json', 'prompts/',
       'runs/', 'SHA-256',
     ]) {
       assert.ok(drawing.includes(required), 'missing ' + required);
