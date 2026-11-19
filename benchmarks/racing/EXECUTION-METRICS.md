@@ -38,6 +38,30 @@ Source: owner-supplied summary of local Claude Code session usage records, scope
 
 The elapsed interval is between the owner-reported creation of track.json and the final verification finish, not the entire run or an active-time estimate. Work may precede or follow these markers. The archived [run.json](./runs/gpt-astra-6.2-v3.4.1/source/verification/run.json) records final verification start 17:20:36.162 UTC and finish 17:23:26.360 UTC (170.198 seconds). The report shows 21.55% of the weekly limit for the chat and a 98% Astra model share (1% Terra and 1% Luna); ~21% is the owner-selected approximate Astra figure, not an independently metered model-specific quota. Quota percentage is a subscription-specific proxy, not a token count and not comparable directly with tokens or other plans.
 
+### GPT-6.2 Sol (V3.5)
+
+| Measurement | Value |
+| --- | ---: |
+| Weekly quota used | 5.75% |
+| Execution duration | 1h 22m |
+| Token count | Unavailable |
+
+Exact values confirmed by the maintainer; subscription plan and timing method unspecified. No independent active-time or quota audit. Quota is not a token count.
+
+### Gemini 4 Neon (V3.5)
+
+| Measurement | Value |
+| --- | ---: |
+| Total execution time | 3h 03m 19s |
+| Start / delivery (UTC, 2026-11-19) | 03:59:45Z / 07:03:04Z |
+| Uncached input | 3,611,993 |
+| Cache read | 29,075,830 |
+| Output | 388,367 |
+| Input + output | 4,000,360 |
+| **Total tokens** | **33,076,190** |
+
+Verified against the local Antigravity transcript.jsonl, inclusive steps 0-481 (482 records). The session totals include 139 model responses and one system checkpoint (389,898 input and 9,118 output tokens). Cache writes were not separately reported. The elapsed execution includes asset preparation, procedural modeling, rendering, physics, audio, iterative inspection and verification. It is not isolated model-active time.
+
 ## Português
 
 A partir da **V3.4.1**, registrar tokens e tempo de execução quando houver evidência disponível. São métricas descritivas de recursos, não notas. As execuções utilizam cotas de diferentes assinaturas e clientes, e não uma API tarifada padronizada. Disponibilidade, precisão, contabilização e cache podem variar. Valores ausentes são desconhecidos, não zero. Não inferir custo de API a partir do uso da assinatura.
@@ -76,3 +100,27 @@ Fonte: resumo fornecido pelo mantenedor dos registros locais de uso do Claude Co
 | Verificação final | 2 min 50 s |
 
 O intervalo vai da criação de track.json informada pelo mantenedor ao término da verificação final; pode haver trabalho antes ou depois. Não representa tempo ativo nem duração total exata. O [run.json](./runs/gpt-astra-6.2-v3.4.1/source/verification/run.json) arquivado registra a verificação de 17:20:36.162 UTC a 17:23:26.360 UTC (170,198 s). O relatório mostra 21,55% do limite semanal do chat e 98% de participação do Astra (1% Terra e 1% Luna); ~21% é a aproximação escolhida pelo mantenedor, não uma medição independente por modelo. Percentual de cota é uma medida alternativa específica da assinatura, não equivale a tokens nem permite comparação direta entre planos.
+
+### GPT-6.2 Sol (V3.5)
+
+| Medida | Valor |
+| --- | ---: |
+| Cota semanal consumida | 5,75% |
+| Duração da execução | 1h 22min |
+| Contagem de tokens | Indisponível |
+
+Valores exatos confirmados pelo mantenedor; plano da assinatura e método de medição do tempo não informados. Sem auditoria independente de tempo ativo ou cota. Cota não equivale a tokens.
+
+### Gemini 4 Neon (V3.5)
+
+| Medida | Valor |
+| --- | ---: |
+| Tempo total de execução | 3h 03min 19s |
+| Início / entrega (UTC, 19/11/2026) | 03:59:45Z / 07:03:04Z |
+| Entrada sem cache | 3.611.993 |
+| Leitura de cache | 29.075.830 |
+| Saída | 388.367 |
+| Entrada + saída | 4.000.360 |
+| **Total de tokens** | **33.076.190** |
+
+Conferido no transcript.jsonl local do Antigravity, passos 0-481 inclusive (482 registros). Os totais da sessão incluem 139 respostas do modelo e um checkpoint do sistema (389.898 tokens de entrada e 9.118 de saída). Escrita em cache não foi informada separadamente. O tempo inclui preparo de assets, modelagem procedural, renderização, física, áudio, inspeção iterativa e verificação. Não é tempo ativo isolado do modelo.

@@ -492,7 +492,20 @@
       "manifest": "runs/gpt-6.2-sol-v3.5/SOURCE-FILES.json",
       "source_file_count": 553,
       "source_bytes": 458536992,
-      "git_bundle": null
+      "git_bundle": null,
+      "execution_metrics": {
+        "status": "owner-reported-not-independently-verified",
+        "scope": "benchmark-only",
+        "primary_time_metric": "reported_execution_minutes",
+        "reported_execution_minutes": 82,
+        "active_minutes_estimate": null,
+        "tokens": null,
+        "weekly_quota_percent": 5.75,
+        "quota_period": "weekly",
+        "quota_plan": null,
+        "quota_source": "owner-confirmed-exact-reported-value",
+        "details": "EXECUTION-METRICS.md"
+      }
     },
     {
       "id": "gemini-4-neon-v3.5",
@@ -515,7 +528,29 @@
       "manifest": "runs/gemini-4-neon-v3.5/SOURCE-FILES.json",
       "source_file_count": 319,
       "source_bytes": 304909004,
-      "git_bundle": null
+      "git_bundle": null,
+      "execution_metrics": {
+        "status": "local-transcript-verified",
+        "scope": "benchmark-only-session-steps-0-through-481",
+        "primary_time_metric": "reported_total_execution_seconds",
+        "reported_total_execution_seconds": 10999,
+        "started_at_utc": "2026-11-19T03:59:45Z",
+        "delivered_at_utc": "2026-11-19T07:03:04Z",
+        "active_minutes_estimate": null,
+        "tokens": {
+          "input_uncached": 3611993,
+          "cache_read": 29075830,
+          "output": 388367,
+          "total": 33076190
+        },
+        "token_subtotal_input_output": 4000360,
+        "model_calls": 139,
+        "checkpoint_tokens": {
+          "input_uncached": 389898,
+          "output": 9118
+        },
+        "details": "EXECUTION-METRICS.md"
+      }
     }
   ],
   "current_prompt": "racing-v3.5",

@@ -121,4 +121,4 @@ The [Gemini 3.8 Flash Racing V3.4 snapshot](../benchmarks/racing/runs/gemini-3.8
 
 Gemini 4 Hydrogen is the sixth current Racing V3.4 run: [source](../benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/), [SHA-256 manifest](../benchmarks/racing/runs/gemini-4-hydrogen-v3.4/SOURCE-FILES.json), and [provenance](../benchmarks/racing/runs/gemini-4-hydrogen-v3.4/SOURCE-PROVENANCE.md). All 319 tracked files (379,164,707 bytes), including local assets and verification media, are preserved exactly at pinned commit dd66f11572. No owner-designated live-game URL or independent acceptance verification is claimed.
 
-GPT-6.2 Sol and Gemini 4 Neon are separate V3.5 runs with 553 and 319 tracked files respectively. No gameplay URLs or resource measurements were provided. Earlier run associations and Orbitarium remain unchanged.
+GPT-6.2 Sol and Gemini 4 Neon are separate V3.5 runs with 553 and 319 tracked files respectively. No gameplay URLs were provided; execution resource measurements are recorded in the Racing execution metrics. Earlier run associations and Orbitarium remain unchanged.

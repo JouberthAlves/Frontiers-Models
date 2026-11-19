@@ -30,12 +30,14 @@
 | ♬ **Opus 5.5** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Jogar](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475,74 M | ~11 h |
 | ⬡ **Gemini 4 Hydrogen** | [Jogar](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/) | — | — |
-| ☀️ **GPT-6.2 Sol (V3.5)** | — | [GPT-6.2 Sol (V3.5)](./benchmarks/racing/runs/gpt-6.2-sol-v3.5/source/) | — | — |
-| ◈ **Gemini 4 Neon (V3.5)** | — | [Gemini 4 Neon (V3.5)](./benchmarks/racing/runs/gemini-4-neon-v3.5/source/) | — | — |
+| ☀️ **GPT-6.2 Sol (V3.5)** | — | [GPT-6.2 Sol (V3.5)](./benchmarks/racing/runs/gpt-6.2-sol-v3.5/source/) | 5,75%\* | 1h 22min |
+| ◈ **Gemini 4 Neon (V3.5)** | — | [Gemini 4 Neon (V3.5)](./benchmarks/racing/runs/gemini-4-neon-v3.5/source/) | ~33,08 M | 3h 03min 19s |
 
 *Desde a V3.4.1: tokens totais (incluindo cache) e tempo ativo estimado de execução, quando disponíveis. — = não registrado. [Métricas e limitações](./benchmarks/racing/EXECUTION-METRICS.md).*
 
 \* GPT-6.2 Astra: ~21% da cota semanal do Plus (informado pelo mantenedor; sem contagem de tokens). 5 h 02 min = intervalo decorrido observado, não tempo ativo comprovado. Relatório: 21,55% da cota semanal do chat, com 98% de participação atribuída ao Astra; valor aproximado.
+
+\* GPT-6.2 Sol: 5,75% da cota semanal, confirmado pelo mantenedor; contagem de tokens e plano não informados. Sol: duração informada; Neon: tempo total conferido pelo transcript, não tempo ativo isolado.
 
 **Entradas V3.5:** [Prompt](./benchmarks/racing/prompts/racing-v3.5/racing-v3.5.md) · [14 referências](./benchmarks/racing/prompts/racing-v3.5/refs/).
 

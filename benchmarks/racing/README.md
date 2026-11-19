@@ -12,12 +12,14 @@ The current package is the [V3.5 prompt](./prompts/racing-v3.5/racing-v3.5.md) w
 | ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Play racing](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./runs/fable-5.2-v3.4.1/source/) | ~475.74M | ~11h |
 | ⬡ **Gemini 4 Hydrogen** | [Play racing](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./runs/gemini-4-hydrogen-v3.4/source/) | — | — |
-| ☀️ **GPT-6.2 Sol (V3.5)** | — | [GPT-6.2 Sol (V3.5)](./runs/gpt-6.2-sol-v3.5/source/) | — | — |
-| ◈ **Gemini 4 Neon (V3.5)** | — | [Gemini 4 Neon (V3.5)](./runs/gemini-4-neon-v3.5/source/) | — | — |
+| ☀️ **GPT-6.2 Sol (V3.5)** | — | [GPT-6.2 Sol (V3.5)](./runs/gpt-6.2-sol-v3.5/source/) | 5.75%\* | 1h 22m |
+| ◈ **Gemini 4 Neon (V3.5)** | — | [Gemini 4 Neon (V3.5)](./runs/gemini-4-neon-v3.5/source/) | ~33.08M | 3h 03m 19s |
 
 *Since V3.4.1: total tokens (including cache) and estimated active execution time, when available. — = not recorded. [Metrics and limitations](./EXECUTION-METRICS.md).*
 
 \* GPT-6.2 Astra: ~21% of the Plus weekly quota (owner-reported; no token count). 5h 02m is the observed elapsed interval, not verified active time. Report: 21.55% of the weekly quota for the chat, with 98% model share attributed to Astra; approximate.
+
+\* GPT-6.2 Sol: 5.75% of the weekly quota, as confirmed by the maintainer; token count and plan unspecified. Sol: reported duration; Neon: transcript-verified total execution time, not isolated active time.
 
 [V3.4.1 prompt](./prompts/racing-v3.4/racing-v3.4.1.md) · [Operational addendum](./EXECUTION-ADDENDUM.md) · [Source code metrics](./SOURCE-METRICS.md) · [Run provenance](./RUN-PROVENANCE.md) · [Earlier prompts](./prompts/README.md).
 

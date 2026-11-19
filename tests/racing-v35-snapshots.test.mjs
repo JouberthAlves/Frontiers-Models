@@ -27,7 +27,8 @@ for(const [id,tree,count,bytes] of [
  assert.equal(m.files.reduce((s,f)=>s+f.bytes,0),bytes);
  assert.equal(r.prompt,registry.prompts['racing-v3.5'].path);
  assert.equal(r.live_url,null);
- assert.equal(r.execution_metrics,undefined);
+ assert.ok(r.execution_metrics);
+ assert.equal(r.execution_metrics.active_minutes_estimate,null);
  const ls=execFileSync('git',['ls-tree','-r','-z','HEAD:'+base+r.archive_path],{encoding:'utf8'}).split('\0').filter(Boolean);
  assert.deepEqual(ls,m.files.map(f=>f.mode+' blob '+f.git_blob_sha1+'\t'+f.path));
 });
