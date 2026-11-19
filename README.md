@@ -30,8 +30,8 @@
 | ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Play racing](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475.74M | ~11h |
 | ⬡ **Gemini 4 Hydrogen** | [Play racing](https://racing-gemini-4-hydrogen.biel.dev.br/) | [Gemini 4 Hydrogen](./benchmarks/racing/runs/gemini-4-hydrogen-v3.4/source/) | — | — |
-| ☀️ **GPT-6.2 Sol (V3.5)** | — | [GPT-6.2 Sol (V3.5)](./benchmarks/racing/runs/gpt-6.2-sol-v3.5/source/) | 5.75%\* | 1h 22m |
-| ◈ **Gemini 4 Neon (V3.5)** | — | [Gemini 4 Neon (V3.5)](./benchmarks/racing/runs/gemini-4-neon-v3.5/source/) | ~33.08M | 3h 03m 19s |
+| ☀️ **GPT-6.2 Sol (V3.5)** | [Play racing](https://racing-gpt-6.2-sol.biel.dev.br/) | [GPT-6.2 Sol (V3.5)](./benchmarks/racing/runs/gpt-6.2-sol-v3.5/source/) | 5.75%\* | 1h 22m |
+| ◈ **Gemini 4 Neon (V3.5)** | [Play racing](https://racing-gemini-4-neon.biel.dev.br/) | [Gemini 4 Neon (V3.5)](./benchmarks/racing/runs/gemini-4-neon-v3.5/source/) | ~33.08M | 3h 03m 19s |
 
 *Since V3.4.1: total tokens (including cache) and estimated active execution time, when available. — = not recorded. [Metrics and limitations](./benchmarks/racing/EXECUTION-METRICS.md).*
 

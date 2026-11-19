@@ -88,8 +88,9 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.source_bytes, 379164707);
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else if (['gpt-6.2-sol-v3.5','gemini-4-neon-v3.5'].includes(run.id)) {
-        assert.equal(run.live_url, null);
-        assert.equal(run.site_url, null);
+        const url=run.id==='gpt-6.2-sol-v3.5'?'https://racing-gpt-6.2-sol.biel.dev.br/':'https://racing-gemini-4-neon.biel.dev.br/';
+        assert.equal(run.live_url, url);
+        assert.equal(run.site_url, url);
         assert.equal(run.prompt, 'prompts/racing-v3.5/racing-v3.5.md');
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else {

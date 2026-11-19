@@ -26,7 +26,13 @@ for(const [id,tree,count,bytes] of [
  assert.equal(m.files.length,count);
  assert.equal(m.files.reduce((s,f)=>s+f.bytes,0),bytes);
  assert.equal(r.prompt,registry.prompts['racing-v3.5'].path);
- assert.equal(r.live_url,null);
+ const url=id==='gpt-6.2-sol-v3.5'?'https://racing-gpt-6.2-sol.biel.dev.br/':'https://racing-gemini-4-neon.biel.dev.br/';
+ assert.equal(r.live_url,url);
+ assert.equal(r.site_url,url);
+ for(const path of ['README.md','README-PT-BR.md',base+'README.md',base+'README-PT-BR.md']) {
+  const row=readFileSync(path,'utf8').split('\n').find(l=>l.startsWith('|')&&l.includes(id+'/source/'));
+  assert.ok(row?.includes(']('+url+')'),path);
+ }
  assert.ok(r.execution_metrics);
  assert.equal(r.execution_metrics.active_minutes_estimate,null);
  const ls=execFileSync('git',['ls-tree','-r','-z','HEAD:'+base+r.archive_path],{encoding:'utf8'}).split('\0').filter(Boolean);
